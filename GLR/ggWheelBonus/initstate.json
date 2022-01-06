@@ -1,0 +1,36 @@
+{
+    "RGSResponse": {
+        "GameLogicResponse": {
+            "OutcomeDetail": {
+                "TransactionId": "A3710-16113239514567",
+                "Stage": "Wager",
+                "NextStage": "Wager",
+                "Balance": "9999.70",
+                "GameStatus": "Initial",
+                "Settled": "0",
+                "Pending": "0",
+                "Payout": "0"
+            },
+            "JSONOutcome": {
+                "@name": "ODERevealData",
+                "#text": {
+                    "revealData": null
+                }
+            },
+            "Balances": {
+                "@totalBalance": "9999.70",
+                "Balance": [
+                    {
+                        "@name": "CASH",
+                        "#text": "9999.70"
+                    },
+                    {
+                        "@name": "BONUS",
+                        "#text": "0.00"
+                    }
+                ]
+            }
+        }
+    },
+    "ExtraInfo": {}
+}

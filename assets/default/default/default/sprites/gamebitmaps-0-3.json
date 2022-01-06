@@ -1,0 +1,327 @@
+{
+  "frames": {
+    "symbolBonus8Static_img": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 146,
+        "h": 146
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 146
+      },
+      "sourceSize": {
+        "w": 146,
+        "h": 146
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus9Static_img": {
+      "frame": {
+        "x": 149,
+        "y": 1,
+        "w": 142,
+        "h": 140
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 142,
+        "h": 140
+      },
+      "sourceSize": {
+        "w": 142,
+        "h": 140
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "palmTree": {
+      "frame": {
+        "x": 149,
+        "y": 145,
+        "w": 139,
+        "h": 141
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 27,
+        "y": 23,
+        "w": 139,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 195,
+        "h": 198
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus6Static_img": {
+      "frame": {
+        "x": 1,
+        "y": 149,
+        "w": 137,
+        "h": 142
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 142
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 142
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "starFish": {
+      "frame": {
+        "x": 1,
+        "y": 288,
+        "w": 127,
+        "h": 131
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 36,
+        "y": 30,
+        "w": 127,
+        "h": 131
+      },
+      "sourceSize": {
+        "w": 195,
+        "h": 198
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "iceCream": {
+      "frame": {
+        "x": 134,
+        "y": 288,
+        "w": 97,
+        "h": 152
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 16,
+        "w": 97,
+        "h": 152
+      },
+      "sourceSize": {
+        "w": 195,
+        "h": 198
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "reel_mask_spinMeterButton_img": {
+      "frame": {
+        "x": 288,
+        "y": 288,
+        "w": 95,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 95,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 95,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "plusButton_overBg_img": {
+      "frame": {
+        "x": 290,
+        "y": 145,
+        "w": 82,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 86
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "plusButton_pressedBg_img": {
+      "frame": {
+        "x": 291,
+        "y": 1,
+        "w": 82,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 86
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "settingsButton_disabledBg_img2": {
+      "frame": {
+        "x": 374,
+        "y": 89,
+        "w": 82,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 85
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "settingsButton_enabledBg_img2": {
+      "frame": {
+        "x": 375,
+        "y": 1,
+        "w": 82,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 85
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "settingsButton_overBg_img2": {
+      "frame": {
+        "x": 374,
+        "y": 176,
+        "w": 82,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 85
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "settingsButton_pressedBg_img2": {
+      "frame": {
+        "x": 385,
+        "y": 263,
+        "w": 82,
+        "h": 85
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 85
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 85
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "IGT Layout Tool - https://github.com/igtinteractive/layout_tool",
+    "version": "0.4.8",
+    "image": "gamebitmaps-0-3.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 468,
+      "h": 416
+    },
+    "scale": 1
+  }
+}

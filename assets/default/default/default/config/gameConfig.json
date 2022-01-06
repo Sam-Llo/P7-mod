@@ -1,0 +1,68 @@
+{
+    "GameOptions": {
+        "toggleAutoPlay": true,
+        "showHowToPlayOnLoad": false,
+        "showResultScreenWin": true,
+        "showResultScreenNonWin": true,
+        "secondsDelayDismissResult": 2,
+        "rollupWinValueDuration": 0.5,
+        "delayBeforeStartIdleInSeconds": 0.5,
+        "delayBeforeResumeIdleInSeconds": 0.65,
+        "revealAllProcessInterval": 0.3,
+        "buttonFadeDelay": 0.3,
+        "infoButtonEnabled": false,
+        "marketingScreenFadeDuration": 0.25,
+        "rollUpStartTimeInPercantageFromIntroAnimation": 0.6
+    },
+    "GameConfig": {
+        "pauseBeforeAutoBuyRevealAll": 500,
+        "successiveAutoBuyDelay": 1000
+    },
+    "RevealAll": {
+        "BaseGame": {
+            "revealOneByOne": false,
+            "autoPlayGameSymbolRevealInterval": 0.3,
+            "autoPlaySymbolsRowInterval": 1
+        }
+    },
+    "PlaqueConfig": {
+        "BonusWin": {
+            "duration": 2.5
+        },
+        "Result": {
+            "duration": 0.01,
+            "prop": "alpha",
+            "showTarget": 1,
+            "hideTarget": 0
+        }
+    },
+    "WinUpTo": {
+        "maxScale": 1.5,
+        "minScale": 0.5,
+        "duration": 0.5
+    },
+    "WinThresholdsForBaseGame": {
+        "level1": {
+            "upper": {"multiplier": 5, "inclusive": false}
+        },
+        "level2": {
+            "lower": {"multiplier": 5, "inclusive": true},
+            "upper": {"multiplier": 20, "inclusive": true}
+        },
+        "level3": {
+            "lower": {"multiplier": 20, "inclusive": false}
+        }
+    },
+    "WinThresholdsForBonusGame": {
+        "level1": {
+            "upper": {"multiplier": 5, "inclusive": false}
+        },
+        "level2": {
+            "lower": {"multiplier": 5, "inclusive": true},
+            "upper": {"multiplier": 20, "inclusive": true}
+        },
+        "level3": {
+            "lower": {"multiplier": 20, "inclusive": false}
+        }
+    }
+}

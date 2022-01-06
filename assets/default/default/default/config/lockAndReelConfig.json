@@ -1,0 +1,43 @@
+{
+    "DelayBetweenNextSpinStarts": 0.125,
+    "PulseAmount": 1.2,
+    "PulseAnimationLength": 0.25,
+    "RandomRangeForReelSpinDelays": 0.25,
+    "SymbolHeight": 181,
+    "SymbolWidth": 154,
+    "LocalPositionX": 0,
+    "LocalPositionY": 0,
+    "IsHorizontalSpin": false,
+    "PeakSpinSpeed": 0.1,
+    "LandingSpinSpeed": 0.125,
+    "MaxStopSpinCounter": 12,
+    "PresentWinAnimationLength": 1,
+    "EndingPresentWinAnimationLength": 1,
+    "CustomSpinSpeedControl": [1.5, 1.2, 1.0, 0.8, 0.7, 0.6, 0.6, 0.7, 0.8, 1.0, 1.2, 1.5],
+    "BonusPaytableValueTextPrefix": "_bonusPaytableValueText",
+    "BonusPaytableFindTextPrefix": "_bonusPaytableFindText",
+    "PaytableBonusMultiplierAnimNamePrefix": "_paytableBonusMultiplierAnim",
+    "SymbolsBonusBackgroundPrefix": "_symbolsBonusBackground",
+    "ShadedGridHighlightAnimationName": "animation",
+    "PaytableHighlightSparkleAnimationName": "Bonus pay table vfx",
+    "GameOptions": {
+        "BonusGridElements": 16,
+        "PrizeDivisionPrefix": "B",
+        "LeastWinningCount": 5,
+        "InitialDelayToSetSpinCounterInSeconds": 0.5,
+        "InitialDelaySpinTimeInSeconds": 1,
+        "MaxSpinCounterNumber": 3,
+        "IsSequenceSpin": true
+    },
+    "BonusWinSpineAnimation": "BonusDrink.skel",
+    "WinningAnimations": {
+        "Reveal1": "Reveal1",
+        "Reveal2": "Reveal2",
+        "Reveal3": "Reveal3",
+        "Idle1": "Idle1",
+        "Idle2": "Idle2",
+        "Idle3": "Idle 3",
+        "BonusBoardWin": "BonusBoardWin",
+        "BonusBoardLoop": "BonusBoardLoop"
+    }
+}

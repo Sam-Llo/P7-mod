@@ -1,0 +1,5053 @@
+/* VARIABLES */
+:root {
+    --dark: rgb(17, 18, 23);
+    --dark-menu: rgb(35, 38, 43);
+    --dark-grey: rgb(30, 30, 34);
+    --dark-disabled: rgb(28, 30, 35);
+    --charcoal-grey: rgb(46, 52, 62);
+    --greyish: rgb(182, 182, 182);
+    --light-grey: rgb(182, 182, 182);
+    --battleship-grey: rgb(115, 120, 128);
+    --off-white: rgb(225, 225, 225);
+    --greyish-two: rgb(183, 183, 183);
+    --charcoal-grey: rgb(46, 52, 62);
+    --mid-blue: rgb(2, 118, 199);
+    --dark-greyish-blue: rgb(114, 125, 140);
+    --very-dark-blue: rgb(20, 20, 22);
+    --shadow-grey: rgb(52, 57, 68);
+    --dark-grey: rgb(25, 27, 31);
+    --very-dark-grey: rgb(27, 29, 32);
+    --black: rgb(0, 0, 0);
+    --scrollbar-track-color: rgba(28, 29, 35);
+    --scrollbar-color: rgba(48, 54, 64);
+    --scrollbar-width: 3px;
+    --scrollbar-size: 3px;
+    --scrollbar-minlength: 1.5rem;
+}
+
+p {
+    margin-block-start: 0px;
+}
+
+/* OVERLAY */
+.paytable-overlay {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999999;
+    background: rgba(38, 39, 43, 0.9);
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+    touch-action: none;
+}
+
+#section-page-TICKET {
+    display: block;
+    width: 48%;
+}
+
+#section-page-PAYTABLE {
+    display: block;
+    width: 48%;
+}
+
+.paytable-overlay--active {
+    display: flex;
+}
+
+/* SETTINGS PANEL */
+.paytable-panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    background: var(--very-dark-blue);
+    width: 1270px;
+    height: 770px;
+    top: 0;
+}
+
+/* NAVIGATION BAR */
+.paytable-nav {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--dark-menu);
+}
+
+.paytable-tabs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.paytable-tab {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-right: 1px solid var(--dark);
+}
+
+.paytable-tab--active {
+    background-color: var(--dark);
+}
+
+.paytable-tab__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.paytable-tab__disabled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+@media (hover: hover) {
+
+    .paytable-tab__link:focus,
+    .paytable-tab__link:hover .paytable-tab__link:active {
+        outline: none;
+    }
+
+    .paytable-tab:focus,
+    .paytable-tab:hover {
+        background: var(--very-dark-grey);
+    }
+}
+
+.paytable-tab__icon {
+    height: 37px;
+}
+
+.close-paytable-btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    /* Desktop positioning by default */
+    top: 45px;
+    right: 55px;
+    /* We want this on the top come what may */
+    z-index: 99999;
+}
+
+.close-paytable-btn__icon {
+    height: 60px;
+    width: 60px;
+}
+
+.scrollup-prizes-btn {
+    border: none;
+    background: transparent;
+    position: absolute;
+    z-index: 400;
+    outline: none;
+    cursor: pointer;
+}
+
+.scrollup-prizes-btn:hover {
+    opacity: 0.8;
+}
+
+.close-paytable-btn:hover {
+    opacity: 0.8;
+    color:rgb(170, 211, 239);
+}
+
+.scrollup-prizes-btn__icon {
+    height: 2.3vw;
+    width: 2.3vw;
+}
+
+/* TAB PAGES */
+.paytable-tab-page {
+    height: calc(100% - 70px);
+    width: calc(50%);
+    flex-direction: column;
+    flex-grow: 1;
+    scrollbar-width: var(--scrollbar-width);
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-track-color);
+    overflow: hidden;
+}
+
+.paytable-tab-page:focus {
+    outline: none;
+}
+
+.paytable-tab-page:focus-visible {
+    outline: #333 solid 2px;
+}
+
+.paytable-tab-page--active {
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    height: var(--scrollbar-size);
+    width: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track-color);
+    border-radius: 3.5px;
+    margin: 20px 0 22px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--greyish);
+    border-radius: 3.5px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    min-height: var(--scrollbar-minlength);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    min-width: var(--scrollbar-minlength);
+}
+
+.paytable-header.ticket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 11px;
+}
+
+.paytable-header.prize {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 11px;
+}
+
+.paytable-tutorial {
+    font-family: Lato-Regular;
+    padding: 0px 0px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--light-grey);
+}
+
+.paytable-heading {
+    position: relative;
+    padding: 0 0 0 30px;
+    margin-block-start: 0.83em;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: var(--off-white);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.paytable-heading2 {
+    position: relative;
+    padding: 0 29px;
+    margin-block-start: 0.83em;
+    font-family: Lato-Regular;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: var(--off-white);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.paytable-subheading {
+    position: relative;
+    padding: 0 29px;
+    /* margin-block-start: 0.83em; */
+    font-family: Lato-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: var(--greyish);
+    margin-top: 5px;
+    margin-bottom: 1.5vw;
+}
+
+.ticket-subeading1 {
+    position: relative;
+    margin-block-start: 0.83em;
+    font-family: Lato-Regular;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: var(--off-white);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.paytable-footerText {
+    position: relative;
+    padding: 0 29px;
+    margin-block-start: 0.83em;
+    font-family: Lato-Regular;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: var(--greyish);
+    margin-top: -9px;
+    margin-bottom: 10px;
+}
+
+.ticket-subText {
+    position: relative;
+    padding: 0 0px;
+    margin-block-start: 0.83em;
+    font-family: Lato-Regular;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: var(--greyish);
+    margin-top: -5px;
+    margin-bottom: 0px;
+}
+
+.paytable-header-lower {
+    display: flex;
+    justify-content: flex-end;
+    background: #26272b;
+    height: 1px;
+    min-height: 1px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.paytable-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 18px;
+    padding-right: 30px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    background: var(--dark-grey);
+}
+
+.paytable-footer--info {
+    padding-top: 18px;
+}
+
+.paytable-footer-multiple {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-right: 30px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    background: var(--dark-grey);
+}
+
+.paytable-footer-multiple--info {
+    padding-top: 18px;
+}
+
+.paytable-sub-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.paytable-sub-wrapper::before,
+.paytable-sub-wrapper::after {
+    content: '';
+    position: absolute;
+    width: calc(100%);
+    height: 15px;
+    z-index: 100;
+}
+
+.paytable-sub-wrapper::before {
+    top: -1px;
+    height: 10px;
+}
+
+.paytable-sub-wrapper::after {
+    bottom: 6px;    
+}
+
+.paytable-content {
+    position: relative;
+    flex-grow: 1;
+    height: calc(50%);
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+
+.paytable-content.prize {    
+    height: 36em;
+}
+
+.gradient {
+    position: absolute;
+    height: 36em;
+    top: 0px;
+    margin-top: 10px;
+    background-image: linear-gradient( rgba(28,29,35,0) 0%, rgba(28,29,35,0) 70%, rgba(28,29,35,1) 100%);
+    pointer-events: none;
+    z-index: 60;
+    width: 100%;
+}
+
+.paytable-scroller-content {    
+    transition: transform 400ms;
+}
+
+.paytable-scroller-content--scrolled {    
+    transform: translateY(20%);
+}
+
+.paytable-radio-line {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px 6px;
+    margin-bottom: 15px;
+}
+
+.paytable-radio-line.bet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px 6px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.paytable-space {
+    content: '';
+    width: 100%;
+    height: 10px;
+}
+
+.paytable-space.radio {
+    height: 10px;
+}
+
+.paytable-space.ticketTop {
+    height: 42px;
+}
+
+.paytable-space.ticketMid {
+    height: 15px;
+}
+
+.paytable-space.ticketLow {
+    height: 0.8vw;
+}
+
+.paytable-space.prize {
+    height: 17px;
+}
+
+.paytable-space.text {
+    height: 15px;
+}
+
+.paytable-space.toggle {
+    height: 37px;
+}
+
+/*Paytable Prize */
+
+.paytable-Prize {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: inherit;
+}
+
+.paytable-PrizeCOM {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: inherit;
+}
+
+.paytable-PrizeCOMDesc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: inherit;
+}
+
+.paytable-PrizeWLA {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: inherit;
+}
+
+.prizeContainer{
+    display: flexbox;
+    width: 100%;
+}
+
+.paytable-Prize.headerCOM{    
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    width: inherit;
+}
+
+.paytable-Prize.headerCOMDesc{    
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    width: inherit;
+}
+
+.paytable-Prize.headerWLA{    
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    width: inherit;
+}
+
+.paytable-Prize.topheaderCOM{    
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.paytable-Prize.topheaderCOMDesc{
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.paytable-Prize.topheaderWLA{    
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.paytable-Prize.tablecontent{
+    display: flex-container;
+    grid-template-columns: repeat(2, 1fr);
+    width: inherit;
+}
+
+.paytable-Prize.tablecontentCOM{
+    display: flex-container;
+    grid-template-columns: repeat(2, 1fr);
+    width: inherit;
+}
+
+.paytable-Prize.tablecontentCOMDesc{
+    display: flex-container;
+    grid-template-columns: repeat(3, 1fr);
+    width: inherit;
+}
+
+.paytable-Prize.tablecontentWLA{
+    display: flex-container;
+    grid-template-columns: repeat(4, 1fr);
+    width: inherit;
+}
+
+.paytable-prize.tab {
+    display: flex;
+    height: 55px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28, 29, 35);
+    box-shadow: inset 0px -1px 0 0 rgba(255, 255, 255, 0.05);
+    pointer-events: unset;
+}
+
+.paytable-prize.contenttab {
+    display: flex;
+    height: 40px;
+    width: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28, 29, 35);
+    box-shadow: inset 0px -1px 0 0 #17171a;
+    pointer-events: unset;
+}
+
+.paytable-prizeTopHeader__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato-Regular;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--off-white);
+    text-size-adjust: auto;
+    pointer-events: none;
+    height: 50px;
+    opacity: 1;
+    word-wrap: break-word;
+    word-wrap: normal;
+}
+
+.paytable-prizeHeader__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato-Regular;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--off-white);
+    text-size-adjust: auto;
+    pointer-events: none;
+    height: 50px;
+    opacity: 1;
+}
+
+.paytable-prize__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--off-white);
+    pointer-events: none;
+    width: 100px;
+    height: 50px;
+    opacity: 1;
+}
+
+.portrait-lower-info {
+    background-color: var(--dark-grey);
+    display: none;
+}
+
+.portrait-lower-info-divider {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 2px;
+    background-image: linear-gradient(to right, rgba(49, 55, 64, 0), #313740, rgba(49, 55, 64, 0)), linear-gradient(to right, rgb(17, 18, 23), rgba(17, 18, 23, 0), rgb(17, 18, 23)), linear-gradient(to bottom, rgb(26, 30, 35), rgb(17, 20, 23));
+    background-position: top center;
+    background-size: 100% 2px, 65% 10px, 65% 10px;
+    background-repeat: no-repeat;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+}
+
+.portrait-lower-info-split {
+    padding-top: 14px;
+    padding-bottom: 16px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.footer-info-split {
+    align-items: center;
+    display: flex;
+}
+
+.paytable-secondary-info-label {
+    position: relative;
+    padding: 0 10px 0 0;
+    font-family: OswaldLocCur-DemiBold;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: var(--greyish);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.paytable-secondary-info-value {
+    position: relative;
+    padding: 0 0 0 10px;
+    font-family: OswaldLocCur-DemiBold;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: var(--greyish);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.paytable-secondary-info-divider {
+    width: 2px;
+    height: 20px;
+    border-radius: 0.5px;
+    background-color: var(--shadow-grey);
+}
+
+.paytable-footer-info-label {
+    position: relative;
+    padding: 0 10px 0 10px;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    margin: 0px;
+    color: var(--greyish);
+}
+
+.paytable-footer-info-value {
+    position: relative;
+    padding: 0 0 0 10px;
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    margin: 0px;
+    color: var(--greyish);
+}
+
+.paytable-footer-info-divider {
+    width: 2px;
+    height: 20px;
+    border-radius: 0.5px;
+    background-color: var(--shadow-grey);
+}
+
+.paytable-ticket-cost-split {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+
+.radiotab-control {
+    display: flex;
+    height: 45px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28, 29, 35);
+    /*box-shadow: inset 0px -1px 0 0 rgba(255, 255, 255, 0.05)*/
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: unset;
+}
+
+@media (hover: hover) {
+    .radiotab-control:hover {
+        opacity: 0.8;
+    }
+
+    .radiotab-control:not(.radiotab-control--active):hover {
+        background-color: rgb(42, 47, 55);
+    }
+}
+
+.radiotab-control--active {
+    background-color: var(--off-white);
+}
+
+.radiotab-control--active-disabled {
+    background-color: var(--off-white);
+    pointer-events: none;
+}
+
+.radiotab-control--disabled {
+    background-color: var(--dark-disabled);
+    pointer-events: none;
+}
+
+.radiotab-control__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--off-white);
+    pointer-events: none;
+    width: 100px;
+    height: 50px;
+    opacity: 1;
+}
+
+.radiotab-control__label--active {
+    color: var(--dark-menu);
+}
+
+.radiotab-control__label--disabled {
+    opacity: 0.2;
+}
+
+.radiotab-control__input {
+    display: none;
+}
+
+.radiotab-control__icon {
+    height: 30px;
+    width: 30px;
+    top: -10px;
+    left: -17px;
+    position: absolute;
+}
+
+.radiotab-control-wrapper {
+    position: relative;
+}
+
+.radiotab-control-wrapper--active {
+    position: relative;
+    z-index: 999;
+    /* High enough number as to not overlap any others */
+}
+
+.radiotab-control-icon-wrapper {
+    top: 0px;
+    left: 50px;
+    position: absolute;
+    display: none;
+}
+
+.radiotab-control-icon-wrapper--active {
+    display: block;
+}
+
+/* 
+    LANDSCAPE MEDIA QUERIES
+    Initially kick in when too small to display the fixed size panel
+*/
+
+@media only screen and (min-width: 1024px) and (orientation: landscape) and (max-width: 1400px) and (orientation: landscape) {
+
+    #section-page-TICKET {
+        display: block;
+        width: 47%;
+    }
+
+    #section-page-PAYTABLE {
+        display: block;
+        width: 47%;
+    }
+
+    .paytable-content.ticket {
+        height: 30em;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .paytable-content.prize {
+        height: 34em;
+    }
+
+    .gradient {
+        height: 34em;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        position: absolute;
+        z-index: 300;
+        margin-top: -15px;
+    }
+
+    .paytable-prizeTopHeader__label {
+        font-size: 17px;
+    }
+    
+    .paytable-prizeHeader__label {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+/* 
+    Special case for wide and tall resolutions (think iPad Pro), to stop the settings panel sitting too high
+*/
+@media (orientation: landscape) and (min-width: 1024px) and (min-height: 960px) {
+    .paytable-panel {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape),
+(max-height: 700px) and (orientation: landscape) {
+    .close-paytable-btn {
+        width: 45px;
+        height: 45px;
+        top: 19.5px;
+        left: unset;
+        right: 22.5px;
+    }
+    
+    .close-paytable-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    :root {
+        --scrollbar-width: 3px;
+        --scrollbar-size: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+        margin: unset;
+    }
+
+    .paytable-panel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }   
+
+    .paytable-prizeHeader__label {        
+        font-size: 13px; 
+        line-height: 18px;      
+    }
+
+    .paytable-prizeTopHeader__label {        
+        font-size: 13px;
+    }
+
+    .paytable-nav {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .paytable-tabs {
+        flex-direction: column;
+    }
+
+    .paytable-tab {
+        width: 55px;
+        height: 55px;
+        border-right: 0 none;
+        border-bottom: 1px solid var(--dark);
+    }
+
+    .paytable-tab-page {
+        height: 100%;
+    }
+    
+
+    .paytable-tab__icon {
+        height: 28px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        margin-top: -1vw;
+        background: transparent;
+        position: absolute;
+        z-index: 4000;
+    }
+
+    .paytable-footer {
+        padding-right: 34px;
+        padding-top: 20px;
+        background: transparent linear-gradient(90deg, #191B1F 0%, #191B1F99 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .paytable-footer--info {
+        padding-top: 20px;
+    }
+
+    .paytable-footer-multiple {
+        padding-right: 34px;
+        padding-top: 20px;
+        padding-left: 86px;
+        background: transparent linear-gradient(90deg, #191B1F 0%, #191B1F99 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .paytable-footer-multiple--info {
+        padding-top: 20px;
+    }
+
+    .paytable-radio-line {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-gap: 22px;
+        margin-bottom: 10px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-gap: 10px 10px;
+    }
+
+    .radiotab-control__label {
+        font-family: 'Lato-Regular';
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .radiotab-control {
+        height: 40px;
+    }
+
+    .paytable-scroller-content {
+        transition: transform 400ms;
+        
+    }
+
+    .paytable-space.toggle {
+        height: 33px;
+    }
+
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+    }
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 27px);
+        height: 5px;
+        z-index: 100;
+    }
+
+    .paytable-sub-wrapper::before {
+        bottom: 0px;
+        height: 10px;
+    }
+
+    .paytable-content {
+        position: relative;
+        flex-grow: 1;
+        height: 60vh;
+        overflow-y: auto;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 75%;
+    }
+
+    .paytable-heading {
+        padding: 10px 34px 0px 30px;
+        font-size: 17px;
+        margin-block-start: 0px;
+        margin-bottom: 0px;
+    }
+
+    .paytable-heading2 {
+        font-size: 13px;
+        margin-block-start: 0px;
+        margin-bottom: 0px;
+    }
+
+    .paytable-prize.tab {
+        display: flex;
+        height: 45px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(28, 29, 35);
+        box-shadow: inset 0px -1px 0 0 rgba(255, 255, 255, 0.05);
+        pointer-events: unset;
+    }
+
+    .paytable-content.prize {
+        height: 60vh;
+    }
+
+    .gradient {
+        height: 60vh;
+    }
+
+    .paytable-space.radio {
+        height: 5px;
+    }
+
+    .paytable-space.prize {
+        height: 5px;
+    }
+
+    .paytable-space.ticketTop {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 0.8vw;
+    }
+    
+    [ class= "paytable-content.ticket" ] {
+        height: 12em;
+    }    
+    
+
+    .paytable-header.ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 5px;
+    }
+
+    .paytable-header.prize {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 5px;
+    }
+
+    .paytable-header-lower {
+        margin-left: 30px;
+        margin-right: 34px;
+    }
+
+    .footer-info-split {
+        display: flex;
+    }
+
+    .paytable-tutorial {
+        font-size: 13px;
+    }
+
+    .paytable-footer-info-label {
+        font-size: 14px;
+        padding-left: 0px;
+    }
+
+    .paytable-footer-info-value {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1730px) and (orientation: landscape) and (min-height: 500px) and (max-height: 900px)and (orientation: landscape) {
+    #section-page-TICKET {
+        display: block;
+        width: 47%;
+    }
+
+    #section-page-PAYTABLE {
+        display: block;
+        width: 47%;
+    }
+
+    .paytable-content.ticket {
+        height: 30em;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-gap: 15px 15px;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 80%;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .paytable-content.prize {
+        height: 66vh;
+    }
+    
+    .gradient {
+        height: 66vh;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        position: absolute;
+        z-index: 300;
+        margin-top: -15px;
+    }
+
+    .paytable-prizeTopHeader__label {
+        font-size: 17px;
+    }
+    
+    .paytable-prizeHeader__label {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media (min-width:600px) and (orientation: landscape) and (max-width: 900px) and (min-height: 500px) and (max-height: 900px)and (orientation: landscape){
+    .paytable-prizeTopHeader__label {
+        font-size: 17px;
+    }
+    
+    .paytable-prizeHeader__label {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (max-width: 823px) and (orientation: landscape),
+(max-height: 411px) and (orientation: landscape) {
+    .close-paytable-btn {
+        width: 45px;
+        height: 45px;
+        top: 27.5px;
+        left: unset;
+        right: 33.5px;
+    }
+    
+    .close-paytable-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 47%;
+        height: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        width: 47%;
+        height: 100%;
+    }
+
+    .radiotab-control {
+        height: 40px;
+        width: 65px;
+    }
+
+    .paytable-content {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 119px;
+    }
+
+    .radiotab-control__label {
+        font-size: 15px;
+        width: 120px;
+        font-family: Lato-Regular;
+    }
+
+    .radiotab-control {
+        height: 40px;
+        width: 60px;
+    }
+
+    .footer-info-split {
+        display: flex;
+    }
+
+    .paytable-tutorial {
+        font-size: 13px;
+    }
+
+    .paytable-footer-info-label {
+        font-size: 14px;
+    }
+
+    .paytable-footer-info-value {
+        font-size: 14px;
+    }
+
+    .paytable-footer-multiple {
+        padding-left: 44px;
+    }
+
+    .paytable-sub-wrapper::before {
+        height: 5px;
+    }
+
+    .paytable-footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .paytable-footerText {
+        margin-top: 3px
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }   
+
+    .ticket-subeading1 { 
+        font-size: 13px;
+    }
+
+    .paytable-space.radio {
+        height: 4px;
+    }
+
+    .paytable-space.prize {
+        height: 16px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 3px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 4px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 0.5vw;
+    }
+
+    .paytable-space.text {
+        height: 10px;
+    }
+
+    .paytable-space.toggle {
+        height: 32px;
+    }
+
+    .paytable-header.multiple {
+        padding-top: 39px;
+    }
+}
+
+@media only screen and (max-width: 812px) and (orientation:landscape),
+(max-height: 375px) and (orientation: landscape) {
+    .close-paytable-btn {
+        width: 45px;
+        height: 45px;
+        top: 8.5px;
+        left: unset;
+        right: 18.5px;
+    }
+    
+    .close-paytable-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        margin: unset;
+    }
+
+    .paytable-panel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }   
+
+    .paytable-prizeHeader__label {        
+        font-size: 13px;
+        line-height: 18px;     
+    }
+
+    .paytable-prizeTopHeader__label {        
+        font-size: 13px;
+    }
+
+    .paytable-nav {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .paytable-tabs {
+        flex-direction: column;
+    }
+
+    .paytable-tab {
+        width: 55px;
+        height: 55px;
+        border-right: 0 none;
+        border-bottom: 1px solid var(--dark);
+    }
+
+    .paytable-tab-page {
+        height: 100%;
+    }
+    
+
+    .paytable-tab__icon {
+        height: 28px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        margin-top: -1vw;
+        background: transparent;
+        position: absolute;
+        z-index: 4000;
+    }
+
+    .paytable-footer {
+        padding-right: 34px;
+        padding-top: 20px;
+        background: transparent linear-gradient(90deg, #191B1F 0%, #191B1F99 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .paytable-footer--info {
+        padding-top: 20px;
+    }
+
+    .paytable-footer-multiple {
+        padding-right: 34px;
+        padding-top: 20px;
+        padding-left: 86px;
+        background: transparent linear-gradient(90deg, #191B1F 0%, #191B1F99 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .paytable-footer-multiple--info {
+        padding-top: 20px;
+    }
+
+    .paytable-radio-line {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-gap: 22px;
+        margin-bottom: 10px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-gap: 10px 10px;
+    }
+
+    .radiotab-control__label {
+        font-family: 'Lato-Regular';
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .radiotab-control {
+        height: 40px;
+    }
+
+    .paytable-scroller-content {
+        transition: transform 400ms;
+        
+    }
+
+    .paytable-space.toggle {
+        height: 33px;
+    }
+
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+    }
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 27px);
+        height: 5px;
+        z-index: 100;
+    }
+
+    .paytable-sub-wrapper::before {
+        bottom: 0px;
+        height: 10px;
+    }
+
+    .paytable-content {
+        position: relative;
+        flex-grow: 1;
+        height: calc(80%);
+        overflow-y: auto;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 75%;
+    }
+
+    .paytable-heading {
+        padding: 10px 34px 0px 30px;
+        font-size: 17px;
+        margin-block-start: 0px;
+        margin-bottom: 0px;
+    }
+
+    .paytable-heading2 {
+        font-size: 13px;
+        margin-block-start: 0px;
+        margin-bottom: 0px;
+    }
+
+    .paytable-prize.tab {
+        display: flex;
+        height: 45px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(28, 29, 35);
+        box-shadow: inset 0px -1px 0 0 rgba(255, 255, 255, 0.05);
+        pointer-events: unset;
+    }
+
+    .paytable-content.prize {
+        height: 60vh;
+    }
+    
+    .gradient {
+        height: 60vh;
+    }
+
+    .paytable-space.radio {
+        height: 5px;
+    }
+
+    .paytable-space.prize {
+        height: 5px;
+    }
+
+    .paytable-space.ticketTop {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 0.8vw;
+    }
+    
+    [ class= "paytable-content.ticket" ] {
+        height: 12em;
+    }    
+    
+
+    .paytable-header.ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 5px;
+    }
+
+    .paytable-header.prize {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 5px;
+    }
+
+    .paytable-header-lower {
+        margin-left: 30px;
+        margin-right: 34px;
+    }
+
+    .footer-info-split {
+        display: flex;
+    }
+
+    .paytable-tutorial {
+        font-size: 13px;
+    }
+
+    .paytable-footer-info-label {
+        font-size: 14px;
+        padding-left: 0px;
+    }
+
+    .paytable-footer-info-value {
+        font-size: 14px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-gap: 10px 10px;
+        margin-left: 29px;
+    }    
+}
+
+/*
+    Special rule for 'in-between' devices such as iPhone 6/7/8+
+*/
+@media (max-width: 736px) and (orientation: landscape) {
+    .close-paytable-btn {
+        width: 45px;
+        height: 45px;
+        top: 26.5px;
+        left: unset;
+        right: 14.5px;
+    }
+    
+    .close-paytable-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 48%;
+        height: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        width: 48%;
+        height: 100%;
+    }
+
+    .radiotab-control {
+        height: 40px;
+        width: 65px;
+    }
+
+    .paytable-content {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 119px;
+    }
+
+    .radiotab-control__label {
+        font-size: 15px;
+        width: 120px;
+        font-family: Lato-Regular;
+    }
+
+    .radiotab-control {
+        height: 40px;
+        width: 60px;
+    }
+
+    .footer-info-split {
+        display: flex;
+    }
+
+    .paytable-tutorial {
+        font-size: 13px;
+    }
+
+    .paytable-footer-info-label {
+        font-size: 14px;
+    }
+
+    .paytable-footer-info-value {
+        font-size: 14px;
+    }
+
+    .paytable-footer-multiple {
+        padding-left: 44px;
+    }
+
+    .paytable-sub-wrapper::before {
+        height: 5px;
+    }
+
+    .paytable-footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .paytable-footerText {
+        margin-top: 3px
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    
+    .ticket-subeading1 { 
+        font-size: 13px;
+    }
+
+    .paytable-space.radio {
+        height: 4px;
+    }
+
+    .paytable-space.prize {
+        height: 16px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 3px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 4px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 0.5vw;
+    }
+
+    .paytable-space.text {
+        height: 10px;
+    }
+
+    .paytable-space.toggle {
+        height: 32px;
+    }
+
+    .paytable-header.multiple {
+        padding-top: 39px;
+    }
+}
+
+/*
+    iPhone X needs a separate media query
+*/
+@media (min-width: 668px) and (orientation: landscape) and (max-height: 375px) and (orientation: landscape) {
+    .close-paytable-btn {
+        width: 45px;
+        height: 45px;
+        top: 8.5px;
+        left: unset;
+        right: 18.5px;
+    }
+    
+    .close-paytable-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .paytable-scroller-content {
+        margin: 0 0px 0 0px;
+    }
+
+    .radiotab-control {
+        height: 40px;
+        width: 75px;
+    }
+
+    .paytable-radio-line {
+        grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+        grid-gap: 6px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(71px, 1fr));
+        grid-gap: 10px 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 140px;
+    }
+
+    .radiotab-control__label {
+        font-size: 16px;
+    }
+
+    .paytable-footer {
+        padding-left: 55px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .paytable-footer-multiple {
+        padding-left: 55px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .paytable-heading {
+        padding-left: 55px;
+    }
+
+    .paytable-heading2 {
+        padding-right: 50px;
+    }
+
+    .paytable-header-lower {
+        margin-left: 55px;
+        margin-right: 50px;
+    }
+
+   
+    .paytable-content.prize {
+        height: 13em;
+    }
+
+    .gradient {
+        height: 13em;
+    }
+
+    .paytable-space.radio {
+        height: 1px;
+    }
+
+    .paytable-space.prize {
+        height: 14px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 2px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 2px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 0.8vw;
+    }
+
+    .paytable-space.text {
+        height: 11px;
+    }
+
+    .radiotab-control__icon {
+        height: 25px;
+        width: 25px;
+        left: -25px;
+        top: -7.5px;
+    }
+
+    .paytable-space.toggle {
+        height: 33px;
+    }
+
+    .paytable-header.ticket {
+        padding-top: 37px;
+    }
+
+    .paytable-header.prize {
+        padding-top: 37px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        margin-top: -4vh;
+        margin-left: -5px;
+        background: transparent;
+        position: absolute;
+        z-index: 4000;
+    }
+}
+
+@media (max-width: 667px) and (orientation: landscape),
+(max-height: 375px) and (orientation: landscape) {
+    .close-paytable-btn {
+        width: 45px;
+        height: 45px;
+        top: 26.5px;
+        left: unset;
+        right: 12.5px;
+    }
+    
+    .close-paytable-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .paytable-heading {
+        padding: 0px 34px 0px 29px;
+    }
+
+    .paytable-subheading {
+        padding: 0 15px;
+        margin-top: -18px;
+    }
+
+    .paytable-heading2 {
+        padding-right: 15px;
+        margin-left: 2px;
+    }
+
+    .ticket-subText {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .paytable-header-lower {
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 12px;
+        margin-left: 15px
+    }
+
+    .paytable-scroller-content {
+        margin: 0 0px 0 0px;
+    }   
+
+    .paytable-sub-wrapper::before {
+        bottom: 0px;
+        height: 7px;
+    }
+   
+
+    #section-page-TICKET {
+        display: block;
+        width: 48%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        width: 48%;
+    }
+
+    .paytable-radio-line {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-gap: 22px;
+        margin-bottom: 10px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-gap: 10px 10px;
+        margin-left: 29px;
+    }    
+
+    .radiotab-control {
+        height: 40px;
+    }
+
+    .paytable-content.prize {
+        height: 58vh;
+    }
+
+    .gradient {
+        height: 58vh;
+    }
+
+    .paytable-content.ticket {
+        height: 72vh;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 117px;
+    }
+
+    .radiotab-control__label {
+        font-family: Lato-Regular;
+        font-size: 14px;
+        width: 120px;
+        font-weight: bold;
+    }
+
+    .radiotab-control {
+        height: 30px;
+        width: 60px;
+    }
+
+    .footer-info-split {
+        display: flex;
+    }
+
+    .paytable-tutorial {
+        font-size: 13px;
+    }
+
+    .paytable-footerText {
+        padding: 0 15px;
+        margin-left: 15px;
+        margin-top: 2px;
+    }
+
+    .paytable-footer-info-label {
+        font-size: 14px;
+    }
+
+
+    .paytable-footer-info-value {
+        font-size: 14px;
+    }
+
+    .paytable-footer-multiple {
+        padding-left: 44px;
+    }
+
+    .paytable-footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    
+
+    .paytable-space.radio {
+        height: 5px;
+    }
+
+    .paytable-space.prize {
+        height: 16px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 0.8vw;
+    }
+
+    .paytable-space.text {
+        height: 10px;
+    }
+
+    .paytable-space.toggle {
+        height: 32px;
+    }
+
+    .paytable-header.ticket {
+        padding-top: 17px;
+    }
+
+    .paytable-header.prize {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 568px) and (orientation: landscape),
+(max-height: 320px) and (orientation: landscape) {
+    .close-paytable-btn {
+        width: 35px;
+        height: 35px;
+        top: 13.5px;
+        left: unset;
+        right: 13.5px;
+    }
+    
+    .close-paytable-btn__icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 48%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        width: 48%;
+    }
+
+    .paytable-content {
+        position: relative;
+        flex-grow: 1;
+        height: calc(55%);
+        overflow-y: auto;
+    }
+
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+    }
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 27px);
+        z-index: 100;
+    }
+
+    .paytable-sub-wrapper::before {
+        bottom: 0px;
+        height: 10px;
+    }
+
+    .paytable-heading {
+        padding: 0px 0px 0px 31px;
+        font-size: 14px;
+    }
+
+    .paytable-header-lower {
+        margin-left: 31px;
+        margin-right: 32px;
+    }
+
+    .paytable-scroller-content {
+        margin: 0 0px 0 0px;
+    }
+
+    .paytable-radio-line {
+        grid-gap: 11px;
+        margin-bottom: 10px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-gap: 8px 8px;
+        margin-bottom: 8px;
+        margin-left: 29px;
+        margin-right: 10px;
+    }    
+
+    .radiotab-control {
+        max-width: 60px;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 130px;
+    }
+
+    .radiotab-control__label {
+        width: 89px;
+        font-size: 12px;
+    }
+
+    .footer-info-split {
+        display: flex;
+    }
+
+    .paytable-tutorial {
+        font-size: 13px;
+    }
+
+    .paytable-footer-info-label {
+        font-size: 13px;
+    }
+
+    .paytable-footer-info-value {
+        font-size: 13px;
+    }
+
+    .paytable-heading2 {
+        font-size: 11px;
+        padding-right: 32px;
+    }
+
+    .paytable-prizeTopHeader__label {
+        font-size: 11px;
+    }
+
+    .paytable-prizeHeader__label {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 11px;
+        margin-top: 26px;
+        margin-left: 15px;
+    }
+
+    .ticket-subText {
+        font-size: 11px;
+        margin-left: 15px;
+    }
+
+    .paytable-footerText {
+        font-size: 11px;
+        margin-top: 4px;
+        margin-left: 15px;
+    }
+
+    .paytable-footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 31px;
+        padding-right: 32px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 31px;
+        padding-right: 32px;
+    }   
+
+    .paytable-space.radio {
+        height: 4px;
+    }
+
+    .paytable-content.prize {
+        height: 60vh;
+    }
+
+    .gradient {
+        height: 60vh;
+    }
+
+    .paytable-space.prize {
+        height: 14px;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+    }
+
+    .paytable-space.ticketMid {
+        height: 1px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 0.5vw;
+    }
+
+    .paytable-space.text {
+        height: 10px;
+    }
+
+    .paytable-space.toggle {
+        height: 18px;
+    }
+
+    .paytable-header.ticket {
+        padding-top: 1px;
+    }
+
+    .paytable-header.prize {
+        padding-top: 1px;
+    }
+
+    .scrollup-prizes-btn__icon { 
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 480px) and (orientation: landscape) and 
+(max-height: 360px) and (orientation: landscape) {
+
+    #section-page-TICKET {
+        display: block;
+        width: 48%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        width: 48%;
+    }
+
+    .paytable-content {
+        position: relative;
+        flex-grow: 1;
+        height: calc(55%);
+        overflow-y: auto;
+    }
+
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+    }
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 27px);
+        /* height: 5px; */
+        z-index: 100;
+    }
+
+    .paytable-sub-wrapper::before {
+        bottom: 0px;
+        height: 10px;
+    }
+
+    .paytable-heading {
+        padding: 0px 0px 0px 31px;
+    }
+
+    .paytable-header-lower {
+        margin-left: 31px;
+        margin-right: 32px;
+    }
+
+    .paytable-scroller-content {
+        margin: 0 0px 0 0px;
+    }
+
+    .paytable-radio-line {
+        grid-gap: 11px;
+        margin-bottom: 10px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        grid-gap: 8px 8px;
+        margin-bottom: 8px;
+        margin-left: 29px;
+        margin-right: 15px;
+    }    
+
+    .radiotab-control {
+        max-width: 60px;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 130px;
+    }
+
+    .radiotab-control__label {
+        width: 89px;
+        font-size: 12px;
+    }
+
+    .footer-info-split {
+        display: flex;
+    }
+
+    .paytable-tutorial {
+        font-size: 13px;
+    }
+
+    .paytable-footer-info-label {
+        font-size: 13px;
+    }
+
+    .paytable-footer-info-value {
+        font-size: 13px;
+    }
+
+    .paytable-heading2 {
+        font-size: 11px;
+        padding-right: 32px;
+    }
+
+    .paytable-prizeTopHeader__label {
+        font-size: 11px;
+    }
+
+    .paytable-prizeHeader__label {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 11px;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+    .ticket-subText {
+        font-size: 11px;
+        margin-left: 15px;
+    }
+
+    .paytable-footerText {
+        font-size: 11px;
+        margin-top: 4px;
+        margin-left: 15px;
+    }
+
+    .paytable-footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 31px;
+        padding-right: 32px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 31px;
+        padding-right: 32px;
+    }    
+
+    .paytable-space.radio {
+        height: 4px;
+    }
+
+    .paytable-content.prize {
+        height: 60vh;
+    }
+
+    .gradient {
+        height: 60vh;
+    }
+
+    .paytable-content.ticket {
+        height: 80vh;
+    }
+
+
+    .paytable-space.prize {
+        height: 14px;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 1px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 0.5vw;
+    }
+
+    .paytable-space.text {
+        height: 10px;
+    }
+
+    .paytable-space.toggle {
+        height: 18px;
+    }
+
+    .paytable-header.ticket {
+        padding-top: 1px;
+    }
+
+    .paytable-header.prize {
+        padding-top: 1px;
+    }
+
+    .scrollup-prizes-btn__icon { 
+        height: 30px;
+        width: 30px;
+    }
+}
+
+
+
+/* 
+    PORTRAIT MEDIA QUERIES
+*/
+
+@media (orientation: portrait) {
+    .close-paytable-btn {
+        width: 50px;
+        height: 50px;
+        top: calc(100% - 79px);
+        left: calc(50% - 25px);
+    }
+    
+    .close-paytable-btn__icon {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+@media (min-width: 1000px) and (min-height: 1300px) and (orientation: portrait) {   
+    .close-paytable-btn {
+        width: 60px;
+        height: 60px;
+        top: calc(100% - 85px);
+        left: calc(50% - 30px);
+    }
+    
+    .close-paytable-btn__icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .paytable-panel {
+        top: 10%;
+    }
+
+    .paytable-panel {        
+        width: 1000px;
+        height: 1250px;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+
+    #section-page-PAYTABLE {
+        display: block;        
+        width: 100%;
+        height: 48%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 80vw;
+    }
+
+    .paytable-space.ticketTop {
+        height: 20px;
+    }
+
+    .paytable-space.ticketMid {
+        height: 20px;
+    }
+
+    .paytable-heading2 {
+        font-size: 20px;
+    }
+
+    .paytable-content {       
+        height: 21em;
+    }
+
+    .paytable-space.radio {
+        height: 1px;
+    }
+
+    .paytable-prize.tab {
+        height: 60px;
+    }
+
+    .paytable-content.prize {
+        height: 38vh;
+    }
+
+    .gradient {
+        height: 38vh;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-gap: 30px 30px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+    .radiotab-control {
+        height: 70px;
+        max-width: 200px;
+    }
+
+    .radiotab-control__label {        
+        font-size: 20px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 20px;
+    }
+
+    .ticket-subText { 
+        font-size: 17px;
+    }
+
+    .paytable-heading {        
+        font-size: 25px;
+    }
+
+    .paytable-prize.contenttab {        
+        height: 55px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 70px;
+        width: 70px;
+    }
+
+    .scrollup-prizes-btn {
+        height: 70px;
+        width: 70px;
+        z-index: 300;
+        margin-left: 86vw;
+        margin-top: 1vw;
+        margin-right: 40px;
+        padding-left: 1px;
+        padding-right: 30px;
+        padding-bottom: 1px;
+        margin-bottom: 1px;
+        padding-top: 1px;
+    }
+}
+
+
+@media (min-width: 901px) and (min-height: 701px) and (orientation: portrait) {
+    .paytable-panel {
+        top: 5%;
+    }
+}
+
+@media (max-width: 900px) and (orientation: portrait),
+(max-height: 700px) and (orientation: portrait) {
+    .paytable-panel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-flow: column;
+        place-content: flex-start;
+    }
+
+    .paytable-prize.tab {
+        display: flex;
+        height: 45px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(28, 29, 35);
+        box-shadow: inset 0px -1px 0 0 rgb(255 255 255 / 5%);
+        pointer-events: unset;
+    }
+
+
+    .paytable-prizeTopHeader__label {        
+        font-size: 13px;
+    }   
+
+    .paytable-prizeHeader__label {        
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: bold;      
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        z-index: 300;
+        margin-top: 1.8vw;
+        margin-left: 82vw;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        height: 99vw;
+        width: 100%;
+    }
+
+    .paytable-tab {
+        width: 56px;
+        height: 56px;
+    }
+
+    .paytable-tab__icon {
+        height: 28px;
+    }
+
+    .paytable-content.prize {
+        height: 13em;
+    }
+
+    .gradient {
+        height: 13em;
+    }
+
+    .paytablefooter {
+        justify-content: center;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 15px;
+        background: var(--dark-grey);
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-overlay--active {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        flex-wrap: wrap;
+        place-content: flex-start;
+    }
+
+    .paytable-footer-multiple {
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 15px;
+        background: var(--dark-grey);
+    }
+
+    .portrait-lower-info-split {
+        padding-left: 13px;
+    }
+
+    .paytable-footer-multiple--info {
+        padding-top: 0px;
+    }
+   
+
+    .paytable-scroller-content--scrolled {
+        transform: translateY(-38%);
+    }
+
+    .paytable-radio-line {
+        grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+        grid-gap: 6px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(71px, 1fr));
+        grid-gap: 10px 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }  
+    
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 100px;
+    }
+
+    .radiotab-control__label {
+        width: 60px;
+        font-size: 16px;
+        height: 35px;
+    }
+
+
+
+    .paytable-space.toggle {
+        height: 15.5px;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 96%;
+    }
+
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper::before {
+        height: 10px;
+    }
+
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+        height: 0px;
+    }
+
+    .paytable-tutorial {
+        font-size: 13px;
+    }
+
+    .paytable-space.radio {
+        height: 7px;
+    }
+
+    .paytable-space.prize {
+        height: 7px;
+    }   
+
+    .paytable-space.ticketTop {
+        height: 7px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 7px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 0.8vw;
+    }
+
+    .paytable-heading {
+        padding: 0 0 0 13px;
+        font-size: 17px;
+        margin-block-start: 0.83em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 15px;
+    }
+
+    .paytable-heading2 {
+        font-size: 12px;
+        padding-right: 13px;
+        margin-block-start: 0.83em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .paytable-header.ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 11px;
+    }
+
+    .paytable-header.prize {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 11px;
+    }
+
+    .paytable-header-lower {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .portrait-lower-info {
+        display: block;
+    }
+
+    .paytable-ticket-cost-split {
+        display: none;
+    }
+
+    .footer-info-split {
+        display: none;
+    }
+
+    .paytable-footer-info-label {
+        padding: 0 10px 0 10px;
+    }
+    
+    .radiotab-control__icon {
+        height: 25px;
+        width: 25px;
+        left: -25px;
+        top: -7.5px;
+    }   
+}
+
+@media (max-width: 900px) and (orientation: portrait), 
+(max-height: 1400px) and (orientation: portrait) {
+    
+
+    .paytable-panel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-flow: column;
+        place-content: flex-start;
+    }
+
+    .paytable-prize.tab {
+        display: flex;
+        height: 45px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(28, 29, 35);
+        box-shadow: inset 0px -1px 0 0 rgb(255 255 255 / 5%);
+        pointer-events: unset;
+    }
+
+
+    .paytable-prizeTopHeader__label {        
+        font-size: 13px;
+    }  
+
+    .paytable-prizeHeader__label {        
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: bold;      
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        z-index: 300;
+        margin-top: 6vh;
+        margin-left: 82vw;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        height: 130vh;
+        width: 100%;
+    }
+
+    .paytable-tab {
+        width: 56px;
+        height: 56px;
+    }
+
+    .paytable-tab__icon {
+        height: 28px;
+    }
+
+    .paytable-content.prize {
+        height: 52vh;
+    }
+
+    .gradient {
+        height: 52vh;
+    }
+
+    .paytable-content.ticket {
+        height: 24vh;
+    }
+
+    .paytablefooter {
+        justify-content: center;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 15px;
+        background: var(--dark-grey);
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-overlay--active {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        flex-wrap: wrap;
+        place-content: flex-start;
+    }
+
+    .paytable-footer-multiple {
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 15px;
+        background: var(--dark-grey);
+    }
+
+    .portrait-lower-info-split {
+        padding-left: 13px;
+    }
+
+    .paytable-footer-multiple--info {
+        padding-top: 0px;
+    }
+   
+
+    .paytable-scroller-content--scrolled {
+        transform: translateY(-38%);
+    }
+
+    .paytable-radio-line {
+        grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+        grid-gap: 6px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(71px, 1fr));
+        grid-gap: 10px 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }  
+    
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 100px;
+    }
+
+    .radiotab-control__label {
+        width: 60px;
+        font-size: 16px;
+        height: 35px;
+    }
+
+
+
+    .paytable-space.toggle {
+        height: 15.5px;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 120%;
+    }
+
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper::before {
+        height: 10px;
+    }
+
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+        height: 0px;
+    }
+
+    .paytable-tutorial {
+        font-size: 13px;
+    }
+
+    .paytable-space.radio {
+        height: 7px;
+    }
+
+    .paytable-space.prize {
+        height: 7px;
+    }   
+
+    .paytable-space.ticketTop {
+        height: 7px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 7px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 0.8vw;
+    }
+
+    .paytable-heading {
+        padding: 0 0 0 13px;
+        font-size: 17px;
+        margin-block-start: 0.83em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 15px;
+    }
+
+    .paytable-heading2 {
+        font-size: 20px;
+        padding-right: 13px;
+        margin-block-start: 0.83em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 20px;
+    }
+
+    .ticket-subText {
+        font-size: 17px;
+    }
+
+    .paytable-footerText {
+        font-size: 17px;
+        margin-top: -2px;
+    }
+
+    .paytable-header.ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 11px;
+    }
+
+    .paytable-header.prize {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 11px;
+    }
+
+    .paytable-header-lower {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .portrait-lower-info {
+        display: block;
+    }
+
+    .paytable-ticket-cost-split {
+        display: none;
+    }
+
+    .footer-info-split {
+        display: none;
+    }    
+
+
+    .paytable-footer-info-label {
+        padding: 0 10px 0 10px;
+    }    
+
+    .radiotab-control__icon {
+        height: 25px;
+        width: 25px;
+        left: -25px;
+        top: -7.5px;
+    }   
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait) and (min-height: 1080px) and (orientation: portrait) {
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+
+    #section-page-PAYTABLE {
+        display: block;
+        height: 110vh;
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 75%;
+    }
+
+    .paytable-space.ticketTop {
+        height: 20px;
+    }
+
+    .paytable-space.ticketMid {
+        height: 20px;
+    }
+
+    .paytable-heading2 {
+        font-size: 20px;
+    }
+
+    .paytable-content {       
+        height: 22em;
+    }
+
+    .paytable-content.ticket {       
+        height: 24vh;
+    }
+
+    .paytable-space.radio {
+        height: 1px;
+    }
+
+    .paytable-prize.tab {
+        height: 60px;
+    }
+
+    .paytable-content.prize {
+        height: 44vh;
+    }
+
+    .gradient {
+        height: 44vh;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-gap: 15px 15px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+    .radiotab-control {
+        height: 55px;
+        max-width: 170px;
+    }
+
+    .radiotab-control__label {        
+        font-size: 20px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 20px;
+    }
+
+    .ticket-subText { 
+        font-size: 17px;
+    }
+
+    .paytable-footerText {
+        font-size: 17px;
+        margin-top: -10px;
+    }
+
+    .paytable-heading {        
+        font-size: 25px;
+    }
+
+    .paytable-prize.contenttab {        
+        height: 55px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .scrollup-prizes-btn {        
+        z-index: 300;
+        margin-left: 80%;
+        margin-top: 1.9vh;
+        position: absolute;
+        padding: 30px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 2vw;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait) and (min-height: 1130px) and (orientation: portrait) {
+    .scrollup-prizes-btn__icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .scrollup-prizes-btn {        
+        z-index: 300;
+        margin-left: 80%;
+        margin-top: -2.9vh;
+        position: absolute;
+        padding: 30px;
+    }
+
+    .paytable-sub-wrapper {        
+        height: 80%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait) and (min-height: 1230px) and (orientation: portrait) {
+    .scrollup-prizes-btn {        
+        z-index: 300;
+        margin-left: 80%;
+        margin-top: 4vh;
+        position: absolute;
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait) and (min-height: 1260px) and (orientation: portrait) {
+    .scrollup-prizes-btn {        
+        z-index: 300;
+        margin-left: 80%;
+        margin-top: 1vh;
+        position: absolute;
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-height: 1024px) and (orientation: portrait) and (max-width: 768px) and (orientation: portrait) {
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+
+    #section-page-PAYTABLE {
+        display: block;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+    }
+
+    .paytable-space.ticketTop {
+        height: 20px;
+    }
+
+    .paytable-heading2 {
+        font-size: 20px;
+    }
+
+    .paytable-content {       
+        height: 19em;
+    }
+
+    .paytable-space.radio {
+        height: 1px;
+    }
+
+    .paytable-prize.tab {
+        height: 60px;
+    }
+
+    .paytable-content.prize {
+        height: 46vh;
+    }
+
+    .gradient {
+        height: 46vh;
+    }
+
+    .paytable-content.ticket {        
+        height: 23vh;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-gap: 15px 15px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+    .radiotab-control {
+        height: 55px;
+        max-width: 170px;
+    }
+
+    .radiotab-control__label {        
+        font-size: 20px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 20px;
+    }
+
+    .ticket-subText { 
+        font-size: 17px;
+    }
+
+    .paytable-heading {        
+        font-size: 25px;
+    }
+
+    .paytable-prize.contenttab {        
+        height: 55px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .scrollup-prizes-btn {
+        height: 50px;
+        width: 50px;
+        z-index: 300;
+        margin-left: 86%;
+        margin-top: -2vh;
+        margin-right: 40px;
+        padding-left: 1px;
+        padding-right: 30px;
+        padding-bottom: 1px;
+        padding-top: 1px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 2vw;
+    }
+}
+
+@media only screen and (max-height: 1024px) and (orientation: portrait) and (max-width: 667px) and (orientation: portrait) {
+    .radiotab-control {
+        height: 40px;
+        max-width: 75px;
+    }
+
+    .radiotab-control__label {
+        width: 60px;
+        font-size: 18px;
+        height: 40px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        grid-gap: 15px 15px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    .paytable-heading {
+        font-size: 18px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 15px;
+    }
+
+    .paytable-heading2 {
+        font-size: 15px;
+    }
+
+    .paytable-footerText {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-height: 1024px) and (orientation: portrait) and (max-width: 562px) and (orientation: portrait) {
+    .radiotab-control {
+        height: 40px;
+        max-width: 75px;
+    }
+
+    .radiotab-control__label {
+        width: 60px;
+        font-size: 16px;
+        height: 35px;
+    }
+
+    /*.paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        grid-gap: 15px 15px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }*/
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-gap: 10px 10px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    .paytable-heading {
+        font-size: 16px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 13px;
+    }
+
+    .paytable-heading2 {
+        font-size: 13px;
+    }
+
+    .paytable-footerText {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+    .close-paytable-btn {
+        width: 50px;
+        height: 50px;
+        top: calc(100% - 64px);
+        left: calc(50% - 25px);
+    }
+    
+    .close-paytable-btn__icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .paytable-panel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-flow: column;
+        place-content: flex-start;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        height: 112vw;
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 90%;
+    }
+
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper::before {
+        height: 10px;
+    }
+
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+        height: 0px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 13px;
+    }
+
+    .paytable-heading {
+        font-size: 16px;
+    }
+
+    .paytable-heading2 {
+        font-size: 13px;
+    }
+
+    .ticket-subText {
+        font-size: 12px;
+    }
+
+    .paytable-footerText {
+        font-size: 12px;
+    }
+
+    .paytable-prize.tab {
+        height: 45px;
+    }
+
+    .paytable-prize.contenttab {
+        height: 40px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(68px, 1fr));
+        grid-gap: 10px 10px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 100px;
+    }
+
+    .radiotab-control__label {
+        width: 60px;
+        font-size: 16px;
+        height: 35px;
+    }
+
+
+    .paytable-footer {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .portrait-lower-info-split {
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+
+    .paytable-space.radio {
+        height: 2px;
+    }
+
+    .paytable-space.prize {
+        height: 1px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 23px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 4vw;
+    }
+
+    .paytable-space.text {
+        height: 8px;
+    }
+
+    .paytable-space.toggle {
+        height: 15px;
+    }
+
+    .paytable-content.prize {
+        height: 43vh;
+    }
+
+    .gradient {
+        height: 43vh;
+    }
+
+    .paytable-content.ticket {
+        height: 24vh;
+    }
+
+    .paytable-header.ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 11px;
+        padding-bottom: 5px;
+    }
+
+    .paytable-header.prize {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        z-index: 300;
+        margin-top: 1vw;
+        margin-left: 82vw;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+
+}
+
+@media only screen and (max-width: 411px) and (max-height: 823px) and (orientation: portrait) {
+    .paytable-panel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-flow: column;
+        place-content: flex-start;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        height: 112vw;
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 96%;
+    }
+
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper::before {
+        height: 10px;
+    }
+
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+        height: 0px;
+    }
+
+    .ticket-subeading1 {
+        font-size: 13px;
+    }
+
+    .paytable-heading {
+        font-size: 16px;
+    }
+
+    .paytable-heading2 {
+        font-size: 13px;
+    }
+
+    .ticket-subText {
+        font-size: 12px;
+    }
+
+    .paytable-footerText {
+        font-size: 12px;
+    }
+
+    .paytable-prize.tab {
+        height: 45px;
+    }
+
+    .paytable-prize.contenttab {
+        height: 40px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(68px, 1fr));
+        grid-gap: 10px 10px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 100px;
+    }
+
+    .radiotab-control__label {
+        width: 60px;
+        font-size: 16px;
+        height: 35px;
+    }
+
+
+    .paytable-footer {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .portrait-lower-info-split {
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+
+    .paytable-space.radio {
+        height: 2px;
+    }
+
+    .paytable-space.prize {
+        height: 1px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 23px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 4vw;
+    }
+
+    .paytable-space.text {
+        height: 8px;
+    }
+
+    .paytable-space.toggle {
+        height: 15px;
+    }
+
+    .paytable-content.prize {
+        height: 21em;
+    }
+
+    .gradient {
+        height: 21em;
+    }
+
+    .paytable-content.ticket {
+        height: 11em;
+    }
+
+    .paytable-header.ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 11px;
+        padding-bottom: 5px;
+    }
+
+    .paytable-header.prize {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        z-index: 300;
+        margin-top: 1vw;
+        margin-left: 82vw;
+        position: absolute;
+    }
+
+}
+
+@media only screen and (max-width: 375px) and (max-height: 812px) and (orientation: portrait) {
+    .paytable-panel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-flow: column;
+        place-content: flex-start;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        height: 111vw;
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 96%;
+    }
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        width: 100%;
+    }
+    .paytable-sub-wrapper::before {       
+        height: 10px;
+    }  
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+        height: 0px;
+    }
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 100px;
+    }
+
+    .radiotab-control__label {
+        width: 60px;
+        font-size: 16px;
+        height: 35px;
+    }
+   
+
+    .paytable-tutorial {
+        font-size: 13px;
+    }
+
+    .paytable-heading {
+        font-size: 16px;
+    }
+
+    .paytable-header.prize {       
+        padding-top: 3px;
+        padding-bottom: 2px;
+    }
+
+    .paytable-footer {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(68px, 1fr));
+        grid-gap: 10px 10px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+   
+    .paytable-content.prize {
+        height: 18.5em;
+    }
+
+    .gradient {
+        height: 18.5em;
+    }
+
+    .paytable-content.ticket {
+        height: 14em;
+    }
+
+    .ticket-subeading1 {
+        font-size: 13px;
+    }
+
+    .paytable-heading {
+        font-size: 16px;
+    }
+
+    .paytable-heading2 {
+        font-size: 13px;
+    }
+
+    .ticket-subText {
+        font-size: 12px;
+    }
+
+    .paytable-footerText {
+        font-size: 12px;
+    }
+
+    .paytable-prize.tab {
+        height: 45px;
+    }
+
+    .paytable-prize.contenttab {
+        height: 40px;
+    }
+
+    .paytable-space.radio {
+        height: 7px;
+    }
+
+    .paytable-space.prize {
+        height: 7px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 7px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 7px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 4vw;
+    }
+
+    .paytable-space.text {
+        height: 5.5px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        z-index: 300;
+        margin-top: -0.1vw;
+        margin-left: 82vw;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 740px) and (orientation: portrait) {
+    .paytable-content.prize {
+        height: 45vh;
+    }
+
+    .gradient {
+        height: 45vh;
+    }
+
+    .paytable-content.ticket {
+        height: 14.5vh;
+    }
+
+    .paytable-panel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-flow: column;
+        place-content: flex-start;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        height: 111vw;
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+    }
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper::before {
+        height: 7px
+    }
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+        height: 0px;
+    }
+
+
+    .paytable-footer {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .portrait-lower-info-split {
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+
+    .paytable-space.radio {
+        height: 2px;
+    }
+
+    .paytable-space.prize {
+        height: 1px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 23px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 3vw;
+    }
+
+    .paytable-space.text {
+        height: 8px;
+    }
+
+    .paytable-space.toggle {
+        height: 15px;
+    }
+    .paytable-subheading {        
+        margin-top: -15px;
+    }
+
+    .paytable-heading2 {
+        margin-top: 3px;
+    }
+
+    .paytable-header.ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 11px;
+        padding-bottom: 5px;
+    }
+
+    .paytable-header.prize {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        z-index: 300;
+        margin-top: 1vh;
+        margin-left: 82vw;
+        position: absolute;
+    }
+
+}
+
+@media only screen and (max-width: 375px) and (max-height: 700px) and (orientation: portrait) {
+    .paytable-panel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-flow: column;
+        place-content: flex-start;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        height: 111vw;
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 96%;
+    }
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper::before {
+        height: 7px
+    }
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+        height: 0px;
+    }
+
+
+    .paytable-footer {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .portrait-lower-info-split {
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+
+    .paytable-space.radio {
+        height: 2px;
+    }
+
+    .paytable-space.prize {
+        height: 1px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 23px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 4vw;
+    }
+
+    .paytable-space.text {
+        height: 8px;
+    }
+
+    .paytable-space.toggle {
+        height: 15px;
+    }
+
+    .paytable-content.prize {
+        height: 18em;
+    }
+
+    .gradient {
+        height: 18em;
+    }
+
+    .paytable-header.ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 11px;
+        padding-bottom: 5px;
+    }
+
+    .paytable-header.prize {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        z-index: 300;
+        margin-top: -4vw;
+        margin-left: 82vw;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 668px) and (orientation: portrait) {
+    .paytable-panel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-flow: column;
+        place-content: flex-start;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 90%;
+    }
+
+    .radiotab-control {
+        height: 35px;
+        max-width: 75px;
+    }
+
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper::before {
+        height: 7px
+    }
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+        height: 0px;
+    }
+
+
+    .paytable-footer {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .portrait-lower-info-split {
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+
+    .paytable-space.radio {
+        height: 2px;
+    }
+
+    .paytable-space.prize {
+        height: 1px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 23px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 4vw;
+    }
+
+    .paytable-space.text {
+        height: 8px;
+    }
+
+    .paytable-space.toggle {
+        height: 15px;
+    }
+
+    .paytable-content.prize {
+        height: 43vh;
+    }
+
+    .gradient {
+        height: 43vh;
+    }
+
+    .paytable-content.ticket {
+        height: 25vh;
+    }
+
+    .paytable-header.ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 11px;
+        padding-bottom: 5px;
+    }
+
+    .paytable-header.prize {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        z-index: 300;
+        margin-top: -2vh;
+        margin-left: 82vw;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-height: 660px) and (orientation: portrait) {
+    .paytable-panel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-flow: column;
+        place-content: flex-start;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        height: 121vw;
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 96%;
+    }
+
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper::before {
+        height: 10px
+    }
+
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+        height: 0px;
+    }
+
+
+    .paytable-footer {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .portrait-lower-info-split {
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+
+    .paytable-space.radio {
+        height: 2px;
+    }
+
+    .paytable-space.prize {
+        height: 1px;
+    }    
+
+    .paytable-space.ticketTop {
+        height: 23px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 5px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 4vw;
+    }
+
+    .paytable-space.text {
+        height: 8px;
+    }
+
+    .paytable-space.toggle {
+        height: 15px;
+    }
+
+    .paytable-content.prize {
+        height: 38vh;
+    }
+
+    .gradient {
+        height: 38vh;
+    }
+
+    .paytable-content.ticket {
+        height: 21vh;
+    }
+
+    .paytable-header.ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 11px;
+        padding-bottom: 5px;
+    }
+
+    .paytable-header.prize {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        z-index: 300;
+        margin-top: -1vw;
+        margin-left: 82vw;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+
+}
+
+@media only screen and (max-width: 360px) and (max-height: 640px) and (orientation: portrait) {
+    .paytable-space.ticketLow {
+        height: 4vw;
+    }
+
+    .paytable-content.ticket {
+        height: 8.5em;
+    }
+
+    .paytable-sub-wrapper {
+        height: 98%;
+    }
+
+    .scrollup-prizes-btn {
+        margin-top: -1vw;
+    }
+
+    .paytable-content.prize {
+        height: 16em;
+    }
+
+    .gradient {
+        height: 16em;
+    }
+}
+
+@media only screen and (max-width: 320px) and (max-height: 768px) and (orientation: portrait) {
+    .close-paytable-btn {
+        width: 40px;
+        height: 40px;
+        top: calc(100% - 49px);
+        left: calc(50% - 20px);
+    }
+    
+    .close-paytable-btn__icon {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 320px) and (max-height: 568px) and (orientation: portrait) {
+    .close-paytable-btn {
+        width: 40px;
+        height: 40px;
+        top: calc(100% - 49px);
+        left: calc(50% - 20px);
+    }
+    
+    .close-paytable-btn__icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .paytable-panel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-flow: column;
+        place-content: flex-start;
+    }
+
+    #section-page-TICKET {
+        display: block;
+        width: 100%;
+    }
+    
+    #section-page-PAYTABLE {
+        display: block;
+        height: 90vh;
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper {
+        overflow: hidden;
+        position: relative;
+        height: 92%;
+    }
+
+    .ticket-subeading1 {
+        font-size: 12px;
+    }
+
+    .ticket-subText {
+        font-size: 12px;
+    }
+
+    .paytable-prize.tab {
+        height: 45px;
+    }
+
+    .paytable-prize.contenttab {
+        height: 40px;
+    }
+
+    .paytable-sub-wrapper::before,
+    .paytable-sub-wrapper::after {
+        width: 100%;
+    }
+
+    .paytable-sub-wrapper::before {        
+        height: 5px;
+    }
+
+    .paytable-sub-wrapper::after {
+        bottom: 0px;
+        height: 0px;
+    }
+
+    .paytable-content.prize {
+        height: 39vh;
+    }
+
+    .paytable-content.ticket {
+        height: 23vh;
+    }
+
+    .paytable-footer {
+        padding-top: 14px;
+        padding-bottom: 11px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .paytable-footer-multiple {
+        padding-top: 14px;
+        padding-bottom: 11px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-footer--info {
+        padding-top: 0px;
+    }
+
+    .paytable-radio-line {
+        grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+        grid-gap: 6px;
+    }
+
+    .paytable-radio-line.bet {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-gap: 8px 8px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }  
+    
+
+    .radiotab-control {
+        height: 30px;
+        max-width: 68px;
+    }
+
+    .radiotab-control-icon-wrapper {
+        left: 100px;
+    }
+
+    .radiotab-control__label {
+        width: 60px;
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .portrait-lower-info {
+        display: block;
+    }
+
+    .paytable-ticket-cost-split {
+        display: none;
+    }
+
+    .footer-info-split {
+        display: none;
+    }
+
+    .autoPlayStopped-popup {
+        top: 50%;
+        left: 50%;
+    }
+
+    .paytable-tutorial {
+        font-size: 12px;
+    }
+
+    .paytable-heading {
+        font-size: 14px;
+        padding-left: 1px;
+    }
+
+    .paytable-heading2 {
+        padding-right: 9px;
+        padding: 0 16px;
+        font-size: 12px;
+    }
+
+    .paytable-footerText {
+        padding: 0 16px;
+        font-size: 12px;
+    }
+
+    .paytable-subheading {
+        padding: 0 15px;
+        font-size: 14px;
+        margin-top: -15px;
+        margin-bottom: 5px;
+    }
+
+    .paytable-header.ticket {
+        padding-top: 10px;
+        padding-bottom: 7px;
+    }
+
+    .paytable-header.prize {
+        padding-top: 10px;
+        padding-bottom: 11px;
+    }
+
+    .portrait-lower-info-split {
+        padding-top: 9px;
+        padding-bottom: 10px;
+        padding-left: 9px;
+    }   
+
+    .paytable-space.radio {
+        height: 2px;
+    }
+
+    .paytable-space.prize {
+        height: 1px;
+    }
+
+    .paytable-space.ticketTop {
+        height: 7px;
+    }
+    
+    .paytable-space.ticketMid {
+        height: 1px;
+    }
+    
+    .paytable-space.ticketLow {
+        height: 4vw;
+    }
+    
+    .paytable-space.text {
+        height: 8px;
+    }
+
+    .paytable-space.toggle {
+        height: 14px;
+    }
+
+    .scrollup-prizes-btn__icon {
+        height: 34px;
+        width: 34px;
+    }
+
+    .scrollup-prizes-btn {
+        border: none;
+        background: transparent;
+        z-index: 300;
+        margin-bottom: 10px;
+        margin-top: 0.1vh;
+        margin-left: 84vw;
+        padding-top: 11px;
+    }
+}
+
+@media (max-width: 220px) and (orientation: portrait) {
+    .portrait-lower-info {
+        display: block;
+    }
+
+    .paytable-ticket-cost-split {
+        display: none;
+    }
+
+    .footer-info-split {
+        display: none;
+    }
+
+    .autoPlayStopped-popup {
+        top: 50%;
+        left: 50%;
+    }
+
+
+
+    .Rtable-cell--light {
+        background-color: white;
+        border-color: mix(white, greyish, 80%);
+    }
+
+    .Rtable {
+        position: relative;
+        top: 10%;
+        left: 10%;
+    }
+
+    .Rtable-cell {
+        margin: 0 0 0 0;
+        background-color: white;
+        border-color: mix(white, greyish, 80%);
+    }
+
+
+    .Rtable-cell--dark {
+        background-color: slategrey;
+        border-color: darken(greyish, 10%);
+        color: white;
+    }
+
+    .Rtable-cell--medium {
+        background-color: mix(white, --greyish, 50%);
+        border-color: mix(white, greyish, 40%);
+    }
+
+    .Rtable-cell--highlight {
+        background-color: lightgreen;
+        border-color: darken(lightgreen, 10%);
+    }
+
+    .Rtable-cell--alert {
+        background-color: darkorange;
+        border-color: darken(darkorange, 10%);
+        color: white;
+
+        
+    }
+
+
+    .Rtable-cell--head {
+        background-color: slategrey;
+        border-color: darken(greyish, 10%);
+        color: white;
+    }
+
+    .Rtable-cell--foot {
+        background-color: mix(white, --greyish, 50%);
+        border-color: mix(white, greyish, 40%);
+    }
+
+
+
+}

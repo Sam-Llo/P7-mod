@@ -1,0 +1,855 @@
+{
+    "soundManifest": [
+        {
+            "id": "BaseMusicLoop",
+            "src": [
+                "soundFiles/BaseMusicLoop.ogg",
+                "soundFiles/BaseMusicLoop.aac"
+            ]
+        },
+        {"id":"BonusTurnsDecrease", "src": ["soundFiles/BonusTurnCounter.ogg", "soundFiles/BonusTurnCounter.aac"]},
+        {"id":"IWWoosh1", "src": ["soundFiles/IWWoosh1.ogg", "soundFiles/IWWoosh1.aac"]},
+        {"id":"IWWoosh2", "src": ["soundFiles/IWWoosh2.ogg", "soundFiles/IWWoosh2.aac"]},
+        {
+            "id": "BaseMusicStopLose",
+            "src": [
+                "soundFiles/MusicTermLose.ogg",
+                "soundFiles/MusicTermLose.aac"
+            ]
+        },
+        {
+            "id": "BaseMusicStopWin",
+            "src": [
+                "soundFiles/WinPopUp.ogg",
+                "soundFiles/WinPopUp.aac"
+            ]
+        },
+        {
+            "id": "BonusMusicLoop",
+            "src": [
+                "soundFiles/BonusMusicLoop.ogg",
+                "soundFiles/BonusMusicLoop.aac"
+            ]
+        },
+        {
+            "id": "BonusMusicStopWin",
+            "src": [
+                "soundFiles/MusicTermWin.ogg",
+                "soundFiles/MusicTermWin.aac"
+            ]
+        },
+        {
+            "id": "RollupWinAllStart",
+            "src": [
+                "soundFiles/RollupWinAllStart.ogg",
+                "soundFiles/RollupWinAllStart.aac"
+            ]
+        },
+        {
+            "id": "RollupWinAllStop",
+            "src": [
+                "soundFiles/RollupWinAllStop.ogg",
+                "soundFiles/RollupWinAllStop.aac"
+            ]
+        },
+        {
+            "id": "UiBetDown",
+            "src": [
+                "soundFiles/BetDown.ogg",
+                "soundFiles/BetDown.aac"
+            ]
+        },
+        {
+            "id": "UiBetMax",
+            "src": [
+                "soundFiles/BetMax.ogg",
+                "soundFiles/BetMax.aac"
+            ]
+        },
+        {
+            "id": "UiBetUp",
+            "src": [
+                "soundFiles/BetUp.ogg",
+                "soundFiles/BetUp.aac"
+            ]
+        },
+        {
+            "id": "UiBuyButton",
+            "src": [
+                "soundFiles/ButtonPlay.ogg",
+                "soundFiles/ButtonPlay.aac"
+            ]
+        },
+        {
+            "id": "UiClick",
+            "src": [
+                "soundFiles/UiClick.ogg",
+                "soundFiles/UiClick.aac"
+            ]
+        },
+        {
+            "id": "UI_onUIOpen",
+            "src": [
+                "soundFiles/UI_onUIOpen.ogg",
+                "soundFiles/UI_onUIOpen.aac"
+            ]
+        },
+        {
+            "id": "UI_onUISelect",
+            "src": [
+                "soundFiles/UI_onUISelect.ogg",
+                "soundFiles/UI_onUISelect.aac"
+            ]
+        },
+        {
+            "id": "UI_onUiClose",
+            "src": [
+                "soundFiles/UI_onUiClose.ogg",
+                "soundFiles/UI_onUiClose.aac"
+            ]
+        },
+        {
+            "id": "CoinShower",
+            "src": [
+                "soundFiles/CoinShower.ogg",
+                "soundFiles/CoinShower.aac"
+            ]
+        },
+        {
+            "id": "BonusDrop",
+            "src": [
+                "soundFiles/BonusDrop.ogg",
+                "soundFiles/BonusDrop.aac"
+            ]
+        },
+        {
+            "id": "BonusIWAmount",
+            "src": [
+                "soundFiles/BonusIWAmount.ogg",
+                "soundFiles/BonusIWAmount.aac"
+            ]
+        },
+        {
+            "id": "BonusSymbolMatch",
+            "src": [
+                "soundFiles/BonusSymbolMatch.ogg",
+                "soundFiles/BonusSymbolMatch.aac"
+            ]
+        },
+        {
+            "id": "BonusSymbolMatch2",
+            "src": [
+                "soundFiles/BonusSymbolMatch2.ogg",
+                "soundFiles/BonusSymbolMatch2.aac"
+            ]
+        },
+        {
+            "id": "BonusSymbolMatch3",
+            "src": [
+                "soundFiles/BonusSymbolMatch3.ogg",
+                "soundFiles/BonusSymbolMatch3.aac"
+            ]
+        },
+        {
+            "id": "BonusSymbolSpin",
+            "src": [
+                "soundFiles/BonusSymbolSpin.ogg",
+                "soundFiles/BonusSymbolSpin.aac"
+            ]
+        },
+        {
+            "id": "BonusTileReveal",
+            "src": [
+                "soundFiles/BonusTileReveal.ogg",
+                "soundFiles/BonusTileReveal.aac"
+            ]
+        },
+        {
+            "id": "BonusTileReveal2",
+            "src": [
+                "soundFiles/BonusTileReveal2.ogg",
+                "soundFiles/BonusTileReveal2.aac"
+            ]
+        },
+        {
+            "id": "BonusTransition",
+            "src": [
+                "soundFiles/BonusTransition.ogg",
+                "soundFiles/BonusTransition.aac"
+            ]
+        },
+        {
+            "id": "BonusTurnsIncrease",
+            "src": [
+                "soundFiles/BonusTurnsIncrease.ogg",
+                "soundFiles/BonusTurnsIncrease.aac"
+            ]
+        },
+        {
+            "id": "SymbolMatch1",
+            "src": [
+                "soundFiles/SymbolMatch1.ogg",
+                "soundFiles/SymbolMatch1.aac"
+            ]
+        },
+        {
+            "id": "SymbolMatch2",
+            "src": [
+                "soundFiles/SymbolMatch2.ogg",
+                "soundFiles/SymbolMatch2.aac"
+            ]
+        },
+        {
+            "id": "SymbolMatch3",
+            "src": [
+                "soundFiles/SymbolMatch3.ogg",
+                "soundFiles/SymbolMatch3.aac"
+            ]
+        },
+        {
+            "id": "TileReveal01",
+            "src": [
+                "soundFiles/TileReveal01.ogg",
+                "soundFiles/TileReveal01.aac"
+            ]
+        },
+        {
+            "id": "TileReveal02",
+            "src": [
+                "soundFiles/TileReveal02.ogg",
+                "soundFiles/TileReveal02.aac"
+            ]
+        },
+        {
+            "id": "TileReveal03",
+            "src": [
+                "soundFiles/TileReveal03.ogg",
+                "soundFiles/TileReveal03.aac"
+            ]
+        },
+        {
+            "id": "BonusDrinkShake",
+            "src": [
+                "soundFiles/BonusDrinkShake.ogg",
+                "soundFiles/BonusDrinkShake.aac"
+            ]
+        }
+    ],
+    "soundDefinitions": {
+        "soundSprites": {
+            "s_IWWoosh1":{"soundId":"IWWoosh1", "startTime":1, "duration":4787, "overlap": true},
+            "s_IWWoosh2":{"soundId":"IWWoosh2", "startTime":1, "duration":5162, "overlap": true},
+            "s_BonusTurnsDecrease":{"soundId":"BonusTurnsDecrease", "startTime":1, "duration":547, "overlap":true},
+            "s_BaseMusicLoop": {
+                "soundId": "BaseMusicLoop",
+                "startTime": 1,
+                "duration": 30476,
+                "tags": [
+                    "Music"
+                ]
+            },
+            "s_BaseMusicStopLose": {
+                "soundId": "BaseMusicStopLose",
+                "startTime": 1,
+                "duration": 6200,
+                "overlap": false,
+                "tags": [
+                    "Music"
+                ]
+            },
+            "s_BaseMusicStopWin": {
+                "soundId": "BaseMusicStopWin",
+                "startTime": 1,
+                "duration": 6074,
+                "overlap": false,
+                "tags": [
+                    "Music"
+                ]
+            },
+            "s_BonusMusicLoop": {
+                "soundId": "BonusMusicLoop",
+                "startTime": 1,
+                "duration": 29538,
+                "tags": [
+                    "Music"
+                ]
+            },
+            "s_BonusMusicStopWin": {
+                "soundId": "BonusMusicStopWin",
+                "startTime": 1,
+                "duration": 5718,
+                "overlap": false,
+                "tags": [
+                    "Music"
+                ]
+            },
+            "s_CoinShower": {
+                "soundId": "CoinShower",
+                "startTime": 1,
+                "duration": 6713,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_RollupWinAllStart": {
+                "soundId": "RollupWinAllStart",
+                "startTime": 50,
+                "duration": 800,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_RollupWinAllStop": {
+                "soundId": "RollupWinAllStop",
+                "startTime": 1,
+                "duration": 2213,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_UiBetDown": {
+                "soundId": "UiBetDown",
+                "startTime": 1,
+                "duration": 1276,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_UiBetMax": {
+                "soundId": "UiBetMax",
+                "startTime": 1,
+                "duration": 2877,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_UiBetUp": {
+                "soundId": "UiBetUp",
+                "startTime": 1,
+                "duration": 1473,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_UiBuyButton": {
+                "soundId": "UiBuyButton",
+                "startTime": 1,
+                "duration": 3145,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_UiClick": {
+                "soundId": "UiClick",
+                "startTime": 1,
+                "duration": 1038,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusDrinkShake": {
+                "soundId": "BonusDrinkShake",
+                "startTime": 1,
+                "duration": 1012,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_UI_onUIOpen": {
+                "soundId": "UI_onUIOpen",
+                "startTime": 1,
+                "duration": 319,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_UI_onUISelect": {
+                "soundId": "UI_onUISelect",
+                "startTime": 1,
+                "duration": 255,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_UI_onUIClose": {
+                "soundId": "UI_onUiClose",
+                "startTime": 1,
+                "duration": 529,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusDrop": {
+                "soundId": "BonusDrop",
+                "startTime": 1,
+                "duration": 1046,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusIWAmount": {
+                "soundId": "BonusIWAmount",
+                "startTime": 1,
+                "duration": 1686,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusSymbolMatch": {
+                "soundId": "BonusSymbolMatch",
+                "startTime": 1,
+                "duration": 1905,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusSymbolMatch2": {
+                "soundId": "BonusSymbolMatch2",
+                "startTime": 1,
+                "duration": 2020,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusSymbolMatch3": {
+                "soundId": "BonusSymbolMatch3",
+                "startTime": 1,
+                "duration": 2067,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusSymbolSpin": {
+                "soundId": "BonusSymbolSpin",
+                "startTime": 1,
+                "duration": 1384,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusTileReveal": {
+                "soundId": "BonusTileReveal",
+                "startTime": 1,
+                "duration": 1250,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusTileReveal2": {
+                "soundId": "BonusTileReveal2",
+                "startTime": 1,
+                "duration": 1785,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusTransition": {
+                "soundId": "BonusTransition",
+                "startTime": 1,
+                "duration": 4206,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_BonusTurnsIncrease": {
+                "soundId": "BonusTurnsIncrease",
+                "startTime": 1,
+                "duration": 1309,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_SymbolMatch1": {
+                "soundId": "SymbolMatch1",
+                "startTime": 1,
+                "duration": 1623,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_SymbolMatch2": {
+                "soundId": "SymbolMatch2",
+                "startTime": 1,
+                "duration": 1718,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_SymbolMatch3": {
+                "soundId": "SymbolMatch3",
+                "startTime": 1,
+                "duration": 1764,
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_TileReveal01": {
+                "soundId": "TileReveal01",
+                "startTime": 1,
+                "duration": 761,
+                "spriteId": "s_TileReveal01",
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_TileReveal02": {
+                "soundId": "TileReveal02",
+                "startTime": 1,
+                "duration": 753,
+                "spriteId": "s_TileReveal02",
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            },
+            "s_TileReveal03": {
+                "soundId": "TileReveal03",
+                "startTime": 1,
+                "duration": 654,
+                "spriteId": "s_TileReveal03",
+                "overlap": true,
+                "tags": [
+                    "SoundEffects"
+                ]
+            }
+        },
+        "spriteList": {
+            "Reveal_SL": {
+                "items": [
+                    "s_TileReveal01",
+                    "s_TileReveal02",
+                    "s_TileReveal03"
+                ],
+                "type": "random",
+                "overlap": true
+            }
+        },
+        "commands": {
+            "onIWWoosh1": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_IWWoosh1"
+                }
+            ],
+            "onIWWoosh2": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_IWWoosh2"
+                }        
+            ],
+            "onBonusTurnsDecrease": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusTurnsDecrease"
+                }
+            ],
+            "CoinShower": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_CoinShower",
+                    "volume": 1
+                }
+            ],
+            "onBonusDrinkShake": [
+                {
+                    "command": "Stop",
+                    "spriteId": "s_BonusDrinkShake"
+                },
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusDrinkShake"
+                }
+            ],
+            "BaseMusicLoop": [
+                {
+                    "command": "Stop",
+                    "spriteId": "s_BonusMusicLoop"
+                },
+                {
+                    "command": "Fade",
+                    "spriteId": "s_CoinShower",
+                    "volume": 0,
+                    "duration": 500
+                },
+                {
+                    "command": "Play",
+                    "spriteId": "s_BaseMusicLoop",
+                    "loop": -1
+                }
+            ],
+            "BaseMusicStopLose": [
+                {
+                    "command": "Stop",
+                    "spriteId": "s_BonusMusicLoop"
+                },
+                {
+                    "command": "Stop",
+                    "spriteId": "s_BaseMusicLoop"
+                },
+                {
+                    "command": "Play",
+                    "spriteId": "s_BaseMusicStopLose"
+                }
+            ],
+            "BaseMusicStopWin": [
+                {
+                    "command": "Stop",
+                    "spriteId": "s_BonusMusicLoop"
+                },
+                {
+                    "command": "Stop",
+                    "spriteId": "s_BaseMusicLoop"
+                },
+                {
+                    "command": "Play",
+                    "spriteId": "s_BaseMusicStopWin"
+                }
+            ],
+            "BonusMusicLoop": [
+                {
+                    "command": "Stop",
+                    "spriteId": "s_BaseMusicLoop"
+                },
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusMusicLoop",
+                    "loop": -1
+                }
+            ],
+            "BonusMusicStopWin": [
+                {
+                    "command": "Stop",
+                    "spriteId": "s_BonusMusicLoop"
+                },
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusMusicStopWin"
+                }
+            ],
+            "Reveal": [
+                {
+                    "command": "Play",
+                    "spriteListId": "Reveal_SL"
+                }
+            ],
+            "RollupWinAllStart": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_RollupWinAllStart",
+                    "loop": -1
+                }
+            ],
+            "RollupWinAllStop": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_RollupWinAllStop"
+                },
+                {
+                    "command": "Stop",
+                    "spriteId": "s_RollupWinAllStart"
+                }
+            ],
+            "UiBetUp": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UiBetUp"
+                }
+            ],
+            "UiBetDown": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UiBetDown"
+                }
+            ],
+            "UiBetMax": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UiBetMax"
+                }
+            ],
+            "UiBuyButton": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UiBuyButton"
+                }
+            ],
+            "UiClick": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UiClick"
+                }
+            ],
+            "onUiOptionsOpen": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIOpen"
+                }
+            ],
+            "onUiOptionsSelect": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUISelect"
+                }
+            ],
+            "onUiOptionsClose": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIClose"
+                }
+            ],
+            "onSymbolMatch1": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_SymbolMatch1",
+                    "volume": 0.7
+                }
+            ],
+            "onSymbolSelected": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusDrop"
+                }
+            ],
+            "onBonusIWAmount": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusIWAmount",
+                    "delay": 588
+                }
+            ],
+            "onSymbolMatch2": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_SymbolMatch2",
+                    "volume": 0.7
+                }
+            ],
+            "onSymbolMatch3": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_SymbolMatch3",
+                    "volume": 0.7
+                }
+            ],
+            "onTileReveal01": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_TileReveal01"
+                }
+            ],
+            "onTileReveal02": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_TileReveal02"
+                }
+            ],
+            "onTileReveal03": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_TileReveal03"
+                }
+            ],
+            "onBonusSymbolMatch": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusSymbolMatch"
+                }
+            ],
+            "onBonusSymbolMatch2": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusSymbolMatch2"
+                }
+            ],
+            "onBonusSymbolMatch3": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusSymbolMatch3"
+                }
+            ],
+            "StopBonusSpinSound": [
+                {
+                    "command": "Stop",
+                    "spriteId": "s_BonusSymbolSpin"
+                }
+            ],
+            "onBonusSymbolSpin": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusSymbolSpin",
+                    "loop": -1
+                }
+            ],
+            "onBonusTileReveal": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusTileReveal",
+                    "volume": 1
+                }
+            ],
+            "onBonusTileReveal2": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusTileReveal2"
+                }
+            ],
+            "onBonusTransitionIn": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusTransition"
+                }
+            ],
+            "onBonusTransitionOut": [
+                {
+                    "command": "Fade",
+                    "spriteId": "s_CoinShower",
+                    "volume": 0,
+                    "duration": 500
+                },
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusTransition"
+                },
+                {
+                    "command": "Play",
+                    "spriteId": "s_BaseMusicLoop",
+                    "loop": -1
+                }
+            ],
+            "onBonusTurnsIncrease": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_BonusTurnsIncrease"
+                }
+            ],
+            "onStopCoinShowerSound": [
+                {
+                    "command": "Stop",
+                    "spriteId": "s_CoinShower"
+                }
+            ]
+        }
+    }
+}

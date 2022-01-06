@@ -1,0 +1,300 @@
+
+Symbols.png
+size: 1761,526
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non Trans/glass shine/Shine_00000
+  rotate: false
+  xy: 1037, 332
+  size: 14, 20
+  orig: 662, 603
+  offset: 262, 226
+  index: -1
+non Trans/glass shine/Shine_00001
+  rotate: false
+  xy: 713, 221
+  size: 31, 104
+  orig: 662, 603
+  offset: 259, 218
+  index: -1
+non Trans/glass shine/Shine_00002
+  rotate: true
+  xy: 1283, 152
+  size: 47, 127
+  orig: 662, 603
+  offset: 259, 213
+  index: -1
+non Trans/glass shine/Shine_00003
+  rotate: false
+  xy: 1683, 251
+  size: 66, 141
+  orig: 662, 603
+  offset: 258, 209
+  index: -1
+non Trans/glass shine/Shine_00004
+  rotate: false
+  xy: 947, 138
+  size: 75, 188
+  orig: 662, 603
+  offset: 258, 205
+  index: -1
+non Trans/glass shine/Shine_00005
+  rotate: false
+  xy: 956, 332
+  size: 79, 194
+  orig: 662, 603
+  offset: 259, 204
+  index: -1
+non Trans/glass shine/Shine_00006
+  rotate: true
+  xy: 404, 125
+  size: 92, 198
+  orig: 662, 603
+  offset: 259, 203
+  index: -1
+non Trans/glass shine/Shine_00007
+  rotate: true
+  xy: 746, 222
+  size: 103, 199
+  orig: 662, 603
+  offset: 260, 203
+  index: -1
+non Trans/glass shine/Shine_00008
+  rotate: false
+  xy: 713, 327
+  size: 110, 199
+  orig: 662, 603
+  offset: 262, 203
+  index: -1
+non Trans/glass shine/Shine_00009
+  rotate: true
+  xy: 493, 5
+  size: 118, 199
+  orig: 662, 603
+  offset: 263, 203
+  index: -1
+non Trans/glass shine/Shine_00010
+  rotate: false
+  xy: 825, 328
+  size: 129, 198
+  orig: 662, 603
+  offset: 264, 204
+  index: -1
+non Trans/glass shine/Shine_00011
+  rotate: true
+  xy: 694, 0
+  size: 131, 196
+  orig: 662, 603
+  offset: 269, 206
+  index: -1
+non Trans/glass shine/Shine_00012
+  rotate: true
+  xy: 0, 0
+  size: 122, 189
+  orig: 662, 603
+  offset: 278, 213
+  index: -1
+non Trans/glass shine/Shine_00013
+  rotate: false
+  xy: 1024, 147
+  size: 112, 183
+  orig: 662, 603
+  offset: 288, 219
+  index: -1
+non Trans/glass shine/Shine_00014
+  rotate: false
+  xy: 1081, 1
+  size: 109, 144
+  orig: 662, 603
+  offset: 293, 258
+  index: -1
+non Trans/glass shine/Shine_00015
+  rotate: true
+  xy: 1517, 149
+  size: 97, 139
+  orig: 662, 603
+  offset: 306, 263
+  index: -1
+non Trans/glass shine/Shine_00016
+  rotate: true
+  xy: 665, 133
+  size: 84, 127
+  orig: 662, 603
+  offset: 319, 274
+  index: -1
+non Trans/glass shine/Shine_00017
+  rotate: false
+  xy: 604, 127
+  size: 59, 90
+  orig: 662, 603
+  offset: 341, 292
+  index: -1
+non Trans/glass shine/Shine_00018
+  rotate: false
+  xy: 897, 151
+  size: 46, 69
+  orig: 662, 603
+  offset: 354, 313
+  index: -1
+non Trans/glass shine/Shine_00019
+  rotate: true
+  xy: 1138, 151
+  size: 31, 57
+  orig: 662, 603
+  offset: 369, 323
+  index: -1
+non Trans/glow1
+  rotate: false
+  xy: 404, 219
+  size: 307, 307
+  orig: 307, 307
+  offset: 0, 0
+  index: -1
+non Trans/glow2
+  rotate: false
+  xy: 0, 124
+  size: 402, 402
+  orig: 402, 402
+  offset: 0, 0
+  index: -1
+trans/Bonus/bonus01
+  rotate: false
+  xy: 1037, 354
+  size: 126, 172
+  orig: 128, 173
+  offset: 1, 1
+  index: -1
+trans/Bonus/bonus02
+  rotate: true
+  xy: 1283, 201
+  size: 157, 133
+  orig: 159, 134
+  offset: 1, 1
+  index: -1
+trans/loseSymbols/symbol01
+  rotate: false
+  xy: 1658, 139
+  size: 103, 107
+  orig: 103, 107
+  offset: 0, 0
+  index: -1
+trans/loseSymbols/symbol02
+  rotate: true
+  xy: 1462, 380
+  size: 146, 76
+  orig: 146, 76
+  offset: 0, 0
+  index: -1
+trans/loseSymbols/symbol03
+  rotate: true
+  xy: 1646, 6
+  size: 131, 97
+  orig: 131, 97
+  offset: 0, 0
+  index: -1
+trans/loseSymbols/symbol04
+  rotate: false
+  xy: 1683, 394
+  size: 77, 132
+  orig: 77, 132
+  offset: 0, 0
+  index: -1
+trans/loseSymbols/symbol05
+  rotate: false
+  xy: 1006, 0
+  size: 73, 136
+  orig: 73, 136
+  offset: 0, 0
+  index: -1
+trans/loseSymbols/symbol06
+  rotate: true
+  xy: 794, 137
+  size: 83, 101
+  orig: 83, 101
+  offset: 0, 0
+  index: -1
+trans/winSymbols/SymbolDoublewin01
+  rotate: false
+  xy: 191, 0
+  size: 154, 122
+  orig: 154, 122
+  offset: 0, 0
+  index: -1
+trans/winSymbols/SymbolDoublewin02
+  rotate: false
+  xy: 1192, 0
+  size: 165, 149
+  orig: 165, 149
+  offset: 0, 0
+  index: -1
+trans/winSymbols/SymbolDoublewin03
+  rotate: true
+  xy: 347, 1
+  size: 121, 144
+  orig: 121, 144
+  offset: 0, 0
+  index: -1
+trans/winSymbols/SymbolDoublewin04
+  rotate: true
+  xy: 892, 0
+  size: 135, 112
+  orig: 135, 113
+  offset: 0, 0
+  index: -1
+trans/winSymbols/SymbolTriplewin01
+  rotate: true
+  xy: 1165, 360
+  size: 166, 140
+  orig: 166, 140
+  offset: 0, 0
+  index: -1
+trans/winSymbols/SymbolTriplewin02
+  rotate: true
+  xy: 1138, 184
+  size: 168, 143
+  orig: 168, 143
+  offset: 0, 0
+  index: -1
+trans/winSymbols/SymbolTriplewin03
+  rotate: true
+  xy: 1307, 370
+  size: 156, 153
+  orig: 156, 153
+  offset: 0, 0
+  index: -1
+trans/winSymbols/SymbolTriplewin04
+  rotate: false
+  xy: 1540, 248
+  size: 139, 137
+  orig: 139, 138
+  offset: 0, 0
+  index: -1
+trans/winSymbols/Symbolwin01
+  rotate: true
+  xy: 1540, 387
+  size: 139, 141
+  orig: 139, 141
+  offset: 0, 0
+  index: -1
+trans/winSymbols/Symbolwin02
+  rotate: false
+  xy: 1359, 1
+  size: 156, 149
+  orig: 156, 149
+  offset: 0, 0
+  index: -1
+trans/winSymbols/Symbolwin03
+  rotate: false
+  xy: 1418, 216
+  size: 97, 152
+  orig: 97, 152
+  offset: 0, 0
+  index: -1
+trans/winSymbols/Symbolwin04
+  rotate: false
+  xy: 1517, 6
+  size: 127, 131
+  orig: 127, 131
+  offset: 0, 0
+  index: -1

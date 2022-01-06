@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6278" data-name="Rectangle 6278" width="14.745" height="17.393" fill="#e1e1e1"/>
+    </clipPath>
+  </defs>
+  <g id="back_up" data-name="back up" transform="translate(-310 -973)">
+    <g id="Group_16098" data-name="Group 16098" transform="translate(-420 676)">
+      <g id="Group_2515" data-name="Group 2515" transform="translate(730 297)" opacity="0.15">
+        <rect id="btnSpin_default_copy_3" data-name="btnSpin_default copy 3" width="40" height="40" rx="20" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_16159" data-name="Group 16159" transform="translate(322.313 984.549)">
+      <g id="Group_16158" data-name="Group 16158" clip-path="url(#clip-path)">
+        <path id="Path_10436" data-name="Path 10436" d="M14.366,21.649,8.178,15.537a1.276,1.276,0,0,0-.9-.368H7.273a1.275,1.275,0,0,0-.9.381L.366,21.656a1.275,1.275,0,1,0,1.817,1.788l3.8-3.867v8.195a1.275,1.275,0,0,0,2.55,0v-8.3l4.037,3.987a1.275,1.275,0,0,0,1.792-1.814" transform="translate(0 -11.653)" fill="#e1e1e1"/>
+        <path id="Path_10437" data-name="Path 10437" d="M4.062,2.55H14.747a1.275,1.275,0,0,0,0-2.55H4.062a1.275,1.275,0,1,0,0,2.55" transform="translate(-2.141)" fill="#e1e1e1"/>
+      </g>
+    </g>
+  </g>
+</svg>

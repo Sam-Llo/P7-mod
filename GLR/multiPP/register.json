@@ -1,0 +1,10 @@
+{
+    "status": "SUCCESS",
+    "sessionId": "SS::1eae31d9-1504-40cc-9ca3-9edfd1657319",
+    "serverTime": 1583850168924,
+    "maxEventBatchSize": 3,
+    "next": {
+        "token": "TK::96395efd-d6fd-4260-8a76-f8837b692098",
+        "time": 1583850228924
+    }
+}

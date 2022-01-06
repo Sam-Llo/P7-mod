@@ -1,0 +1,64 @@
+{   
+    "gameClient": [ 
+        {   
+            "code": "mobile",
+            "channel": "MOB",   
+            "presentation": "STD",
+            "technology": "HTML",   
+            "height": "600",    
+            "width": "800",    
+            "meterheight": "0", 
+            "meterwidth": "10", 
+            "gameFolder": "Precious7s",  
+            "enableFreeSpin": "Y"   
+        },  
+        {   
+            "code": "tablet",   
+            "channel": "TAB",   
+            "presentation": "STD",
+            "technology": "HTML",   
+            "height": "600",    
+            "width": "800",    
+            "meterheight": "0", 
+            "meterwidth": "10", 
+            "gameFolder": "Precious7s",  
+            "enableFreeSpin": "Y"   
+        },  
+        {   
+            "code": "desktop",
+            "channel": "INT",   
+            "presentation": "STD",
+            "technology": "HTML",   
+            "height": "600",    
+            "width": "800",    
+            "meterheight": "0", 
+            "meterwidth": "10", 
+            "gameFolder": "Precious7s",  
+            "enableFreeSpin": "Y"   
+        },  
+        {   
+            "code": "tabletmini",
+            "channel": "TAB",   
+            "presentation": "MIN",
+            "technology": "HTML",   
+            "height": "320",    
+            "width": "480", 
+            "meterheight": "0", 
+            "meterwidth": "10", 
+            "gameFolder": "Precious7s",  
+            "enableFreeSpin": "Y"   
+        },  
+        {   
+            "code": "desktopmini",
+            "channel": "INT",   
+            "presentation": "MIN",  
+            "technology": "HTML",   
+            "height": "320",    
+            "width": "480", 
+            "meterheight": "0", 
+            "meterwidth": "10", 
+            "gameFolder": "Precious7s",  
+            "enableFreeSpin": "Y"   
+        }   
+    ]   
+} 

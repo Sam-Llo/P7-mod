@@ -1,0 +1,27 @@
+
+Foil.png
+size: 416,140
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/foil01
+  rotate: true
+  xy: 280, 3
+  size: 135, 134
+  orig: 135, 134
+  offset: 0, 0
+  index: -1
+trans/foil02
+  rotate: true
+  xy: 2, 2
+  size: 136, 137
+  orig: 136, 137
+  offset: 0, 0
+  index: -1
+trans/foil03
+  rotate: true
+  xy: 141, 2
+  size: 136, 137
+  orig: 137, 137
+  offset: 1, 0
+  index: -1

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>PLAYA GAME</title>
+        <script type="text/javascript" src="./libs/lodash.min.js"></script>
+        <script type="text/javascript" src="./libs/postal.min.js"></script>
+        <script type="text/javascript" src="./libs/postal.federation.min.js"></script>
+        <script type="text/javascript" src="./libs/postal.request-response.min.js"></script>
+        <script type="text/javascript" src="./libs/postal.xframe.min.js"></script>
+        <script>
+            // setting up postal instance //////////////////////////////////////////////////
+            window.postal.instanceId("Game");
+            window.postal.fedx.transports.xframe.configure({allowedOrigins: ["*"],safeSerialize: true});
+            window.postal.fedx.addFilter([
+                { channel: "Kernel", topic: "#", direction: "both" },
+                { channel: "ClientService", topic: "#", direction: "both" },
+                { channel: "ConsoleService", topic: "#", direction: "both" },
+                { channel: "Game", topic: "#", direction: "both" },
+                { channel: "postal.request-response", topic: "#", direction: "both" },
+            ]);
+            window.postal.fedx.signalReady();       
+            // setting up early progress updates ///////////////////////////////////////////
+            const maxEarlyProgressUpdates = 12; // (1 minute + RGS timeout for initial files)
+            const progressInterval = 5000; // msec
+            let currentEarlyProgressUpdate = 0;
+            const earlyProgressUpdate = setInterval(()=>{
+                currentEarlyProgressUpdate++;
+                if (currentEarlyProgressUpdate>maxEarlyProgressUpdates) {
+                    clearEarlyProgressUpdate();
+                    delete window.clearEarlyProgressUpdate;
+                    console.log("Removing early load progress - keep-alive, max count reached.")
+                    return;
+                }
+                console.log("Sending early load progress - keep-alive... "+(maxEarlyProgressUpdates-currentEarlyProgressUpdate));
+                window.postal.channel("Kernel").publish("LoadProgress", 
+                    { id: "game", total:Number.MAX_SAFE_INTEGER, current:0, complete:false}
+                );
+            },progressInterval);
+            // expose for game to trigger
+            window.clearEarlyProgressUpdate = ()=>{clearInterval(earlyProgressUpdate)};
+            /////////////////////////////////////////////////////////////////////////////////
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+</html>

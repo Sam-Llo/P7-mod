@@ -1,0 +1,15 @@
+{
+    "LeastWinningSymbolsCount": 3,
+    "MaxWinningSymbolsCount": 12,
+    "FlashingTextAnimationLength": 0.25,
+    "TransitionFlashingTextAnimationLength": 0.25,
+    "WinFindLabelTextPrefix": "_winFindLabelText",
+    "WinAmountValueTextPrefix": "_winAmountText",
+    "LandscapeGamePaytableStaticAnimtionName": "Landscape/Play Table Landscape static",
+    "PortraitGamePaytableStaticAnimtionName": "Portrait/Play Table Portrait static",
+    "LandscapeFadeInWinAnimPrefix": "Landscape/fade in/Play Table Landscape FadeIn Win",
+    "LandscapeFadeOutWinAnimPrefix": "Landscape/fade out/Play Table Landscape FadeOut Win",
+    "PortraitFadeInWinAnimPrefix": "Portrait/fade in/Play Table Portrait FadeIn Win",
+    "PortraitFadeOutWinAnimPrefix": "Portrait/fade out/Play Table Portrait FadeOut Win",
+    "BaseGamePrizeDivisionPrefix": "M"
+}

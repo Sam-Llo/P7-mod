@@ -1,0 +1,39 @@
+{
+  "frames": {
+    "gameLogo_img2": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 548,
+        "h": 241
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 548,
+        "h": 241
+      },
+      "sourceSize": {
+        "w": 548,
+        "h": 241
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "IGT Layout Tool - https://github.com/igtinteractive/layout_tool",
+    "version": "0.4.8",
+    "image": "gamebitmaps-2.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 550,
+      "h": 243
+    },
+    "scale": 1
+  }
+}

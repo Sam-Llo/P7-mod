@@ -1,0 +1,11 @@
+{
+    "SymbolHeight": 192,
+    "SymbolWidth": 186,
+    "LocalPositionX": 0,
+    "LocalPositionY": 0,
+    "IsHorizontalSpin": true,
+    "PeakSpinSpeed": 0.2,
+    "LandingSpinSpeed": 0.25,
+    "MaxStopSpinCounter": 4,
+    "CustomSpinSpeedControl": [1, 0.8, 0.8, 1]
+}

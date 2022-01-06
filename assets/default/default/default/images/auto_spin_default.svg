@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="Icons"
+   x="0px"
+   y="0px"
+   viewBox="0 0 113.9 96.099995"
+   xml:space="preserve"
+   sodipodi:docname="auto_spin_default.svg"
+   width="113.9"
+   height="96.099998"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs437" /><sodipodi:namedview
+   id="namedview435"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="4.3047033"
+   inkscape:cx="53.313778"
+   inkscape:cy="50.990738"
+   inkscape:window-width="1920"
+   inkscape:window-height="1027"
+   inkscape:window-x="1912"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Icons" />
+<style
+   type="text/css"
+   id="style398">
+	.st0{opacity:0.6;fill:#414851;enable-background:new    ;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:#60656E;}
+	.st3{fill:url(#SVGID_2_);}
+	.st4{fill:#60656F;}
+</style>
+<g
+   id="g432"
+   transform="translate(-51.5,-47)">
+	<path
+   class="st0"
+   d="M 124,92 H 112.5 V 80.5 c 0,-0.6 -0.4,-1 -1,-1 h -6 c -0.6,0 -1,0.4 -1,1 V 92 H 93 c -0.6,0 -1,0.4 -1,1 v 6 c 0,0.6 0.4,1 1,1 h 11.5 v 11.5 c 0,0.6 0.4,1 1,1 h 6 c 0.6,0 1,-0.4 1,-1 V 100 H 124 c 0.6,0 1,-0.4 1,-1 v -6 c 0,-0.5 -0.5,-1 -1,-1 z"
+   id="path400" />
+	<g
+   id="g411">
+		
+			<linearGradient
+   id="SVGID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="117.797"
+   y1="69.277496"
+   x2="88.009804"
+   y2="38.979599"
+   gradientTransform="matrix(1,0,0,-1,8.3714,155.9583)">
+			<stop
+   offset="0"
+   style="stop-color:#F9FAFC;stop-opacity:0"
+   id="stop402" />
+			<stop
+   offset="0.2039"
+   style="stop-color:#E8E8EB;stop-opacity:4.748603e-02"
+   id="stop404" />
+			<stop
+   offset="1"
+   style="stop-color:#60656E"
+   id="stop406" />
+		</linearGradient>
+		<path
+   class="st1"
+   d="M 108.3,129.6 C 89.2,129.6 73.7,114.1 73.7,95 H 60.2 c 0,26.6 21.5,48.1 48.1,48.1 26.6,0 48.1,-21.5 48.1,-48.1 H 143 c 0,19.1 -15.5,34.6 -34.7,34.6 z"
+   id="path409"
+   style="fill:url(#SVGID_1_)" />
+	</g>
+	<g
+   id="g415">
+		<polygon
+   class="st2"
+   points="165.4,84.7 131.8,84.7 148.6,104.5 "
+   id="polygon413" />
+	</g>
+	<g
+   id="g426">
+		
+			<linearGradient
+   id="SVGID_2_"
+   gradientUnits="userSpaceOnUse"
+   x1="-1342.8821"
+   y1="236.69501"
+   x2="-1372.6693"
+   y2="206.39709"
+   gradientTransform="matrix(-1,0,0,1,-1252.108,-133.319)">
+			<stop
+   offset="0"
+   style="stop-color:#F9FAFC;stop-opacity:0"
+   id="stop417" />
+			<stop
+   offset="0.2039"
+   style="stop-color:#E8E8EB;stop-opacity:4.748603e-02"
+   id="stop419" />
+			<stop
+   offset="1"
+   style="stop-color:#60656E"
+   id="stop421" />
+		</linearGradient>
+		<path
+   class="st3"
+   d="m 108.6,60.5 c 19.1,0 34.6,15.5 34.6,34.6 h 13.5 C 156.7,68.5 135.2,47 108.6,47 82,47 60.5,68.5 60.5,95.1 H 74 C 74,76 89.5,60.5 108.6,60.5 Z"
+   id="path424"
+   style="fill:url(#SVGID_2_)" />
+	</g>
+	<g
+   id="g430">
+		<polygon
+   class="st4"
+   points="51.5,105.3 85.1,105.3 68.3,85.5 "
+   id="polygon428" />
+	</g>
+</g>
+</svg>

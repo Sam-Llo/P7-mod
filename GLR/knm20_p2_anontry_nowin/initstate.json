@@ -1,0 +1,1 @@
+{"GameLogicResponse":{"OutcomeDetail":{"TransactionId":"A6910-15825226241013","Stage":"Wager","NextStage":"Wager","Balance":"100.0","GameStatus":"Initial","Settled":"0","Pending":"0","Payout":"0"},"JSONOutcome":{"@name":"ODERevealData","#text":{"revealData":null}},"Balances":{"@totalBalance":"100.0","Balance":[{"@name":"BONUS","#text":"0"},{"@name":"CASH","#text":"100.0"}]}}}

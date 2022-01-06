@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="minimum-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="cleartype" content="on">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title>Beahch Bonanza</title>
+  
+  <script>
+    document.addEventListener('gesturestart', function (e) {
+	  e.preventDefault();
+    });
+  </script>
+</head>
+
+<body style="transform:translateZ(0)">
+  <img id="logo" class="logo"/>  
+  <div id="webGLMessage" class="webGLText"></div>
+  <div id="loader-progress" class="progress-bar-container">
+    <div id="progress" class="loader">0%</div>
+    <div id="progress-candy" class="progress candy" data-width="0%">
+      <div id="stripes-bar" class="progress-bar bar-overlay shine stripes">
+        <span id="prog-span" style="width: 0%"></span>
+      </div>
+      <div id="progress-bar" class="progress-bar" style="width: 0%;"></div>    
+    </div>
+  </div>  
+  <div id="copyright" class="copy" />
+</body>
+
+</html>

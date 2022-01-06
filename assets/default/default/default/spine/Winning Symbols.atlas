@@ -1,0 +1,41 @@
+
+Winning Symbols.png
+size: 570,307
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Non trans/glow1
+  rotate: false
+  xy: 0, 0
+  size: 307, 307
+  orig: 307, 307
+  offset: 0, 0
+  index: -1
+Trans/Symbol1
+  rotate: false
+  xy: 309, 24
+  size: 136, 138
+  orig: 195, 198
+  offset: 24, 40
+  index: -1
+Trans/Symbol2
+  rotate: false
+  xy: 309, 164
+  size: 150, 143
+  orig: 186, 192
+  offset: 14, 33
+  index: -1
+Trans/Symbol3
+  rotate: false
+  xy: 461, 159
+  size: 93, 148
+  orig: 192, 189
+  offset: 62, 31
+  index: -1
+Trans/Symbol4
+  rotate: false
+  xy: 447, 30
+  size: 123, 127
+  orig: 243, 186
+  offset: 69, 34
+  index: -1

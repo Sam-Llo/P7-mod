@@ -1,0 +1,43 @@
+{
+      "gaffData": {
+            "001": [
+                  {
+                        "name": "S01x5",
+                        "description": "5 S01 symbols on line 1",
+                        "forceActions": [
+                              "?BaseGame.Reel0=8&BaseGame.Reel1=9&BaseGame.Reel2=9&BaseGame.Reel3=13&BaseGame.Reel4=35&FreeSpin.Reel0=0&FreeSpin.Reel1=0&FreeSpin.Reel2=0&FreeSpin.Reel3=0&FreeSpin.Reel4=0",
+                              "?clear"
+                        ]
+                  },
+                  {
+                        "name": "Wildx5",
+                        "description": "5 W01 symbols on line 1",
+                        "forceActions": [
+                              "?BaseGame.Reel0=3&BaseGame.Reel1=27&BaseGame.Reel2=3&BaseGame.Reel3=6&BaseGame.Reel4=23&FreeSpin.Reel0=0&FreeSpin.Reel1=0&FreeSpin.Reel2=0&FreeSpin.Reel3=0&FreeSpin.Reel4=0",
+                              "?clear"
+                        ]
+                  },
+                  {
+                        "name": "Bonus",
+                        "description": "",
+                        "forceActions": [
+                              "?BaseGame.Reel0=0&BaseGame.Reel1=11&BaseGame.Reel2=26&BaseGame.Reel3=4&BaseGame.Reel4=15&FreeSpin.Reel0=0&FreeSpin.Reel1=0&FreeSpin.Reel2=0&FreeSpin.Reel3=0&FreeSpin.Reel4=0",
+                              "?clear"
+                        ]
+                  },
+                  {
+                        "name": "4 times Lose X4",
+                        "description": "In 4 spins lose outcome with x4 selection",
+                        "forceActions": [
+                              "?BaseGame.Reel0=14&BaseGame.Reel1=24&BaseGame.Reel2=0&BaseGame.Reel3=17&BaseGame.Reel4=38&FreeSpin.Reel0=0&FreeSpin.Reel1=0&FreeSpin.Reel2=0&FreeSpin.Reel3=0&FreeSpin.Reel4=0",
+                              "?BaseGame.Reel0=14&BaseGame.Reel1=24&BaseGame.Reel2=0&BaseGame.Reel3=17&BaseGame.Reel4=38&FreeSpin.Reel0=0&FreeSpin.Reel1=0&FreeSpin.Reel2=0&FreeSpin.Reel3=0&FreeSpin.Reel4=0",
+                              "?BaseGame.Reel0=14&BaseGame.Reel1=24&BaseGame.Reel2=0&BaseGame.Reel3=17&BaseGame.Reel4=38&FreeSpin.Reel0=0&FreeSpin.Reel1=0&FreeSpin.Reel2=0&FreeSpin.Reel3=0&FreeSpin.Reel4=0",
+                              "?BaseGame.Reel0=14&BaseGame.Reel1=24&BaseGame.Reel2=0&BaseGame.Reel3=17&BaseGame.Reel4=38&FreeSpin.Reel0=0&FreeSpin.Reel1=0&FreeSpin.Reel2=0&FreeSpin.Reel3=0&FreeSpin.Reel4=0",
+                              "?clear"
+                        ]
+                  }
+            ],
+            "002": [],
+            "003": []
+      }
+}

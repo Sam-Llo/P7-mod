@@ -1,0 +1,232 @@
+
+BackGround.png
+size: 2018,1973
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/Reflection Landscape
+  rotate: false
+  xy: 0, 290
+  size: 1996, 249
+  orig: 1996, 253
+  offset: 0, 2
+  index: -1
+trans/Reflection Portrait
+  rotate: false
+  xy: 0, 1058
+  size: 1379, 247
+  orig: 1379, 251
+  offset: 0, 2
+  index: -1
+trans/cloud1a
+  rotate: false
+  xy: 1332, 1761
+  size: 494, 212
+  orig: 495, 216
+  offset: 0, 2
+  index: -1
+trans/cloud1bLandscape
+  rotate: false
+  xy: 495, 760
+  size: 562, 296
+  orig: 563, 300
+  offset: 0, 2
+  index: -1
+trans/cloud2a
+  rotate: false
+  xy: 1487, 1514
+  size: 531, 245
+  orig: 532, 249
+  offset: 1, 2
+  index: -1
+trans/cloud2b
+  rotate: false
+  xy: 0, 791
+  size: 493, 265
+  orig: 494, 267
+  offset: 1, 1
+  index: -1
+trans/logo
+  rotate: false
+  xy: 163, 1832
+  size: 526, 141
+  orig: 526, 141
+  offset: 0, 0
+  index: -1
+trans/palm 01
+  rotate: false
+  xy: 899, 1774
+  size: 431, 199
+  orig: 431, 199
+  offset: 0, 0
+  index: -1
+trans/palm 02
+  rotate: false
+  xy: 0, 1615
+  size: 439, 215
+  orig: 439, 215
+  offset: 0, 0
+  index: -1
+trans/palm 03
+  rotate: false
+  xy: 1413, 1252
+  size: 504, 260
+  orig: 504, 264
+  offset: 0, 3
+  index: -1
+trans/palm 04
+  rotate: true
+  xy: 441, 1560
+  size: 270, 248
+  orig: 270, 248
+  offset: 0, 0
+  index: -1
+trans/palm 05
+  rotate: true
+  xy: 1381, 989
+  size: 261, 441
+  orig: 261, 441
+  offset: 0, 0
+  index: -1
+trans/seaLandscape
+  rotate: false
+  xy: 0, 0
+  size: 1999, 288
+  orig: 1999, 290
+  offset: 0, 1
+  index: -1
+trans/sun
+  rotate: false
+  xy: 1059, 541
+  size: 717, 446
+  orig: 794, 518
+  offset: 56, 72
+  index: -1
+trans/sunLandscape
+  rotate: false
+  xy: 1059, 541
+  size: 717, 446
+  orig: 794, 518
+  offset: 56, 72
+  index: -1
+trans/sun Bonus
+  rotate: false
+  xy: 0, 1866
+  size: 161, 107
+  orig: 278, 163
+  offset: 61, 2
+  index: -1
+trans/trunk
+  rotate: true
+  xy: 691, 1803
+  size: 170, 206
+  orig: 170, 797
+  offset: 0, 591
+  index: -1
+trans/wave
+  rotate: false
+  xy: 691, 1534
+  size: 794, 225
+  orig: 794, 233
+  offset: 0, 1
+  index: -1
+trans/waveLandscape
+  rotate: false
+  xy: 0, 1307
+  size: 1411, 225
+  orig: 1411, 232
+  offset: 0, 1
+  index: -1
+
+BackGround2.png
+size: 1867,1780
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/BonusSkyPortrait
+  rotate: false
+  xy: 0, 0
+  size: 794, 504
+  orig: 794, 504
+  offset: 0, 0
+  index: -1
+trans/barPotrait
+  rotate: false
+  xy: 0, 506
+  size: 1577, 1274
+  orig: 1581, 1276
+  offset: 2, 2
+  index: -1
+trans/seaPortrait
+  rotate: true
+  xy: 1579, 398
+  size: 1382, 288
+  orig: 1382, 290
+  offset: 0, 1
+  index: -1
+
+BackGround3.png
+size: 1382,1347
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/skyPortrait
+  rotate: false
+  xy: 0, 0
+  size: 1382, 1347
+  orig: 1382, 1381
+  offset: 0, 34
+  index: -1
+
+BackGround4.png
+size: 2021,1411
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/BonusSkyLandscape
+  rotate: true
+  xy: 1233, 0
+  size: 1411, 788
+  orig: 1411, 794
+  offset: 0, 6
+  index: -1
+trans/barLandscape
+  rotate: false
+  xy: 0, 636
+  size: 1231, 775
+  orig: 1235, 776
+  offset: 2, 1
+  index: -1
+
+BackGround5.png
+size: 1999,1798
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/shoreLandscape
+  rotate: false
+  xy: 0, 899
+  size: 1998, 899
+  orig: 1998, 899
+  offset: 0, 0
+  index: -1
+trans/skyLandscape
+  rotate: false
+  xy: 0, 0
+  size: 1999, 897
+  orig: 1999, 931
+  offset: 0, 34
+  index: -1
+
+BackGround6.png
+size: 1381,1025
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/shorePortrait
+  rotate: false
+  xy: 0, 0
+  size: 1381, 1025
+  orig: 1381, 1025
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="cache-control" content="max-age=3600" />
+
+    <!-- Put your game title here -->
+    <title>Paytable</title>
+
+    <style type="text/css">
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            html {
+                -webkit-text-size-adjust: 100%;
+            }
+        }
+
+        body {
+            font-family: sans-serif, arial, helvetica;
+            font-size: 14px;
+            background-color: #cccccc;
+            color: black;
+            margin: 20px;
+        }
+
+        div {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .roundedCorners {
+            border: 1px solid grey;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 60px;
+        }
+
+        .gameTitle {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            color: black;
+        }
+
+        .gameIntro {
+            color: #008800;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        table tr th,
+        table tr td {
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            padding: 4px;
+        }
+
+        table tr th:first-child,
+        table tr td:first-child {
+            border-left: 1px solid black;
+            height: 30px;
+        }
+
+        table tr th {
+            background: silver;
+            border-top: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        /* top-left border-radius */
+        table tr:first-child th:first-child {
+            border-top-left-radius: 10px;
+        }
+
+        /* top-right border-radius */
+        table tr:first-child th:last-child {
+            border-top-right-radius: 10px;
+        }
+
+        /* bottom-left border-radius */
+        table tr:last-child td:first-child {
+            border-bottom-left-radius: 10px;
+        }
+
+        /* bottom-right border-radius */
+        table tr:last-child td:last-child {
+            border-bottom-right-radius: 10px;
+        }
+
+        .footer {
+            position: fixed;
+            padding: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #cccccc;
+            color: white;
+            text-align: center;
+        }
+
+        .closeBtn {
+            width: 61px;
+            height: 27px;
+            line-height: 25px;
+            color: #EEEEEE;
+            font-size: 12px;
+            font-weight: bold;
+            text-shadow: #aaa 0px 1px 1px;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px solid #0590d1;
+            background: -webkit-linear-gradient(#69bce3, #0590d1);
+            background: -moz-linear-gradient(#69bce3, #0590d1);
+            background: -o-linear-gradient(#69bce3, #0590d1);
+            background: linear-gradient(#69bce3, #0590d1);
+            cursor: pointer;
+            margin: 10px auto;
+            display: block;
+            outline: none;
+        }
+
+        .COM {
+            padding: 0px;
+        }
+
+        .WLA {
+            padding: 0px;
+        }
+    </style>
+
+    <script>
+        function closePanel() {
+            var closeEvt = new Event("closeWebView");
+            parent.document.dispatchEvent(closeEvt);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="roundedCorners">
+        <div id="WLA" class="WLA">
+            <section>
+                <h1>{name}</h1>
+                <p>Header text - comment out as needed or add customer specific text here.</p>
+            </section>
+            <section>
+                <p>Available Price Points: {availablePricePoints}</p>
+            </section>
+            {paytableBodyWLA}
+            <section>
+                <p>Footer text - comment out as needed or add customer specific text here.</p>
+            </section>
+        </div>
+        <div id="COM" class="COM">
+            {paytableBodyCOM}
+        </div>
+    </div>
+    <div class="footer">
+        <form><button formaction="javascript:parent.document.dispatchEvent(new Event('closeWebView'))"
+                class="closeBtn">X</button></form>
+    </div>
+    <!-- make sure to add this line to have the span  replace correctly with dynamic server data -->
+    <!-- valid span id are : maxRTP, minRTP -->
+    <!-- <script src=${require("../../spanReplace.js")}> </script>  -->
+</body> 
+</html>

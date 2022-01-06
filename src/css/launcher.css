@@ -1,0 +1,15 @@
+canvas {
+	position:absolute;
+    top:0px;
+    left:0px;
+    z-index:999;
+}
+
+.Base_BG{
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    opacity: 1;
+    z-index: 1;
+}

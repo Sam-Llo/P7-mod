@@ -1,0 +1,283 @@
+/* VARIABLES */
+:root {
+    --black-transparent: rgba(0, 0, 0, 0);  
+    --black: rgb(0, 0, 0);  
+    --progress-bar-surround: rgba(255, 39, 0, 1);  
+    --dark-menu: rgb(35, 38, 43);
+    --bar-background: rgb(216, 68, 68);
+    --loader-value: rgb(251, 255, 0);
+    --copyright: rgb(255, 255, 255);
+    --webgl-warning: rgb(0, 0, 0);
+    --stripes: rgba(255, 186, 0, .9);
+    --body-background: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    z-index: 0;
+    /*Safari bug iPhone 2.0 bug. This establishes a stacking context on every element */
+    user-select: none;
+    tap-highlight-color: var(--black-transparent);
+    touch-callout: none;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    font: bold 5em sans-serif;
+    background-color: var(--body-background);
+    font: bold 5em sans-serif;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* sets up the logo */
+.logo {
+    /* this will help it resize when the width is reduce (e.g. mobile devices) */
+    width: 60vmin;
+    /* 'max-width' will ensure the 'perfect' pixel size is used, if the space is available (rather than relying on vmin). */
+    /* This should match your image size, and will result in a crisper image where possible */
+    max-width: 450px;
+    position: absolute;
+    top: 20%;
+}
+
+/* Affects the Progress Bar BACKGROUND (not the progress bar itself) */
+.progress {
+    width: 60vmin;
+    z-index: 5;
+    border: 0.5vmin solid var(--progress-bar-surround);
+    border-radius: 2vmin;
+    box-shadow: 0 4px 10px rgba(40, 40, 40, 0.5), 0 0 3px 1px rgba(40, 40, 40, 0.5) inset;
+}
+
+/* Position of the progress bar */
+.progress-bar-container {
+    position: absolute;
+    top: 65%;
+    padding-top: 1.5vh;
+}
+
+/* Height of the progress bar */
+.progress,
+.progress-bar {
+    height: 1.5vmin;
+}
+
+.progress-bar {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    border-radius: 12px;
+    width: 0;
+    -moz-transition: width .2s linear;
+    -webkit-transition: width .2s linear;
+    -o-transition: width .2s linear;
+    transition: width .2s linear;
+}
+
+.progress.candy .progress-bar {
+    width: 100%;
+}
+
+.progress-bar span {
+    display: inline-block;
+    height: 100%;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+}
+
+.bar-overlay span {
+    background-color: var(--bar-background);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bar-background)), to(#FFFFFF));
+    background-image: -webkit-linear-gradient(top, var(--bar-background), #FFFFFF);
+    background-image: -moz-linear-gradient(top, var(--bar-background), #FFFFFF);
+    background-image: -ms-linear-gradient(top, var(--bar-background), #FFFFFF);
+    background-image: -o-linear-gradient(top, var(--bar-background), #FFFFFF);
+    background-image: linear-gradient(top, var(--bar-background), #FFFFFF);
+}
+
+/* Stripes that create the 'candy cane' effect */
+.stripes span {
+    -webkit-background-size: 30px 30px;
+    -moz-background-size: 30px 30px;
+    background-size: 30px 30px;
+    background-image: -webkit-gradient(linear, left top, right bottom,
+            color-stop(.25, var(--stripes)), color-stop(.25, transparent),
+            color-stop(.5, transparent), color-stop(.5, var(--stripes)),
+            color-stop(.75, var(--stripes)), color-stop(.75, transparent),
+            to(transparent));
+    background-image: -webkit-linear-gradient(135deg, var(--stripes) 25%, transparent 25%,
+            transparent 50%, var(--stripes) 50%, var(--stripes) 75%,
+            transparent 75%, transparent);
+    background-image: -moz-linear-gradient(135deg, var(--stripes) 25%, transparent 25%,
+            transparent 50%, var(--stripes) 50%, var(--stripes) 75%,
+            transparent 75%, transparent);
+    background-image: -ms-linear-gradient(135deg, var(--stripes) 25%, transparent 25%,
+            transparent 50%, var(--stripes) 50%, var(--stripes) 75%,
+            transparent 75%, transparent);
+    background-image: -o-linear-gradient(135deg, var(--stripes) 25%, transparent 25%,
+            transparent 50%, var(--stripes) 50%, var(--stripes) 75%,
+            transparent 75%, transparent);
+    background-image: linear-gradient(135deg, var(--stripes) 25%, transparent 25%,
+            transparent 50%, var(--stripes) 50%, var(--stripes) 75%,
+            transparent 75%, transparent);
+
+    -webkit-animation: animate-stripes 3s linear infinite;
+    -moz-animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+@-moz-keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+/* Shine/light sweep that animates along the bar */
+.shine span {
+    position: absolute;
+}
+
+.shine span::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--stripes);
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    -webkit-animation: animate-shine 2s ease-out infinite;
+    -moz-animation: animate-shine 2s ease-out infinite;
+}
+
+@-webkit-keyframes animate-shine {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+        width: 95%;
+    }
+}
+
+@-moz-keyframes animate-shine {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+        width: 95%;
+    }
+}
+
+/* Sets up the percentage text */
+.loader {
+    text-align: center;
+    font-size: 5vmin;
+    color: var(--loader-value);
+    text-shadow: 0 0 3px #4e4848, 0 0 5px #332f27;
+    padding-bottom: 1vh;
+    padding-top:1.5vh;
+    /* Web-safe fallbacks used if player does not have Oswald installed */
+    font-family: "OswaldLocCur", "Oswald", Impact, sans-serif;
+    font-weight: normal;
+}
+
+/* Sets up the copyright text */
+.copy {
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    font-size: 2vmin;
+    font-family: sans-serif;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 1vh 10%;
+    width: 80%;
+    color: var(--copyright);
+}
+
+/* Warning message displayed if WebGL disabled/not supported */
+.webGLText {
+    text-align: center;
+    font-size: 5vmin;
+    font-family: sans-serif;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    margin: 1vh 10%;
+    width: 80%;
+    color: var(--webgl-warning);
+    transform: translate(-50%, -50%);
+    margin: 0px;
+}
+
+/* MEDIA QUERIES - For when you need slightly different layouts for portrait and landscape */
+/* Currently unused */
+/*
+/*@media (orientation: landscape) {
+    .copy {
+        top: 84%;
+    }
+
+    .progress-bar-container {
+        top: 71%;
+    }
+}
+
+@media (orientation: portrait) {
+    .copy {
+        top: 87%;
+    }
+
+    .progress-bar-container {
+        top: 72%;
+    }
+}*/

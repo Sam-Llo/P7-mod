@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>Beach Bonanza</title>
+
+<style type="text/css">
+ html, body {
+					height: 100%;
+					overflow:hidden;
+				}
+
+				@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+					html, body {	
+						-webkit-overflow-scrolling: touch;
+						-webkit-text-size-adjust: 100%;
+					}
+				}
+
+				.roundedCorners {	
+					position: absolute;
+					top: 20px;
+					bottom: 20px;
+					left: 20px;
+					right: 20px;
+					overflow: auto;
+				}
+
+				.roundedCornersInnerStyle {
+					border: 1px solid grey;
+					border-radius: 10px;
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				}
+
+				body {
+					font-family: sans-serif, arial, helvetica;
+					font-size: 14px;
+					background-color: #cccccc;
+					color: black;
+				}
+
+				div {
+					background-color: white;
+					padding: 20px;
+				}
+
+				.gameTitle {
+					font-size: 24px;
+					font-weight: bold;
+					font-style: italic;
+					color: black;
+				}
+
+				.gameIntro {
+					color: #008800;
+				}
+
+				h1 {
+					font-size:22px;
+					font-weight:bold;
+					border-bottom: 1px solid black;
+				}
+
+				h2 {
+					font-size:20px;
+					font-weight:bold;
+				}
+
+				h3 {
+					font-size:18px;
+					font-weight:bold;
+				}
+				
+				.closeBtn {
+					width: 61px;
+					height: 27px;
+					line-height: 25px;
+					color: #EEEEEE;
+					font-size: 12px;
+					font-weight: bold;
+					text-shadow: #aaa 0px 1px 1px;
+					text-align: center;
+					border-radius: 6px;
+					border: 1px solid #0590d1;
+					background: -webkit-linear-gradient(#69bce3, #0590d1);
+					background: -moz-linear-gradient(#69bce3, #0590d1);
+					background: -o-linear-gradient(#69bce3, #0590d1);
+					background: linear-gradient(#69bce3, #0590d1);
+					cursor: pointer;
+					margin: 10px auto;
+					display: block;
+					outline: none;
+				}
+
+				.footer {
+					position: fixed;
+					padding: 0;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					background-color: #cccccc;
+					color: white;
+					text-align: center;
+				}
+
+				table, th, td {
+					border: 1px solid black;
+					height: 15px;
+					padding: 2px;
+					text-align: center;
+				}				
+
+
+</style>
+
+
+</head>
+
+
+
+<div id="_top" class="roundedCorners roundedCornersInnerStyle">
+
+	<p class="gameTitle">Beach Bonanza</p>
+
+	<p class="gameIntro">Have fun under the sun in <b><i>Beach Bonanza</i></b>! Collect 3 or more of the Winning Symbol to win a prize. Uncover hidden Treasure Chests for instant wins! Grab a Fruit Drink to spin 
+	for wins in the <i>Beachy Bonus</i>.</p>
+
+	<h1>How to Bet</h1>
+
+	<h2>Bet Settings Menu</h2>
+	
+	<p>Press the cog or TICKET COST to open the bet settings menu.</p>
+	
+	<h2>Ticket Cost</h2>
+
+	<p>Displays the current ticket cost.</p>
+	
+	<h4>To change the ticket cost:</h4>
+	
+	<p>Select the desired ticket cost.</p>
+
+	<p>On desktop devices, optionally press the minus button (&#8211;) to decrease the ticket cost, or press the plus button (&#43;) to increase the ticket cost.</p>
+
+	<p>Press OK to confirm and close the bet settings menu.</p>
+	
+	<p>Press BUY to deduct the ticket cost from the balance and play the game.</p>
+
+	<h1>How to Play</h1>
+
+	<p>At the start of the game, the Winning Symbol for the game is revealed.</p>
+	
+	<p>Press each Beach Ball to reveal symbols. Collect 3 or more of the Winning Symbol to win the prize displayed in the prize table. 1, 2, or 3 Winning Symbols can be found in a single grid space.</p>
+	
+	<p>Reveal a Treasure Chest Symbol to instantly win the displayed prize amount. Multiple prizes may be awarded.</p>
+	
+	<p>Reveal a Fruit Drink Symbol to trigger the Beachy Bonus game.</p>
+	
+	<p><b>Beachy Bonus</b></p>
+	
+	<p>The Beachy Bonus begins with 3 spins of the grid. Collect 5 or more Fruit Drink Symbols to win the prize displayed in the prize table. 1, 2, or 3 Fruit Drink Symbols can be found in a single grid space. If a 
+	Fruit Drink Symbol appears on the grid, the spins counter resets to 3.</p>
+	
+	<p>The Beachy Bonus game ends when 16 Fruit Drink Symbols are collected or if no Fruit Drink Symbols appear for 3 consecutive spins. Only 1 Beachy Bonus game may be awarded.</p>
+
+	<p>The game ends when all symbols have been revealed and any triggered bonus game has completed. A message appears, indicating the game’s outcome.</p>
+	
+	<p>Dismiss the win message and view the game’s outcome by pressing the message.</p>
+
+	<h1>Reveal All</h1>
+	
+	<p>Press REVEAL ALL to play the game to completion automatically. Game play continues until all selections have been made and any prizes have been awarded.</p>
+		
+		<h1>Options</h1>
+	
+	<p><b>All Sound</b></p>
+		<ul>
+		<li>Toggle game sounds on or off.</li>
+		</ul>
+	
+	
+	<p><b>Music</b></p>
+		<ul>
+		<li>Toggle music on or off.</li>
+		</ul>
+	
+	<p><b>Sound Effects</b></p>
+		<ul>
+		<li>Toggle sound effects on or off.</li>
+		</ul>
+	
+	<h1>Rules</h1>
+
+	<p>Misuse or malfunction voids all pays and plays.</p>
+
+	<p>Bonus wins are added to total winning prize values.</p>
+	
+	<p>Instant wins are added to total winning prize values.</p>
+
+	<p>Player choices made during gameplay do not affect the game's outcome.</p>
+
+	<p>Wins are shown in currency.</p>
+
+	<h1>Additional Information</h1>
+
+	<p style="text-decoration:underline">Intellectual Property</p>
+
+	<p>&copy; 2022 IGT. The trademarks and/or service marks used herein are either trademarks or registered trademarks of IGT, its affiliates or its licensors.</p>
+	
+	<p style="font-size: x-small; text-align: center; height: 50px">Last updated 16 Dec 2021</p>
+	<script>
+		document.addEventListener('gesturestart', function (e) {
+			e.preventDefault();
+		});
+	</script>
+
+</div>
+
+<div class="footer">
+
+ 
+<form><button formaction="javascript:parent.document.dispatchEvent(new Event('closeWebView'))" class="closeBtn">X</button></form>
+
+ 
+
+
+
+</div>
+
+</body>
+</html>

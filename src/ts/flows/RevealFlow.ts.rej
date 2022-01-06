@@ -1,0 +1,20 @@
+diff a/src/ts/flows/RevealFlow.ts b/src/ts/flows/RevealFlow.ts	(rejected hunks)
+@@ -31,8 +31,10 @@ export class RevealFlow extends GameFlow {
+-        return new SequenceDefinition()
+-            .start()
+-            .do(this.getCommands(GameUIControls).setUpCommand(store.wagerType))
+-            .do(this.getCommands(FooterSettings).setUpCommand(store.wagerType))
+-            .do(this.getCommands(GameUIControls).customPositioningCommand())
+-            // .do(this.getCommands(RevealAllSettings).customPositioningCommand())
+-            .do(this.getCommands(FooterSettings).clearWinCommand())
+-            .end();
++        return (
++            new SequenceDefinition()
++                .start()
++                .do(this.getCommands(GameUIControls).setUpCommand(store.wagerType))
++                .do(this.getCommands(FooterSettings).setUpCommand(store.wagerType))
++                .do(this.getCommands(GameUIControls).customPositioningCommand())
++                // .do(this.getCommands(RevealAllSettings).customPositioningCommand())
++                .do(this.getCommands(FooterSettings).clearWinCommand())
++                .end()
++        );
