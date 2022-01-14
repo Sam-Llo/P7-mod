@@ -22,11 +22,11 @@ export class TransitionBGAnimation {
 
     private static readonly waveLandscapeTransitionInAnimationName = "ScreenTransitionLandscape";
 
-    private static readonly waveLandscapeTransitionOutAnimationName = "ScreenTransitionLandscape2";
+    private static readonly waveLandscapeTransitionOutAnimationName = "ScreenTransitionLandscape";
 
     private static readonly wavePortraitTransitionInAnimationName = "ScreenTransitionPortrait";
 
-    private static readonly wavePotraitTransitionOutAnimationName = "ScreenTransitionPortrait2";
+    private static readonly wavePotraitTransitionOutAnimationName = "ScreenTransitionPortrait";
 
     private static readonly waveSpineAnimationAttachmentName = "beachyBonus";
 

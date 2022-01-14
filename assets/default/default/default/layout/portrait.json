@@ -13,8 +13,8 @@
         "x": -314,
         "y": 0,
         "rotation": 0,
-        "width": 2304.1111450195312,
-        "height": 2535.631103515625,
+        "width": 1410.0000610351562,
+        "height": 2473.129867553711,
         "alpha": 1,
         "visible": true,
         "scale": {
@@ -22,48 +22,6 @@
           "y": 1
         },
         "children": [
-          {
-            "id": "backGround_anim",
-            "preFab": false,
-            "loadType": "-",
-            "type": "spine-animation",
-            "x": 1019,
-            "y": 1035,
-            "rotation": 0,
-            "alpha": 1,
-            "visible": true,
-            "scale": {
-              "x": 1,
-              "y": 1
-            },
-            "spinedata": {
-              "data": "spine/BackGround.skel",
-              "skin": "default",
-              "animation": "Landscape",
-              "speed": 1
-            }
-          },
-          {
-            "id": "backGround_anim_prt",
-            "preFab": false,
-            "loadType": "-",
-            "type": "spine-animation",
-            "x": 1027,
-            "y": 1238,
-            "rotation": 0,
-            "alpha": 1,
-            "visible": true,
-            "scale": {
-              "x": 1,
-              "y": 1
-            },
-            "spinedata": {
-              "data": "spine/BackGround.skel",
-              "skin": "default",
-              "animation": "PortraitBonus",
-              "speed": 1
-            }
-          },
           {
             "id": "stringOfLightsBonus_anim",
             "preFab": false,
@@ -82,6 +40,27 @@
               "data": "spine/StringofLightsBonus.skel",
               "skin": "default",
               "animation": "PortraitLightBonusStatic",
+              "speed": 1
+            }
+          },
+          {
+            "id": "backGround_anim",
+            "preFab": false,
+            "loadType": "-",
+            "type": "spine-animation",
+            "x": 1334,
+            "y": 705,
+            "rotation": 0,
+            "alpha": 1,
+            "visible": true,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "spinedata": {
+              "data": "spine/background.skel",
+              "skin": "default",
+              "animation": "landscape animation background",
               "speed": 1
             }
           },
@@ -105,6 +84,48 @@
               "animation": "PortraitLightBonusStatic",
               "speed": 1
             }
+          },
+          {
+            "id": "backGround_anim_prt",
+            "preFab": false,
+            "loadType": "-",
+            "type": "spine-animation",
+            "x": 1017,
+            "y": 1073,
+            "rotation": 0,
+            "alpha": 1,
+            "visible": true,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "spinedata": {
+              "data": "spine/background.skel",
+              "skin": "default",
+              "animation": "portrait animation background",
+              "speed": 1
+            }
+          },
+          {
+            "id": "gameLogo_anim_prt",
+            "preFab": false,
+            "loadType": "-",
+            "type": "spine-animation",
+            "x": 1387,
+            "y": 763,
+            "rotation": 0,
+            "alpha": 1,
+            "visible": true,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "spinedata": {
+              "data": "spine/background.skel",
+              "skin": "default",
+              "animation": "landscape logo animation",
+              "speed": 1
+            }
           }
         ]
       },
@@ -117,7 +138,7 @@
         "y": 0,
         "rotation": 0,
         "width": 934,
-        "height": 1408,
+        "height": 1134.1500244140625,
         "alpha": 1,
         "visible": true,
         "scale": {
@@ -134,7 +155,7 @@
             "y": 564,
             "rotation": 0,
             "width": 934,
-            "height": 1119,
+            "height": 845.1500205993652,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -151,7 +172,7 @@
                 "y": 0,
                 "rotation": 0,
                 "width": 934,
-                "height": 347.65002059936523,
+                "height": 341.99999618530273,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -176,7 +197,7 @@
                     "spinedata": {
                       "data": "spine/Pay Table Main Game.skel",
                       "skin": "default",
-                      "animation": "Portrait/Play Table Portrait static",
+                      "animation": "Landscape/fade in/Play Table Landscape FadeIn Win3",
                       "speed": 1
                     }
                   },
@@ -197,7 +218,7 @@
                     "spinedata": {
                       "data": "spine/Pay Table Main Game.skel",
                       "skin": "default",
-                      "animation": "Landscape/Play Table Landscape static",
+                      "animation": "Landscape/fade in/Play Table Landscape FadeIn Win3",
                       "speed": 1
                     }
                   },
@@ -209,8 +230,8 @@
                     "x": 56,
                     "y": 165,
                     "rotation": 0,
-                    "width": 313,
-                    "height": 115,
+                    "width": 272,
+                    "height": 62,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -262,8 +283,8 @@
                     "x": 56,
                     "y": 207,
                     "rotation": 0,
-                    "width": 313,
-                    "height": 115,
+                    "width": 272,
+                    "height": 62,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -315,8 +336,8 @@
                     "x": 56,
                     "y": 249,
                     "rotation": 0,
-                    "width": 313,
-                    "height": 115,
+                    "width": 272,
+                    "height": 62,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -368,8 +389,8 @@
                     "x": 56,
                     "y": 291,
                     "rotation": 0,
-                    "width": 315,
-                    "height": 115,
+                    "width": 274,
+                    "height": 62,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -421,8 +442,8 @@
                     "x": 56,
                     "y": 333,
                     "rotation": 0,
-                    "width": 315,
-                    "height": 115,
+                    "width": 274,
+                    "height": 62,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -474,8 +495,8 @@
                     "x": 558,
                     "y": 165,
                     "rotation": 0,
-                    "width": 313,
-                    "height": 115,
+                    "width": 272,
+                    "height": 62,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -527,8 +548,8 @@
                     "x": 558,
                     "y": 207,
                     "rotation": 0,
-                    "width": 313,
-                    "height": 115,
+                    "width": 272,
+                    "height": 62,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -580,8 +601,8 @@
                     "x": 558,
                     "y": 249,
                     "rotation": 0,
-                    "width": 313,
-                    "height": 115,
+                    "width": 272,
+                    "height": 62,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -633,8 +654,8 @@
                     "x": 558,
                     "y": 291,
                     "rotation": 0,
-                    "width": 313,
-                    "height": 115,
+                    "width": 272,
+                    "height": 62,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -686,8 +707,8 @@
                     "x": 558,
                     "y": 333,
                     "rotation": 0,
-                    "width": 313,
-                    "height": 115,
+                    "width": 272,
+                    "height": 62,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -3124,8 +3145,8 @@
                 "x": 0,
                 "y": 402,
                 "rotation": 0,
-                "width": 759,
-                "height": 486,
+                "width": 804.0000038146973,
+                "height": 511.95000648498535,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -3141,8 +3162,8 @@
                     "x": 0,
                     "y": 0,
                     "rotation": 0,
-                    "width": 759,
-                    "height": 486,
+                    "width": 804.0000038146973,
+                    "height": 511.95000648498535,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -3173,8 +3194,8 @@
                         "x": 77,
                         "y": 82,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -3199,12 +3220,12 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
                           {
-                            "id": "coverAnims_symbol1",
+                            "id": "frameCoverAnims_symbol1",
                             "preFab": false,
                             "loadType": "-",
                             "type": "spine-animation",
@@ -3220,7 +3241,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "coverAnims_symbol1_fH6xT",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3255,8 +3297,8 @@
                         "x": 228,
                         "y": 82,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -3281,7 +3323,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -3302,7 +3344,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol2",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3337,8 +3400,8 @@
                         "x": 380,
                         "y": 82,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -3363,12 +3426,12 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
                           {
-                            "id": "coverAnims_symbol3",
+                            "id": "frameCoverAnims_symbol3",
                             "preFab": false,
                             "loadType": "-",
                             "type": "spine-animation",
@@ -3384,7 +3447,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "coverAnims_symbol3_arjnJ",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3419,8 +3503,8 @@
                         "x": 528,
                         "y": 82,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -3445,7 +3529,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -3466,7 +3550,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol4",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3501,8 +3606,8 @@
                         "x": 680,
                         "y": 82,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -3527,7 +3632,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -3548,7 +3653,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol5",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3583,8 +3709,8 @@
                         "x": 77,
                         "y": 246,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -3609,7 +3735,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -3630,7 +3756,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Reveal/BaseLoseReveal",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol6",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3665,8 +3812,8 @@
                         "x": 228,
                         "y": 246,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -3691,7 +3838,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -3712,7 +3859,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol7",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3747,8 +3915,8 @@
                         "x": 380,
                         "y": 246,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -3773,7 +3941,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -3794,7 +3962,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol8",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3829,8 +4018,8 @@
                         "x": 528,
                         "y": 246,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -3855,7 +4044,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -3876,7 +4065,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol9",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3911,8 +4121,8 @@
                         "x": 680,
                         "y": 246,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -3937,7 +4147,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -3958,7 +4168,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol10",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3993,8 +4224,8 @@
                         "x": 77,
                         "y": 408,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -4019,7 +4250,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -4040,7 +4271,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol11",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -4075,8 +4327,8 @@
                         "x": 228,
                         "y": 408,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -4101,7 +4353,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -4122,7 +4374,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol12",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -4157,8 +4430,8 @@
                         "x": 380,
                         "y": 408,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -4183,7 +4456,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -4204,7 +4477,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Reveal/BaseLoseReveal",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol13",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -4239,8 +4533,8 @@
                         "x": 528,
                         "y": 408,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -4265,7 +4559,7 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1",
+                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -4286,7 +4580,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol14",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -4321,8 +4636,8 @@
                         "x": 680,
                         "y": 408,
                         "rotation": 0,
-                        "width": 307,
-                        "height": 307,
+                        "width": 243.00001525878906,
+                        "height": 214.90000915527344,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -4347,7 +4662,8 @@
                             "spinedata": {
                               "data": "spine/Symbols.skel",
                               "skin": "default",
-                              "animation": "OutroSymbols/OutroBonus1"
+                              "animation": "reset/symbol reset bonus",
+                              "speed": 1
                             }
                           },
                           {
@@ -4367,7 +4683,28 @@
                             "spinedata": {
                               "data": "spine/Foil.skel",
                               "skin": "default",
-                              "animation": "Idle/FoilStatic",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol15",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -4409,7 +4746,7 @@
             "y": 577,
             "rotation": 0,
             "width": 800,
-            "height": 178.2105255126953,
+            "height": 152,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -4426,7 +4763,7 @@
                 "y": 32,
                 "rotation": 0,
                 "width": 800,
-                "height": 178.2105255126953,
+                "height": 152,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -4471,7 +4808,7 @@
                 "y": 32,
                 "rotation": 0,
                 "width": 800,
-                "height": 178.2105255126953,
+                "height": 152,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -4532,8 +4869,8 @@
             "x": 639,
             "y": 319,
             "rotation": 0,
-            "width": 807,
-            "height": 1226,
+            "width": 766,
+            "height": 1224,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -4549,8 +4886,8 @@
                 "x": 0,
                 "y": 138,
                 "rotation": 0,
-                "width": 807,
-                "height": 1226,
+                "width": 766,
+                "height": 1224,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -4566,8 +4903,8 @@
                     "x": 243,
                     "y": 1083,
                     "rotation": 0,
-                    "width": 373.5,
-                    "height": 154,
+                    "width": 369,
+                    "height": 120,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -4611,8 +4948,8 @@
                         "x": 48,
                         "y": 46,
                         "rotation": 0,
-                        "width": 115,
-                        "height": 154,
+                        "width": 110,
+                        "height": 87,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -4629,7 +4966,7 @@
                             "y": 0,
                             "rotation": 0,
                             "width": 110,
-                            "height": 86.93548387096774,
+                            "height": 87,
                             "alpha": 1,
                             "visible": true,
                             "anchor": {
@@ -4646,7 +4983,7 @@
                             "y": 0,
                             "rotation": 0,
                             "width": 110,
-                            "height": 86.93548387096774,
+                            "height": 87,
                             "alpha": 1,
                             "visible": true,
                             "anchor": {
@@ -4663,7 +5000,7 @@
                             "y": 0,
                             "rotation": 0,
                             "width": 110,
-                            "height": 86.93548387096774,
+                            "height": 87,
                             "alpha": 1,
                             "visible": true,
                             "anchor": {
@@ -4680,7 +5017,7 @@
                             "y": 0,
                             "rotation": 0,
                             "width": 110,
-                            "height": 86.93548387096774,
+                            "height": 87,
                             "alpha": 1,
                             "visible": true,
                             "anchor": {
@@ -4700,7 +5037,7 @@
                     "x": 13,
                     "y": 15,
                     "rotation": 0,
-                    "width": 807,
+                    "width": 766,
                     "height": 495,
                     "alpha": 1,
                     "visible": true,
@@ -4717,8 +5054,8 @@
                         "x": 68,
                         "y": 61,
                         "rotation": 0,
-                        "width": 341,
-                        "height": 126,
+                        "width": 300,
+                        "height": 63.013698630136986,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -4791,8 +5128,8 @@
                         "x": 68,
                         "y": 111,
                         "rotation": 0,
-                        "width": 341,
-                        "height": 126,
+                        "width": 300,
+                        "height": 63.013698630136986,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -4865,8 +5202,8 @@
                         "x": 68,
                         "y": 161,
                         "rotation": 0,
-                        "width": 341,
-                        "height": 126,
+                        "width": 300,
+                        "height": 63.013698630136986,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -4939,8 +5276,8 @@
                         "x": 68,
                         "y": 211,
                         "rotation": 0,
-                        "width": 341,
-                        "height": 126,
+                        "width": 300,
+                        "height": 63.013698630136986,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5013,8 +5350,8 @@
                         "x": 68,
                         "y": 261,
                         "rotation": 0,
-                        "width": 341,
-                        "height": 126,
+                        "width": 300,
+                        "height": 63.013698630136986,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5087,8 +5424,8 @@
                         "x": 68,
                         "y": 311,
                         "rotation": 0,
-                        "width": 340.0708446866485,
-                        "height": 120.75,
+                        "width": 299.1825613079019,
+                        "height": 60.38812785388128,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5161,8 +5498,8 @@
                         "x": 534,
                         "y": 61,
                         "rotation": 0,
-                        "width": 341,
-                        "height": 126,
+                        "width": 300,
+                        "height": 63.013698630136986,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5235,8 +5572,8 @@
                         "x": 534,
                         "y": 111,
                         "rotation": 0,
-                        "width": 341,
-                        "height": 126,
+                        "width": 300,
+                        "height": 63.013698630136986,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5309,8 +5646,8 @@
                         "x": 534,
                         "y": 161,
                         "rotation": 0,
-                        "width": 341,
-                        "height": 126,
+                        "width": 300,
+                        "height": 63.013698630136986,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5383,8 +5720,8 @@
                         "x": 534,
                         "y": 211,
                         "rotation": 0,
-                        "width": 341,
-                        "height": 126,
+                        "width": 300,
+                        "height": 63.013698630136986,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5457,8 +5794,8 @@
                         "x": 534,
                         "y": 261,
                         "rotation": 0,
-                        "width": 341,
-                        "height": 126,
+                        "width": 300,
+                        "height": 63.013698630136986,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5531,8 +5868,8 @@
                         "x": 534,
                         "y": 311,
                         "rotation": 0,
-                        "width": 336.4043126684636,
-                        "height": 120.75,
+                        "width": 295.95687331536385,
+                        "height": 60.38812785388128,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5887,8 +6224,8 @@
             "x": 563,
             "y": 586,
             "rotation": 0,
-            "width": 722.8939437866211,
-            "height": 627.2788391113281,
+            "width": 1028,
+            "height": 1022.9999694824219,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -5978,8 +6315,8 @@
                 "x": 0,
                 "y": 0,
                 "rotation": 0,
-                "width": 722.8939437866211,
-                "height": 627.2788391113281,
+                "width": 1028,
+                "height": 1022.9999694824219,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -5995,8 +6332,8 @@
                     "x": 0,
                     "y": 4,
                     "rotation": 0,
-                    "width": 610,
-                    "height": 512,
+                    "width": 1028,
+                    "height": 1022.9999694824219,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -6009,11 +6346,11 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "group",
-                        "x": 0,
-                        "y": 0,
+                        "x": 18,
+                        "y": 232,
                         "rotation": 0,
                         "width": 514,
-                        "height": 459,
+                        "height": 409,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -6030,11 +6367,20 @@
                             "y": 0,
                             "rotation": 0,
                             "width": 514,
-                            "height": 459,
+                            "height": 409,
                             "alpha": 1,
                             "visible": true,
                             "blendMode": 0,
-                            "points": [211, 413, 725, 413, 725, 822, 211, 822]
+                            "points": [
+                              211,
+                              413,
+                              725,
+                              413,
+                              725,
+                              822,
+                              211,
+                              822
+                            ]
                           }
                         ]
                       },
@@ -6066,9 +6412,9 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/Plaque.skel",
+                          "data": "spine/winning plaque.skel",
                           "skin": "default",
-                          "animation": "Plaque Static/Lose Plaque Static",
+                          "animation": "win/green/PlaquePopOutGreen",
                           "speed": 1
                         }
                       }
@@ -6079,7 +6425,7 @@
                     "preFab": false,
                     "loadType": "-",
                     "type": "group",
-                    "x": 0,
+                    "x": 4,
                     "y": 0,
                     "rotation": 0,
                     "width": 722.8939437866211,
@@ -6096,11 +6442,11 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "group",
-                        "x": 0,
-                        "y": 0,
+                        "x": 8,
+                        "y": 240,
                         "rotation": 0,
                         "width": 514,
-                        "height": 459,
+                        "height": 409,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -6117,11 +6463,20 @@
                             "y": 0,
                             "rotation": 0,
                             "width": 514,
-                            "height": 459,
+                            "height": 409,
                             "alpha": 1,
                             "visible": true,
                             "blendMode": 0,
-                            "points": [211, 413, 725, 413, 725, 822, 211, 822]
+                            "points": [
+                              211,
+                              413,
+                              725,
+                              413,
+                              725,
+                              822,
+                              211,
+                              822
+                            ]
                           }
                         ]
                       },
@@ -6331,7 +6686,7 @@
                 "y": 56,
                 "rotation": 0,
                 "width": 451,
-                "height": 129.00000286102295,
+                "height": 96,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -8101,7 +8456,7 @@
                             "x": 0,
                             "y": 0,
                             "rotation": 0,
-                            "width": 93,
+                            "width": 92.99999999999999,
                             "height": 94.00000000000001,
                             "alpha": 1,
                             "visible": true,
@@ -8929,7 +9284,7 @@
                             "y": 0,
                             "rotation": 0,
                             "width": 92.99999999999999,
-                            "height": 93.99999999999999,
+                            "height": 94,
                             "alpha": 1,
                             "visible": true,
                             "blendMode": 0,
@@ -9031,7 +9386,7 @@
                             "y": 0,
                             "rotation": 0,
                             "width": 92.99999999999999,
-                            "height": 93.99999999999999,
+                            "height": 94,
                             "alpha": 1,
                             "visible": true,
                             "blendMode": 0,
@@ -10723,7 +11078,7 @@
                     "x": 0,
                     "y": 0,
                     "rotation": 0,
-                    "width": 257,
+                    "width": 225,
                     "height": 198,
                     "alpha": 1,
                     "visible": true,
@@ -12188,7 +12543,7 @@
                         "x": 0,
                         "y": 0,
                         "rotation": 0,
-                        "width": 257,
+                        "width": 225,
                         "height": 198,
                         "alpha": 1,
                         "visible": true,
@@ -12235,7 +12590,7 @@
                         "x": 0,
                         "y": 0,
                         "rotation": 0,
-                        "width": 257,
+                        "width": 225,
                         "height": 198,
                         "alpha": 1,
                         "visible": true,
@@ -12282,7 +12637,7 @@
                         "x": 0,
                         "y": 0,
                         "rotation": 0,
-                        "width": 257,
+                        "width": 225,
                         "height": 198,
                         "alpha": 1,
                         "visible": true,
@@ -13888,7 +14243,7 @@
                     "y": 0,
                     "rotation": 0,
                     "width": 150,
-                    "height": 130,
+                    "height": 88,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -13935,7 +14290,7 @@
                     "y": 0,
                     "rotation": 0,
                     "width": 150,
-                    "height": 130,
+                    "height": 88,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -13982,7 +14337,7 @@
                     "y": 0,
                     "rotation": 0,
                     "width": 150,
-                    "height": 130,
+                    "height": 88,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -14029,7 +14384,7 @@
                     "y": 0,
                     "rotation": 0,
                     "width": 150,
-                    "height": 130,
+                    "height": 88,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -22965,7 +23320,7 @@
                         "x": 0,
                         "y": 0,
                         "rotation": 0,
-                        "width": 93,
+                        "width": 92.99999999999999,
                         "height": 93.99999999999999,
                         "alpha": 1,
                         "visible": true,
@@ -22999,7 +23354,7 @@
                         "x": 0,
                         "y": 0,
                         "rotation": 0,
-                        "width": 93,
+                        "width": 92.99999999999999,
                         "height": 93.99999999999999,
                         "alpha": 1,
                         "visible": true,
@@ -23033,7 +23388,7 @@
                         "x": 0,
                         "y": 0,
                         "rotation": 0,
-                        "width": 93,
+                        "width": 92.99999999999999,
                         "height": 93.99999999999999,
                         "alpha": 1,
                         "visible": true,
@@ -23067,7 +23422,7 @@
                         "x": 0,
                         "y": 0,
                         "rotation": 0,
-                        "width": 93,
+                        "width": 92.99999999999999,
                         "height": 93.99999999999999,
                         "alpha": 1,
                         "visible": true,
@@ -23088,8 +23443,8 @@
             "x": 0,
             "y": 0,
             "rotation": 0,
-            "width": 809,
-            "height": 1437,
+            "width": 2040,
+            "height": 2040,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -23122,8 +23477,8 @@
                 "x": 0,
                 "y": 0,
                 "rotation": 0,
-                "width": 809,
-                "height": 1437,
+                "width": 2040,
+                "height": 2040,
                 "alpha": 1,
                 "visible": false,
                 "scale": {
@@ -23144,14 +23499,16 @@
                     "alpha": 1,
                     "visible": true,
                     "blendMode": 0,
-                    "points": [-1,
+                    "points": [
+                      -1,
                       0,
                       2039,
                       0,
                       2039,
                       2040,
                       -1,
-                      2040]
+                      2040
+                    ]
                   }
                 ]
               },
@@ -23163,8 +23520,8 @@
                 "x": 856,
                 "y": 560,
                 "rotation": 0,
-                "width": 400,
-                "height": 378.64610290527344,
+                "width": 460.0000457763672,
+                "height": 460,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -23186,7 +23543,7 @@
                     "visible": true
                   },
                   {
-                    "id": "bonusMarketingScreen_anim_chest",
+                    "id": "bonusMarketingScreen_anim_jewelBox",
                     "preFab": false,
                     "loadType": "-",
                     "type": "spine-animation",
@@ -23200,9 +23557,9 @@
                       "y": 1
                     },
                     "spinedata": {
-                      "data": "spine/BonusMarketingScreen.skel",
+                      "data": "spine/Marketing screen.skel",
                       "skin": "default",
-                      "animation": "MarketingScreenBonus2",
+                      "animation": "7 bonus",
                       "speed": 1
                     }
                   }
@@ -23216,8 +23573,8 @@
                 "x": 831,
                 "y": 870,
                 "rotation": 0,
-                "width": 486,
-                "height": 401.2144775390625,
+                "width": 460.0000457763672,
+                "height": 460,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -23239,7 +23596,7 @@
                     "visible": true
                   },
                   {
-                    "id": "bonusMarketingScreen_anim_glass",
+                    "id": "bonusMarketingScreen_anim_seven",
                     "preFab": false,
                     "loadType": "-",
                     "type": "spine-animation",
@@ -23253,9 +23610,9 @@
                       "y": 1
                     },
                     "spinedata": {
-                      "data": "spine/Symbols.skel",
+                      "data": "spine/Marketing screen.skel",
                       "skin": "default",
-                      "animation": "SymbolRevealWinBonus1with glow",
+                      "animation": "7 bonus",
                       "speed": 1
                     }
                   }
@@ -23270,7 +23627,7 @@
                 "y": 1180,
                 "rotation": 0,
                 "width": 500,
-                "height": 374.1159362792969,
+                "height": 349.231884057971,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -23393,7 +23750,7 @@
                 "y": 1460,
                 "rotation": 0,
                 "width": 555,
-                "height": 115,
+                "height": 100,
                 "alpha": 0,
                 "visible": false,
                 "scale": {
@@ -24245,12 +24602,12 @@
             ]
           },
           {
-            "id": "waveTransitionAnim",
+            "id": "waveTransitionAnim_prt",
             "preFab": false,
             "loadType": "-",
             "type": "spine-animation",
-            "x": 1004,
-            "y": 609,
+            "x": 1648,
+            "y": 1019,
             "rotation": 0,
             "alpha": 1,
             "visible": true,
@@ -24266,12 +24623,12 @@
             }
           },
           {
-            "id": "waveTransitionAnim_prt",
+            "id": "waveTransitionAnim",
             "preFab": false,
             "loadType": "-",
             "type": "spine-animation",
-            "x": 1004,
-            "y": 609,
+            "x": 1648,
+            "y": 1019,
             "rotation": 0,
             "alpha": 1,
             "visible": true,
@@ -24282,7 +24639,7 @@
             "spinedata": {
               "data": "spine/Transition.skel",
               "skin": "default",
-              "animation": "ScreenTransitionPortrait",
+              "animation": "ScreenTransitionLandscape",
               "speed": 1
             }
           }
@@ -24396,7 +24753,7 @@
         "x": 100,
         "y": 100,
         "rotation": 0,
-        "width": 717,
+        "width": 744,
         "height": 480,
         "alpha": 1,
         "visible": true,
@@ -24580,8 +24937,8 @@
         "x": 100,
         "y": 100,
         "rotation": 0,
-        "width": 589,
-        "height": 838,
+        "width": 566,
+        "height": 804,
         "alpha": 1,
         "visible": true,
         "scale": {
@@ -24689,5 +25046,5 @@
     ]
   },
   "resources": [],
-  "layoutTool_Version": "0.4.8"
+  "layoutTool_Version": "0.5.2"
 }

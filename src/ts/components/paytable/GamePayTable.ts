@@ -121,16 +121,16 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._paytableAnimSpine = this.container.children.find(
             (obj) => obj.name === `PayTableMainGame_anim`,
         ) as SpineAnimation;
-        this._paytableAnimSpine.updateTransform();
-        this._paytableAnimSpine.setAnimation(this._config.LandscapeGamePaytableStaticAnimtionName);
-        this._paytableAnimSpine.play();
+        //this._paytableAnimSpine.updateTransform();
+        //this._paytableAnimSpine.setAnimation(this._config.LandscapeGamePaytableStaticAnimtionName);
+        //this._paytableAnimSpine.play();
 
         this._paytableAnimSpinePrt = this.container.children.find(
             (obj) => obj.name === `PayTableMainGame_anim_prt`,
         ) as SpineAnimation;
-        this._paytableAnimSpinePrt.updateTransform();
-        this._paytableAnimSpinePrt.setAnimation(this._config.PortraitGamePaytableStaticAnimtionName);
-        this._paytableAnimSpinePrt.play();
+        //this._paytableAnimSpinePrt.updateTransform();
+        //this._paytableAnimSpinePrt.setAnimation(this._config.PortraitGamePaytableStaticAnimtionName);
+        //this._paytableAnimSpinePrt.play();
         this._paytableAnimSpine.renderable = systemProps.orientation === Orientation.LANDSCAPE;
         this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable;
 
@@ -167,6 +167,18 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
 
     private findPaytableElementByMultiplierNumber(num: number) {
         const symbolPaytable = this.container.children.find((obj) => obj.name === `symbolPaytable${num}`) as Container;
+
+        this[`${this._config.PaytableMultiplierAnimNamePrefix}${num}`] = symbolPaytable.children.find((obj) =>
+            obj.name.includes("paytable_multiplier_anim"),
+        ) as SpineAnimation;
+        this[`${this._config.PaytableMultiplierAnimNamePrefix}${num}`].updateTransform();
+        this[`${this._config.PaytableMultiplierAnimNamePrefix}${num}`].setAnimation(
+            this._config.PaytableHighlightAnimationName,
+            undefined,
+            false,
+        );
+        this[`${this._config.PaytableMultiplierAnimNamePrefix}${num}`].play();
+
         this[`${this._config.WinFindLabelTextPrefix}${num}`] = symbolPaytable.children.find((obj) =>
             obj.name.includes("find_value"),
         ) as TextAutoFit;
@@ -266,6 +278,12 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
     private highlightTransitionWinningAmounts(startingIndex: number, currentMultiplier: number) {
         for (let i = startingIndex; i < currentMultiplier; i++) {
             const timeline = new TimelineMax();
+
+            const highlightAnim = this[`${this._config.PaytableMultiplierAnimNamePrefix}${i}`];
+            highlightAnim.updateTransform();
+            highlightAnim.setAnimation(this._config.PaytableHighlightAnimationName, undefined, false);
+            highlightAnim.play();
+
             timeline.fromTo(
                 [
                     this[`${this._config.WinFindLabelTextPrefix}${i}`],
@@ -309,6 +327,11 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._paytableAnimSpinePrt.updateTransform();
         this._paytableAnimSpinePrt.setAnimation(`${this._config.PortraitFadeInWinAnimPrefix}${currentMultiplier}`);
         this._paytableAnimSpinePrt.play();
+
+        const highlightAnim = this[`${this._config.PaytableMultiplierAnimNamePrefix}${currentMultiplier}`];
+        highlightAnim.updateTransform();
+        highlightAnim.setAnimation(this._config.PaytableHighlightAnimationName, undefined, false);
+        highlightAnim.play();
     }
 
     private playWinHighlights(currentMultiplier: number) {

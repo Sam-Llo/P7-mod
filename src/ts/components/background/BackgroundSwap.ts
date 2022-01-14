@@ -33,6 +33,9 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
     //Animated Potrait background
     private bgBaseGameAnimPort!: SpineAnimation;
 
+    //Animated Logo
+    private bgBaseGameLogoAnim!: SpineAnimation;
+
     private stringOfLightsBonusGameAnim!: SpineAnimation;
 
     private stringOfLightsBonusGameAnimPort!: SpineAnimation;
@@ -52,25 +55,28 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
         // Build layout
         LayoutBuilder.build(this.layout, new Map(), this.container);
 
-        //Find the portrai and landscape animated background inside Layout
+        //Find the portrait and landscape animated logos inside Layout
+        this.bgBaseGameLogoAnim = this.container.children.find((obj) => obj.name === "gameLogo_anim") as SpineAnimation;
+
+        //Find the portrait and landscape animated background inside Layout
         this.bgBaseGameAnimLand = this.container.children.find(
             (obj) => obj.name === "backGround_anim",
         ) as SpineAnimation;
-        LayoutUtils.getInstance().changeSpineTextureWihDifferentTexture(
+        /* LayoutUtils.getInstance().changeSpineTextureWihDifferentTexture(
             this.bgBaseGameAnimLand,
             "non Trans/logo",
             "non Trans/logo",
             loaderService.fromCache("beachyBonusWithSurfboardLogo"),
-        );
+        ); */
         this.bgBaseGameAnimPort = this.container.children.find(
             (obj) => obj.name === "backGround_anim_prt",
         ) as SpineAnimation;
-        LayoutUtils.getInstance().changeSpineTextureWihDifferentTexture(
+        /*  LayoutUtils.getInstance().changeSpineTextureWihDifferentTexture(
             this.bgBaseGameAnimPort,
             "non Trans/logo",
             "non Trans/logo",
             loaderService.fromCache("beachyBonusWithSurfboardLogo"),
-        );
+        ); */
         this.stringOfLightsBonusGameAnim = this.container.children.find(
             (obj) => obj.name === "stringOfLightsBonus_anim",
         ) as SpineAnimation;
@@ -81,11 +87,16 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
 
         this.bgBaseGameAnimLand.updateTransform();
         this.bgBaseGameAnimPort.updateTransform();
+        this.bgBaseGameLogoAnim.updateTransform();
 
-        this.bgBaseGameAnimLand.setAnimation("Landscape", undefined, true);
-        this.bgBaseGameAnimPort.setAnimation("Portrait", undefined, true);
+        this.bgBaseGameAnimLand.setAnimation("landscape animation background", undefined, true);
+        this.bgBaseGameAnimPort.setAnimation("portrait animation background", undefined, true);
+        this.bgBaseGameLogoAnim.setAnimation("landscape logo animation", undefined, true);
+        this.bgBaseGameLogoAnim.setAnimation("portrait logo animation", undefined, true);
+
         this.bgBaseGameAnimLand.play();
         this.bgBaseGameAnimPort.play();
+        this.bgBaseGameLogoAnim.play();
         this.bgBaseGameAnimLand.renderable = systemProps.orientation === Orientation.LANDSCAPE;
         this.bgBaseGameAnimLand.visible = systemProps.orientation === Orientation.LANDSCAPE;
         this.bgBaseGameAnimPort.renderable = !this.bgBaseGameAnimLand.renderable;
@@ -108,6 +119,17 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                 this.bgBaseGameAnimPort.renderable = !this.bgBaseGameAnimLand.renderable;
                 this.bgBaseGameAnimPort.visible = !this.bgBaseGameAnimLand.visible;
                 this.setStringOfLightsVisibilitiesBaseOnOrientation();
+
+                // setting logo animation depending on orientation
+                /*                 if ((this.bgBaseGameLogoAnim.renderable = systemProps.orientation === Orientation.LANDSCAPE)) {
+                    this.bgBaseGameLogoAnim.visible = systemProps.orientation === Orientation.LANDSCAPE;
+                    this.bgBaseGameLogoAnim.setAnimation("landscape logo animation", undefined, true);
+                    this.bgBaseGameLogoAnim.play();
+                } else if ((this.bgBaseGameLogoAnim.renderable = systemProps.orientation === Orientation.PORTRAIT)) {
+                    this.bgBaseGameLogoAnim.visible = systemProps.orientation === Orientation.PORTRAIT;
+                    this.bgBaseGameLogoAnim.setAnimation("portrait logo animation", undefined, true);
+                    this.bgBaseGameLogoAnim.play(); */
+                // }
             },
             { fireImmediately: true },
         );
@@ -128,8 +150,8 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                 } else {
                     this.bgBaseGameAnimLand.updateTransform();
                     this.bgBaseGameAnimPort.updateTransform();
-                    this.bgBaseGameAnimLand.setAnimation("Landscape", undefined, true);
-                    this.bgBaseGameAnimPort.setAnimation("Portrait", undefined, true);
+                    this.bgBaseGameAnimLand.setAnimation("landscape animation background", undefined, true);
+                    this.bgBaseGameAnimPort.setAnimation("portrait animation background", undefined, true);
                     this.bgBaseGameAnimLand.play();
                     this.bgBaseGameAnimPort.play();
                 }

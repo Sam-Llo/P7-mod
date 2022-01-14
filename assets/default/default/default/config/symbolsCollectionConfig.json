@@ -14,133 +14,140 @@
         "DrinkShakeAnimationPercantageBeforeWaveComesUp": 0.5,
         "FoilAnimations": {
             "Unrevealed": {
-                "Idle": "Idle/FoilIdle",
-                "Static": "Idle/FoilStatic",
-                "Mouseover": "Idle/MouseOnIdle",
-                "Mouseout": "Idle/MouseTwoIdle",
-                "Reveal": "Reveal/FoilReveal",
-                "Reset": "BaseIntro_Outro/FoilReset"
+                "Idle": "static-idle/Foilidle",
+                "Static": "static-idle/FoilStatic",
+                "Mouseover": "static-idle/FoilStatic",
+                "Mouseout": "static-idle/Foilidle",
+                "Reveal": "reveal/FoilReveal",
+                "Reset": "reset/FoilReset",
+               
+                "Mouseoverframe": "static-idle/FrameMouseonIdle",
+                "Mouseoutframe": "static-idle/FrameIdle",
+                "Idleframe": "static-idle/FrameIdle",
+                "Revealframe": "reveal/FrameReveal",
+                "Resetframe": "reset/FrameReset"
+                
             },
             "WinReveal": {
-                "Static": "Idle/BaseStaticWin",
-                "Reveal": "Reveal/BaseWinReveal",
-                "Outro": "BaseIntro_Outro/BaseOutroWin"
+                "Static": "static-idle/FoilStatic",
+                "Reveal": "reveal/FoilReveal",
+                "Outro": "reset/FoilReset"
             },
             "LoseReveal": {
-                "Static": "Idle/BaseStaticLose",
-                "Reveal": "Reveal/BaseLoseReveal",
-                "Outro": "BaseIntro_Outro/BaseOutroLose"
+                "Static": "static-idle/Foilidle",
+                "Reveal": "reveal/FoilReveal",
+                "Outro": "reset/FoilReset"
             }
         },
         "WinningGameSymbols": {
             "PalmTree": {
                 "Single": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealWin1",
-                    "Outro": "OutroSymbols/OutroWin1",
-                    "Static": "SymbolStatic/SymbolStaticWin1"
+                    "Reveal": "reveal/single win/symbol reveal green win single",
+                    "Outro": "reset/single win/symbol reset green win single",
+                    "Static": "static-idle/single win/symbol idle green win single"
                 },
                 "Double": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealDoubleWin1",
-                    "Outro": "OutroSymbols/OutroDoubleWin1",
-                    "Static": "SymbolStatic/SymbolStaticDoubleWin1"
+                    "Reveal": "reveal/double win/symbol reveal green win double",
+                    "Outro": "reset/double win/symbol reset green win double",
+                    "Static": "static-idle/double win/symbol idle green win double"
                 },
                 "Triple": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealTripleWin1",
-                    "Outro": "OutroSymbols/OutroTripleWin1",
-                    "Static": "SymbolStatic/SymbolStaticTrippleWin1"
+                    "Reveal": "reveal/triple win/symbol reveal green win triple",
+                    "Outro": "reset/triple win/symbol reset green win triple",
+                    "Static": "static-idle/triple win/symbol idle green win triple"
                 }
             },
             "Sun": {
                 "Single": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealWin2",
-                    "Outro": "OutroSymbols/OutroWin2",
-                    "Static": "SymbolStatic/SymbolStaticWin2"
+                    "Reveal": "reveal/single win/symbol reveal purple win single",
+                    "Outro": "reset/single win/symbol reset purple win single",
+                    "Static": "static-idle/single win/symbol idle purple win single"
                 },
                 "Double": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealDoubleWin2",
-                    "Outro": "OutroSymbols/OutroDoubleWin2",
-                    "Static": "SymbolStatic/SymbolStaticDoubleWin2"
+                    "Reveal": "reveal/double win/symbol reveal purple win double",
+                    "Outro": "reset/double win/symbol reset purple win double",
+                    "Static": "static-idle/double win/symbol idle purple win double"
                 },
                 "Triple": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealTripleWin2",
-                    "Outro": "OutroSymbols/OutroTripleWin2",
-                    "Static": "SymbolStatic/SymbolStaticTrippleWin2"
+                    "Reveal": "reveal/triple win/symbol reveal purple win triple",
+                    "Outro": "reset/triple win/symbol reset purple win triple",
+                    "Static": "static-idle/triple win/symbol idle purple win triple"
                 }
             },
             "Icecream": {
                 "Single": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealWin3",
-                    "Outro": "OutroSymbols/OutroWin3",
-                    "Static": "SymbolStatic/SymbolStaticWin3"
+                    "Reveal": "reveal/single win/symbol reveal red win single",
+                    "Outro": "reset/single win/symbol reset red win single",
+                    "Static": "static-idle/single win/symbol idle red win single"
                 },
                 "Double": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealDoubleWin3",
-                    "Outro": "OutroSymbols/OutroDoubleWin3",
-                    "Static": "SymbolStatic/SymbolStaticDoubleWin3"
+                    "Reveal": "reveal/double win/symbol reveal red win double",
+                    "Outro": "reset/double win/symbol reset red win double",
+                    "Static": "static-idle/double win/symbol idle red win double"
                 },
                 "Triple": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealTripleWin3",
-                    "Outro": "OutroSymbols/OutroTripleWin3",
-                    "Static": "SymbolStatic/SymbolStaticTrippleWin3"
+                    "Reveal": "reveal/triple win/symbol reveal red win triple",
+                    "Outro": "reset/triple win/symbol reset red win triple",
+                    "Static": "static-idle/triple win/symbol idle red win triple"
                 }
             },
             "StarFish": {
                 "Single": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealWin4",
-                    "Outro": "OutroSymbols/OutroWin4",
-                    "Static": "SymbolStatic/SymbolStaticWin4"
+                    "Reveal": "reveal/single win/symbol reveal yellow win single",
+                    "Outro": "reset/single win/symbol reset yellow win single",
+                    "Static": "static-idle/single win/symbol idle yellow win single"
                 },
                 "Double": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealDoubleWin4",
-                    "Outro": "OutroSymbols/OutroDoubleWin4",
-                    "Static": "SymbolStatic/SymbolStaticDoubleWin4"
+                    "Reveal": "reveal/double win/symbol reveal yellow win double",
+                    "Outro": "reset/double win/symbol reset yellow win double",
+                    "Static": "static-idle/double win/symbol idle yellow win double"
                 },
                 "Triple": {
-                    "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealTripleWin4",
-                    "Outro": "OutroSymbols/OutroTripleWin4",
-                    "Static": "SymbolStatic/SymbolStaticTrippleWin4"
+                    "Reveal": "reveal/triple win/symbol reveal yellow win triple",
+                    "Outro": "reset/triple win/symbol reset yellow win triple",
+                    "Static": "static-idle/triple win/symbol idle yellow win triple"
                 }
             }
         },
         "LosingGameSymbols": {
             "Flower": {
-                "Reveal": "SymbolReveal/SymbolRevealLose/SymbolRevealLose1",
-                "Outro": "OutroSymbols/OutroLose1",
-                "Static": "SymbolStatic/SymbolStaticLose1"
+                "Reveal": "reveal/lose/symbol reveal lose1",
+                "Outro": "reset/lose/symbol reset lose1",
+                "Static": "static-idle/lose/symbol idle lose1"
             },
             "SunGlass": {
-                "Reveal": "SymbolReveal/SymbolRevealLose/SymbolRevealLose2",
-                "Outro": "OutroSymbols/OutroLose2",
-                "Static": "SymbolStatic/SymbolStaticLose2"
+                "Reveal": "reveal/lose/symbol reveal lose2",
+                "Outro": "reset/lose/symbol reset lose2",
+                "Static": "static-idle/lose/symbol idle lose2"
             },
             "Watermelon": {
-                "Reveal": "SymbolReveal/SymbolRevealLose/SymbolRevealLose3",
-                "Outro": "OutroSymbols/OutroLose3",
-                "Static": "SymbolStatic/SymbolStaticLose3"
+                "Reveal": "reveal/lose/symbol reveal lose3",
+                "Outro": "reset/lose/symbol reset lose3",
+                "Static": "static-idle/lose/symbol idle lose3"
             },
             "IceLolly": {
-                "Reveal": "SymbolReveal/SymbolRevealLose/SymbolRevealLose4",
-                "Outro": "OutroSymbols/OutroLose4",
-                "Static": "SymbolStatic/SymbolStaticLose4"
+                "Reveal": "reveal/lose/symbol reveal lose4",
+                "Outro": "reset/lose/symbol reset lose4",
+                "Static": "static-idle/lose/symbol idle lose4"
             },
             "Surfboard": {
-                "Reveal": "SymbolReveal/SymbolRevealLose/SymbolRevealLose5",
-                "Outro": "OutroSymbols/OutroLose5",
-                "Static": "SymbolStatic/SymbolStaticLose5"
+                "Reveal": "reveal/lose/symbol reveal lose5",
+                "Outro": "reset/lose/symbol reset lose5",
+                "Static": "static-idle/lose/symbol idle lose5"
             },
             "Conch": {
-                "Reveal": "SymbolReveal/SymbolRevealLose/SymbolRevealLose6",
-                "Outro": "OutroSymbols/OutroLose6",
-                "Static": "SymbolStatic/SymbolStaticLose6"
+                "Reveal": "reveal/lose/symbol reveal lose6",
+                "Outro": "reset/lose/symbol reset lose6",
+                "Static": "static-idle/lose/symbol idle lose6"
             }
         },
         "BonusGameSymbols": {
             "CocktailGlass": {
-                "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealBonus1",
-                "Outro": "OutroSymbols/OutroBonus1",
+                "Reveal": "reveal/symbol reveal bonus",
+                "Outro": "reset/symbol reset bonus",
                 "Static": "SymbolStatic/SymbolStaticBonus1",
-                "GlowShake":"SymbolRevealWinBonus1with glow",
-                "NoGlowShake": "SymbolRevealWinBonus1"
+                "GlowShake":"reveal/symbol reveal bonus",
+                "NoGlowShake": "reveal/symbol reveal bonus"
             },
             "Chest": {
                 "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealBonus2",

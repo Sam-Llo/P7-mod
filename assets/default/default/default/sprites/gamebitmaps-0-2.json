@@ -387,7 +387,7 @@
   },
   "meta": {
     "app": "IGT Layout Tool - https://github.com/igtinteractive/layout_tool",
-    "version": "0.4.8",
+    "version": "0.5.2",
     "image": "gamebitmaps-0-2.png",
     "format": "RGBA8888",
     "size": {

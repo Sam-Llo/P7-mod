@@ -1,0 +1,399 @@
+{
+  "frames": {
+    "buy_button_pressed_lds": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 479,
+        "h": 207
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 479,
+        "h": 207
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 207
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "buy_button_disabled_lds": {
+      "frame": {
+        "x": 1,
+        "y": 210,
+        "w": 478,
+        "h": 206
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 478,
+        "h": 206
+      },
+      "sourceSize": {
+        "w": 478,
+        "h": 206
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "buy_button_over_lds": {
+      "frame": {
+        "x": 1,
+        "y": 418,
+        "w": 478,
+        "h": 205
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 478,
+        "h": 205
+      },
+      "sourceSize": {
+        "w": 478,
+        "h": 205
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "beachyBonusWithSurfboardLogo": {
+      "frame": {
+        "x": 482,
+        "y": 1,
+        "w": 537,
+        "h": 144
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 537,
+        "h": 144
+      },
+      "sourceSize": {
+        "w": 537,
+        "h": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "footerBarBg_img2": {
+      "frame": {
+        "x": 1,
+        "y": 625,
+        "w": 810,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 810,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 810,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "beachyBonusLogoWaveText": {
+      "frame": {
+        "x": 628,
+        "y": 1,
+        "w": 389,
+        "h": 93
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 389,
+        "h": 93
+      },
+      "sourceSize": {
+        "w": 389,
+        "h": 93
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus10Static": {
+      "frame": {
+        "x": 628,
+        "y": 392,
+        "w": 174,
+        "h": 184
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 174,
+        "h": 184
+      },
+      "sourceSize": {
+        "w": 174,
+        "h": 184
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "pricePointSelectorButton_disabledBg_img2": {
+      "frame": {
+        "x": 1,
+        "y": 707,
+        "w": 247,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 247,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 247,
+        "h": 92
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "pricePointSelectorButton_disabledBg": {
+      "frame": {
+        "x": 250,
+        "y": 707,
+        "w": 243,
+        "h": 91
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 243,
+        "h": 91
+      },
+      "sourceSize": {
+        "w": 243,
+        "h": 91
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "DoNotShowAgainCheckBoxOff_img": {
+      "frame": {
+        "x": 495,
+        "y": 707,
+        "w": 182,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 0,
+        "w": 182,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 183,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "minusButton_disabledBg_img": {
+      "frame": {
+        "x": 481,
+        "y": 540,
+        "w": 82,
+        "h": 86
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 86
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "minusButton_enabledBg_img": {
+      "frame": {
+        "x": 679,
+        "y": 707,
+        "w": 82,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 86
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "minusButton_overBg_img": {
+      "frame": {
+        "x": 723,
+        "y": 1,
+        "w": 82,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 86
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "minusButton_pressedBg_img": {
+      "frame": {
+        "x": 723,
+        "y": 89,
+        "w": 82,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 86
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "plusButton_disabledBg_img": {
+      "frame": {
+        "x": 723,
+        "y": 177,
+        "w": 82,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 86
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "plusButton_enabledBg_img": {
+      "frame": {
+        "x": 723,
+        "y": 265,
+        "w": 82,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 86
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "IGT Layout Tool - https://github.com/igtinteractive/layout_tool",
+    "version": "0.5.2",
+    "image": "gamebitmaps-0-1.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 812,
+      "h": 800
+    },
+    "scale": 1
+  }
+}

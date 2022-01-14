@@ -34,11 +34,11 @@ export class ResultSettings extends ResultPlaques {
 
     private static readonly WIN_PLAQUE_SPINE: string = "winPlaqueAnims";
 
-    private static readonly LOSE_PLAQUE_STATIC_LOOP_SPINE_ANIMATION_NAME = "Plaque Static/Lose Plaque Static";
+    private static readonly LOSE_PLAQUE_STATIC_LOOP_SPINE_ANIMATION_NAME = "lose/PlaqueStaticLose";
 
-    private static readonly LOSE_PLAQUE_INTRO_SPINE_ANIMATION_NAME = "Plaque Pop Up/Lose Plaque Pop Up";
+    private static readonly LOSE_PLAQUE_INTRO_SPINE_ANIMATION_NAME = "lose/PlaquePopUpLose"; //lose/PlaquePopUpLose
 
-    private static readonly LOSE_PLAQUE_OUTRO_SPINE_ANIMATION_NAME = "Plaque Pop Out/Lose Plaque Pop Out";
+    private static readonly LOSE_PLAQUE_OUTRO_SPINE_ANIMATION_NAME = "lose/PlaquePopOutLose"; //lose/PlaquePopOutLose
 
     private static readonly WIN_PLAQUE_STATIC_LOOP_SPINE_ANIMATION_NAME = "Plaque Static/Win Plaque Static";
 
@@ -207,7 +207,7 @@ export class ResultSettings extends ResultPlaques {
         if (playResult === this._setupData.NONWIN_STRING) {
             this._isWin = false;
 
-            this.changeNoWinPlaqueLabel();
+            //this.changeNoWinPlaqueLabel();
             // Queue the intro
             this._spineAnimNonWin.updateTransform();
             this._spineAnimNonWin.setAnimation(ResultSettings.LOSE_PLAQUE_INTRO_SPINE_ANIMATION_NAME);

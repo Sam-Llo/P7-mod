@@ -1,39 +1,4 @@
 {
-  "symbolContainerPaytable12_win_value": {
-    "align": "right",
-    "breakWords": false,
-    "dropShadow": true,
-    "dropShadowAlpha": 0.3,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 1,
-    "dropShadowColor": "black",
-    "dropShadowDistance": 5,
-    "fill": [
-      "#ffffff"
-    ],
-    "fillGradientType": 0,
-    "fillGradientStops": [
-      0
-    ],
-    "fontFamily": "oswaldloccur-bold",
-    "fontSize": 24,
-    "fontStyle": "normal",
-    "fontVariant": "normal",
-    "fontWeight": "normal",
-    "letterSpacing": 0,
-    "lineHeight": 0,
-    "lineJoin": "round",
-    "miterLimit": 28,
-    "padding": 41,
-    "stroke": "#ffffff",
-    "strokeThickness": 0,
-    "textBaseline": "alphabetic",
-    "trim": false,
-    "whiteSpace": "pre",
-    "wordWrap": false,
-    "wordWrapWidth": 100,
-    "leading": 0
-  },
   "symbolContainerPaytable12_find_value": {
     "align": "right",
     "breakWords": false,
@@ -69,7 +34,7 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "symbolContainerPaytable11_win_value": {
+  "symbolContainerPaytable12_win_value": {
     "align": "right",
     "breakWords": false,
     "dropShadow": true,
@@ -139,7 +104,7 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "symbolContainerPaytable10_win_value": {
+  "symbolContainerPaytable11_win_value": {
     "align": "right",
     "breakWords": false,
     "dropShadow": true,
@@ -175,6 +140,41 @@
     "leading": 0
   },
   "symbolContainerPaytable10_find_value": {
+    "align": "right",
+    "breakWords": false,
+    "dropShadow": true,
+    "dropShadowAlpha": 0.3,
+    "dropShadowAngle": 90,
+    "dropShadowBlur": 1,
+    "dropShadowColor": "black",
+    "dropShadowDistance": 5,
+    "fill": [
+      "#ffffff"
+    ],
+    "fillGradientType": 0,
+    "fillGradientStops": [
+      0
+    ],
+    "fontFamily": "oswaldloccur-bold",
+    "fontSize": 24,
+    "fontStyle": "normal",
+    "fontVariant": "normal",
+    "fontWeight": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 0,
+    "lineJoin": "round",
+    "miterLimit": 28,
+    "padding": 41,
+    "stroke": "#ffffff",
+    "strokeThickness": 0,
+    "textBaseline": "alphabetic",
+    "trim": false,
+    "whiteSpace": "pre",
+    "wordWrap": false,
+    "wordWrapWidth": 100,
+    "leading": 0
+  },
+  "symbolContainerPaytable10_win_value": {
     "align": "right",
     "breakWords": false,
     "dropShadow": true,
@@ -279,7 +279,7 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "symbolContainerPaytable8_win_value": {
+  "symbolContainerPaytable8_find_value": {
     "align": "right",
     "breakWords": false,
     "dropShadow": true,
@@ -314,7 +314,7 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "symbolContainerPaytable8_find_value": {
+  "symbolContainerPaytable8_win_value": {
     "align": "right",
     "breakWords": false,
     "dropShadow": true,

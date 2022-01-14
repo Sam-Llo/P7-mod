@@ -56,6 +56,10 @@ export class ExtendedGameSymbolCard extends GameSymbolCard {
             child.name.startsWith("win_glow_anim"),
         ) as SpineAnimation;
 
+        const frameCoverAnim = this.children.find((child): any =>
+            child.name.startsWith("frameCoverAnims"),
+        ) as SpineAnimation;
+
         // Init the match animation
         const matchAnim = this.children.find((child): any =>
             child.name.startsWith(this._gameSymbolsConfig.MatchSpinePrefix),
@@ -65,6 +69,7 @@ export class ExtendedGameSymbolCard extends GameSymbolCard {
             this,
             this._gameSymbolsConfig,
             coverAnim,
+            frameCoverAnim,
             winGlowAnim,
             matchAnim,
         );

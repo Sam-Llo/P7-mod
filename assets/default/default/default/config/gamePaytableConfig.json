@@ -11,5 +11,9 @@
     "LandscapeFadeOutWinAnimPrefix": "Landscape/fade out/Play Table Landscape FadeOut Win",
     "PortraitFadeInWinAnimPrefix": "Portrait/fade in/Play Table Portrait FadeIn Win",
     "PortraitFadeOutWinAnimPrefix": "Portrait/fade out/Play Table Portrait FadeOut Win",
-    "BaseGamePrizeDivisionPrefix": "M"
+    "BaseGamePrizeDivisionPrefix": "M",
+    "PaytableMultiplierAnimNamePrefix": "_paytableMultiplierAnim",
+    "PaytableHighlightAnimationName": "reveal/white/white selector landscape reveal right"
+
+
 }

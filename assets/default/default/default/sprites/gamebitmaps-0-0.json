@@ -1,0 +1,159 @@
+{
+  "frames": {
+    "symbolsFrame": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 759,
+        "h": 486
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 759,
+        "h": 486
+      },
+      "sourceSize": {
+        "w": 759,
+        "h": 486
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gameLogo_img2": {
+      "frame": {
+        "x": 1,
+        "y": 489,
+        "w": 548,
+        "h": 241
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 548,
+        "h": 241
+      },
+      "sourceSize": {
+        "w": 548,
+        "h": 241
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus11Static": {
+      "frame": {
+        "x": 551,
+        "y": 489,
+        "w": 213,
+        "h": 184
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 213,
+        "h": 184
+      },
+      "sourceSize": {
+        "w": 213,
+        "h": 184
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "winUpToCenterArea_img": {
+      "frame": {
+        "x": 1,
+        "y": 732,
+        "w": 537,
+        "h": 71
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 537,
+        "h": 71
+      },
+      "sourceSize": {
+        "w": 537,
+        "h": 71
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "DoNotShowAgainCheckBoxOn_img": {
+      "frame": {
+        "x": 551,
+        "y": 704,
+        "w": 183,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 183,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 183,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "footerDivider_03_img": {
+      "frame": {
+        "x": 540,
+        "y": 732,
+        "w": 2,
+        "h": 20
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 2,
+        "h": 20
+      },
+      "sourceSize": {
+        "w": 2,
+        "h": 20
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "IGT Layout Tool - https://github.com/igtinteractive/layout_tool",
+    "version": "0.5.2",
+    "image": "gamebitmaps-0-0.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 761,
+      "h": 804
+    },
+    "scale": 1
+  }
+}

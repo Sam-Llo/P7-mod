@@ -25,9 +25,9 @@ export class MarketingScreenSettings extends MarketingScreen {
     };
 
     //Used to hold initial Marketing screen's showing game features animation
-    private chestAnim!: SpineAnimation;
+    private jewelBoxAnim!: SpineAnimation;
 
-    private glassAnim!: SpineAnimation;
+    private sevenAnim!: SpineAnimation;
 
     private _symbolSelectionReelAnimation!: SymbolSelectionReelAnimation;
 
@@ -79,18 +79,18 @@ export class MarketingScreenSettings extends MarketingScreen {
 
         this._uiFooterContainer = this.container.parent.children.find((obj) => obj.name === "uiFooterBar") as Container;
 
-        this.chestAnim = tutorialContent1.children.find(
-            (obj) => obj.name === "bonusMarketingScreen_anim_chest",
+        this.jewelBoxAnim = tutorialContent1.children.find(
+            (obj) => obj.name === "bonusMarketingScreen_anim_jewelBox",
         ) as SpineAnimation;
-        this.glassAnim = tutorialContent2.children.find(
-            (obj) => obj.name === "bonusMarketingScreen_anim_glass",
+        this.sevenAnim = tutorialContent2.children.find(
+            (obj) => obj.name === "bonusMarketingScreen_anim_seven",
         ) as SpineAnimation;
-        this.chestAnim.updateTransform();
-        this.glassAnim.updateTransform();
-        this.chestAnim.setAnimation("MarketingScreenBonus2", undefined, true);
-        this.glassAnim.setAnimation("SymbolRevealWinBonus1with glow", undefined, true);
-        this.chestAnim.play();
-        this.glassAnim.play();
+        this.jewelBoxAnim.updateTransform();
+        this.sevenAnim.updateTransform();
+        this.jewelBoxAnim.setAnimation("Jewel box bonus", undefined, true);
+        this.sevenAnim.setAnimation("7 bonus", undefined, true);
+        this.jewelBoxAnim.play();
+        this.sevenAnim.play();
 
         // Pulse call to action
         this.pulsePrompt(true);
@@ -145,8 +145,8 @@ export class MarketingScreenSettings extends MarketingScreen {
      * stopSpine
      */
     private stopSpine(): void {
-        this.stopSpineAnim(this.chestAnim);
-        this.stopSpineAnim(this.glassAnim);
+        this.stopSpineAnim(this.jewelBoxAnim);
+        this.stopSpineAnim(this.sevenAnim);
     }
 
     /**
