@@ -518,23 +518,23 @@ export class ExtendedGameSymbolCardAnimationsControl {
         this._frameCoverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.MOUSEOUTFRAME);
         this.removeSpineListeners(this._frameCoverAnim);
 
-        this._coverAnim.spine.state.addListener({
-            complete: (entry) => {
-                //If mouse out animation finished playing, we set the cover animation to static
-                if (entry.animation.name === this._coverFoilAnimationMap.UNREVEALED.MOUSEOUT) {
-                    this._coverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.STATIC);
-                    // this._frameCoverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.MOUSEOUTFRAME);
+        // this._coverAnim.spine.state.addListener({
+        //complete: (entry) => {
+        //If mouse out animation finished playing, we set the cover animation to static
+        // if (entry.animation.name === this._coverFoilAnimationMap.UNREVEALED.MOUSEOUT) {
+        this._coverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.STATIC);
+        // this._frameCoverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.MOUSEOUTFRAME);
 
-                    this._gameSymbolCard.resetIdleAnimationIfNeeded();
+        this._gameSymbolCard.resetIdleAnimationIfNeeded();
 
-                    TweenMax.killTweensOf(this._coverAnim.scale);
-                    this._coverAnim.scale.set(1, 1);
+        // TweenMax.killTweensOf(this._coverAnim.scale);
+        //this._coverAnim.scale.set(1, 1);
 
-                    TweenMax.killTweensOf(this._frameCoverAnim.scale);
-                    this._frameCoverAnim.scale.set(1, 1);
-                }
-            },
-        });
+        // TweenMax.killTweensOf(this._frameCoverAnim.scale);
+        // this._frameCoverAnim.scale.set(1, 1);
+        // }
+        // },
+        // });
         this._coverAnim.play();
         this._frameCoverAnim.play();
 

@@ -207,7 +207,7 @@ export class ResultSettings extends ResultPlaques {
         if (playResult === this._setupData.NONWIN_STRING) {
             this._isWin = false;
 
-            //this.changeNoWinPlaqueLabel();
+            this.changeNoWinPlaqueLabel();
             // Queue the intro
             this._spineAnimNonWin.updateTransform();
             this._spineAnimNonWin.setAnimation(ResultSettings.LOSE_PLAQUE_INTRO_SPINE_ANIMATION_NAME);

@@ -14,7 +14,7 @@
         "y": -314,
         "rotation": 0,
         "width": 1076.1985778808594,
-        "height": 539.3411865234375,
+        "height": 508.62713623046875,
         "alpha": 1,
         "visible": true,
         "scale": {
@@ -115,7 +115,7 @@
             "y": 1076,
             "rotation": 0,
             "alpha": 1,
-            "visible": true,
+            "visible": false,
             "scale": {
               "x": 1,
               "y": 1
@@ -158,8 +158,8 @@
         "x": 0,
         "y": -314,
         "rotation": 0,
-        "width": 2040,
-        "height": 2040,
+        "width": 1698.3099517822266,
+        "height": 1023,
         "alpha": 1,
         "visible": true,
         "scale": {
@@ -175,8 +175,8 @@
             "x": 304,
             "y": 744,
             "rotation": 0,
-            "width": 1596,
-            "height": 666.6542358398438,
+            "width": 1596.3099517822266,
+            "height": 636,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -192,8 +192,8 @@
                 "x": 0,
                 "y": 154,
                 "rotation": 0,
-                "width": 1025.8088989257812,
-                "height": 488.66777205932885,
+                "width": 920.3099517822266,
+                "height": 334.5,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -251,8 +251,8 @@
                     "x": -40,
                     "y": 160,
                     "rotation": 0,
-                    "width": 385.5,
-                    "height": 320,
+                    "width": 453.00001525878906,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -278,27 +278,6 @@
                         }
                       },
                       {
-                        "id": "paytable_multiplier_anim_12",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "spine-animation",
-                        "x": 185,
-                        "y": 0,
-                        "rotation": 0,
-                        "alpha": 1,
-                        "visible": true,
-                        "scale": {
-                          "x": 1,
-                          "y": 1
-                        },
-                        "spinedata": {
-                          "data": "spine/paytable.skel",
-                          "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
-                          "speed": 1
-                        }
-                      },
-                      {
                         "id": "symbolContainerPaytable12_win_value",
                         "preFab": false,
                         "loadType": "-",
@@ -314,6 +293,27 @@
                           "x": 1,
                           "y": 0.5
                         }
+                      },
+                      {
+                        "id": "paytable_multiplier_anim_12",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "spine-animation",
+                        "x": 185,
+                        "y": 0,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "visible": false,
+                        "scale": {
+                          "x": 1,
+                          "y": 1
+                        },
+                        "spinedata": {
+                          "data": "spine/paytable.skel",
+                          "skin": "default",
+                          "animation": "reset/green/green selector landscape reset left",
+                          "speed": 1
+                        }
                       }
                     ]
                   },
@@ -325,8 +325,8 @@
                     "x": -40,
                     "y": 202,
                     "rotation": 0,
-                    "width": 500.347412109375,
-                    "height": 321.1099548339844,
+                    "width": 453.00001525878906,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -352,27 +352,6 @@
                         }
                       },
                       {
-                        "id": "paytable_multiplier_anim_11",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "spine-animation",
-                        "x": 185,
-                        "y": 0,
-                        "rotation": 0,
-                        "alpha": 1,
-                        "visible": true,
-                        "scale": {
-                          "x": 1,
-                          "y": 1
-                        },
-                        "spinedata": {
-                          "data": "spine/paytable.skel",
-                          "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
-                          "speed": 1
-                        }
-                      },
-                      {
                         "id": "symbolContainerPaytable11_win_value",
                         "preFab": false,
                         "loadType": "-",
@@ -388,6 +367,27 @@
                           "x": 1,
                           "y": 0.5
                         }
+                      },
+                      {
+                        "id": "paytable_multiplier_anim_11",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "spine-animation",
+                        "x": 185,
+                        "y": 0,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "visible": false,
+                        "scale": {
+                          "x": 1,
+                          "y": 1
+                        },
+                        "spinedata": {
+                          "data": "spine/paytable.skel",
+                          "skin": "default",
+                          "animation": "reset/green/green selector landscape reset left",
+                          "speed": 1
+                        }
                       }
                     ]
                   },
@@ -399,8 +399,8 @@
                     "x": -40,
                     "y": 244,
                     "rotation": 0,
-                    "width": 540.833740234375,
-                    "height": 321.2453308105469,
+                    "width": 386,
+                    "height": 115,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -426,27 +426,6 @@
                         }
                       },
                       {
-                        "id": "paytable_multiplier_anim_10",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "spine-animation",
-                        "x": 185,
-                        "y": 0,
-                        "rotation": 0,
-                        "alpha": 1,
-                        "visible": true,
-                        "scale": {
-                          "x": 1,
-                          "y": 1
-                        },
-                        "spinedata": {
-                          "data": "spine/paytable.skel",
-                          "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
-                          "speed": 1
-                        }
-                      },
-                      {
                         "id": "symbolContainerPaytable10_win_value",
                         "preFab": false,
                         "loadType": "-",
@@ -462,6 +441,27 @@
                           "x": 1,
                           "y": 0.5
                         }
+                      },
+                      {
+                        "id": "paytable_multiplier_anim_10",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "spine-animation",
+                        "x": 185,
+                        "y": 0,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "visible": false,
+                        "scale": {
+                          "x": 1,
+                          "y": 1
+                        },
+                        "spinedata": {
+                          "data": "spine/paytable.skel",
+                          "skin": "default",
+                          "animation": "reset/green/green selector landscape reset left",
+                          "speed": 1
+                        }
                       }
                     ]
                   },
@@ -473,8 +473,8 @@
                     "x": -40,
                     "y": 286,
                     "rotation": 0,
-                    "width": 521.8418884277344,
-                    "height": 321.1640930175781,
+                    "width": 453.00001525878906,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -525,7 +525,7 @@
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
-                        "visible": true,
+                        "visible": false,
                         "scale": {
                           "x": 1,
                           "y": 1
@@ -547,8 +547,8 @@
                     "x": -40,
                     "y": 328,
                     "rotation": 0,
-                    "width": 564.4940795898438,
-                    "height": 321.3085021972656,
+                    "width": 453.00001525878906,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -574,27 +574,6 @@
                         }
                       },
                       {
-                        "id": "paytable_multiplier_anim_8",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "spine-animation",
-                        "x": 185,
-                        "y": 0,
-                        "rotation": 0,
-                        "alpha": 1,
-                        "visible": true,
-                        "scale": {
-                          "x": 1,
-                          "y": 1
-                        },
-                        "spinedata": {
-                          "data": "spine/paytable.skel",
-                          "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
-                          "speed": 1
-                        }
-                      },
-                      {
                         "id": "symbolContainerPaytable8_win_value",
                         "preFab": false,
                         "loadType": "-",
@@ -610,6 +589,27 @@
                           "x": 1,
                           "y": 0.5
                         }
+                      },
+                      {
+                        "id": "paytable_multiplier_anim_8",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "spine-animation",
+                        "x": 185,
+                        "y": 0,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "visible": false,
+                        "scale": {
+                          "x": 1,
+                          "y": 1
+                        },
+                        "spinedata": {
+                          "data": "spine/paytable.skel",
+                          "skin": "default",
+                          "animation": "reset/green/green selector landscape reset left",
+                          "speed": 1
+                        }
                       }
                     ]
                   },
@@ -621,8 +621,8 @@
                     "x": 368,
                     "y": 160,
                     "rotation": 0,
-                    "width": 390.5,
-                    "height": 320.0270690917969,
+                    "width": 453.00001525878906,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -673,7 +673,7 @@
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
-                        "visible": true,
+                        "visible": false,
                         "scale": {
                           "x": 1,
                           "y": 1
@@ -695,8 +695,8 @@
                     "x": 368,
                     "y": 202,
                     "rotation": 0,
-                    "width": 503.01318359375,
-                    "height": 321.1189880371094,
+                    "width": 453.00001525878906,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -747,7 +747,7 @@
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
-                        "visible": true,
+                        "visible": false,
                         "scale": {
                           "x": 1,
                           "y": 1
@@ -769,8 +769,8 @@
                     "x": 368,
                     "y": 244,
                     "rotation": 0,
-                    "width": 612.8088989257812,
-                    "height": 321.4889831542969,
+                    "width": 453.00001525878906,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -821,7 +821,7 @@
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
-                        "visible": true,
+                        "visible": false,
                         "scale": {
                           "x": 1,
                           "y": 1
@@ -843,8 +843,8 @@
                     "x": 368,
                     "y": 286,
                     "rotation": 0,
-                    "width": 420.8749084472656,
-                    "height": 320.8392333984375,
+                    "width": 453.00001525878906,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -895,7 +895,7 @@
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
-                        "visible": true,
+                        "visible": false,
                         "scale": {
                           "x": 1,
                           "y": 1
@@ -917,8 +917,8 @@
                     "x": 368,
                     "y": 328,
                     "rotation": 0,
-                    "width": 484.85284423828125,
-                    "height": 321.0558166503906,
+                    "width": 453.00001525878906,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -969,7 +969,7 @@
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
-                        "visible": true,
+                        "visible": false,
                         "scale": {
                           "x": 1,
                           "y": 1
@@ -4360,8 +4360,8 @@
                         "x": 77,
                         "y": 409,
                         "rotation": 0,
-                        "width": 1218.0000076293945,
-                        "height": 1042.9500045776367,
+                        "width": 130,
+                        "height": 130,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -4374,8 +4374,8 @@
                             "preFab": false,
                             "loadType": "-",
                             "type": "spine-animation",
-                            "x": -1031,
-                            "y": -871,
+                            "x": 0,
+                            "y": 0,
                             "rotation": 0,
                             "alpha": 1,
                             "visible": true,
@@ -4463,8 +4463,8 @@
                         "x": 228,
                         "y": 409,
                         "rotation": 0,
-                        "width": 243.00001525878906,
-                        "height": 214.90000915527344,
+                        "width": 130,
+                        "height": 130,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5100,8 +5100,8 @@
             "x": 275,
             "y": 628,
             "rotation": 0,
-            "width": 971.0707969665527,
-            "height": 833.8403873443604,
+            "width": 721,
+            "height": 614,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -5117,8 +5117,8 @@
                 "x": 0,
                 "y": 0,
                 "rotation": 0,
-                "width": 971.0707969665527,
-                "height": 833.8403873443604,
+                "width": 721,
+                "height": 614,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -5134,8 +5134,8 @@
                     "x": -7,
                     "y": 177,
                     "rotation": 0,
-                    "width": 971.0707969665527,
-                    "height": 833.8403930664062,
+                    "width": 721,
+                    "height": 495,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -5891,8 +5891,8 @@
                         "x": 495,
                         "y": 301,
                         "rotation": 0,
-                        "width": 662.0000152587891,
-                        "height": 483,
+                        "width": 326,
+                        "height": 124,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5965,8 +5965,8 @@
                         "x": 495,
                         "y": 351,
                         "rotation": 0,
-                        "width": 662.0000152587891,
-                        "height": 483,
+                        "width": 326,
+                        "height": 124,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -6400,7 +6400,7 @@
                 "x": 240,
                 "y": 25,
                 "rotation": 0,
-                "width": 200,
+                "width": 308,
                 "height": 31.325301204819276,
                 "alpha": 1,
                 "visible": true,
@@ -6563,8 +6563,8 @@
                     "x": 0,
                     "y": 0,
                     "rotation": 0,
-                    "width": 590,
-                    "height": 474,
+                    "width": 1028,
+                    "height": 1022.9999694824219,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -6580,8 +6580,8 @@
                         "x": 92,
                         "y": 12,
                         "rotation": 0,
-                        "width": 590,
-                        "height": 474,
+                        "width": 514,
+                        "height": 409,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -6597,88 +6597,23 @@
                             "x": 0,
                             "y": 0,
                             "rotation": 0,
-                            "width": 590,
-                            "height": 474,
+                            "width": 514,
+                            "height": 409,
                             "alpha": 1,
                             "visible": true,
                             "blendMode": 0,
                             "points": [
                               316,
-                              250,
-                              280,
-                              250,
-                              278,
-                              210,
-                              317,
-                              206,
-                              322,
-                              175,
-                              354,
-                              174,
-                              351,
-                              215,
-                              576,
-                              208,
-                              798,
-                              210,
-                              799,
-                              170,
-                              833,
-                              170,
-                              833,
-                              212,
-                              865,
-                              215,
-                              865,
-                              245,
-                              833,
-                              246,
-                              832,
-                              572,
-                              868,
-                              576,
-                              866,
-                              609,
-                              833,
-                              605,
-                              836,
-                              642,
-                              791,
-                              633,
-                              798,
-                              608,
-                              573,
-                              610,
-                              353,
-                              609,
-                              357,
-                              644,
-                              314,
-                              644,
+                              204,
+                              830,
+                              204,
+                              830,
+                              613,
                               316,
-                              612,
-                              278,
-                              611,
-                              284,
-                              566,
-                              320,
-                              575
+                              613
                             ]
                           }
                         ]
-                      },
-                      {
-                        "id": "losePlaque_label",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "label",
-                        "x": 291,
-                        "y": 363,
-                        "rotation": 0,
-                        "width": 396,
-                        "height": 113,
-                        "alpha": 1,
-                        "visible": false
                       },
                       {
                         "id": "losePlaqueAnims",
@@ -6700,6 +6635,19 @@
                           "animation": "win/green/PlaquePopOutGreen",
                           "speed": 1
                         }
+                      },
+                      {
+                        "id": "losePlaque_label",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "label",
+                        "x": 291,
+                        "y": 363,
+                        "rotation": 0,
+                        "width": 396,
+                        "height": 113,
+                        "alpha": 1,
+                        "visible": false
                       }
                     ]
                   },
@@ -6728,8 +6676,8 @@
                         "x": 90,
                         "y": 11,
                         "rotation": 0,
-                        "width": 590,
-                        "height": 480,
+                        "width": 514,
+                        "height": 409,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -6745,74 +6693,20 @@
                             "x": 0,
                             "y": 0,
                             "rotation": 0,
-                            "width": 590,
-                            "height": 480,
+                            "width": 514,
+                            "height": 409,
                             "alpha": 1,
                             "visible": true,
                             "blendMode": 0,
                             "points": [
-                              308,
-                              249,
-                              269,
-                              252,
-                              266,
-                              210,
-                              303,
-                              206,
-                              309,
-                              176,
-                              344,
-                              175,
-                              340,
+                              306,
                               204,
-                              542,
-                              160,
-                              687,
-                              162,
-                              785,
-                              183,
-                              785,
-                              167,
-                              821,
-                              169,
-                              823,
-                              208,
-                              855,
-                              214,
-                              854,
-                              246,
-                              822,
-                              245,
-                              823,
-                              576,
-                              856,
-                              573,
-                              851,
-                              609,
-                              819,
-                              606,
-                              825,
-                              637,
-                              777,
-                              635,
-                              784,
-                              607,
-                              562,
-                              610,
-                              343,
-                              609,
-                              345,
-                              640,
-                              300,
-                              638,
-                              303,
-                              606,
-                              270,
-                              611,
-                              270,
-                              567,
-                              308,
-                              574
+                              820,
+                              204,
+                              820,
+                              613,
+                              306,
+                              613
                             ]
                           }
                         ]
@@ -12265,7 +12159,7 @@
                         "y": 0,
                         "rotation": 0,
                         "width": 222,
-                        "height": 82,
+                        "height": 104,
                         "alpha": 1,
                         "visible": false,
                         "blendMode": 0,
@@ -12312,7 +12206,7 @@
                         "y": 0,
                         "rotation": 0,
                         "width": 222,
-                        "height": 82,
+                        "height": 104,
                         "alpha": 1,
                         "visible": false,
                         "blendMode": 0,
@@ -18170,6 +18064,30 @@
                 },
                 "children": [
                   {
+                    "id": "marketingScreenCloseButton_prt_hitArea",
+                    "preFab": false,
+                    "loadType": "-",
+                    "type": "hit-area",
+                    "x": 0,
+                    "y": 0,
+                    "rotation": 0,
+                    "width": 2040,
+                    "height": 2040,
+                    "alpha": 1,
+                    "visible": true,
+                    "blendMode": 0,
+                    "points": [
+                      -1,
+                      0,
+                      2039,
+                      0,
+                      2039,
+                      2040,
+                      -1,
+                      2040
+                    ]
+                  },
+                  {
                     "id": "marketingScreenCloseButton_hitArea",
                     "preFab": false,
                     "loadType": "-",
@@ -18203,7 +18121,7 @@
                 "x": 1027,
                 "y": 1296,
                 "rotation": 0,
-                "width": 530,
+                "width": 600,
                 "height": 100,
                 "alpha": 1,
                 "visible": true,
@@ -18220,8 +18138,8 @@
                 "x": 325,
                 "y": 925,
                 "rotation": 0,
-                "width": 370.3492374420166,
-                "height": 414.40457916259766,
+                "width": 460.0000457763672,
+                "height": 488.14434814453125,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -18237,8 +18155,8 @@
                     "x": 18,
                     "y": 167,
                     "rotation": 0,
-                    "width": 330,
-                    "height": 120,
+                    "width": 360,
+                    "height": 122.28871391076115,
                     "alpha": 1,
                     "visible": true
                   },
@@ -18273,8 +18191,8 @@
                 "x": 801,
                 "y": 906,
                 "rotation": 0,
-                "width": 697.7576904296875,
-                "height": 651.1194915771484,
+                "width": 486,
+                "height": 497.7138977050781,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -18290,8 +18208,8 @@
                     "x": -35,
                     "y": 167,
                     "rotation": 0,
-                    "width": 410,
-                    "height": 120.42898550724637,
+                    "width": 450,
+                    "height": 177.4278215223097,
                     "alpha": 1,
                     "visible": true
                   },
@@ -18326,8 +18244,8 @@
                 "x": 1282,
                 "y": 889,
                 "rotation": 0,
-                "width": 435,
-                "height": 338,
+                "width": 514,
+                "height": 377.7138977050781,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -18356,10 +18274,10 @@
                     "loadType": "-",
                     "type": "label",
                     "x": -20,
-                    "y": 215,
+                    "y": 184,
                     "rotation": 0,
-                    "width": 435,
-                    "height": 115,
+                    "width": 450,
+                    "height": 177.4278215223097,
                     "alpha": 1,
                     "visible": true
                   },
@@ -19613,6 +19531,27 @@
       },
       {
         "id": "bonusWinSpineAnimation",
+        "preFab": true,
+        "loadType": "-",
+        "type": "spine-animation",
+        "x": 752,
+        "y": 214,
+        "rotation": 0,
+        "alpha": 1,
+        "visible": false,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "spinedata": {
+          "data": "spine/bonus symbol.skel",
+          "skin": "default",
+          "animation": "BonusBoardLoop",
+          "speed": 1
+        }
+      },
+      {
+        "id": "bonusWinSpineAnimation_old_old",
         "preFab": true,
         "loadType": "-",
         "type": "spine-animation",

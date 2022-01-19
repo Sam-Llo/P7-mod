@@ -173,7 +173,7 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         ) as SpineAnimation;
         this[`${this._config.PaytableMultiplierAnimNamePrefix}${num}`].updateTransform();
         this[`${this._config.PaytableMultiplierAnimNamePrefix}${num}`].setAnimation(
-            this._config.PaytableHighlightAnimationName,
+            this._config.PaytableHighlightAnimationNameRight,
             undefined,
             false,
         );
@@ -261,6 +261,9 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
     }
 
     private turnCurrentlyHighlightedWinningNumbersToNormalColour() {
+        const highlightAnim = this[
+            `${this._config.PaytableMultiplierAnimNamePrefix}${this._currentHighlightedMultiplierNum}`
+        ];
         const timeline = new TimelineMax();
         //change back to normal colour
         timeline.fromTo(
@@ -273,16 +276,25 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
             { tint: GamePayTable.originalTintColour },
             "0",
         );
+        highlightAnim.visible = false;
     }
 
     private highlightTransitionWinningAmounts(startingIndex: number, currentMultiplier: number) {
         for (let i = startingIndex; i < currentMultiplier; i++) {
             const timeline = new TimelineMax();
-
             const highlightAnim = this[`${this._config.PaytableMultiplierAnimNamePrefix}${i}`];
-            highlightAnim.updateTransform();
-            highlightAnim.setAnimation(this._config.PaytableHighlightAnimationName, undefined, false);
-            highlightAnim.play();
+
+            highlightAnim.visible = true;
+
+            if (currentMultiplier < 8) {
+                highlightAnim.updateTransform();
+                highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameRight, undefined, false);
+                highlightAnim.play();
+            } else {
+                highlightAnim.updateTransform();
+                highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameLeft, undefined, false);
+                highlightAnim.play();
+            }
 
             timeline.fromTo(
                 [
@@ -304,6 +316,7 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
                 { tint: GamePayTable.originalTintColour },
                 `<${this._config.TransitionFlashingTextAnimationLength}`,
             );
+            highlightAnim.visible = false;
         }
     }
 
@@ -329,9 +342,17 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._paytableAnimSpinePrt.play();
 
         const highlightAnim = this[`${this._config.PaytableMultiplierAnimNamePrefix}${currentMultiplier}`];
-        highlightAnim.updateTransform();
-        highlightAnim.setAnimation(this._config.PaytableHighlightAnimationName, undefined, false);
-        highlightAnim.play();
+        highlightAnim.visible = true;
+
+        if (currentMultiplier < 8) {
+            highlightAnim.updateTransform();
+            highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameRight, undefined, false);
+            highlightAnim.play();
+        } else {
+            highlightAnim.updateTransform();
+            highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameLeft, undefined, false);
+            highlightAnim.play();
+        }
     }
 
     private playWinHighlights(currentMultiplier: number) {
@@ -391,6 +412,14 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
                 "0",
             );
         }
+        const highlightAnim = this[
+            `${this._config.PaytableMultiplierAnimNamePrefix}${this._currentHighlightedMultiplierNum}`
+        ];
+        highlightAnim.updateTransform();
+        highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameReset, undefined, false);
+        highlightAnim.play();
+        //highlightAnim.visible = false;
+
         this._currentHighlightedMultiplierNum = 0;
     }
 }
