@@ -372,8 +372,8 @@ export class ExtendedGameSymbolCardAnimationsControl {
                     this._frameCoverAnim.addAnimation(this._coverFoilAnimationMap.UNREVEALED.RESETFRAME);
                     this._frameCoverAnim.play();
 
-                    this._coverAnim.addAnimation(this._coverFoilAnimationMap.UNREVEALED.RESET);
-                    this._coverAnim.play();
+                    // this._coverAnim.addAnimation(this._coverFoilAnimationMap.UNREVEALED.RESET);
+                    //this._coverAnim.play();
                 },
             });
         } else {

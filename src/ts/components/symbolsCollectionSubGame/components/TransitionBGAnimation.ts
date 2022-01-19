@@ -20,13 +20,13 @@ export class TransitionBGAnimation {
 
     private static readonly waveMaxHeightCoveredWholeScreenEventName = "maxHeightReached";
 
-    private static readonly waveLandscapeTransitionInAnimationName = "ScreenTransitionLandscape";
+    private static readonly waveLandscapeTransitionInAnimationName = "Landscape";
 
-    private static readonly waveLandscapeTransitionOutAnimationName = "ScreenTransitionLandscape";
+    private static readonly waveLandscapeTransitionOutAnimationName = "Landscape";
 
-    private static readonly wavePortraitTransitionInAnimationName = "ScreenTransitionPortrait";
+    private static readonly wavePortraitTransitionInAnimationName = "Portrait";
 
-    private static readonly wavePotraitTransitionOutAnimationName = "ScreenTransitionPortrait";
+    private static readonly wavePotraitTransitionOutAnimationName = "Portrait";
 
     private static readonly waveSpineAnimationAttachmentName = "beachyBonus";
 
@@ -37,21 +37,21 @@ export class TransitionBGAnimation {
         this._isWaveTransitionAnimPlaying = false;
         this._transitionBGAnim = transitionBGAnim;
         this._transitionBGAnim.renderable = false;
-        LayoutUtils.getInstance().changeSpineTextureWihDifferentTexture(
+        /*         LayoutUtils.getInstance().changeSpineTextureWihDifferentTexture(
             this._transitionBGAnim,
             TransitionBGAnimation.waveSpineAnimationAttachmentName,
             TransitionBGAnimation.waveSpineAnimationAttachmentMeshName,
             loaderService.fromCache(TransitionBGAnimation.beachyBonusTextPrefabName),
-        );
+        ); */
 
         this._transitionBGAnimPrt = transitionBGAnimPrt;
         this._transitionBGAnimPrt.renderable = false;
-        LayoutUtils.getInstance().changeSpineTextureWihDifferentTexture(
+        /*         LayoutUtils.getInstance().changeSpineTextureWihDifferentTexture(
             this._transitionBGAnimPrt,
             TransitionBGAnimation.waveSpineAnimationAttachmentName,
             TransitionBGAnimation.waveSpineAnimationAttachmentMeshName,
             loaderService.fromCache(TransitionBGAnimation.beachyBonusTextPrefabName),
-        );
+        ); */
     }
 
     public setWaveTransitionVisibilties() {
@@ -82,18 +82,18 @@ export class TransitionBGAnimation {
             this._transitionBGAnimPrt.play();
             this._transitionBGAnim.spine.state.addListener({
                 event: (entry, event) => {
-                    if (event.data.name === TransitionBGAnimation.waveMaxHeightCoveredWholeScreenEventName) {
-                        if (isTransitionIn) {
-                            if (gameStore.props.baseGameVisible === true) {
-                                gameStore.actions.revealActions.setBaseGameVisible(false);
-                            }
-                        } else {
-                            if (gameStore.props.baseGameVisible === false) {
-                                gameStore.actions.revealActions.setBaseGameVisible(true);
-                            }
-
-                            this._symbolsCollectionSubGame.setButtonsStates(true, false);
+                    // if (event.data.name === TransitionBGAnimation.waveMaxHeightCoveredWholeScreenEventName) {
+                    if (isTransitionIn) {
+                        if (gameStore.props.baseGameVisible === true) {
+                            gameStore.actions.revealActions.setBaseGameVisible(false);
                         }
+                    } else {
+                        if (gameStore.props.baseGameVisible === false) {
+                            gameStore.actions.revealActions.setBaseGameVisible(true);
+                        }
+
+                        this._symbolsCollectionSubGame.setButtonsStates(true, false);
+                        //  }
                     }
                 },
                 complete: (entry) => {

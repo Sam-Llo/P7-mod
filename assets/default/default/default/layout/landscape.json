@@ -158,7 +158,7 @@
         "x": 0,
         "y": -314,
         "rotation": 0,
-        "width": 1698.3099517822266,
+        "width": 2111.23095703125,
         "height": 1023,
         "alpha": 1,
         "visible": true,
@@ -399,8 +399,8 @@
                     "x": -40,
                     "y": 244,
                     "rotation": 0,
-                    "width": 386,
-                    "height": 115,
+                    "width": 453.00001525878906,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -6647,7 +6647,7 @@
                         "width": 396,
                         "height": 113,
                         "alpha": 1,
-                        "visible": false
+                        "visible": true
                       }
                     ]
                   },
@@ -19295,9 +19295,9 @@
               "y": 1
             },
             "spinedata": {
-              "data": "spine/Transition.skel",
+              "data": "spine/transition.skel",
               "skin": "default",
-              "animation": "ScreenTransitionLandscape",
+              "animation": "Landscape",
               "speed": 1
             }
           },
@@ -19316,9 +19316,9 @@
               "y": 1
             },
             "spinedata": {
-              "data": "spine/Transition.skel",
+              "data": "spine/transition.skel",
               "skin": "default",
-              "animation": "ScreenTransitionLandscape",
+              "animation": "Landscape",
               "speed": 1
             }
           }

@@ -1,54 +1,27 @@
 
-Transition.png
-size: 2004,1507
+transition.png
+size: 1625,1217
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-beachyBonus
-  rotate: false
-  xy: 0, 1414
-  size: 389, 93
-  orig: 389, 93
-  offset: 0, 0
-  index: -1
-burst
-  rotate: false
-  xy: 391, 855
-  size: 669, 652
-  orig: 680, 655
-  offset: 4, 3
-  index: -1
-sea01
-  rotate: false
-  xy: 0, 149
-  size: 809, 704
-  orig: 809, 786
-  offset: 0, 0
-  index: -1
-sea02
+big_curtain
   rotate: true
-  xy: 811, 0
-  size: 810, 1193
-  orig: 810, 1315
+  xy: 0, 185
+  size: 1032, 1424
+  orig: 1032, 1424
   offset: 0, 0
   index: -1
-wave01
-  rotate: false
-  xy: 1062, 812
-  size: 810, 695
-  orig: 810, 785
-  offset: 0, 0
-  index: -1
-
-Transition2.png
-size: 810,1067
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-wave02
-  rotate: false
+curtain
+  rotate: true
   xy: 0, 0
-  size: 810, 1067
-  orig: 810, 1147
-  offset: 0, 43
+  size: 183, 1433
+  orig: 194, 1447
+  offset: 11, 14
+  index: -1
+folded_curtain
+  rotate: true
+  xy: 1426, 599
+  size: 618, 199
+  orig: 621, 221
+  offset: 1, 1
   index: -1

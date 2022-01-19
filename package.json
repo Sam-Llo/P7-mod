@@ -1,8 +1,8 @@
 {
   "name": "precious-7s",
   "studio": "interactive",
-  "version": "0.1.0-precious-7s",
-  "id": "300-2231-1",
+  "version": "0.1.0-dev.0",
+  "id": "300-2232-1",
   "author": "Playa Team",
   "license": "ISC",
   "description": "IGT unified game framework",
@@ -28,7 +28,7 @@
     "build-prod": "cross-env NODE_ENV=production FILTERED=true webpack --output-path=dist --env.production --progress",
     "start": "run-p \"watch {@}\" \"launch {@}\" --",
     "watch": "webpack --watch --output-path=dist",
-    "launch": "playa launch --server rgs-gsdev02 --softwareid 300-9031-199 --ns COM --skin 251",
+    "launch": "playa launch --server rgs-gsdev03 --softwareid 300-2232-199 --ns COM --skin 251",
     "all": "yarn format && yarn lint && yarn test && yarn coverage && yarn build-dev"
   },
   "husky": {

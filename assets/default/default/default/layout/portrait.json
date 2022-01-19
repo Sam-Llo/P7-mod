@@ -138,7 +138,7 @@
         "y": 0,
         "rotation": 0,
         "width": 1122.3099670410156,
-        "height": 1172.14892578125,
+        "height": 1172.7490234375,
         "alpha": 1,
         "visible": true,
         "scale": {
@@ -155,7 +155,7 @@
             "y": 564,
             "rotation": 0,
             "width": 1122.3099517822266,
-            "height": 883.1488966941833,
+            "height": 883.7219243049622,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -172,7 +172,7 @@
                 "y": 0,
                 "rotation": 0,
                 "width": 1122.3099517822266,
-                "height": 391.64438486099243,
+                "height": 392.21290016174316,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -230,8 +230,8 @@
                     "x": 56,
                     "y": 165,
                     "rotation": 0,
-                    "width": 309.9016876220703,
-                    "height": 320.2797546386719,
+                    "width": 546.0002136230469,
+                    "height": 321.4077453613281,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -24826,9 +24826,9 @@
               "y": 1
             },
             "spinedata": {
-              "data": "spine/Transition.skel",
+              "data": "spine/transition.skel",
               "skin": "default",
-              "animation": "ScreenTransitionLandscape",
+              "animation": "Landscape",
               "speed": 1
             }
           },
@@ -24847,9 +24847,9 @@
               "y": 1
             },
             "spinedata": {
-              "data": "spine/Transition.skel",
+              "data": "spine/transition.skel",
               "skin": "default",
-              "animation": "ScreenTransitionLandscape",
+              "animation": "Landscape",
               "speed": 1
             }
           }

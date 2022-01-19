@@ -1,6 +1,6 @@
 import { TweenMax } from "gsap";
 import { Container } from "pixi.js";
-import { currencyService, soundManager, SpineAnimation, translationService } from "playa-core";
+import { currencyService, soundManager, SpineAnimation, TextAutoFit, translationService } from "playa-core";
 import { ResultPlaques, IResultSetup, IWProps, iwProps } from "playa-iw";
 import { gameStore } from "..";
 import { LayoutUtils } from "../utils/LayoutUtils";
@@ -48,6 +48,8 @@ export class ResultSettings extends ResultPlaques {
 
     private _outroAnimName!: string;
 
+    private _loseTextFields: TextAutoFit[] = [];
+
     private _targetPrizeValue: number = 0;
 
     private _targetPlayResult: string = "";
@@ -86,6 +88,13 @@ export class ResultSettings extends ResultPlaques {
 
         this._winThresholdsForBaseGame = this.assets.get(ResultSettings.configName).WinThresholdsForBaseGame;
         this._isWin = false;
+
+        const loseMsg: any = this.losePlaque.children.find((obj: any) => obj.name === "losePlaque_label");
+        this._loseTextFields.push(loseMsg);
+
+        this._loseTextFields.forEach((obj: TextAutoFit) => {
+            obj.alpha = 0;
+        });
     }
 
     private initSpine(): void {
@@ -207,12 +216,25 @@ export class ResultSettings extends ResultPlaques {
         if (playResult === this._setupData.NONWIN_STRING) {
             this._isWin = false;
 
-            this.changeNoWinPlaqueLabel();
+            // this.changeNoWinPlaqueLabel();
             // Queue the intro
             this._spineAnimNonWin.updateTransform();
             this._spineAnimNonWin.setAnimation(ResultSettings.LOSE_PLAQUE_INTRO_SPINE_ANIMATION_NAME);
             this._spineAnimNonWin.play();
             this._outroAnimName = ResultSettings.LOSE_PLAQUE_OUTRO_SPINE_ANIMATION_NAME;
+
+            let dur: number = 0;
+            this._spineAnimNonWin.spine.state.data.skeletonData.animations.forEach((anim: any) => {
+                dur =
+                    anim.name === ResultSettings.LOSE_PLAQUE_INTRO_SPINE_ANIMATION_NAME
+                        ? (anim.duration as number) / 2
+                        : dur;
+            });
+            // Fade in the text over the second half of the intro
+            this._loseTextFields.forEach((obj: TextAutoFit) => {
+                TweenMax.to(obj, dur, { alpha: 1, delay: dur });
+            });
+
             //DO not need to Set the lose Text as it is baked into the spine animation
         } else {
             //Update win value of the win plaque
@@ -398,6 +420,9 @@ export class ResultSettings extends ResultPlaques {
                 this.stopSpineAnim(this._spineAnimWin);
                 this._spineAnimNonWin.setAnimation(this._outroAnimName, undefined, false);
                 this._spineAnimNonWin.play();
+                this._loseTextFields.forEach((obj: TextAutoFit) => {
+                    obj.alpha = 0;
+                });
             }
         } else {
             super.hide();
