@@ -1,3 +1,4 @@
+import { TweenMax } from "gsap";
 import { loaderService, Orientation, soundManager, SpineAnimation, systemProps } from "playa-core";
 import { gameStore } from "../..";
 import { BackgroundAudio } from "../../background/BackgroundAudio";
@@ -56,6 +57,9 @@ export class TransitionBGAnimation {
 
     public setWaveTransitionVisibilties() {
         if (this._isWaveTransitionAnimPlaying) {
+            TweenMax.to([this._transitionBGAnim], 0, { alpha: 1 });
+            TweenMax.to([this._transitionBGAnimPrt], 0, { alpha: 1 });
+
             this._transitionBGAnim.renderable = systemProps.orientation === Orientation.LANDSCAPE;
             this._transitionBGAnimPrt.renderable = !this._transitionBGAnim.renderable;
         }
@@ -67,6 +71,8 @@ export class TransitionBGAnimation {
             this.setWaveTransitionVisibilties();
             if (isTransitionIn === true) {
                 soundManager.execute("onBonusTransitionIn");
+                this._transitionBGAnim.alpha = 1;
+                this._transitionBGAnimPrt.alpha = 1;
                 this._transitionBGAnim.setAnimation(TransitionBGAnimation.waveLandscapeTransitionInAnimationName);
                 this._transitionBGAnimPrt.setAnimation(TransitionBGAnimation.wavePortraitTransitionInAnimationName);
                 soundManager.execute(BackgroundAudio.BONUS_MUSIC_START_LOOP);
@@ -82,7 +88,7 @@ export class TransitionBGAnimation {
             this._transitionBGAnimPrt.play();
             this._transitionBGAnim.spine.state.addListener({
                 event: (entry, event) => {
-                    // if (event.data.name === TransitionBGAnimation.waveMaxHeightCoveredWholeScreenEventName) {
+                    // if (event.data.name === TransitionBGAnimation.waveLandscapeTransitionOutAnimationName) {
                     if (isTransitionIn) {
                         if (gameStore.props.baseGameVisible === true) {
                             gameStore.actions.revealActions.setBaseGameVisible(false);
@@ -93,13 +99,24 @@ export class TransitionBGAnimation {
                         }
 
                         this._symbolsCollectionSubGame.setButtonsStates(true, false);
-                        //  }
                     }
+                    // }
                 },
                 complete: (entry) => {
-                    // Add listener for match animation complete, it'll then start the looping animation
-                    this._transitionBGAnim.renderable = false;
-                    this._transitionBGAnimPrt.renderable = false;
+                    //TweenMax.delayedCall(
+                    //TransitionBGAnimation.DELAY,
+                    // () => {
+                    //this._transitionBGAnim.renderable = false;
+                    TweenMax.to([this._transitionBGAnim], 1, { alpha: 0, renderable: false });
+                    TweenMax.to([this._transitionBGAnimPrt], 1, { alpha: 0, renderable: false });
+
+                    if (this._transitionBGAnim.alpha === 0) {
+                        //this._transitionBGAnim.renderable = false;
+                    }
+                    //},
+                    // );
+                    //  this._transitionBGAnim.renderable = false;
+                    // this._transitionBGAnimPrt.renderable = false;
                     this._isWaveTransitionAnimPlaying = false;
                     //enable help and settings button if lastItemRevealed is equal to false
                     if (!isTransitionIn && gameStore.props.lastItemRevealed === false) {

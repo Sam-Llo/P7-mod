@@ -158,7 +158,7 @@
         "x": 0,
         "y": -314,
         "rotation": 0,
-        "width": 2111.23095703125,
+        "width": 1698.3099517822266,
         "height": 1023,
         "alpha": 1,
         "visible": true,
@@ -175,8 +175,8 @@
             "x": 304,
             "y": 744,
             "rotation": 0,
-            "width": 1596.3099517822266,
-            "height": 636,
+            "width": 934.0000152587891,
+            "height": 571.9851379394531,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -192,8 +192,8 @@
                 "x": 0,
                 "y": 154,
                 "rotation": 0,
-                "width": 920.3099517822266,
-                "height": 334.5,
+                "width": 934.0000152587891,
+                "height": 571.9851379394531,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -210,7 +210,7 @@
                     "y": 184,
                     "rotation": 0,
                     "alpha": 1,
-                    "visible": true,
+                    "visible": false,
                     "scale": {
                       "x": 1,
                       "y": 1
@@ -311,7 +311,7 @@
                         "spinedata": {
                           "data": "spine/paytable.skel",
                           "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
+                          "animation": "reveal/white/white selector landscape reveal left",
                           "speed": 1
                         }
                       }
@@ -385,7 +385,7 @@
                         "spinedata": {
                           "data": "spine/paytable.skel",
                           "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
+                          "animation": "reveal/white/white selector landscape reveal left",
                           "speed": 1
                         }
                       }
@@ -459,7 +459,7 @@
                         "spinedata": {
                           "data": "spine/paytable.skel",
                           "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
+                          "animation": "reveal/white/white selector landscape reveal left",
                           "speed": 1
                         }
                       }
@@ -473,8 +473,8 @@
                     "x": -40,
                     "y": 286,
                     "rotation": 0,
-                    "width": 453.00001525878906,
-                    "height": 127,
+                    "width": 391,
+                    "height": 320,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -533,7 +533,7 @@
                         "spinedata": {
                           "data": "spine/paytable.skel",
                           "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
+                          "animation": "reveal/white/white selector landscape reveal left",
                           "speed": 1
                         }
                       }
@@ -607,7 +607,7 @@
                         "spinedata": {
                           "data": "spine/paytable.skel",
                           "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
+                          "animation": "reveal/white/white selector landscape reveal left",
                           "speed": 1
                         }
                       }
@@ -669,7 +669,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 185,
+                        "x": 135,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -681,7 +681,7 @@
                         "spinedata": {
                           "data": "spine/paytable.skel",
                           "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
+                          "animation": "reveal/white/white selector landscape reveal right",
                           "speed": 1
                         }
                       }
@@ -743,7 +743,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 185,
+                        "x": 135,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -755,7 +755,7 @@
                         "spinedata": {
                           "data": "spine/paytable.skel",
                           "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
+                          "animation": "reveal/white/white selector landscape reveal right",
                           "speed": 1
                         }
                       }
@@ -769,8 +769,8 @@
                     "x": 368,
                     "y": 244,
                     "rotation": 0,
-                    "width": 453.00001525878906,
-                    "height": 127,
+                    "width": 455.3659362792969,
+                    "height": 321.0919189453125,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -817,7 +817,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 185,
+                        "x": 135,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -829,7 +829,7 @@
                         "spinedata": {
                           "data": "spine/paytable.skel",
                           "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
+                          "animation": "reveal/white/white selector landscape reveal right",
                           "speed": 1
                         }
                       }
@@ -891,7 +891,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 185,
+                        "x": 135,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -903,7 +903,7 @@
                         "spinedata": {
                           "data": "spine/paytable.skel",
                           "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
+                          "animation": "reveal/white/white selector landscape reveal right",
                           "speed": 1
                         }
                       }
@@ -917,8 +917,8 @@
                     "x": 368,
                     "y": 328,
                     "rotation": 0,
-                    "width": 453.00001525878906,
-                    "height": 127,
+                    "width": 700.0000305175781,
+                    "height": 321.13702392578125,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -965,7 +965,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 185,
+                        "x": 135,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -977,7 +977,7 @@
                         "spinedata": {
                           "data": "spine/paytable.skel",
                           "skin": "default",
-                          "animation": "reset/green/green selector landscape reset left",
+                          "animation": "reveal/white/white selector landscape reveal right",
                           "speed": 1
                         }
                       }
@@ -997,6 +997,27 @@
                     "visible": true,
                     "blendMode": 0,
                     "bitmap": "symbolborder"
+                  },
+                  {
+                    "id": "Symbol Select_anim",
+                    "preFab": false,
+                    "loadType": "-",
+                    "type": "spine-animation",
+                    "x": 317,
+                    "y": 237,
+                    "rotation": 0,
+                    "alpha": 1,
+                    "visible": true,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "spinedata": {
+                      "data": "spine/Symbol Select.skel",
+                      "skin": "default",
+                      "animation": "reset/landscape/Selector landscape reset green",
+                      "speed": 1
+                    }
                   },
                   {
                     "id": "initialWinningSymbolsSelection_glow_anim",
@@ -3318,7 +3339,7 @@
                         "width": 759,
                         "height": 486,
                         "alpha": 1,
-                        "visible": true,
+                        "visible": false,
                         "blendMode": 0,
                         "bitmap": "symbolsFrame"
                       },
@@ -19310,7 +19331,7 @@
             "y": 1019,
             "rotation": 0,
             "alpha": 1,
-            "visible": true,
+            "visible": false,
             "scale": {
               "x": 1,
               "y": 1
@@ -19318,7 +19339,7 @@
             "spinedata": {
               "data": "spine/transition.skel",
               "skin": "default",
-              "animation": "Landscape",
+              "animation": "Portrait",
               "speed": 1
             }
           }

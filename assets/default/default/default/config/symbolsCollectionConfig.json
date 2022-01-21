@@ -146,8 +146,8 @@
                 "Reveal": "reveal/symbol reveal bonus",
                 "Outro": "reset/symbol reset bonus",
                 "Static": "SymbolStatic/SymbolStaticBonus1",
-                "GlowShake":"reveal/symbol reveal bonus",
-                "NoGlowShake": "reveal/symbol reveal bonus"
+                "GlowShake":"SymbolRevealWinBonus",
+                "NoGlowShake": "SymbolLoopingWinBonus"
             },
             "Chest": {
                 "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealBonus2",

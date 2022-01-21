@@ -137,8 +137,8 @@
         "x": -314,
         "y": 0,
         "rotation": 0,
-        "width": 1122.3099670410156,
-        "height": 1172.7490234375,
+        "width": 1181.4313049316406,
+        "height": 1221.0025634765625,
         "alpha": 1,
         "visible": true,
         "scale": {
@@ -154,8 +154,8 @@
             "x": 639,
             "y": 564,
             "rotation": 0,
-            "width": 1122.3099517822266,
-            "height": 883.7219243049622,
+            "width": 1181.4312896728516,
+            "height": 932.0025939941406,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -171,8 +171,8 @@
                 "x": 1,
                 "y": 0,
                 "rotation": 0,
-                "width": 1122.3099517822266,
-                "height": 392.21290016174316,
+                "width": 1181.4312896728516,
+                "height": 571.9851379394531,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -230,8 +230,8 @@
                     "x": 56,
                     "y": 165,
                     "rotation": 0,
-                    "width": 546.0002136230469,
-                    "height": 321.4077453613281,
+                    "width": 462.3099670410156,
+                    "height": 127,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -896,8 +896,8 @@
                     "x": 558,
                     "y": 333,
                     "rotation": 0,
-                    "width": 462.3099670410156,
-                    "height": 127,
+                    "width": 658.0004577636719,
+                    "height": 321.696533203125,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -961,6 +961,27 @@
                         }
                       }
                     ]
+                  },
+                  {
+                    "id": "Symbol Select_anim_prt",
+                    "preFab": false,
+                    "loadType": "-",
+                    "type": "spine-animation",
+                    "x": 384,
+                    "y": 238,
+                    "rotation": 0,
+                    "alpha": 1,
+                    "visible": true,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "spinedata": {
+                      "data": "spine/Symbol Select.skel",
+                      "skin": "default",
+                      "animation": "reset/landscape/Selector landscape reset green",
+                      "speed": 1
+                    }
                   },
                   {
                     "id": "symbolborder",
@@ -24828,7 +24849,7 @@
             "spinedata": {
               "data": "spine/transition.skel",
               "skin": "default",
-              "animation": "Landscape",
+              "animation": "Portrait",
               "speed": 1
             }
           },
@@ -24841,7 +24862,7 @@
             "y": 1019,
             "rotation": 0,
             "alpha": 1,
-            "visible": true,
+            "visible": false,
             "scale": {
               "x": 1,
               "y": 1

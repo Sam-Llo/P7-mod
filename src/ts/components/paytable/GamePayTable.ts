@@ -1,4 +1,4 @@
-import { Ease, TimelineMax } from "gsap";
+import { Ease, TimelineMax, TweenMax } from "gsap";
 import { Container } from "pixi.js";
 import {
     BaseAction,
@@ -30,11 +30,15 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
 
     public static readonly configName = "gamePaytableConfig.json";
 
+    private static readonly DELAY: number = 0.7;
+
     private _config;
 
     private _initialSymbolSelectionReel!: InitialSymbolSelectionReel;
 
     private _glowAnim!: SpineAnimation;
+
+    private _symbolSelectAnim!: SpineAnimation;
 
     private _paytableAnimSpine!: SpineAnimation;
 
@@ -134,6 +138,10 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._paytableAnimSpine.renderable = systemProps.orientation === Orientation.LANDSCAPE;
         this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable;
 
+        this._symbolSelectAnim = this.container.children.find(
+            (obj) => obj.name === `Symbol Select_anim`,
+        ) as SpineAnimation;
+
         this._glowAnim = this.container.children.find(
             (obj) => obj.name === `initialWinningSymbolsSelection_glow_anim`,
         ) as SpineAnimation;
@@ -190,6 +198,11 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
     public resetAndSpinForever() {
         //TODO: if game is in progress, then just set the winning symbol to the winning one, instead of spin again
         this._initialSymbolSelectionReel.spinWithoutLanding();
+
+        //play reset animationg for the symbol select
+        this._symbolSelectAnim.updateTransform();
+        this._symbolSelectAnim.setAnimation("reset/landscape/Selector landscape reset white", undefined, false);
+        this._symbolSelectAnim.play();
     }
 
     public land(symbolToLand: string, onCompleteCallback) {
@@ -200,7 +213,13 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._glowAnim.renderable = true;
         this._glowAnim.updateTransform();
         this._glowAnim.setAnimation("glow", undefined, false); //NOTE: sometimes, just call setAnimation with "name" without additional paramters does not work
-
+        this._symbolSelectAnim.updateTransform();
+        this._symbolSelectAnim.setAnimation(
+            "reveal/selector/landscape/Selector landscape reveal white",
+            undefined,
+            false,
+        );
+        this._symbolSelectAnim.play();
         this._glowAnim.play();
     }
 
@@ -348,10 +367,23 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
             highlightAnim.updateTransform();
             highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameRight, undefined, false);
             highlightAnim.play();
+
+            TweenMax.delayedCall(
+                GamePayTable.DELAY, // highlightAnim.onComplete +
+                () => {
+                    highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameReset, undefined, false);
+                    highlightAnim.play();
+                },
+            );
         } else {
             highlightAnim.updateTransform();
             highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameLeft, undefined, false);
             highlightAnim.play();
+
+            TweenMax.delayedCall(GamePayTable.DELAY, () => {
+                highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameReset, undefined, false);
+                highlightAnim.play();
+            });
         }
     }
 
@@ -415,10 +447,10 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         const highlightAnim = this[
             `${this._config.PaytableMultiplierAnimNamePrefix}${this._currentHighlightedMultiplierNum}`
         ];
-        highlightAnim.updateTransform();
+        /*         highlightAnim.updateTransform();
         highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameReset, undefined, false);
         highlightAnim.play();
-        //highlightAnim.visible = false;
+        //highlightAnim.visible = false; */
 
         this._currentHighlightedMultiplierNum = 0;
     }

@@ -23,7 +23,7 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
 
     private static readonly STRINGS_BONUS_WIN_POT: string = "PortraitLightBonusWin";
 
-    private static readonly MINIMUN_GAP_TIME_STRINGS_LIGHTS: number = 1.5;
+    private static readonly DELAY_BONUS_BACKGROUND: number = 0.35;
 
     private static readonly RANDOM_TIME_STRINGS_LIGHTS: number = 2;
 
@@ -128,8 +128,8 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                 } else if ((this.bgBaseGameLogoAnim.renderable = systemProps.orientation === Orientation.PORTRAIT)) {
                     this.bgBaseGameLogoAnim.visible = systemProps.orientation === Orientation.PORTRAIT;
                     this.bgBaseGameLogoAnim.setAnimation("portrait logo animation", undefined, true);
-                    this.bgBaseGameLogoAnim.play(); */
-                // }
+                    this.bgBaseGameLogoAnim.play();
+                } */
             },
             { fireImmediately: true },
         );
@@ -143,10 +143,12 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                 if (!isBaseGameVisible) {
                     this.bgBaseGameAnimLand.updateTransform();
                     this.bgBaseGameAnimPort.updateTransform();
-                    this.bgBaseGameAnimLand.setAnimation("LandscapeBonus", undefined, true);
-                    this.bgBaseGameAnimPort.setAnimation("PortraitBonus", undefined, true);
-                    this.bgBaseGameAnimLand.play();
-                    this.bgBaseGameAnimPort.play();
+                    TweenMax.delayedCall(BackgroundSwap.DELAY_BONUS_BACKGROUND, () => {
+                        this.bgBaseGameAnimLand.setAnimation("landscape bouns reveal background", undefined, false);
+                        this.bgBaseGameAnimLand.play();
+                        this.bgBaseGameAnimPort.setAnimation("portrait bonus reveal background", undefined, false);
+                        this.bgBaseGameAnimPort.play();
+                    });
                 } else {
                     this.bgBaseGameAnimLand.updateTransform();
                     this.bgBaseGameAnimPort.updateTransform();
@@ -188,8 +190,7 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
             this.playBonusStringOfLightsAnimation();
             //Only play the strings of lights animation if the base game is not visible
             TweenMax.delayedCall(
-                BackgroundSwap.MINIMUN_GAP_TIME_STRINGS_LIGHTS +
-                    Math.random() * BackgroundSwap.RANDOM_TIME_STRINGS_LIGHTS,
+                BackgroundSwap.DELAY_BONUS_BACKGROUND + Math.random() * BackgroundSwap.RANDOM_TIME_STRINGS_LIGHTS,
                 () => {
                     this.startPlaytingStringsOfLightsAnimation();
                 },
