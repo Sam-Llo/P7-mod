@@ -88,14 +88,6 @@ export class GameUIsOrientationChangeControl {
 
     private _retryButtonDisabledBg;
 
-    private _moveToMoneyPromptButtonEnabledLabel;
-
-    private _moveToMoneyPromptButtonOverLabel;
-
-    private _moveToMoneyPromptButtonPressedLabel;
-
-    private _moveToMoneyPromptButtonDisabledLabel;
-
     private _revealAllStartButtonEnabledBg;
 
     private _revealAllStartButtonOverBg;
@@ -338,22 +330,6 @@ export class GameUIsOrientationChangeControl {
         const moveToMoneyPromptButtonDisabled = moveToMoneyPromptBtn.children.find((obj: any) =>
             obj.name.startsWith("moveToMoneyPromptButton_disabled"),
         ) as Container;
-
-        this._moveToMoneyPromptButtonEnabledLabel = moveToMoneyPromptButtonEnabled.children.find((obj: any) =>
-            obj.name.startsWith("moveToMoneyPromptButton_enabled_label"),
-        ) as TextAutoFit;
-
-        this._moveToMoneyPromptButtonOverLabel = moveToMoneyPromptButtonOver.children.find((obj: any) =>
-            obj.name.startsWith("moveToMoneyPromptButton_over_label"),
-        ) as TextAutoFit;
-
-        this._moveToMoneyPromptButtonPressedLabel = moveToMoneyPromptButtonPressed.children.find((obj: any) =>
-            obj.name.startsWith("moveToMoneyPromptButton_pressed_label"),
-        ) as TextAutoFit;
-
-        this._moveToMoneyPromptButtonDisabledLabel = moveToMoneyPromptButtonDisabled.children.find((obj: any) =>
-            obj.name.startsWith("moveToMoneyPromptButton_disabled_label"),
-        ) as TextAutoFit;
 
         this._moveToMoneyPromptButtonEnabledBg = moveToMoneyPromptButtonEnabled.children.find((obj: any) =>
             obj.name.startsWith("moveToMoneyPromptButton_enabledBg"),
@@ -625,18 +601,6 @@ export class GameUIsOrientationChangeControl {
 
     private changeMoveToMoneyPromptButtonTextureBasedOnOrientation(orientation: Orientation) {
         if (orientation === Orientation.LANDSCAPE) {
-            this._moveToMoneyPromptButtonEnabledLabel.text = translationService.getString(
-                "messages.moveToMoneyPromptButton_enabled_label",
-            );
-            this._moveToMoneyPromptButtonOverLabel.text = translationService.getString(
-                "messages.moveToMoneyPromptButton_over_label",
-            );
-            this._moveToMoneyPromptButtonPressedLabel.text = translationService.getString(
-                "messages.moveToMoneyPromptButton_pressed_label",
-            );
-            this._moveToMoneyPromptButtonDisabledLabel.text = translationService.getString(
-                "messages.moveToMoneyPromptButton_disabled_label",
-            );
             this._moveToMoneyPromptButtonEnabledBg.texture = loaderService.fromCache(
                 GameUIsOrientationChangeControl.rectangleUIBgEnabledTexture,
             );
@@ -650,18 +614,6 @@ export class GameUIsOrientationChangeControl {
                 GameUIsOrientationChangeControl.rectangleUIBgDisabledTexture,
             );
         } else {
-            this._moveToMoneyPromptButtonEnabledLabel.text = translationService.getString(
-                "messages.moveToMoneyPromptButton_enabled_label_portrait",
-            );
-            this._moveToMoneyPromptButtonOverLabel.text = translationService.getString(
-                "messages.moveToMoneyPromptButton_over_label_portrait",
-            );
-            this._moveToMoneyPromptButtonPressedLabel.text = translationService.getString(
-                "messages.moveToMoneyPromptButton_pressed_label_portrait",
-            );
-            this._moveToMoneyPromptButtonDisabledLabel.text = translationService.getString(
-                "messages.moveToMoneyPromptButton_disabled_label_portrait",
-            );
             this._moveToMoneyPromptButtonEnabledBg.texture = loaderService.fromCache(
                 GameUIsOrientationChangeControl.circleUIBgEnabledTexture,
             );

@@ -187,13 +187,9 @@
     "tutorialContent2_label1": "Reveal a Fruit Drink to activate the bonus game",
     "tutorialContent3_label1": "Game selects which 1 of 4 winning symbols is in play",
     "doNotShowAgain_label": "DO NOT SHOW AGAIN",
-    "moveToMoneyPromptButton_disabled_label": "MOVE TO MONEY",
-    "moveToMoneyPromptButton_pressed_label": "MOVE TO MONEY",
-    "moveToMoneyPromptButton_over_label": "MOVE TO MONEY",
-    "moveToMoneyPromptButton_enabled_label": "MOVE TO MONEY",
-    "moveToMoneyPromptButton_disabled_label_portrait": "MOVE\nTO MONEY",
-    "moveToMoneyPromptButton_pressed_label_portrait": "MOVE\nTO MONEY",
-    "moveToMoneyPromptButton_over_label_portrait": "MOVE\nTO MONEY",
-    "moveToMoneyPromptButton_enabled_label_portrait": "MOVE\nTO MONEY"
+    "moveToMoneyPromptButton_disabled_label": "OK",
+    "moveToMoneyPromptButton_pressed_label": "OK",
+    "moveToMoneyPromptButton_over_label": "OK",
+    "moveToMoneyPromptButton_enabled_label": "OK"
   }
 }

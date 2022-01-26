@@ -9,6 +9,8 @@ import { ExtendedGameSymbolCard } from "./ExtendedGameSymbolCard";
 export class ExtendedGameSymbolCardAnimationsControl {
     private _coverAnim!: SpineAnimation;
 
+    private _frameCoverAnim!: SpineAnimation;
+
     private _winGlowAnim!: SpineAnimation;
 
     private _matchAnim!: SpineAnimation;
@@ -33,6 +35,11 @@ export class ExtendedGameSymbolCardAnimationsControl {
             MOUSEOUT: string;
             REVEAL: string;
             RESET: string;
+            MOUSEOVERFRAME: string;
+            MOUSEOUTFRAME: string;
+            IDLEFRAME: string;
+            REVEALFRAME: string;
+            RESETFRAME: string;
         };
         WINREVEAL: {
             STATIC: string;
@@ -168,14 +175,18 @@ export class ExtendedGameSymbolCardAnimationsControl {
 
     private _gameSymbolCard: ExtendedGameSymbolCard;
 
-    constructor(gameSymbolCard, gameSymbolsConfig, coverAnim, winGlowAnim, matchAnim) {
+    constructor(gameSymbolCard, gameSymbolsConfig, coverAnim, frameCoverAnim, winGlowAnim, matchAnim) {
         this._gameSymbolCard = gameSymbolCard;
 
         this._gameSymbolsConfig = gameSymbolsConfig;
 
         this._coverAnim = coverAnim;
+
+        this._frameCoverAnim = frameCoverAnim;
+
         // Set renderable
         this._coverAnim.renderable = true;
+        this._frameCoverAnim.renderable = true;
 
         this._winGlowAnim = winGlowAnim;
         this._winGlowAnim.renderable = false;
@@ -199,6 +210,11 @@ export class ExtendedGameSymbolCardAnimationsControl {
                 MOUSEOUT: this._gameSymbolsConfig.FoilAnimations.Unrevealed.Mouseout,
                 REVEAL: this._gameSymbolsConfig.FoilAnimations.Unrevealed.Reveal,
                 RESET: this._gameSymbolsConfig.FoilAnimations.Unrevealed.Reset,
+                MOUSEOVERFRAME: this._gameSymbolsConfig.FoilAnimations.Unrevealed.Mouseoverframe,
+                MOUSEOUTFRAME: this._gameSymbolsConfig.FoilAnimations.Unrevealed.Mouseoutframe,
+                IDLEFRAME: this._gameSymbolsConfig.FoilAnimations.Unrevealed.Idleframe,
+                REVEALFRAME: this._gameSymbolsConfig.FoilAnimations.Unrevealed.Revealframe,
+                RESETFRAME: this._gameSymbolsConfig.FoilAnimations.Unrevealed.Resetframe,
             },
             WINREVEAL: {
                 STATIC: this._gameSymbolsConfig.FoilAnimations.WinReveal.Static,
@@ -353,8 +369,11 @@ export class ExtendedGameSymbolCardAnimationsControl {
                         this._coverAnim.setAnimation(this._coverFoilAnimationMap.LOSEREVEAL.OUTRO);
                     }
                     //onComplte set to reset
-                    this._coverAnim.addAnimation(this._coverFoilAnimationMap.UNREVEALED.RESET);
-                    this._coverAnim.play();
+                    this._frameCoverAnim.addAnimation(this._coverFoilAnimationMap.UNREVEALED.RESETFRAME);
+                    this._frameCoverAnim.play();
+
+                    // this._coverAnim.addAnimation(this._coverFoilAnimationMap.UNREVEALED.RESET);
+                    //this._coverAnim.play();
                 },
             });
         } else {
@@ -454,6 +473,13 @@ export class ExtendedGameSymbolCardAnimationsControl {
                     }
                 },
             });
+
+            this._frameCoverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.REVEALFRAME);
+            TweenMax.killTweensOf(this._frameCoverAnim.scale);
+            this._frameCoverAnim.scale.set(1, 1);
+            // Play frame reveal anim
+            this._frameCoverAnim.play();
+
             // Set scale to 1 because roll over scale this sprite/spine bigger
             TweenMax.killTweensOf(this._coverAnim.scale);
             this._coverAnim.scale.set(1, 1);
@@ -466,8 +492,11 @@ export class ExtendedGameSymbolCardAnimationsControl {
         this._coverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.MOUSEOVER, undefined, true);
         this._coverAnim.play();
 
+        this._frameCoverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.MOUSEOVERFRAME, undefined, true);
+        this._frameCoverAnim.play();
         // Scale the anim up
         TweenMax.to(this._coverAnim.scale, 1 / 3, { x: 1.15, y: 1.15 });
+        TweenMax.to(this._frameCoverAnim.scale, 1 / 3, { x: 1.15, y: 1.15 });
     }
 
     public playRolloutAnimation(): void {
@@ -485,23 +514,33 @@ export class ExtendedGameSymbolCardAnimationsControl {
         // Carry on as normal
         this._coverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.MOUSEOUT); //TODO: do not have mouse out animation
         this.removeSpineListeners(this._coverAnim);
-        this._coverAnim.spine.state.addListener({
-            complete: (entry) => {
-                //If mouse out animation finished playing, we set the cover animation to static
-                if (entry.animation.name === this._coverFoilAnimationMap.UNREVEALED.MOUSEOUT) {
-                    this._coverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.STATIC);
 
-                    this._gameSymbolCard.resetIdleAnimationIfNeeded();
+        this._frameCoverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.MOUSEOUTFRAME);
+        this.removeSpineListeners(this._frameCoverAnim);
 
-                    TweenMax.killTweensOf(this._coverAnim.scale);
-                    this._coverAnim.scale.set(1, 1);
-                }
-            },
-        });
+        // this._coverAnim.spine.state.addListener({
+        //complete: (entry) => {
+        //If mouse out animation finished playing, we set the cover animation to static
+        // if (entry.animation.name === this._coverFoilAnimationMap.UNREVEALED.MOUSEOUT) {
+        this._coverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.STATIC);
+        // this._frameCoverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.MOUSEOUTFRAME);
+
+        this._gameSymbolCard.resetIdleAnimationIfNeeded();
+
+        // TweenMax.killTweensOf(this._coverAnim.scale);
+        //this._coverAnim.scale.set(1, 1);
+
+        // TweenMax.killTweensOf(this._frameCoverAnim.scale);
+        // this._frameCoverAnim.scale.set(1, 1);
+        // }
+        // },
+        // });
         this._coverAnim.play();
+        this._frameCoverAnim.play();
 
         // Scale the anim down again
         TweenMax.to(this._coverAnim.scale, 1 / 3, { x: 1, y: 1 });
+        TweenMax.to(this._frameCoverAnim.scale, 1 / 3, { x: 1, y: 1 });
     }
 
     public playStaticAnimation() {
@@ -511,7 +550,9 @@ export class ExtendedGameSymbolCardAnimationsControl {
 
     public playIdleAnimation() {
         this._coverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.IDLE, undefined, true);
+        this._frameCoverAnim.setAnimation(this._coverFoilAnimationMap.UNREVEALED.IDLEFRAME, undefined, true);
         this._coverAnim.play();
+        this._frameCoverAnim.play();
     }
 
     public isCoverAnimationInStaticState(): boolean {

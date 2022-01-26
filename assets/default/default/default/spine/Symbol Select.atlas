@@ -1,0 +1,195 @@
+
+Symbol Select.png
+size: 1641,851
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/non trans/7 glow
+  rotate: false
+  xy: 288, 0
+  size: 169, 177
+  orig: 460, 460
+  offset: 147, 147
+  index: -1
+images/non trans/border anim/border anim_00
+  rotate: false
+  xy: 1414, 38
+  size: 182, 143
+  orig: 500, 500
+  offset: 213, 291
+  index: -1
+images/non trans/border anim/border anim_01
+  rotate: true
+  xy: 459, 5
+  size: 232, 145
+  orig: 500, 500
+  offset: 164, 292
+  index: -1
+images/non trans/border anim/border anim_02
+  rotate: false
+  xy: 1169, 163
+  size: 243, 139
+  orig: 500, 500
+  offset: 113, 299
+  index: -1
+images/non trans/border anim/border anim_03
+  rotate: false
+  xy: 1170, 304
+  size: 245, 174
+  orig: 500, 500
+  offset: 74, 263
+  index: -1
+images/non trans/border anim/border anim_04
+  rotate: true
+  xy: 1414, 637
+  size: 214, 216
+  orig: 500, 500
+  offset: 62, 221
+  index: -1
+images/non trans/border anim/border anim_05
+  rotate: false
+  xy: 1448, 380
+  size: 190, 255
+  orig: 500, 500
+  offset: 47, 178
+  index: -1
+images/non trans/border anim/border anim_06
+  rotate: false
+  xy: 499, 281
+  size: 169, 258
+  orig: 500, 500
+  offset: 43, 139
+  index: -1
+images/non trans/border anim/border anim_07
+  rotate: true
+  xy: 670, 273
+  size: 166, 255
+  orig: 500, 500
+  offset: 47, 92
+  index: -1
+images/non trans/border anim/border anim_08
+  rotate: true
+  xy: 1417, 183
+  size: 195, 224
+  orig: 500, 500
+  offset: 51, 76
+  index: -1
+images/non trans/border anim/border anim_09
+  rotate: false
+  xy: 927, 179
+  size: 240, 189
+  orig: 500, 500
+  offset: 55, 69
+  index: -1
+images/non trans/border anim/border anim_10
+  rotate: false
+  xy: 1170, 480
+  size: 276, 155
+  orig: 500, 500
+  offset: 68, 66
+  index: -1
+images/non trans/border anim/border anim_11
+  rotate: false
+  xy: 670, 441
+  size: 274, 135
+  orig: 500, 500
+  offset: 114, 66
+  index: -1
+images/non trans/border anim/border anim_12
+  rotate: true
+  xy: 329, 239
+  size: 272, 168
+  orig: 500, 500
+  offset: 159, 66
+  index: -1
+images/non trans/border anim/border anim_13
+  rotate: false
+  xy: 1170, 637
+  size: 242, 214
+  orig: 500, 500
+  offset: 201, 68
+  index: -1
+images/non trans/border anim/border anim_14
+  rotate: false
+  xy: 960, 598
+  size: 208, 253
+  orig: 500, 500
+  offset: 238, 73
+  index: -1
+images/non trans/border anim/border anim_15
+  rotate: true
+  xy: 0, 32
+  size: 166, 286
+  orig: 500, 500
+  offset: 280, 87
+  index: -1
+images/non trans/border anim/border anim_16
+  rotate: false
+  xy: 606, 47
+  size: 195, 224
+  orig: 500, 500
+  offset: 254, 200
+  index: -1
+images/non trans/border glow
+  rotate: false
+  xy: 0, 200
+  size: 327, 311
+  orig: 338, 322
+  offset: 5, 5
+  index: -1
+images/non trans/border white flash
+  rotate: false
+  xy: 0, 513
+  size: 359, 338
+  orig: 432, 432
+  offset: 30, 44
+  index: -1
+images/trans/7 green
+  rotate: true
+  xy: 803, 41
+  size: 136, 141
+  orig: 136, 141
+  offset: 0, 0
+  index: -1
+images/trans/7 purp
+  rotate: true
+  xy: 946, 41
+  size: 136, 141
+  orig: 136, 141
+  offset: 0, 0
+  index: -1
+images/trans/7 red
+  rotate: true
+  xy: 1089, 26
+  size: 135, 141
+  orig: 135, 141
+  offset: 0, 0
+  index: -1
+images/trans/7 yellow
+  rotate: true
+  xy: 1232, 25
+  size: 136, 141
+  orig: 136, 141
+  offset: 0, 0
+  index: -1
+images/trans/base
+  rotate: false
+  xy: 946, 370
+  size: 222, 206
+  orig: 222, 206
+  offset: 0, 0
+  index: -1
+images/trans/border
+  rotate: false
+  xy: 670, 578
+  size: 288, 273
+  orig: 294, 295
+  offset: 3, 4
+  index: -1
+images/trans/ornament
+  rotate: false
+  xy: 361, 541
+  size: 307, 310
+  orig: 315, 318
+  offset: 4, 4
+  index: -1

@@ -298,37 +298,3 @@ Non Trans/Comp 1/PlaytableVFX_00043
   orig: 509, 286
   offset: 240, 117
   index: -1
-
-Pay Table Main Game2.png
-size: 1460,345
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-trans/FIND
-  rotate: true
-  xy: 1435, 299
-  size: 46, 25
-  orig: 46, 25
-  offset: 0, 0
-  index: -1
-trans/WIN
-  rotate: true
-  xy: 1435, 259
-  size: 38, 25
-  orig: 38, 25
-  offset: 0, 0
-  index: -1
-trans/base blue
-  rotate: false
-  xy: 793, 3
-  size: 640, 342
-  orig: 640, 342
-  offset: 0, 0
-  index: -1
-trans/border
-  rotate: false
-  xy: 0, 0
-  size: 791, 345
-  orig: 791, 346
-  offset: 0, 1
-  index: -1

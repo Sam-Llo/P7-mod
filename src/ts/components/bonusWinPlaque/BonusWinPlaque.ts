@@ -1,5 +1,6 @@
+import { throws } from "assert";
 import { TweenMax } from "gsap";
-import { currencyService, ParentDef, soundManager, SpineAnimation, translationService } from "playa-core";
+import { currencyService, ParentDef, soundManager, SpineAnimation, TextAutoFit, translationService } from "playa-core";
 import { AnimatedPlaque, iwProps, IWProps } from "playa-iw";
 import { gameStore } from "..";
 import { LayoutUtils } from "../utils/LayoutUtils";
@@ -12,15 +13,17 @@ export class BonusWinPlaque extends AnimatedPlaque<IWProps, null> {
     //Grab the config
     public static readonly configName: string = "gameConfig.json";
 
-    private static readonly introAnimationName = "Plaque Pop Up/Bonus Plaque Pop Up";
+    private static readonly introAnimationName = "win/white/PlaquePopUpWhite";
 
-    private static readonly outroAnimationName = "Plaque Pop Out/Bonus Plaque Pop Out";
+    private static readonly outroAnimationName = "win/white/PlaquePopOutWhite";
 
-    private static readonly staticLoopAnimationName = "Plaque Static/Bonus Plaque Static";
+    private static readonly staticLoopAnimationName = "win/white/PlaqueStaticWhite";
 
     private static readonly spineAnimName: string = "bonusWinPlaqueAnim";
 
     private _spineAnim!: SpineAnimation;
+
+    private _winTextFields: TextAutoFit[] = [];
 
     private _presentComplete;
 
@@ -52,6 +55,16 @@ export class BonusWinPlaque extends AnimatedPlaque<IWProps, null> {
         this.build(this.layout, new Map(), this.container);
         this._winValuetextStyle = translationService.getStyle("winValueTextStyle") as object;
         this._winLabelStyle = translationService.getStyle("winLabelTextStyle") as object;
+
+        //const buyMsg: any = this.container.children.find((obj: any) => obj.name === this._setupData.BUY_WIN_MESSAGE);
+        //const tryMsg: any = this.container.children.find((obj: any) => obj.name === this._setupData.TRY_WIN_MESSAGE);
+        const winVal: any = this.container.children.find((obj: any) => obj.name === "bonuswinPlaque_value");
+        const winLbl: any = this.container.children.find((obj: any) => obj.name === "bonuswinPlaque_label");
+        this._winTextFields.push(winVal, winLbl);
+
+        this._winTextFields.forEach((obj: TextAutoFit) => {
+            obj.alpha = 0;
+        });
         // Init spine
         this._spineAnim = this.container.children.find(
             (obj) => obj.name === BonusWinPlaque.spineAnimName,
@@ -67,12 +80,23 @@ export class BonusWinPlaque extends AnimatedPlaque<IWProps, null> {
             complete: (entry) => {
                 if (entry.animation.name === BonusWinPlaque.introAnimationName) {
                     gameStore.actions.revealActions.addWin(this._winAmount);
+                    let dur: number = 0;
+                    this._spineAnim.spine.state.data.skeletonData.animations.forEach((anim: any) => {
+                        dur = anim.name === BonusWinPlaque.introAnimationName ? (anim.duration as number) / 2 : dur;
+                    });
+                    this._winTextFields.forEach((obj: TextAutoFit) => {
+                        TweenMax.to(obj, dur, { alpha: 1, delay: dur });
+                    });
                     this.playCoinShowerIfThereIsAnWin();
                     this.setPlaqueAnimationToOutroAfterDelay();
                 } else if (entry.animation.name === BonusWinPlaque.outroAnimationName) {
                     if (this._presentComplete !== undefined) {
+                        this._winTextFields[0].renderable = false;
+                        this._winTextFields[1].renderable = false;
                         this._presentComplete();
                         this._spineAnim.renderable = false;
+                        //this._winTextFields[0].renderable = false;
+                        // this._winTextFields[1].renderable = false;
                     }
                 }
             },
@@ -141,6 +165,11 @@ export class BonusWinPlaque extends AnimatedPlaque<IWProps, null> {
     private setPlaqueAnimationToOutroAfterDelay() {
         gameStore.actions.revealActions.setWinPlauqeIsUp(true);
         TweenMax.delayedCall(this._bonusWinPresentationTime, () => {
+            const dur: number = 0;
+
+            this._winTextFields.forEach((obj: TextAutoFit) => {
+                TweenMax.to(obj, dur, { alpha: 0, delay: dur });
+            });
             this._spineAnim.setAnimation(BonusWinPlaque.outroAnimationName, undefined, false);
             gameStore.actions.revealActions.setWinPlauqeIsUp(false);
         });
@@ -187,8 +216,9 @@ export class BonusWinPlaque extends AnimatedPlaque<IWProps, null> {
             this._spineAnim.setAnimation(BonusWinPlaque.introAnimationName, undefined, false);
             this._spineAnim.addAnimation(BonusWinPlaque.staticLoopAnimationName, undefined, true);
             this._spineAnim.play();
+            this._winTextFields[0].text = currencyService.format(this._winAmount, iwProps.denomination);
 
-            this.changeWinAmountText(data);
+            //this.changeWinAmountText(data);
         });
         this._presentComplete = undefined;
     }

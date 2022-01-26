@@ -1,0 +1,61 @@
+
+winning plaque.png
+size: 1705,1177
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non trans/glow
+  rotate: true
+  xy: 0, 149
+  size: 1028, 1023
+  orig: 1028, 1023
+  offset: 0, 0
+  index: -1
+non trans/glow 2
+  rotate: true
+  xy: 1025, 518
+  size: 659, 680
+  orig: 680, 705
+  offset: 15, 7
+  index: -1
+non trans/lighting
+  rotate: false
+  xy: 1025, 0
+  size: 625, 516
+  orig: 647, 538
+  offset: 11, 11
+  index: -1
+
+winning plaque2.png
+size: 630,900
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/deco frame 1
+  rotate: true
+  xy: 551, 290
+  size: 610, 79
+  orig: 610, 79
+  offset: 0, 0
+  index: -1
+trans/deco frame 2
+  rotate: false
+  xy: 0, 0
+  size: 610, 79
+  orig: 610, 79
+  offset: 0, 0
+  index: -1
+trans/frame
+  rotate: false
+  xy: 0, 460
+  size: 549, 440
+  orig: 559, 450
+  offset: 5, 5
+  index: -1
+trans/panel
+  rotate: false
+  xy: 0, 81
+  size: 485, 377
+  orig: 485, 377
+  offset: 0, 0
+  index: -1

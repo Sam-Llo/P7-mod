@@ -36,6 +36,10 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
 
     private _glowAnim!: SpineAnimation;
 
+    private _symbolSelectAnim!: SpineAnimation;
+
+    private _symbolSelectAnimPrt!: SpineAnimation;
+
     private _paytableAnimSpine!: SpineAnimation;
 
     private _paytableAnimSpinePrt!: SpineAnimation;
@@ -125,14 +129,14 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._paytableAnimSpine.setAnimation(this._config.LandscapeGamePaytableStaticAnimtionName);
         this._paytableAnimSpine.play();
 
-        this._paytableAnimSpinePrt = this.container.children.find(
+        /* this._paytableAnimSpinePrt = this.container.children.find(
             (obj) => obj.name === `PayTableMainGame_anim_prt`,
         ) as SpineAnimation;
         this._paytableAnimSpinePrt.updateTransform();
         this._paytableAnimSpinePrt.setAnimation(this._config.PortraitGamePaytableStaticAnimtionName);
         this._paytableAnimSpinePrt.play();
         this._paytableAnimSpine.renderable = systemProps.orientation === Orientation.LANDSCAPE;
-        this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable;
+        this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable; */
 
         this._glowAnim = this.container.children.find(
             (obj) => obj.name === `initialWinningSymbolsSelection_glow_anim`,
@@ -147,6 +151,26 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
                 this._glowAnim.renderable = false;
             },
         });
+
+        this._symbolSelectAnim = this.container.children.find(
+            (obj) => obj.name === `Symbol Select_anim`,
+        ) as SpineAnimation;
+
+        this._symbolSelectAnim.updateTransform();
+        this._symbolSelectAnim.setAnimation("static/selector/landscape/Selector landscape static");
+        this._symbolSelectAnim.play();
+
+        this._symbolSelectAnimPrt = this.container.children.find(
+            (obj) => obj.name === `Symbol Select_anim_prt`,
+        ) as SpineAnimation;
+
+        this._symbolSelectAnimPrt.updateTransform();
+        this._symbolSelectAnimPrt.setAnimation("static/selector/portrait/Selector portrait static");
+        this._symbolSelectAnimPrt.play();
+
+        this._symbolSelectAnim.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+        this._symbolSelectAnimPrt.renderable = !this._symbolSelectAnim.renderable;
+
         this.findPaytableElements(); // Layout tool base one
 
         this.addReactions();
@@ -178,6 +202,23 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
     public resetAndSpinForever() {
         //TODO: if game is in progress, then just set the winning symbol to the winning one, instead of spin again
         this._initialSymbolSelectionReel.spinWithoutLanding();
+
+        //play reset animation for the symbol select
+        //  if (systemProps.orientation === Orientation.LANDSCAPE) {
+
+        // this._symbolSelectAnimPrt.visible = false;
+        //this._symbolSelectAnim.visible = true;
+        this._symbolSelectAnim.updateTransform();
+        this._symbolSelectAnim.setAnimation("reset/landscape/Selector landscape reset white", undefined, false);
+        this._symbolSelectAnim.play();
+        // } else if (systemProps.orientation === Orientation.PORTRAIT) {
+
+        // }
+        // this._symbolSelectAnim.visible = false;
+        //this._symbolSelectAnimPrt.visible = true;
+        this._symbolSelectAnimPrt.updateTransform();
+        this._symbolSelectAnimPrt.setAnimation("reset/portrait/Selector portrait reset green", undefined, false); //will need to set this to reset white once i get updated anim
+        this._symbolSelectAnimPrt.play();
     }
 
     public land(symbolToLand: string, onCompleteCallback) {
@@ -190,6 +231,22 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._glowAnim.setAnimation("glow", undefined, false); //NOTE: sometimes, just call setAnimation with "name" without additional paramters does not work
 
         this._glowAnim.play();
+        //if (systemProps.orientation === Orientation.LANDSCAPE) {
+        this._symbolSelectAnim.updateTransform();
+        this._symbolSelectAnim.setAnimation(
+            "reveal/selector/landscape/Selector landscape reveal white",
+            undefined,
+            false,
+        );
+        this._symbolSelectAnim.play();
+
+        this._symbolSelectAnimPrt.updateTransform();
+        this._symbolSelectAnimPrt.setAnimation(
+            "reveal/selector/portrait/Selector portrait reveal white",
+            undefined,
+            false,
+        );
+        this._symbolSelectAnimPrt.play();
     }
 
     public setLandingSymbolWithoutSpin(landingSymbol: string) {
@@ -227,11 +284,22 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
             GamePayTable.orientationChanged,
             () => systemProps.orientation,
             (orientation: Orientation) => {
+                //this._paytableAnimSpine.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+                //this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable;
+
+                this._symbolSelectAnim.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+                this._symbolSelectAnimPrt.renderable = !this._symbolSelectAnim.renderable;
+            },
+        );
+
+        MobxUtils.getInstance().addReaction(
+            GamePayTable.orientationChanged,
+            () => systemProps.orientation,
+            (orientation: Orientation) => {
                 this._paytableAnimSpine.renderable = systemProps.orientation === Orientation.LANDSCAPE;
                 this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable;
             },
         );
-
         MobxUtils.getInstance().addReaction(
             "totalWinningSymbolsCountChangedReaction",
             () => gameStore.props.totalWinningSymbolsCount,
@@ -306,9 +374,9 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._paytableAnimSpine.updateTransform();
         this._paytableAnimSpine.setAnimation(`${this._config.LandscapeFadeInWinAnimPrefix}${currentMultiplier}`);
         this._paytableAnimSpine.play();
-        this._paytableAnimSpinePrt.updateTransform();
-        this._paytableAnimSpinePrt.setAnimation(`${this._config.PortraitFadeInWinAnimPrefix}${currentMultiplier}`);
-        this._paytableAnimSpinePrt.play();
+        // this._paytableAnimSpinePrt.updateTransform();
+        // this._paytableAnimSpinePrt.setAnimation(`${this._config.PortraitFadeInWinAnimPrefix}${currentMultiplier}`);
+        //  this._paytableAnimSpinePrt.play();
     }
 
     private playWinHighlights(currentMultiplier: number) {

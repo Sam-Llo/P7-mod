@@ -1,0 +1,208 @@
+
+Jewel_box.png
+size: 2023,1800
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Non trans/glow effect
+  rotate: false
+  xy: 552, 1323
+  size: 371, 342
+  orig: 376, 364
+  offset: 3, 6
+  index: -1
+Trans/base_box
+  rotate: false
+  xy: 1005, 1621
+  size: 274, 179
+  orig: 274, 179
+  offset: 0, 0
+  index: -1
+Trans/gemspin/gemSpin01
+  rotate: true
+  xy: 1594, 97
+  size: 533, 387
+  orig: 704, 528
+  offset: 71, 55
+  index: -1
+Trans/gemspin/gemSpin02
+  rotate: true
+  xy: 0, 148
+  size: 529, 386
+  orig: 704, 528
+  offset: 73, 57
+  index: -1
+Trans/gemspin/gemSpin03
+  rotate: false
+  xy: 1059, 774
+  size: 539, 382
+  orig: 704, 528
+  offset: 65, 60
+  index: -1
+Trans/gemspin/gemSpin05
+  rotate: false
+  xy: 1057, 389
+  size: 535, 383
+  orig: 704, 528
+  offset: 68, 63
+  index: -1
+Trans/gemspin/gemSpin06
+  rotate: false
+  xy: 925, 1241
+  size: 531, 378
+  orig: 704, 528
+  offset: 68, 64
+  index: -1
+Trans/gemspin/gemSpin08
+  rotate: false
+  xy: 528, 472
+  size: 527, 384
+  orig: 704, 528
+  offset: 72, 60
+  index: -1
+Trans/gemspin/gemSpin09
+  rotate: false
+  xy: 388, 85
+  size: 542, 385
+  orig: 704, 528
+  offset: 67, 58
+  index: -1
+Trans/gemspin/gemSpin10
+  rotate: true
+  xy: 1600, 632
+  size: 524, 388
+  orig: 704, 528
+  offset: 71, 57
+  index: -1
+Trans/gemspin/gemSpin11
+  rotate: false
+  xy: 1458, 1158
+  size: 532, 378
+  orig: 704, 528
+  offset: 68, 66
+  index: -1
+Trans/gemspin/gemSpin12
+  rotate: false
+  xy: 0, 679
+  size: 526, 382
+  orig: 704, 528
+  offset: 70, 61
+  index: -1
+Trans/gemspin/gemSpin13
+  rotate: false
+  xy: 0, 1063
+  size: 530, 380
+  orig: 704, 528
+  offset: 72, 63
+  index: -1
+Trans/gemspin/gemSpin14
+  rotate: false
+  xy: 932, 0
+  size: 538, 387
+  orig: 704, 528
+  offset: 65, 60
+  index: -1
+Trans/gemspin/gemSpin15
+  rotate: false
+  xy: 532, 858
+  size: 525, 381
+  orig: 704, 528
+  offset: 76, 62
+  index: -1
+Trans/glass_closed
+  rotate: true
+  xy: 1807, 1538
+  size: 262, 216
+  orig: 262, 216
+  offset: 0, 0
+  index: -1
+Trans/glass_open
+  rotate: false
+  xy: 732, 1667
+  size: 271, 133
+  orig: 271, 133
+  offset: 0, 0
+  index: -1
+Trans/gold_bar
+  rotate: true
+  xy: 0, 1502
+  size: 218, 272
+  orig: 220, 285
+  offset: 1, 11
+  index: -1
+Trans/gold_bar_back
+  rotate: false
+  xy: 274, 1445
+  size: 276, 237
+  orig: 276, 241
+  offset: 0, 4
+  index: -1
+Trans/gold_rim
+  rotate: false
+  xy: 456, 1684
+  size: 274, 116
+  orig: 274, 116
+  offset: 0, 0
+  index: -1
+Trans/gold_rim_2
+  rotate: false
+  xy: 152, 1722
+  size: 302, 78
+  orig: 302, 115
+  offset: 0, 0
+  index: -1
+Trans/gold_top
+  rotate: false
+  xy: 0, 1781
+  size: 48, 19
+  orig: 48, 19
+  offset: 0, 0
+  index: -1
+Trans/link
+  rotate: false
+  xy: 50, 1749
+  size: 100, 51
+  orig: 106, 56
+  offset: 3, 2
+  index: -1
+Trans/shadow
+  rotate: false
+  xy: 1281, 1621
+  size: 524, 179
+  orig: 585, 200
+  offset: 31, 10
+  index: -1
+
+Jewel_box2.png
+size: 1283,1015
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Non trans/glow
+  rotate: false
+  xy: 0, 391
+  size: 663, 624
+  orig: 708, 628
+  offset: 23, 3
+  index: -1
+Trans/gemspin/gemSpin04
+  rotate: false
+  xy: 665, 2
+  size: 536, 392
+  orig: 704, 528
+  offset: 66, 51
+  index: -1
+Trans/gemspin/gemSpin07
+  rotate: false
+  xy: 0, 0
+  size: 536, 389
+  orig: 704, 528
+  offset: 69, 56
+  index: -1
+Trans/value
+  rotate: true
+  xy: 665, 396
+  size: 619, 618
+  orig: 619, 618
+  offset: 0, 0
+  index: -1

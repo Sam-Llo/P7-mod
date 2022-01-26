@@ -20,6 +20,9 @@
     "SymbolsBonusBackgroundPrefix": "_symbolsBonusBackground",
     "ShadedGridHighlightAnimationName": "animation",
     "PaytableHighlightSparkleAnimationName": "Bonus pay table vfx",
+    "PaytableHighlightAnimationNameLeft": "reveal/white/white selector landscape reveal left",
+    "PaytableHighlightAnimationNameReset": "reset/white/white selector landscape reset right",
+    
     "GameOptions": {
         "BonusGridElements": 16,
         "PrizeDivisionPrefix": "B",
@@ -29,13 +32,13 @@
         "MaxSpinCounterNumber": 3,
         "IsSequenceSpin": true
     },
-    "BonusWinSpineAnimation": "BonusDrink.skel",
+    "BonusWinSpineAnimation": "bonus symbol.skel",
     "WinningAnimations": {
-        "Reveal1": "Reveal1",
-        "Reveal2": "Reveal2",
-        "Reveal3": "Reveal3",
-        "Idle1": "Idle1",
-        "Idle2": "Idle2",
+        "Reveal1": "Reveal 1",
+        "Reveal2": "Reveal 2 try 1",
+        "Reveal3": "Reveal 3 try 1",
+        "Idle1": "Idle 1",
+        "Idle2": "Idle 2",
         "Idle3": "Idle 3",
         "BonusBoardWin": "BonusBoardWin",
         "BonusBoardLoop": "BonusBoardLoop"

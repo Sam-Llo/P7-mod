@@ -28,13 +28,13 @@ export class Chest extends BaseView<any, null, any, null> {
 
     private _winAmount!: number;
 
-    private static chestIntroAnimationName = "Chest/chestIntro";
+    private static chestIntroAnimationName = "chestIntro";
 
-    private static chestOpeningAnimationName = "Chest/chestOpen";
+    private static chestOpeningAnimationName = "chestOpen";
 
-    private static chestOpendedLoopAnimationName = "Chest/chestIdleOpen";
+    private static chestOpendedLoopAnimationName = "chestIdleOpen";
 
-    private static chestOutroAnimationName = "Chest/chestOutro";
+    private static chestOutroAnimationName = "chestOutro";
 
     private static chestBackgroundIntroAnimationName = "Fade/FadeIntro";
 
@@ -81,7 +81,7 @@ export class Chest extends BaseView<any, null, any, null> {
         this._chestAnimBG.renderable = false;
 
         // eslint-disable-next-line prefer-destructuring
-        this._chestValueContainer = this._chestAnim.spine.children[19];
+        this._chestValueContainer = this._chestAnim.spine.children[13];
 
         this.setUpSpineAnimationEventListners();
     }

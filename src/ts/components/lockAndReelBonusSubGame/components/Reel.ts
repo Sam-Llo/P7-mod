@@ -674,7 +674,7 @@ export class Reel extends BaseView<any, null, any, null> {
         this._symbolsTextureNameMap.set("M", "symbolBonus3Static_img");
         this._symbolsTextureNameMap.set("N", "symbolBonus5Static_img");
         this._symbolsTextureNameMap.set("O", "symbolBonus6Static_img");
-        this._symbolsTextureNameMap.set("P", "symbolBonus7Static_img");
+        this._symbolsTextureNameMap.set("P", "symbolBonus6Static_img");
         this._symbolsTextureNameMap.set("Q", "symbolBonus8Static_img");
         this._symbolsTextureNameMap.set("R", "symbolBonus9Static_img");
     }

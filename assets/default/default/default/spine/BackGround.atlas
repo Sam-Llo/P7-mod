@@ -1,232 +1,377 @@
 
-BackGround.png
-size: 2018,1973
+background.png
+size: 578,285
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-trans/Reflection Landscape
+sparkles reference
   rotate: false
-  xy: 0, 290
-  size: 1996, 249
-  orig: 1996, 253
-  offset: 0, 2
-  index: -1
-trans/Reflection Portrait
-  rotate: false
-  xy: 0, 1058
-  size: 1379, 247
-  orig: 1379, 251
-  offset: 0, 2
-  index: -1
-trans/cloud1a
-  rotate: false
-  xy: 1332, 1761
-  size: 494, 212
-  orig: 495, 216
-  offset: 0, 2
-  index: -1
-trans/cloud1bLandscape
-  rotate: false
-  xy: 495, 760
-  size: 562, 296
-  orig: 563, 300
-  offset: 0, 2
-  index: -1
-trans/cloud2a
-  rotate: false
-  xy: 1487, 1514
-  size: 531, 245
-  orig: 532, 249
-  offset: 1, 2
-  index: -1
-trans/cloud2b
-  rotate: false
-  xy: 0, 791
-  size: 493, 265
-  orig: 494, 267
+  xy: 0, 0
+  size: 578, 285
+  orig: 580, 287
   offset: 1, 1
   index: -1
+
+background2.png
+size: 2040,1742
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non trans/base landscape
+  rotate: false
+  xy: 0, 0
+  size: 2040, 1410
+  orig: 2040, 1410
+  offset: 0, 0
+  index: -1
+non trans/gold trim header
+  rotate: false
+  xy: 102, 1412
+  size: 1555, 330
+  orig: 1602, 605
+  offset: 27, 107
+  index: -1
+non trans/sparkle
+  rotate: false
+  xy: 0, 1642
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+
+background3.png
+size: 1410,2040
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non trans/base portrait
+  rotate: false
+  xy: 0, 0
+  size: 1410, 2040
+  orig: 1410, 2040
+  offset: 0, 0
+  index: -1
+
+background4.png
+size: 2040,1410
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non trans/bleed
+  rotate: false
+  xy: 0, 0
+  size: 2040, 1410
+  orig: 2040, 1410
+  offset: 0, 0
+  index: -1
+
+background5.png
+size: 2040,1410
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non trans/main curtain landscape
+  rotate: false
+  xy: 0, 0
+  size: 2040, 1410
+  orig: 2040, 1410
+  offset: 0, 0
+  index: -1
+
+background6.png
+size: 1410,2040
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non trans/main curtain portrait
+  rotate: false
+  xy: 0, 0
+  size: 1410, 2040
+  orig: 1410, 2040
+  offset: 0, 0
+  index: -1
+
+background7.png
+size: 1971,394
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non trans/gold trim/gold trim anim_00001
+  rotate: true
+  xy: 369, 130
+  size: 66, 16
+  orig: 1602, 605
+  offset: 106, 277
+  index: -1
+non trans/gold trim/gold trim anim_00002
+  rotate: true
+  xy: 1951, 110
+  size: 121, 16
+  orig: 1602, 605
+  offset: 106, 277
+  index: -1
+non trans/gold trim/gold trim anim_00003
+  rotate: false
+  xy: 678, 4
+  size: 171, 26
+  orig: 1602, 605
+  offset: 106, 277
+  index: -1
+non trans/gold trim/gold trim anim_00004
+  rotate: false
+  xy: 1581, 7
+  size: 219, 43
+  orig: 1602, 605
+  offset: 106, 277
+  index: -1
+non trans/gold trim/gold trim anim_00005
+  rotate: false
+  xy: 1081, 160
+  size: 267, 60
+  orig: 1602, 605
+  offset: 106, 277
+  index: -1
+non trans/gold trim/gold trim anim_00006
+  rotate: false
+  xy: 712, 32
+  size: 273, 73
+  orig: 1602, 605
+  offset: 150, 277
+  index: -1
+non trans/gold trim/gold trim anim_00007
+  rotate: false
+  xy: 1702, 317
+  size: 269, 77
+  orig: 1602, 605
+  offset: 207, 281
+  index: -1
+non trans/gold trim/gold trim anim_00008
+  rotate: false
+  xy: 1306, 39
+  size: 273, 68
+  orig: 1602, 605
+  offset: 259, 292
+  index: -1
+non trans/gold trim/gold trim anim_00009
+  rotate: false
+  xy: 1350, 109
+  size: 286, 53
+  orig: 1602, 605
+  offset: 307, 308
+  index: -1
+non trans/gold trim/gold trim anim_00010
+  rotate: false
+  xy: 369, 0
+  size: 307, 36
+  orig: 1602, 605
+  offset: 354, 325
+  index: -1
+non trans/gold trim/gold trim anim_00011
+  rotate: false
+  xy: 1354, 303
+  size: 346, 91
+  orig: 1602, 605
+  offset: 404, 270
+  index: -1
+non trans/gold trim/gold trim anim_00012
+  rotate: false
+  xy: 0, 198
+  size: 389, 196
+  orig: 1602, 605
+  offset: 456, 165
+  index: -1
+non trans/gold trim/gold trim anim_00013
+  rotate: false
+  xy: 0, 0
+  size: 367, 196
+  orig: 1602, 605
+  offset: 510, 164
+  index: -1
+non trans/gold trim/gold trim anim_00014
+  rotate: false
+  xy: 391, 202
+  size: 345, 192
+  orig: 1602, 605
+  offset: 571, 164
+  index: -1
+non trans/gold trim/gold trim anim_00015
+  rotate: false
+  xy: 738, 216
+  size: 322, 178
+  orig: 1602, 605
+  offset: 637, 164
+  index: -1
+non trans/gold trim/gold trim anim_00016
+  rotate: false
+  xy: 1062, 222
+  size: 290, 172
+  orig: 1602, 605
+  offset: 715, 167
+  index: -1
+non trans/gold trim/gold trim anim_00017
+  rotate: false
+  xy: 1081, 5
+  size: 223, 153
+  orig: 1602, 605
+  offset: 832, 199
+  index: -1
+non trans/gold trim/gold trim anim_00018
+  rotate: false
+  xy: 1705, 116
+  size: 244, 115
+  orig: 1602, 605
+  offset: 864, 244
+  index: -1
+non trans/gold trim/gold trim anim_00019
+  rotate: false
+  xy: 1705, 233
+  size: 265, 82
+  orig: 1602, 605
+  offset: 901, 279
+  index: -1
+non trans/gold trim/gold trim anim_00020
+  rotate: false
+  xy: 1350, 164
+  size: 287, 54
+  orig: 1602, 605
+  offset: 941, 307
+  index: -1
+non trans/gold trim/gold trim anim_00021
+  rotate: false
+  xy: 745, 107
+  size: 309, 39
+  orig: 1602, 605
+  offset: 987, 322
+  index: -1
+non trans/gold trim/gold trim anim_00022
+  rotate: false
+  xy: 745, 148
+  size: 334, 66
+  orig: 1602, 605
+  offset: 1036, 295
+  index: -1
+non trans/gold trim/gold trim anim_00023
+  rotate: false
+  xy: 1354, 220
+  size: 349, 81
+  orig: 1602, 605
+  offset: 1088, 280
+  index: -1
+non trans/gold trim/gold trim anim_00024
+  rotate: false
+  xy: 391, 117
+  size: 352, 83
+  orig: 1602, 605
+  offset: 1144, 277
+  index: -1
+non trans/gold trim/gold trim anim_00025
+  rotate: false
+  xy: 369, 38
+  size: 341, 77
+  orig: 1602, 605
+  offset: 1205, 277
+  index: -1
+non trans/gold trim/gold trim anim_00026
+  rotate: false
+  xy: 1638, 52
+  size: 274, 62
+  orig: 1602, 605
+  offset: 1272, 277
+  index: -1
+non trans/gold trim/gold trim anim_00027
+  rotate: false
+  xy: 1306, 2
+  size: 200, 35
+  orig: 1602, 605
+  offset: 1346, 277
+  index: -1
+non trans/gold trim/gold trim anim_00028
+  rotate: false
+  xy: 851, 13
+  size: 132, 17
+  orig: 1602, 605
+  offset: 1414, 277
+  index: -1
+non trans/gold trim/gold trim anim_00029
+  rotate: false
+  xy: 1508, 21
+  size: 71, 16
+  orig: 1602, 605
+  offset: 1475, 277
+  index: -1
+
+background8.png
+size: 2011,1733
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/border
+  rotate: false
+  xy: 0, 147
+  size: 1440, 197
+  orig: 1440, 278
+  offset: 0, 0
+  index: -1
+trans/curtain
+  rotate: true
+  xy: 922, 0
+  size: 145, 445
+  orig: 152, 445
+  offset: 7, 0
+  index: -1
+trans/folded_curtain
+  rotate: true
+  xy: 1763, 1115
+  size: 618, 201
+  orig: 639, 239
+  offset: 19, 17
+  index: -1
+trans/gold trim header landscape
+  rotate: false
+  xy: 0, 595
+  size: 1440, 326
+  orig: 1440, 331
+  offset: 0, 5
+  index: -1
+trans/gold trim header portrait
+  rotate: true
+  xy: 1442, 923
+  size: 810, 319
+  orig: 810, 326
+  offset: 0, 7
+  index: -1
 trans/logo
-  rotate: false
-  xy: 163, 1832
-  size: 526, 141
-  orig: 526, 141
+  rotate: true
+  xy: 1702, 204
+  size: 717, 309
+  orig: 717, 309
   offset: 0, 0
   index: -1
-trans/palm 01
+trans/middle curtain
   rotate: false
-  xy: 899, 1774
-  size: 431, 199
-  orig: 431, 199
-  offset: 0, 0
+  xy: 0, 9
+  size: 920, 136
+  orig: 928, 139
+  offset: 4, 3
   index: -1
-trans/palm 02
+trans/pattern layers landscape
   rotate: false
-  xy: 0, 1615
-  size: 439, 215
-  orig: 439, 215
-  offset: 0, 0
-  index: -1
-trans/palm 03
-  rotate: false
-  xy: 1413, 1252
-  size: 504, 260
-  orig: 504, 264
+  xy: 0, 346
+  size: 1440, 247
+  orig: 1440, 250
   offset: 0, 3
   index: -1
-trans/palm 04
+trans/pattern layers portrait
   rotate: true
-  xy: 441, 1560
-  size: 270, 248
-  orig: 270, 248
-  offset: 0, 0
-  index: -1
-trans/palm 05
-  rotate: true
-  xy: 1381, 989
-  size: 261, 441
-  orig: 261, 441
-  offset: 0, 0
-  index: -1
-trans/seaLandscape
-  rotate: false
-  xy: 0, 0
-  size: 1999, 288
-  orig: 1999, 290
+  xy: 1442, 112
+  size: 809, 258
+  orig: 810, 259
   offset: 0, 1
   index: -1
-trans/sun
+trans/shadow overlay
   rotate: false
-  xy: 1059, 541
-  size: 717, 446
-  orig: 794, 518
-  offset: 56, 72
-  index: -1
-trans/sunLandscape
-  rotate: false
-  xy: 1059, 541
-  size: 717, 446
-  orig: 794, 518
-  offset: 56, 72
-  index: -1
-trans/sun Bonus
-  rotate: false
-  xy: 0, 1866
-  size: 161, 107
-  orig: 278, 163
-  offset: 61, 2
-  index: -1
-trans/trunk
-  rotate: true
-  xy: 691, 1803
-  size: 170, 206
-  orig: 170, 797
-  offset: 0, 591
-  index: -1
-trans/wave
-  rotate: false
-  xy: 691, 1534
-  size: 794, 225
-  orig: 794, 233
-  offset: 0, 1
-  index: -1
-trans/waveLandscape
-  rotate: false
-  xy: 0, 1307
-  size: 1411, 225
-  orig: 1411, 232
-  offset: 0, 1
-  index: -1
-
-BackGround2.png
-size: 1867,1780
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-trans/BonusSkyPortrait
-  rotate: false
-  xy: 0, 0
-  size: 794, 504
-  orig: 794, 504
-  offset: 0, 0
-  index: -1
-trans/barPotrait
-  rotate: false
-  xy: 0, 506
-  size: 1577, 1274
-  orig: 1581, 1276
-  offset: 2, 2
-  index: -1
-trans/seaPortrait
-  rotate: true
-  xy: 1579, 398
-  size: 1382, 288
-  orig: 1382, 290
-  offset: 0, 1
-  index: -1
-
-BackGround3.png
-size: 1382,1347
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-trans/skyPortrait
-  rotate: false
-  xy: 0, 0
-  size: 1382, 1347
-  orig: 1382, 1381
-  offset: 0, 34
-  index: -1
-
-BackGround4.png
-size: 2021,1411
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-trans/BonusSkyLandscape
-  rotate: true
-  xy: 1233, 0
-  size: 1411, 788
-  orig: 1411, 794
-  offset: 0, 6
-  index: -1
-trans/barLandscape
-  rotate: false
-  xy: 0, 636
-  size: 1231, 775
-  orig: 1235, 776
-  offset: 2, 1
-  index: -1
-
-BackGround5.png
-size: 1999,1798
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-trans/shoreLandscape
-  rotate: false
-  xy: 0, 899
-  size: 1998, 899
-  orig: 1998, 899
-  offset: 0, 0
-  index: -1
-trans/skyLandscape
-  rotate: false
-  xy: 0, 0
-  size: 1999, 897
-  orig: 1999, 931
-  offset: 0, 34
-  index: -1
-
-BackGround6.png
-size: 1381,1025
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-trans/shorePortrait
-  rotate: false
-  xy: 0, 0
-  size: 1381, 1025
-  orig: 1381, 1025
+  xy: 0, 923
+  size: 1440, 810
+  orig: 1440, 810
   offset: 0, 0
   index: -1

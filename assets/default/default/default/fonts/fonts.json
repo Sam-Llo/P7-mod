@@ -91,6 +91,11 @@
             ]
         },
         {
+            "src": ["OswaldLocCur-Medium.ttf", "OswaldLocCur-Medium.woff", "OswaldLocCur-Medium.woff2"],
+            "font-family": "OswaldLocCur-Medium",
+            "format": ["truetype", "woff", "woff2", "embedded-opentype", "svg"]
+        },
+        {
             "src": [
                 "Lato-Regular.ttf",
                 "Lato-Regular.woff",
