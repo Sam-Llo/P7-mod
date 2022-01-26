@@ -1,22 +1,22 @@
 
 Symbols.jpg
-size: 834,624
+size: 434,262
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 jpeg/7 glow
   rotate: false
-  xy: 665, 447
+  xy: 265, 85
   size: 169, 177
   orig: 460, 460
   offset: 147, 147
   index: -1
 jpeg/glow
-  rotate: false
+  rotate: true
   xy: 0, 0
-  size: 663, 624
-  orig: 708, 628
-  offset: 23, 3
+  size: 262, 263
+  orig: 270, 270
+  offset: 5, 5
   index: -1
 
 Symbols2.jpg
@@ -270,118 +270,132 @@ jpeg/goldframe/goldframe_00020
   index: -1
 
 Symbols.png
-size: 215,917
+size: 290,1047
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 png/7
   rotate: true
-  xy: 152, 856
+  xy: 227, 250
   size: 61, 63
   orig: 61, 63
   offset: 0, 0
   index: -1
 png/7_bonus
   rotate: true
-  xy: 0, 198
+  xy: 124, 214
   size: 97, 101
   orig: 97, 101
   offset: 0, 0
   index: -1
 png/7_green
   rotate: true
-  xy: 103, 100
+  xy: 0, 206
   size: 97, 101
   orig: 97, 101
   offset: 0, 0
   index: -1
 png/7_purple
   rotate: true
-  xy: 0, 99
+  xy: 103, 115
   size: 97, 101
   orig: 97, 101
   offset: 0, 0
   index: -1
 png/7_red
   rotate: true
-  xy: 103, 1
+  xy: 0, 107
   size: 97, 101
   orig: 97, 101
   offset: 0, 0
   index: -1
 png/7_yellow
   rotate: true
-  xy: 0, 0
+  xy: 103, 16
   size: 97, 101
   orig: 97, 101
   offset: 0, 0
   index: -1
 png/base_full
   rotate: false
-  xy: 0, 508
+  xy: 152, 524
   size: 126, 125
   orig: 126, 125
   offset: 0, 0
   index: -1
+png/chest_jewelbox
+  rotate: true
+  xy: 0, 483
+  size: 146, 148
+  orig: 150, 150
+  offset: 2, 0
+  index: -1
 png/details
   rotate: false
-  xy: 0, 767
+  xy: 0, 631
   size: 150, 150
   orig: 150, 150
   offset: 0, 0
   index: -1
 png/gem01
-  rotate: true
-  xy: 128, 430
+  rotate: false
+  xy: 0, 394
   size: 122, 87
   orig: 122, 88
   offset: 0, 0
   index: -1
 png/gem02
   rotate: false
-  xy: 0, 419
+  xy: 124, 313
   size: 122, 87
   orig: 122, 88
   offset: 0, 0
   index: -1
 png/gem03
-  rotate: true
-  xy: 124, 306
+  rotate: false
+  xy: 0, 305
   size: 122, 87
   orig: 122, 88
   offset: 0, 0
   index: -1
 png/gem04
   rotate: false
-  xy: 123, 199
+  xy: 206, 107
   size: 84, 105
   orig: 90, 108
   offset: 6, 0
   index: -1
 png/gem05
   rotate: false
-  xy: 132, 660
+  xy: 206, 0
   size: 83, 105
   orig: 90, 108
   offset: 7, 0
   index: -1
 png/gem06
   rotate: false
-  xy: 132, 554
+  xy: 0, 1
   size: 83, 104
   orig: 90, 108
   offset: 7, 1
   index: -1
 png/goldframe
   rotate: false
-  xy: 0, 635
+  xy: 152, 651
   size: 130, 130
   orig: 130, 130
   offset: 0, 0
   index: -1
+png/ring
+  rotate: false
+  xy: 0, 783
+  size: 280, 264
+  orig: 480, 270
+  offset: 99, 5
+  index: -1
 png/shadow
   rotate: false
-  xy: 0, 297
+  xy: 150, 402
   size: 121, 120
   orig: 121, 120
   offset: 0, 0

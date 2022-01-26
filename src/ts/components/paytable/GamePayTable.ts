@@ -1,4 +1,4 @@
-import { Ease, TimelineMax, TweenMax } from "gsap";
+import { Ease, TimelineMax } from "gsap";
 import { Container } from "pixi.js";
 import {
     BaseAction,
@@ -30,8 +30,6 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
 
     public static readonly configName = "gamePaytableConfig.json";
 
-    private static readonly DELAY: number = 0.7;
-
     private _config;
 
     private _initialSymbolSelectionReel!: InitialSymbolSelectionReel;
@@ -39,6 +37,8 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
     private _glowAnim!: SpineAnimation;
 
     private _symbolSelectAnim!: SpineAnimation;
+
+    private _symbolSelectAnimPrt!: SpineAnimation;
 
     private _paytableAnimSpine!: SpineAnimation;
 
@@ -125,22 +125,18 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._paytableAnimSpine = this.container.children.find(
             (obj) => obj.name === `PayTableMainGame_anim`,
         ) as SpineAnimation;
-        //this._paytableAnimSpine.updateTransform();
-        //this._paytableAnimSpine.setAnimation(this._config.LandscapeGamePaytableStaticAnimtionName);
-        //this._paytableAnimSpine.play();
+        this._paytableAnimSpine.updateTransform();
+        this._paytableAnimSpine.setAnimation(this._config.LandscapeGamePaytableStaticAnimtionName);
+        this._paytableAnimSpine.play();
 
-        this._paytableAnimSpinePrt = this.container.children.find(
+        /* this._paytableAnimSpinePrt = this.container.children.find(
             (obj) => obj.name === `PayTableMainGame_anim_prt`,
         ) as SpineAnimation;
-        //this._paytableAnimSpinePrt.updateTransform();
-        //this._paytableAnimSpinePrt.setAnimation(this._config.PortraitGamePaytableStaticAnimtionName);
-        //this._paytableAnimSpinePrt.play();
+        this._paytableAnimSpinePrt.updateTransform();
+        this._paytableAnimSpinePrt.setAnimation(this._config.PortraitGamePaytableStaticAnimtionName);
+        this._paytableAnimSpinePrt.play();
         this._paytableAnimSpine.renderable = systemProps.orientation === Orientation.LANDSCAPE;
-        this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable;
-
-        this._symbolSelectAnim = this.container.children.find(
-            (obj) => obj.name === `Symbol Select_anim`,
-        ) as SpineAnimation;
+        this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable; */
 
         this._glowAnim = this.container.children.find(
             (obj) => obj.name === `initialWinningSymbolsSelection_glow_anim`,
@@ -155,6 +151,26 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
                 this._glowAnim.renderable = false;
             },
         });
+
+        this._symbolSelectAnim = this.container.children.find(
+            (obj) => obj.name === `Symbol Select_anim`,
+        ) as SpineAnimation;
+
+        this._symbolSelectAnim.updateTransform();
+        this._symbolSelectAnim.setAnimation("static/selector/landscape/Selector landscape static");
+        this._symbolSelectAnim.play();
+
+        this._symbolSelectAnimPrt = this.container.children.find(
+            (obj) => obj.name === `Symbol Select_anim_prt`,
+        ) as SpineAnimation;
+
+        this._symbolSelectAnimPrt.updateTransform();
+        this._symbolSelectAnimPrt.setAnimation("static/selector/portrait/Selector portrait static");
+        this._symbolSelectAnimPrt.play();
+
+        this._symbolSelectAnim.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+        this._symbolSelectAnimPrt.renderable = !this._symbolSelectAnim.renderable;
+
         this.findPaytableElements(); // Layout tool base one
 
         this.addReactions();
@@ -175,18 +191,6 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
 
     private findPaytableElementByMultiplierNumber(num: number) {
         const symbolPaytable = this.container.children.find((obj) => obj.name === `symbolPaytable${num}`) as Container;
-
-        this[`${this._config.PaytableMultiplierAnimNamePrefix}${num}`] = symbolPaytable.children.find((obj) =>
-            obj.name.includes("paytable_multiplier_anim"),
-        ) as SpineAnimation;
-        this[`${this._config.PaytableMultiplierAnimNamePrefix}${num}`].updateTransform();
-        this[`${this._config.PaytableMultiplierAnimNamePrefix}${num}`].setAnimation(
-            this._config.PaytableHighlightAnimationNameRight,
-            undefined,
-            false,
-        );
-        this[`${this._config.PaytableMultiplierAnimNamePrefix}${num}`].play();
-
         this[`${this._config.WinFindLabelTextPrefix}${num}`] = symbolPaytable.children.find((obj) =>
             obj.name.includes("find_value"),
         ) as TextAutoFit;
@@ -199,10 +203,22 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         //TODO: if game is in progress, then just set the winning symbol to the winning one, instead of spin again
         this._initialSymbolSelectionReel.spinWithoutLanding();
 
-        //play reset animationg for the symbol select
+        //play reset animation for the symbol select
+        //  if (systemProps.orientation === Orientation.LANDSCAPE) {
+
+        // this._symbolSelectAnimPrt.visible = false;
+        //this._symbolSelectAnim.visible = true;
         this._symbolSelectAnim.updateTransform();
         this._symbolSelectAnim.setAnimation("reset/landscape/Selector landscape reset white", undefined, false);
         this._symbolSelectAnim.play();
+        // } else if (systemProps.orientation === Orientation.PORTRAIT) {
+
+        // }
+        // this._symbolSelectAnim.visible = false;
+        //this._symbolSelectAnimPrt.visible = true;
+        this._symbolSelectAnimPrt.updateTransform();
+        this._symbolSelectAnimPrt.setAnimation("reset/portrait/Selector portrait reset green", undefined, false); //will need to set this to reset white once i get updated anim
+        this._symbolSelectAnimPrt.play();
     }
 
     public land(symbolToLand: string, onCompleteCallback) {
@@ -213,6 +229,9 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._glowAnim.renderable = true;
         this._glowAnim.updateTransform();
         this._glowAnim.setAnimation("glow", undefined, false); //NOTE: sometimes, just call setAnimation with "name" without additional paramters does not work
+
+        this._glowAnim.play();
+        //if (systemProps.orientation === Orientation.LANDSCAPE) {
         this._symbolSelectAnim.updateTransform();
         this._symbolSelectAnim.setAnimation(
             "reveal/selector/landscape/Selector landscape reveal white",
@@ -220,7 +239,14 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
             false,
         );
         this._symbolSelectAnim.play();
-        this._glowAnim.play();
+
+        this._symbolSelectAnimPrt.updateTransform();
+        this._symbolSelectAnimPrt.setAnimation(
+            "reveal/selector/portrait/Selector portrait reveal white",
+            undefined,
+            false,
+        );
+        this._symbolSelectAnimPrt.play();
     }
 
     public setLandingSymbolWithoutSpin(landingSymbol: string) {
@@ -258,11 +284,22 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
             GamePayTable.orientationChanged,
             () => systemProps.orientation,
             (orientation: Orientation) => {
+                //this._paytableAnimSpine.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+                //this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable;
+
+                this._symbolSelectAnim.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+                this._symbolSelectAnimPrt.renderable = !this._symbolSelectAnim.renderable;
+            },
+        );
+
+        MobxUtils.getInstance().addReaction(
+            GamePayTable.orientationChanged,
+            () => systemProps.orientation,
+            (orientation: Orientation) => {
                 this._paytableAnimSpine.renderable = systemProps.orientation === Orientation.LANDSCAPE;
                 this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable;
             },
         );
-
         MobxUtils.getInstance().addReaction(
             "totalWinningSymbolsCountChangedReaction",
             () => gameStore.props.totalWinningSymbolsCount,
@@ -280,9 +317,6 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
     }
 
     private turnCurrentlyHighlightedWinningNumbersToNormalColour() {
-        const highlightAnim = this[
-            `${this._config.PaytableMultiplierAnimNamePrefix}${this._currentHighlightedMultiplierNum}`
-        ];
         const timeline = new TimelineMax();
         //change back to normal colour
         timeline.fromTo(
@@ -295,26 +329,11 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
             { tint: GamePayTable.originalTintColour },
             "0",
         );
-        highlightAnim.visible = false;
     }
 
     private highlightTransitionWinningAmounts(startingIndex: number, currentMultiplier: number) {
         for (let i = startingIndex; i < currentMultiplier; i++) {
             const timeline = new TimelineMax();
-            const highlightAnim = this[`${this._config.PaytableMultiplierAnimNamePrefix}${i}`];
-
-            highlightAnim.visible = true;
-
-            if (currentMultiplier < 8) {
-                highlightAnim.updateTransform();
-                highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameRight, undefined, false);
-                highlightAnim.play();
-            } else {
-                highlightAnim.updateTransform();
-                highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameLeft, undefined, false);
-                highlightAnim.play();
-            }
-
             timeline.fromTo(
                 [
                     this[`${this._config.WinFindLabelTextPrefix}${i}`],
@@ -335,7 +354,6 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
                 { tint: GamePayTable.originalTintColour },
                 `<${this._config.TransitionFlashingTextAnimationLength}`,
             );
-            highlightAnim.visible = false;
         }
     }
 
@@ -356,35 +374,9 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._paytableAnimSpine.updateTransform();
         this._paytableAnimSpine.setAnimation(`${this._config.LandscapeFadeInWinAnimPrefix}${currentMultiplier}`);
         this._paytableAnimSpine.play();
-        this._paytableAnimSpinePrt.updateTransform();
-        this._paytableAnimSpinePrt.setAnimation(`${this._config.PortraitFadeInWinAnimPrefix}${currentMultiplier}`);
-        this._paytableAnimSpinePrt.play();
-
-        const highlightAnim = this[`${this._config.PaytableMultiplierAnimNamePrefix}${currentMultiplier}`];
-        highlightAnim.visible = true;
-
-        if (currentMultiplier < 8) {
-            highlightAnim.updateTransform();
-            highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameRight, undefined, false);
-            highlightAnim.play();
-
-            TweenMax.delayedCall(
-                GamePayTable.DELAY, // highlightAnim.onComplete +
-                () => {
-                    highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameReset, undefined, false);
-                    highlightAnim.play();
-                },
-            );
-        } else {
-            highlightAnim.updateTransform();
-            highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameLeft, undefined, false);
-            highlightAnim.play();
-
-            TweenMax.delayedCall(GamePayTable.DELAY, () => {
-                highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameReset, undefined, false);
-                highlightAnim.play();
-            });
-        }
+        // this._paytableAnimSpinePrt.updateTransform();
+        // this._paytableAnimSpinePrt.setAnimation(`${this._config.PortraitFadeInWinAnimPrefix}${currentMultiplier}`);
+        //  this._paytableAnimSpinePrt.play();
     }
 
     private playWinHighlights(currentMultiplier: number) {
@@ -444,14 +436,6 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
                 "0",
             );
         }
-        const highlightAnim = this[
-            `${this._config.PaytableMultiplierAnimNamePrefix}${this._currentHighlightedMultiplierNum}`
-        ];
-        /*         highlightAnim.updateTransform();
-        highlightAnim.setAnimation(this._config.PaytableHighlightAnimationNameReset, undefined, false);
-        highlightAnim.play();
-        //highlightAnim.visible = false; */
-
         this._currentHighlightedMultiplierNum = 0;
     }
 }

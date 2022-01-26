@@ -5,15 +5,15 @@
     "TransitionFlashingTextAnimationLength": 0.25,
     "WinFindLabelTextPrefix": "_winFindLabelText",
     "WinAmountValueTextPrefix": "_winAmountText",
-    "LandscapeGamePaytableStaticAnimtionName": "Landscape/Play Table Landscape static",
+    "LandscapeGamePaytableStaticAnimtionName": "Play Table static",
     "PortraitGamePaytableStaticAnimtionName": "Portrait/Play Table Portrait static",
-    "LandscapeFadeInWinAnimPrefix": "Landscape/fade in/Play Table Landscape FadeIn Win",
+    "LandscapeFadeInWinAnimPrefix": "Landscape/Play Table Win Landscape ",
     "LandscapeFadeOutWinAnimPrefix": "Landscape/fade out/Play Table Landscape FadeOut Win",
     "PortraitFadeInWinAnimPrefix": "Portrait/fade in/Play Table Portrait FadeIn Win",
     "PortraitFadeOutWinAnimPrefix": "Portrait/fade out/Play Table Portrait FadeOut Win",
     "BaseGamePrizeDivisionPrefix": "M",
     "PaytableMultiplierAnimNamePrefix": "_paytableMultiplierAnim",
-    "PaytableHighlightAnimationNameRight": "reveal/white/white selector landscape reveal right",
+    "PaytableHighlightAnimationName": "Landscape/Play Table Win Landscape",
     "PaytableHighlightAnimationNameLeft": "reveal/white/white selector landscape reveal left",
     "PaytableHighlightAnimationNameReset": "reset/white/white selector landscape reset right"
     

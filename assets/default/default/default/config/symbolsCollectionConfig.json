@@ -150,9 +150,9 @@
                 "NoGlowShake": "SymbolLoopingWinBonus"
             },
             "Chest": {
-                "Reveal": "SymbolReveal/SymbolRevealWin/SymbolRevealBonus2",
-                "Outro": "OutroSymbols/OutroBonus2",
-                "Static": "SymbolStatic/SymbolStaticBonus2"
+                "Reveal": "reveal/symbol reveal chest win bonus",
+                "Outro": "reset/symbol reset chest bonus",
+                "Static": "static-idle/symbol idle chest win bonus"
             }
         }
     }

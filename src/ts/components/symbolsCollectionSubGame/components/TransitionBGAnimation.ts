@@ -107,12 +107,18 @@ export class TransitionBGAnimation {
                     //TransitionBGAnimation.DELAY,
                     // () => {
                     //this._transitionBGAnim.renderable = false;
-                    TweenMax.to([this._transitionBGAnim], 1, { alpha: 0, renderable: false });
-                    TweenMax.to([this._transitionBGAnimPrt], 1, { alpha: 0, renderable: false });
+                    //this._transitionBGAnim.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+                    //if (this._transitionBGAnimPrt.renderable = !this._transitionBGAnim.renderable)
 
-                    if (this._transitionBGAnim.alpha === 0) {
-                        //this._transitionBGAnim.renderable = false;
+                    if (systemProps.orientation === Orientation.LANDSCAPE) {
+                        TweenMax.to([this._transitionBGAnim], 1, { alpha: 0, renderable: false });
+                    } else if (systemProps.orientation === Orientation.PORTRAIT) {
+                        TweenMax.to([this._transitionBGAnimPrt], 1, { alpha: 0, renderable: false });
                     }
+
+                    // if (this._transitionBGAnim.alpha === 0) {
+                    //this._transitionBGAnim.renderable = false;
+                    //}
                     //},
                     // );
                     //  this._transitionBGAnim.renderable = false;

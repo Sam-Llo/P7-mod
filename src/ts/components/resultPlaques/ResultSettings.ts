@@ -17,9 +17,9 @@ export class ResultSettings extends ResultPlaques {
     private _setupData: IResultSetup = {
         WIN_PLAQUE_NAME: "winPlaque",
         LOSE_PLAQUE_NAME: "losePlaque",
-        BUY_WIN_MESSAGE: "winPlaqueBuy222_labelsds", // winPlaqueBuy_label
+        BUY_WIN_MESSAGE: "winPlaqueBuy_label", //  winPlaqueBuy222_labelsds
         TRY_WIN_MESSAGE: "winPlaqueTry_label",
-        TOTAL_WIN_VALUE: "winPlaque22_value222", // winPlaque_value
+        TOTAL_WIN_VALUE: "winPlaque_value", //  winPlaque22_value222"
         WIN_STRING: "WIN",
         NONWIN_STRING: "NONWIN",
         BUY_STRING: "BUY",
@@ -40,15 +40,19 @@ export class ResultSettings extends ResultPlaques {
 
     private static readonly LOSE_PLAQUE_OUTRO_SPINE_ANIMATION_NAME = "lose/PlaquePopOutLose"; //lose/PlaquePopOutLose
 
-    private static readonly WIN_PLAQUE_STATIC_LOOP_SPINE_ANIMATION_NAME = "Plaque Static/Win Plaque Static";
+    private static readonly WIN_PLAQUE_STATIC_LOOP_SPINE_ANIMATION_NAME = "win/white/PlaqueStaticWhite";
 
-    private static readonly WIN_PLAQUE_INTRO_SPINE_ANIMATION_NAME = "Plaque Pop Up/Win Plaque Pop Up";
+    private static readonly WIN_PLAQUE_INTRO_SPINE_ANIMATION_NAME = "win/white/PlaquePopUpWhite";
 
-    private static readonly WIN_PLAQUE_OUTRO_SPINE_ANIMATION_NAME = "Plaque Pop Out/Win Plaque Pop Out";
+    private static readonly WIN_PLAQUE_OUTRO_SPINE_ANIMATION_NAME = "win/white/PlaquePopOutWhite";
 
     private _outroAnimName!: string;
 
     private _loseTextFields: TextAutoFit[] = [];
+
+    private _winTextFields: TextAutoFit[] = [];
+
+    protected winPlaqueBuy_label!: TextAutoFit;
 
     private _targetPrizeValue: number = 0;
 
@@ -88,9 +92,28 @@ export class ResultSettings extends ResultPlaques {
 
         this._winThresholdsForBaseGame = this.assets.get(ResultSettings.configName).WinThresholdsForBaseGame;
         this._isWin = false;
+        const _this = this;
+
+        const buyMsg: any = this.winPlaque.children.find((obj: any) => obj.name === this._setupData.BUY_WIN_MESSAGE);
+        const tryMsg: any = this.winPlaque.children.find((obj: any) => obj.name === this._setupData.TRY_WIN_MESSAGE);
+        const winVal: any = this.winPlaque.children.find((obj: any) => obj.name === this._setupData.TOTAL_WIN_VALUE);
+        this._winTextFields.push(buyMsg, tryMsg, winVal);
 
         const loseMsg: any = this.losePlaque.children.find((obj: any) => obj.name === "losePlaque_label");
         this._loseTextFields.push(loseMsg);
+
+        /*         this.winPlaqueBuy_label = new TextAutoFit("");
+        
+        this._winPlaque.children.forEach(function(obj) {
+            if (obj.name ===  'winPlaque_label') {
+                _this.winPlaqueBuy_label = obj as TextAutoFit;
+                //_this.winPlaqueMessageBuy1.visible = false;
+            }
+        }); */
+        // Set all of them to alpha 0
+        this._winTextFields.forEach((obj: TextAutoFit) => {
+            obj.alpha = 0;
+        });
 
         this._loseTextFields.forEach((obj: TextAutoFit) => {
             obj.alpha = 0;
@@ -182,6 +205,10 @@ export class ResultSettings extends ResultPlaques {
         // Show the relevant plaque
         this._winPlaque.visible = data.playResult === this.WIN && this.gameConfig.showResultScreenWin;
         this._losePlaque.visible = data.playResult === this.NONWIN && this.gameConfig.showResultScreenNonWin;
+
+        this._winTextFields[0].visible = data.wagerType === this.BUY;
+        this._winTextFields[1].visible = data.wagerType === this.TRY;
+
         // Populate the prize value field
         this.currentPrizeValue = data.playResult === this.WIN ? data.prizeValue : 0;
 
@@ -190,6 +217,7 @@ export class ResultSettings extends ResultPlaques {
             if (this.isPlayerWinBiggerThanHisWager(this.currentPrizeValue) === true) {
                 this.changeWinPlaqueWinningAmountText(0);
             } else {
+                //this.winPlaqueBuy_label.text = "hi";
                 this.changeWinPlaqueWinningAmountText(this.currentPrizeValue);
             }
         }
@@ -238,13 +266,25 @@ export class ResultSettings extends ResultPlaques {
             //DO not need to Set the lose Text as it is baked into the spine animation
         } else {
             //Update win value of the win plaque
-            this.changeWinPlaqueWithWinPrizeValueAndLabel(prizeValue);
+            //this.changeWinPlaqueWithWinPrizeValueAndLabel(prizeValue);
             this._isWin = true;
             // Queue the intro
             this._spineAnimWin.updateTransform();
             this._spineAnimWin.setAnimation(ResultSettings.WIN_PLAQUE_INTRO_SPINE_ANIMATION_NAME);
             this._spineAnimWin.play();
             this._outroAnimName = ResultSettings.WIN_PLAQUE_OUTRO_SPINE_ANIMATION_NAME;
+
+            let dur: number = 0;
+            this._spineAnimWin.spine.state.data.skeletonData.animations.forEach((anim: any) => {
+                dur =
+                    anim.name === ResultSettings.WIN_PLAQUE_INTRO_SPINE_ANIMATION_NAME
+                        ? (anim.duration as number) / 2
+                        : dur;
+            });
+            // Fade in the text over the second half of the intro
+            this._winTextFields.forEach((obj: TextAutoFit) => {
+                TweenMax.to(obj, dur, { alpha: 1, delay: dur });
+            });
             //TODO: Set the Win Amount as Win Amount is a placeholder texture that is baked into the spine animation
         }
     }
@@ -265,6 +305,7 @@ export class ResultSettings extends ResultPlaques {
             if (targetValue > 0) {
                 soundManager.execute("RollupWinAllStop");
             }
+            this.winPlaqueBuy_label.text = currencyService.format(targetValue, iwProps.denomination);
             return;
         }
 
@@ -278,6 +319,14 @@ export class ResultSettings extends ResultPlaques {
             current: targetValue,
             onUpdate: () => {
                 this.changeWinPlaqueWinningAmountText(this.rollUpTween.target.current);
+
+                this._winTextFields[2].style = this._winLabelStyle; //this.winPlaqueBuy_label.style = this._winLabelStyle
+                this._winTextFields[2].text = currencyService.format(
+                    this.rollUpTween.target.current,
+                    iwProps.denomination,
+                );
+
+                //this.winPlaqueBuy_label.text = currencyService.format(this.rollUpTween.target.current, iwProps.denomination);
             },
             onComplete: () => {
                 if (targetValue > 0) {
@@ -345,15 +394,15 @@ export class ResultSettings extends ResultPlaques {
     }
 
     private changeWinPlaqueWinningAmountText(targetValue: number) {
-        LayoutUtils.getInstance().changeSpineTextToDifferentTextTexture(
-            this._spineAnimWin,
-            "win value",
-            "trans/win value",
-            currencyService.format(targetValue, iwProps.denomination),
-            500,
-            this._winValuetextStyle,
-            250,
-        );
+        // LayoutUtils.getInstance().changeSpineTextToDifferentTextTexture(
+        //    this._spineAnimWin,
+        //   "win value",
+        //   "trans/win value",
+        // currencyService.format(targetValue, iwProps.denomination);
+        //  500,
+        //   this._winValuetextStyle,
+        //  250,
+        // );
     }
 
     private changeNoWinPlaqueLabel() {
@@ -415,6 +464,9 @@ export class ResultSettings extends ResultPlaques {
                 this.stopSpineAnim(this._spineAnimNonWin);
                 this._spineAnimWin.setAnimation(this._outroAnimName, undefined, false);
                 this._spineAnimWin.play();
+                this._winTextFields.forEach((obj: TextAutoFit) => {
+                    obj.alpha = 0;
+                });
             } else {
                 // this.transitionScaleOutInElement(this.noWinText, false);
                 this.stopSpineAnim(this._spineAnimWin);

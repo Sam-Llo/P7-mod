@@ -20,6 +20,9 @@
     "SymbolsBonusBackgroundPrefix": "_symbolsBonusBackground",
     "ShadedGridHighlightAnimationName": "animation",
     "PaytableHighlightSparkleAnimationName": "Bonus pay table vfx",
+    "PaytableHighlightAnimationNameLeft": "reveal/white/white selector landscape reveal left",
+    "PaytableHighlightAnimationNameReset": "reset/white/white selector landscape reset right",
+    
     "GameOptions": {
         "BonusGridElements": 16,
         "PrizeDivisionPrefix": "B",

@@ -13,8 +13,8 @@
         "x": 0,
         "y": -314,
         "rotation": 0,
-        "width": 1076.1985778808594,
-        "height": 508.62713623046875,
+        "width": 745,
+        "height": 413.4921875,
         "alpha": 1,
         "visible": true,
         "scale": {
@@ -31,7 +31,7 @@
             "y": 770,
             "rotation": 0,
             "alpha": 1,
-            "visible": true,
+            "visible": false,
             "scale": {
               "x": 1,
               "y": 1
@@ -52,7 +52,7 @@
             "y": 770,
             "rotation": 0,
             "alpha": 1,
-            "visible": true,
+            "visible": false,
             "scale": {
               "x": 1,
               "y": 1
@@ -158,8 +158,8 @@
         "x": 0,
         "y": -314,
         "rotation": 0,
-        "width": 1698.3099517822266,
-        "height": 1023,
+        "width": 3694.721923828125,
+        "height": 1210.8589172363281,
         "alpha": 1,
         "visible": true,
         "scale": {
@@ -175,8 +175,8 @@
             "x": 304,
             "y": 744,
             "rotation": 0,
-            "width": 934.0000152587891,
-            "height": 571.9851379394531,
+            "width": 963.6950073242188,
+            "height": 703.2835388183594,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -192,8 +192,8 @@
                 "x": 0,
                 "y": 154,
                 "rotation": 0,
-                "width": 934.0000152587891,
-                "height": 571.9851379394531,
+                "width": 963.6950073242188,
+                "height": 703.2835388183594,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -202,46 +202,19 @@
                 },
                 "children": [
                   {
-                    "id": "PayTableMainGame_anim",
+                    "id": "paytableFrameBG_img.png",
                     "preFab": false,
                     "loadType": "-",
-                    "type": "spine-animation",
-                    "x": 321,
-                    "y": 184,
+                    "type": "layer",
+                    "x": 18,
+                    "y": 53,
                     "rotation": 0,
-                    "alpha": 1,
-                    "visible": false,
-                    "scale": {
-                      "x": 1,
-                      "y": 1
-                    },
-                    "spinedata": {
-                      "data": "spine/Pay Table Main Game.skel",
-                      "skin": "default",
-                      "animation": "Landscape/fade in/Play Table Landscape FadeIn Win3",
-                      "speed": 1
-                    }
-                  },
-                  {
-                    "id": "PayTableMainGame_anim_prt",
-                    "preFab": false,
-                    "loadType": "-",
-                    "type": "spine-animation",
-                    "x": 321,
-                    "y": 184,
-                    "rotation": 0,
+                    "width": 633,
+                    "height": 293,
                     "alpha": 1,
                     "visible": true,
-                    "scale": {
-                      "x": 1,
-                      "y": 1
-                    },
-                    "spinedata": {
-                      "data": "spine/Pay Table Main Game.skel",
-                      "skin": "default",
-                      "animation": "Portrait/Play Table Portrait static",
-                      "speed": 1
-                    }
+                    "blendMode": 0,
+                    "bitmap": "paytableFrameBG_img"
                   },
                   {
                     "id": "symbolPaytable12",
@@ -251,8 +224,8 @@
                     "x": -40,
                     "y": 160,
                     "rotation": 0,
-                    "width": 453.00001525878906,
-                    "height": 127,
+                    "width": 385.5,
+                    "height": 115,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -299,7 +272,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 185,
+                        "x": 160,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -309,10 +282,10 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/paytable.skel",
+                          "data": "spine/Pay Table Main Game.skel",
                           "skin": "default",
-                          "animation": "reveal/white/white selector landscape reveal left",
-                          "speed": 1
+                          "animation": "Landscape/Play Table Win Landscape 3",
+                          "speed": 5
                         }
                       }
                     ]
@@ -325,8 +298,8 @@
                     "x": -40,
                     "y": 202,
                     "rotation": 0,
-                    "width": 453.00001525878906,
-                    "height": 127,
+                    "width": 385.5,
+                    "height": 115,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -373,7 +346,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 185,
+                        "x": 160,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -383,10 +356,10 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/paytable.skel",
+                          "data": "spine/Pay Table Main Game.skel",
                           "skin": "default",
-                          "animation": "reveal/white/white selector landscape reveal left",
-                          "speed": 1
+                          "animation": "Landscape/Play Table Win Landscape 3",
+                          "speed": 5
                         }
                       }
                     ]
@@ -399,8 +372,8 @@
                     "x": -40,
                     "y": 244,
                     "rotation": 0,
-                    "width": 453.00001525878906,
-                    "height": 127,
+                    "width": 386,
+                    "height": 115,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -447,7 +420,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 185,
+                        "x": 160,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -457,10 +430,10 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/paytable.skel",
+                          "data": "spine/Pay Table Main Game.skel",
                           "skin": "default",
-                          "animation": "reveal/white/white selector landscape reveal left",
-                          "speed": 1
+                          "animation": "Landscape/Play Table Win Landscape 3",
+                          "speed": 5
                         }
                       }
                     ]
@@ -474,7 +447,7 @@
                     "y": 286,
                     "rotation": 0,
                     "width": 391,
-                    "height": 320,
+                    "height": 115,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -521,7 +494,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 185,
+                        "x": 160,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -531,10 +504,10 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/paytable.skel",
+                          "data": "spine/Pay Table Main Game.skel",
                           "skin": "default",
-                          "animation": "reveal/white/white selector landscape reveal left",
-                          "speed": 1
+                          "animation": "Landscape/Play Table Win Landscape 3",
+                          "speed": 5
                         }
                       }
                     ]
@@ -547,8 +520,8 @@
                     "x": -40,
                     "y": 328,
                     "rotation": 0,
-                    "width": 453.00001525878906,
-                    "height": 127,
+                    "width": 391,
+                    "height": 115,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -595,7 +568,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 185,
+                        "x": 160,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -605,10 +578,10 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/paytable.skel",
+                          "data": "spine/Pay Table Main Game.skel",
                           "skin": "default",
-                          "animation": "reveal/white/white selector landscape reveal left",
-                          "speed": 1
+                          "animation": "Landscape/Play Table Win Landscape 3",
+                          "speed": 5
                         }
                       }
                     ]
@@ -621,8 +594,8 @@
                     "x": 368,
                     "y": 160,
                     "rotation": 0,
-                    "width": 453.00001525878906,
-                    "height": 127,
+                    "width": 376,
+                    "height": 115,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -652,11 +625,11 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "label",
-                        "x": 0.5,
+                        "x": 20,
                         "y": 0,
                         "rotation": 0,
-                        "width": 200,
-                        "height": 62,
+                        "width": 210,
+                        "height": 65.10000000000001,
                         "alpha": 1,
                         "visible": true,
                         "anchor": {
@@ -669,7 +642,7 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 135,
+                        "x": 160,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -679,10 +652,10 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/paytable.skel",
+                          "data": "spine/Pay Table Main Game.skel",
                           "skin": "default",
-                          "animation": "reveal/white/white selector landscape reveal right",
-                          "speed": 1
+                          "animation": "Landscape/Play Table Win Landscape 3",
+                          "speed": 5
                         }
                       }
                     ]
@@ -695,8 +668,8 @@
                     "x": 368,
                     "y": 202,
                     "rotation": 0,
-                    "width": 453.00001525878906,
-                    "height": 127,
+                    "width": 376,
+                    "height": 115,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -704,6 +677,23 @@
                       "y": 1
                     },
                     "children": [
+                      {
+                        "id": "symbolContainerPaytable6_find_value",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "label",
+                        "x": 20,
+                        "y": 0,
+                        "rotation": 0,
+                        "width": 210,
+                        "height": 65.10000000000001,
+                        "alpha": 1,
+                        "visible": true,
+                        "anchor": {
+                          "x": 0.5,
+                          "y": 0.5
+                        }
+                      },
                       {
                         "id": "symbolContainerPaytable6_win_value",
                         "preFab": false,
@@ -722,28 +712,11 @@
                         }
                       },
                       {
-                        "id": "symbolContainerPaytable6_find_value",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "label",
-                        "x": 0.5,
-                        "y": 0,
-                        "rotation": 0,
-                        "width": 200,
-                        "height": 62,
-                        "alpha": 1,
-                        "visible": true,
-                        "anchor": {
-                          "x": 0.5,
-                          "y": 0.5
-                        }
-                      },
-                      {
                         "id": "paytable_multiplier_anim_6",
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 135,
+                        "x": 160,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -753,10 +726,10 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/paytable.skel",
+                          "data": "spine/Pay Table Main Game.skel",
                           "skin": "default",
-                          "animation": "reveal/white/white selector landscape reveal right",
-                          "speed": 1
+                          "animation": "Landscape/Play Table Win Landscape 3",
+                          "speed": 5
                         }
                       }
                     ]
@@ -769,8 +742,8 @@
                     "x": 368,
                     "y": 244,
                     "rotation": 0,
-                    "width": 455.3659362792969,
-                    "height": 321.0919189453125,
+                    "width": 376,
+                    "height": 115,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -778,6 +751,23 @@
                       "y": 1
                     },
                     "children": [
+                      {
+                        "id": "symbolContainerPaytable5_find_value",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "label",
+                        "x": 20,
+                        "y": 0,
+                        "rotation": 0,
+                        "width": 210,
+                        "height": 65.10000000000001,
+                        "alpha": 1,
+                        "visible": true,
+                        "anchor": {
+                          "x": 0.5,
+                          "y": 0.5
+                        }
+                      },
                       {
                         "id": "symbolContainerPaytable5_win_value",
                         "preFab": false,
@@ -796,28 +786,11 @@
                         }
                       },
                       {
-                        "id": "symbolContainerPaytable5_find_value",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "label",
-                        "x": 0,
-                        "y": 0,
-                        "rotation": 0,
-                        "width": 200,
-                        "height": 62,
-                        "alpha": 1,
-                        "visible": true,
-                        "anchor": {
-                          "x": 0.5,
-                          "y": 0.5
-                        }
-                      },
-                      {
                         "id": "paytable_multiplier_anim_5",
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 135,
+                        "x": 160,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -827,10 +800,10 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/paytable.skel",
+                          "data": "spine/Pay Table Main Game.skel",
                           "skin": "default",
-                          "animation": "reveal/white/white selector landscape reveal right",
-                          "speed": 1
+                          "animation": "Landscape/Play Table Win Landscape 3",
+                          "speed": 5
                         }
                       }
                     ]
@@ -843,8 +816,8 @@
                     "x": 368,
                     "y": 286,
                     "rotation": 0,
-                    "width": 453.00001525878906,
-                    "height": 127,
+                    "width": 580.0249633789062,
+                    "height": 391.78094482421875,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -852,6 +825,23 @@
                       "y": 1
                     },
                     "children": [
+                      {
+                        "id": "symbolContainerPaytable4_find_value",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "label",
+                        "x": 20,
+                        "y": 0,
+                        "rotation": 0,
+                        "width": 210,
+                        "height": 65.10000000000001,
+                        "alpha": 1,
+                        "visible": true,
+                        "anchor": {
+                          "x": 0.5,
+                          "y": 0.5
+                        }
+                      },
                       {
                         "id": "symbolContainerPaytable4_win_value",
                         "preFab": false,
@@ -870,28 +860,11 @@
                         }
                       },
                       {
-                        "id": "symbolContainerPaytable4_find_value",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "label",
-                        "x": 0,
-                        "y": 0,
-                        "rotation": 0,
-                        "width": 200,
-                        "height": 62,
-                        "alpha": 1,
-                        "visible": true,
-                        "anchor": {
-                          "x": 0.5,
-                          "y": 0.5
-                        }
-                      },
-                      {
                         "id": "paytable_multiplier_anim_4",
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 135,
+                        "x": 160,
                         "y": 0,
                         "rotation": 0,
                         "alpha": 1,
@@ -901,10 +874,10 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/paytable.skel",
+                          "data": "spine/Pay Table Main Game.skel",
                           "skin": "default",
-                          "animation": "reveal/white/white selector landscape reveal right",
-                          "speed": 1
+                          "animation": "Landscape/Play Table Win Landscape 3",
+                          "speed": 5
                         }
                       }
                     ]
@@ -917,8 +890,8 @@
                     "x": 368,
                     "y": 328,
                     "rotation": 0,
-                    "width": 700.0000305175781,
-                    "height": 321.13702392578125,
+                    "width": 580.0249633789062,
+                    "height": 387.78094482421875,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -948,11 +921,11 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "label",
-                        "x": 0,
+                        "x": 20,
                         "y": 0,
                         "rotation": 0,
-                        "width": 200,
-                        "height": 62,
+                        "width": 210,
+                        "height": 65.10000000000001,
                         "alpha": 1,
                         "visible": true,
                         "anchor": {
@@ -965,8 +938,8 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
-                        "x": 135,
-                        "y": 0,
+                        "x": 160,
+                        "y": -4,
                         "rotation": 0,
                         "alpha": 1,
                         "visible": false,
@@ -975,10 +948,10 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/paytable.skel",
+                          "data": "spine/Pay Table Main Game.skel",
                           "skin": "default",
-                          "animation": "reveal/white/white selector landscape reveal right",
-                          "speed": 1
+                          "animation": "Landscape/Play Table Win Landscape 3",
+                          "speed": 5
                         }
                       }
                     ]
@@ -994,16 +967,37 @@
                     "width": 227,
                     "height": 213,
                     "alpha": 1,
-                    "visible": true,
+                    "visible": false,
                     "blendMode": 0,
                     "bitmap": "symbolborder"
+                  },
+                  {
+                    "id": "Symbol Select_anim_prt",
+                    "preFab": false,
+                    "loadType": "-",
+                    "type": "spine-animation",
+                    "x": 336,
+                    "y": 237,
+                    "rotation": 0,
+                    "alpha": 1,
+                    "visible": true,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "spinedata": {
+                      "data": "spine/Symbol Select.skel",
+                      "skin": "default",
+                      "animation": "reset/landscape/Selector landscape reset green",
+                      "speed": 1
+                    }
                   },
                   {
                     "id": "Symbol Select_anim",
                     "preFab": false,
                     "loadType": "-",
                     "type": "spine-animation",
-                    "x": 317,
+                    "x": 336,
                     "y": 237,
                     "rotation": 0,
                     "alpha": 1,
@@ -1091,6 +1085,27 @@
                     "height": 62,
                     "alpha": 1,
                     "visible": true
+                  },
+                  {
+                    "id": "PayTableMainGame_anim",
+                    "preFab": false,
+                    "loadType": "-",
+                    "type": "spine-animation",
+                    "x": 718,
+                    "y": 133,
+                    "rotation": 0,
+                    "alpha": 1,
+                    "visible": true,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "spinedata": {
+                      "data": "spine/Pay Table Main Game.skel",
+                      "skin": "default",
+                      "animation": "Landscape/Play Table Win Landscape 3",
+                      "speed": 1
+                    }
                   }
                 ]
               },
@@ -1749,7 +1764,7 @@
                     "width": 503,
                     "height": 221,
                     "alpha": 1,
-                    "visible": true,
+                    "visible": false,
                     "blendMode": 0,
                     "bitmap": "gameLogo_img2"
                   }
@@ -4897,11 +4912,11 @@
                 "preFab": false,
                 "loadType": "-",
                 "type": "group",
-                "x": 317,
+                "x": 336,
                 "y": 394,
                 "rotation": 0,
-                "width": 186,
-                "height": 192,
+                "width": 120.125,
+                "height": 124,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -4917,8 +4932,8 @@
                     "x": 0,
                     "y": 0,
                     "rotation": 0,
-                    "width": 186,
-                    "height": 192,
+                    "width": 120.125,
+                    "height": 124,
                     "alpha": 1,
                     "visible": true,
                     "blendMode": 0,
@@ -4936,8 +4951,8 @@
                     "x": 0,
                     "y": 0,
                     "rotation": 0,
-                    "width": 186,
-                    "height": 192,
+                    "width": 120.125,
+                    "height": 124,
                     "alpha": 1,
                     "visible": true,
                     "blendMode": 0,
@@ -4955,8 +4970,8 @@
                     "x": 0,
                     "y": 0,
                     "rotation": 0,
-                    "width": 186,
-                    "height": 192,
+                    "width": 120.125,
+                    "height": 124,
                     "alpha": 1,
                     "visible": true,
                     "blendMode": 0,
@@ -4974,8 +4989,8 @@
                     "x": 0,
                     "y": 0,
                     "rotation": 0,
-                    "width": 186,
-                    "height": 192,
+                    "width": 217,
+                    "height": 154,
                     "alpha": 1,
                     "visible": true,
                     "blendMode": 0,
@@ -5121,8 +5136,8 @@
             "x": 275,
             "y": 628,
             "rotation": 0,
-            "width": 721,
-            "height": 614,
+            "width": 1478.0249633789062,
+            "height": 1128,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -5138,8 +5153,8 @@
                 "x": 0,
                 "y": 0,
                 "rotation": 0,
-                "width": 721,
-                "height": 614,
+                "width": 1478.0249633789062,
+                "height": 1128,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -5155,8 +5170,8 @@
                     "x": -7,
                     "y": 177,
                     "rotation": 0,
-                    "width": 721,
-                    "height": 495,
+                    "width": 1478.0249633789062,
+                    "height": 1127.9999694824219,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -5165,6 +5180,21 @@
                     },
                     "children": [
                       {
+                        "id": "paytableBonusFrameBG_img.png",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "layer",
+                        "x": 26,
+                        "y": -2,
+                        "rotation": 0,
+                        "width": 658,
+                        "height": 380,
+                        "alpha": 1,
+                        "visible": true,
+                        "blendMode": 0,
+                        "bitmap": "paytableBonusFrameBG_img"
+                      },
+                      {
                         "id": "paytableBonus_multiplier16",
                         "preFab": false,
                         "loadType": "-",
@@ -5172,7 +5202,7 @@
                         "x": 100,
                         "y": 101,
                         "rotation": 0,
-                        "width": 326,
+                        "width": 261,
                         "height": 124,
                         "alpha": 1,
                         "visible": true,
@@ -5182,37 +5212,24 @@
                         },
                         "children": [
                           {
-                            "id": "paytableBonus_multiplierAmount_value16",
+                            "id": "old",
                             "preFab": false,
                             "loadType": "-",
-                            "type": "label",
-                            "x": 75,
+                            "type": "spine-animation",
+                            "x": 95,
                             "y": 0,
                             "rotation": 0,
-                            "width": 200,
-                            "height": 63.013698630136986,
                             "alpha": 1,
-                            "visible": true,
-                            "anchor": {
-                              "x": 0.5,
-                              "y": 0.5
-                            }
-                          },
-                          {
-                            "id": "paytableBonus_multiplier_counter16",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "label",
-                            "x": -10,
-                            "y": 0,
-                            "rotation": 0,
-                            "width": 200,
-                            "height": 63.013698630136986,
-                            "alpha": 1,
-                            "visible": true,
-                            "anchor": {
-                              "x": 0.5,
-                              "y": 0.5
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/paytable.skel",
+                              "skin": "default",
+                              "animation": "reveal/white/white selector landscape reveal right",
+                              "speed": 1
                             }
                           },
                           {
@@ -5235,6 +5252,40 @@
                               "animation": "Bonus pay table vfx",
                               "speed": 1
                             }
+                          },
+                          {
+                            "id": "paytableBonus_multiplier_counter16",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "label",
+                            "x": -10,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 200,
+                            "height": 63.013698630136986,
+                            "alpha": 1,
+                            "visible": true,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            }
+                          },
+                          {
+                            "id": "paytableBonus_multiplierAmount_value16",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "label",
+                            "x": 10,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 200,
+                            "height": 63.013698630136986,
+                            "alpha": 1,
+                            "visible": true,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            }
                           }
                         ]
                       },
@@ -5246,8 +5297,8 @@
                         "x": 100,
                         "y": 151,
                         "rotation": 0,
-                        "width": 326,
-                        "height": 124,
+                        "width": 662.0000152587891,
+                        "height": 483,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5256,11 +5307,53 @@
                         },
                         "children": [
                           {
+                            "id": "paytableBonus_multiplier_anim_15",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 95,
+                            "y": 14,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/bonus pay table vfx.skel",
+                              "skin": "default",
+                              "animation": "Bonus pay table vfx",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "old_NqBoy",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 95,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/paytable.skel",
+                              "skin": "default",
+                              "animation": "reveal/white/white selector landscape reveal right",
+                              "speed": 1
+                            }
+                          },
+                          {
                             "id": "paytableBonus_multiplierAmount_value15",
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
-                            "x": 75,
+                            "x": 10,
                             "y": 0,
                             "rotation": 0,
                             "width": 200,
@@ -5288,27 +5381,6 @@
                               "x": 0.5,
                               "y": 0.5
                             }
-                          },
-                          {
-                            "id": "paytableBonus_multiplier_anim_15",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "spine-animation",
-                            "x": 95,
-                            "y": 14,
-                            "rotation": 0,
-                            "alpha": 1,
-                            "visible": true,
-                            "scale": {
-                              "x": 1,
-                              "y": 1
-                            },
-                            "spinedata": {
-                              "data": "spine/bonus pay table vfx.skel",
-                              "skin": "default",
-                              "animation": "Bonus pay table vfx",
-                              "speed": 1
-                            }
                           }
                         ]
                       },
@@ -5320,8 +5392,8 @@
                         "x": 100,
                         "y": 201,
                         "rotation": 0,
-                        "width": 326,
-                        "height": 124,
+                        "width": 662.0000152587891,
+                        "height": 483,
                         "alpha": 1,
                         "visible": true,
                         "scale": {
@@ -5330,28 +5402,32 @@
                         },
                         "children": [
                           {
+                            "id": "old_sNQx5",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 95,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/paytable.skel",
+                              "skin": "default",
+                              "animation": "reveal/white/white selector landscape reveal right",
+                              "speed": 1
+                            }
+                          },
+                          {
                             "id": "paytableBonus_multiplierAmount_value14",
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
-                            "x": 75,
-                            "y": 0,
-                            "rotation": 0,
-                            "width": 200,
-                            "height": 63.013698630136986,
-                            "alpha": 1,
-                            "visible": true,
-                            "anchor": {
-                              "x": 0.5,
-                              "y": 0.5
-                            }
-                          },
-                          {
-                            "id": "paytableBonus_multiplier_counter14",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "label",
-                            "x": -10,
+                            "x": 10,
                             "y": 0,
                             "rotation": 0,
                             "width": 200,
@@ -5383,45 +5459,9 @@
                               "animation": "Bonus pay table vfx",
                               "speed": 1
                             }
-                          }
-                        ]
-                      },
-                      {
-                        "id": "paytableBonus_multiplier13",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "group",
-                        "x": 100,
-                        "y": 251,
-                        "rotation": 0,
-                        "width": 326,
-                        "height": 124,
-                        "alpha": 1,
-                        "visible": true,
-                        "scale": {
-                          "x": 1,
-                          "y": 1
-                        },
-                        "children": [
-                          {
-                            "id": "paytableBonus_multiplierAmount_value13",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "label",
-                            "x": 75,
-                            "y": 0,
-                            "rotation": 0,
-                            "width": 200,
-                            "height": 63.013698630136986,
-                            "alpha": 1,
-                            "visible": true,
-                            "anchor": {
-                              "x": 0.5,
-                              "y": 0.5
-                            }
                           },
                           {
-                            "id": "paytableBonus_multiplier_counter13",
+                            "id": "paytableBonus_multiplier_counter14",
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
@@ -5436,7 +5476,26 @@
                               "x": 0.5,
                               "y": 0.5
                             }
-                          },
+                          }
+                        ]
+                      },
+                      {
+                        "id": "paytableBonus_multiplier13",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "group",
+                        "x": 100,
+                        "y": 251,
+                        "rotation": 0,
+                        "width": 261,
+                        "height": 124,
+                        "alpha": 1,
+                        "visible": true,
+                        "scale": {
+                          "x": 1,
+                          "y": 1
+                        },
+                        "children": [
                           {
                             "id": "paytableBonus_multiplier_anim_13",
                             "preFab": false,
@@ -5457,32 +5516,34 @@
                               "animation": "Bonus pay table vfx",
                               "speed": 1
                             }
-                          }
-                        ]
-                      },
-                      {
-                        "id": "paytableBonus_multiplier12",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "group",
-                        "x": 100,
-                        "y": 301,
-                        "rotation": 0,
-                        "width": 326,
-                        "height": 124,
-                        "alpha": 1,
-                        "visible": true,
-                        "scale": {
-                          "x": 1,
-                          "y": 1
-                        },
-                        "children": [
+                          },
                           {
-                            "id": "paytableBonus_multiplierAmount_value12",
+                            "id": "old_rFY54",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 95,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/paytable.skel",
+                              "skin": "default",
+                              "animation": "reveal/white/white selector landscape reveal right",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "paytableBonus_multiplier_counter13",
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
-                            "x": 75,
+                            "x": -10,
                             "y": 0,
                             "rotation": 0,
                             "width": 200,
@@ -5495,11 +5556,68 @@
                             }
                           },
                           {
-                            "id": "paytableBonus_multiplier_counter12",
+                            "id": "paytableBonus_multiplierAmount_value13",
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
-                            "x": -10,
+                            "x": 10,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 200,
+                            "height": 63.013698630136986,
+                            "alpha": 1,
+                            "visible": true,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "paytableBonus_multiplier12",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "group",
+                        "x": 100,
+                        "y": 301,
+                        "rotation": 0,
+                        "width": 261,
+                        "height": 124,
+                        "alpha": 1,
+                        "visible": true,
+                        "scale": {
+                          "x": 1,
+                          "y": 1
+                        },
+                        "children": [
+                          {
+                            "id": "old_1l3fY",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 95,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/paytable.skel",
+                              "skin": "default",
+                              "animation": "reveal/white/white selector landscape reveal right",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "paytableBonus_multiplierAmount_value12",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "label",
+                            "x": 10,
                             "y": 0,
                             "rotation": 0,
                             "width": 200,
@@ -5531,6 +5649,23 @@
                               "animation": "Bonus pay table vfx",
                               "speed": 1
                             }
+                          },
+                          {
+                            "id": "paytableBonus_multiplier_counter12",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "label",
+                            "x": -10,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 200,
+                            "height": 63.013698630136986,
+                            "alpha": 1,
+                            "visible": true,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            }
                           }
                         ]
                       },
@@ -5542,7 +5677,7 @@
                         "x": 100,
                         "y": 351,
                         "rotation": 0,
-                        "width": 326,
+                        "width": 261,
                         "height": 124,
                         "alpha": 1,
                         "visible": true,
@@ -5552,11 +5687,53 @@
                         },
                         "children": [
                           {
+                            "id": "paytableBonus_multiplier_anim_11",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 95,
+                            "y": 14,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/bonus pay table vfx.skel",
+                              "skin": "default",
+                              "animation": "Bonus pay table vfx",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "old_VJPXk",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 95,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/paytable.skel",
+                              "skin": "default",
+                              "animation": "reveal/white/white selector landscape reveal right",
+                              "speed": 1
+                            }
+                          },
+                          {
                             "id": "paytableBonus_multiplierAmount_value11",
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
-                            "x": 75,
+                            "x": 10,
                             "y": 0,
                             "rotation": 0,
                             "width": 200,
@@ -5584,27 +5761,6 @@
                               "x": 0.5,
                               "y": 0.5
                             }
-                          },
-                          {
-                            "id": "paytableBonus_multiplier_anim_11",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "spine-animation",
-                            "x": 95,
-                            "y": 14,
-                            "rotation": 0,
-                            "alpha": 1,
-                            "visible": true,
-                            "scale": {
-                              "x": 1,
-                              "y": 1
-                            },
-                            "spinedata": {
-                              "data": "spine/bonus pay table vfx.skel",
-                              "skin": "default",
-                              "animation": "Bonus pay table vfx",
-                              "speed": 1
-                            }
                           }
                         ]
                       },
@@ -5616,7 +5772,7 @@
                         "x": 495,
                         "y": 101,
                         "rotation": 0,
-                        "width": 326,
+                        "width": 266,
                         "height": 124,
                         "alpha": 1,
                         "visible": true,
@@ -5626,28 +5782,32 @@
                         },
                         "children": [
                           {
+                            "id": "old_ARMxj",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 50,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/paytable.skel",
+                              "skin": "default",
+                              "animation": "reveal/white/white selector landscape reveal right",
+                              "speed": 1
+                            }
+                          },
+                          {
                             "id": "paytableBonus_multiplierAmount_value10",
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
                             "x": 75,
-                            "y": 0,
-                            "rotation": 0,
-                            "width": 200,
-                            "height": 62.16216216216216,
-                            "alpha": 1,
-                            "visible": true,
-                            "anchor": {
-                              "x": 0.5,
-                              "y": 0.5
-                            }
-                          },
-                          {
-                            "id": "paytableBonus_multiplier_counter10",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "label",
-                            "x": -10,
                             "y": 0,
                             "rotation": 0,
                             "width": 200,
@@ -5679,6 +5839,23 @@
                               "animation": "Bonus pay table vfx",
                               "speed": 1
                             }
+                          },
+                          {
+                            "id": "paytableBonus_multiplier_counter10",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "label",
+                            "x": 50,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 200,
+                            "height": 62.16216216216216,
+                            "alpha": 1,
+                            "visible": true,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            }
                           }
                         ]
                       },
@@ -5690,7 +5867,7 @@
                         "x": 495,
                         "y": 151,
                         "rotation": 0,
-                        "width": 326,
+                        "width": 266,
                         "height": 124,
                         "alpha": 1,
                         "visible": true,
@@ -5700,37 +5877,24 @@
                         },
                         "children": [
                           {
-                            "id": "paytableBonus_multiplierAmount_value9",
+                            "id": "old_wlwDt",
                             "preFab": false,
                             "loadType": "-",
-                            "type": "label",
-                            "x": 75,
+                            "type": "spine-animation",
+                            "x": 50,
                             "y": 0,
                             "rotation": 0,
-                            "width": 200,
-                            "height": 62.16216216216216,
                             "alpha": 1,
-                            "visible": true,
-                            "anchor": {
-                              "x": 0.5,
-                              "y": 0.5
-                            }
-                          },
-                          {
-                            "id": "paytableBonus_multiplier_counter9",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "label",
-                            "x": -10,
-                            "y": 0,
-                            "rotation": 0,
-                            "width": 200,
-                            "height": 62.16216216216216,
-                            "alpha": 1,
-                            "visible": true,
-                            "anchor": {
-                              "x": 0.5,
-                              "y": 0.5
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/paytable.skel",
+                              "skin": "default",
+                              "animation": "reveal/white/white selector landscape reveal right",
+                              "speed": 1
                             }
                           },
                           {
@@ -5753,6 +5917,40 @@
                               "animation": "Bonus pay table vfx",
                               "speed": 1
                             }
+                          },
+                          {
+                            "id": "paytableBonus_multiplierAmount_value9",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "label",
+                            "x": 75,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 200,
+                            "height": 62.16216216216216,
+                            "alpha": 1,
+                            "visible": true,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            }
+                          },
+                          {
+                            "id": "paytableBonus_multiplier_counter9",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "label",
+                            "x": 50,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 200,
+                            "height": 62.16216216216216,
+                            "alpha": 1,
+                            "visible": true,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            }
                           }
                         ]
                       },
@@ -5764,7 +5962,7 @@
                         "x": 495,
                         "y": 201,
                         "rotation": 0,
-                        "width": 326,
+                        "width": 266,
                         "height": 124,
                         "alpha": 1,
                         "visible": true,
@@ -5773,6 +5971,48 @@
                           "y": 1
                         },
                         "children": [
+                          {
+                            "id": "paytableBonus_multiplier_anim_8",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 95,
+                            "y": 14,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/bonus pay table vfx.skel",
+                              "skin": "default",
+                              "animation": "Bonus pay table vfx",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "old_0SF1w",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 50,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/paytable.skel",
+                              "skin": "default",
+                              "animation": "reveal/white/white selector landscape reveal right",
+                              "speed": 1
+                            }
+                          },
                           {
                             "id": "paytableBonus_multiplierAmount_value8",
                             "preFab": false,
@@ -5795,7 +6035,7 @@
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
-                            "x": -10,
+                            "x": 50,
                             "y": 0,
                             "rotation": 0,
                             "width": 200,
@@ -5806,9 +6046,28 @@
                               "x": 0.5,
                               "y": 0.5
                             }
-                          },
+                          }
+                        ]
+                      },
+                      {
+                        "id": "paytableBonus_multiplier7",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "group",
+                        "x": 495,
+                        "y": 251,
+                        "rotation": 0,
+                        "width": 1268.02490234375,
+                        "height": 755.7190551757812,
+                        "alpha": 1,
+                        "visible": true,
+                        "scale": {
+                          "x": 1,
+                          "y": 1
+                        },
+                        "children": [
                           {
-                            "id": "paytableBonus_multiplier_anim_8",
+                            "id": "paytableBonus_multiplier_anim_7",
                             "preFab": false,
                             "loadType": "-",
                             "type": "spine-animation",
@@ -5827,26 +6086,28 @@
                               "animation": "Bonus pay table vfx",
                               "speed": 1
                             }
-                          }
-                        ]
-                      },
-                      {
-                        "id": "paytableBonus_multiplier7",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "group",
-                        "x": 495,
-                        "y": 251,
-                        "rotation": 0,
-                        "width": 326,
-                        "height": 124,
-                        "alpha": 1,
-                        "visible": true,
-                        "scale": {
-                          "x": 1,
-                          "y": 1
-                        },
-                        "children": [
+                          },
+                          {
+                            "id": "old_FvS55",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 50,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/paytable.skel",
+                              "skin": "default",
+                              "animation": "reveal/white/white selector landscape reveal right",
+                              "speed": 1
+                            }
+                          },
                           {
                             "id": "paytableBonus_multiplierAmount_value7",
                             "preFab": false,
@@ -5869,7 +6130,7 @@
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
-                            "x": -10,
+                            "x": 50,
                             "y": 0,
                             "rotation": 0,
                             "width": 200,
@@ -5882,12 +6143,12 @@
                             }
                           },
                           {
-                            "id": "paytableBonus_multiplier_anim_7",
+                            "id": "old_3mLte",
                             "preFab": false,
                             "loadType": "-",
                             "type": "spine-animation",
-                            "x": 95,
-                            "y": 14,
+                            "x": -603,
+                            "y": -742,
                             "rotation": 0,
                             "alpha": 1,
                             "visible": true,
@@ -5896,9 +6157,9 @@
                               "y": 1
                             },
                             "spinedata": {
-                              "data": "spine/bonus pay table vfx.skel",
+                              "data": "spine/Pay Table Main Game.skel",
                               "skin": "default",
-                              "animation": "Bonus pay table vfx",
+                              "animation": "Landscape/Play Table Win Landscape 3",
                               "speed": 1
                             }
                           }
@@ -5912,7 +6173,7 @@
                         "x": 495,
                         "y": 301,
                         "rotation": 0,
-                        "width": 326,
+                        "width": 266,
                         "height": 124,
                         "alpha": 1,
                         "visible": true,
@@ -5921,40 +6182,6 @@
                           "y": 1
                         },
                         "children": [
-                          {
-                            "id": "paytableBonus_multiplierAmount_value6",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "label",
-                            "x": 75,
-                            "y": 0,
-                            "rotation": 0,
-                            "width": 200,
-                            "height": 62.16216216216216,
-                            "alpha": 1,
-                            "visible": true,
-                            "anchor": {
-                              "x": 0.5,
-                              "y": 0.5
-                            }
-                          },
-                          {
-                            "id": "paytableBonus_multiplier_counter6",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "label",
-                            "x": -10,
-                            "y": 0,
-                            "rotation": 0,
-                            "width": 200,
-                            "height": 62.16216216216216,
-                            "alpha": 1,
-                            "visible": true,
-                            "anchor": {
-                              "x": 0.5,
-                              "y": 0.5
-                            }
-                          },
                           {
                             "id": "paytableBonus_multiplier_anim_6",
                             "preFab": false,
@@ -5975,28 +6202,26 @@
                               "animation": "Bonus pay table vfx",
                               "speed": 1
                             }
-                          }
-                        ]
-                      },
-                      {
-                        "id": "paytableBonus_multiplier5",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "group",
-                        "x": 495,
-                        "y": 351,
-                        "rotation": 0,
-                        "width": 326,
-                        "height": 124,
-                        "alpha": 1,
-                        "visible": true,
-                        "scale": {
-                          "x": 1,
-                          "y": 1
-                        },
-                        "children": [
+                          },
                           {
-                            "id": "paytableBonus_multiplierAmount_value5",
+                            "id": "paytableBonus_multiplier_counter6",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "label",
+                            "x": 50,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 200,
+                            "height": 62.16216216216216,
+                            "alpha": 1,
+                            "visible": true,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            }
+                          },
+                          {
+                            "id": "paytableBonus_multiplierAmount_value6",
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
@@ -6013,11 +6238,51 @@
                             }
                           },
                           {
-                            "id": "paytableBonus_multiplier_counter5",
+                            "id": "old_ylxA1",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 65,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Pay Table Main Game.skel",
+                              "skin": "default",
+                              "animation": "Landscape/Play Table Win Landscape 3",
+                              "speed": 1
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "paytableBonus_multiplier5",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "group",
+                        "x": 495,
+                        "y": 351,
+                        "rotation": 0,
+                        "width": 810.0249633789062,
+                        "height": 562.2809448242188,
+                        "alpha": 1,
+                        "visible": true,
+                        "scale": {
+                          "x": 1,
+                          "y": 1
+                        },
+                        "children": [
+                          {
+                            "id": "paytableBonus_multiplierAmount_value5",
                             "preFab": false,
                             "loadType": "-",
                             "type": "label",
-                            "x": -10,
+                            "x": 75,
                             "y": 0,
                             "rotation": 0,
                             "width": 200,
@@ -6049,11 +6314,49 @@
                               "animation": "Bonus pay table vfx",
                               "speed": 1
                             }
+                          },
+                          {
+                            "id": "paytableBonus_multiplier_counter5",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "label",
+                            "x": 50,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 200,
+                            "height": 62.16216216216216,
+                            "alpha": 1,
+                            "visible": true,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            }
+                          },
+                          {
+                            "id": "old_cTaEc",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 65,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": false,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Pay Table Main Game.skel",
+                              "skin": "default",
+                              "animation": "Landscape/Play Table Win Landscape 3",
+                              "speed": 1
+                            }
                           }
                         ]
                       },
                       {
-                        "id": "bonusBoardWinSpineAnimation",
+                        "id": "bonusBoardWinSpineAnimation_old",
                         "preFab": false,
                         "loadType": "-",
                         "type": "spine-animation",
@@ -6061,7 +6364,7 @@
                         "y": 223,
                         "rotation": 0,
                         "alpha": 1,
-                        "visible": true,
+                        "visible": false,
                         "scale": {
                           "x": 1,
                           "y": 1
@@ -6070,6 +6373,57 @@
                           "data": "spine/BonusDrink.skel",
                           "skin": "default",
                           "animation": "BonusBoardWin",
+                          "speed": 1
+                        }
+                      },
+                      {
+                        "id": "paytableBonusSymbolContainer_img.png",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "layer",
+                        "x": 190,
+                        "y": 50,
+                        "rotation": 0,
+                        "width": 361,
+                        "height": 323,
+                        "alpha": 1,
+                        "visible": true,
+                        "blendMode": 0,
+                        "bitmap": "paytableBonusSymbolContainer_img"
+                      },
+                      {
+                        "id": "bonusGameLogo_img.png",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "layer",
+                        "x": 50,
+                        "y": -139,
+                        "rotation": 0,
+                        "width": 618,
+                        "height": 207,
+                        "alpha": 1,
+                        "visible": true,
+                        "blendMode": 0,
+                        "bitmap": "bonusGameLogo_img"
+                      },
+                      {
+                        "id": "bonusBoardWinSpineAnimation",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "spine-animation",
+                        "x": 375,
+                        "y": 200,
+                        "rotation": 0,
+                        "alpha": 1,
+                        "visible": true,
+                        "scale": {
+                          "x": 1.5,
+                          "y": 1.5
+                        },
+                        "spinedata": {
+                          "data": "spine/bonus symbol.skel",
+                          "skin": "default",
+                          "animation": "BonusBoardLoop",
                           "speed": 1
                         }
                       }
@@ -6662,11 +7016,11 @@
                         "preFab": false,
                         "loadType": "-",
                         "type": "label",
-                        "x": 291,
-                        "y": 363,
+                        "x": 180,
+                        "y": 290,
                         "rotation": 0,
-                        "width": 396,
-                        "height": 113,
+                        "width": 796,
+                        "height": 227.14141414141412,
                         "alpha": 1,
                         "visible": true
                       }
@@ -6680,8 +7034,8 @@
                     "x": 0,
                     "y": 2,
                     "rotation": 0,
-                    "width": 722.8939361572266,
-                    "height": 627.2788391113281,
+                    "width": 1028,
+                    "height": 1022.9999694824219,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -6733,58 +7087,6 @@
                         ]
                       },
                       {
-                        "id": "winPlaque_label",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "label",
-                        "x": 279,
-                        "y": 336,
-                        "rotation": 0,
-                        "width": 396,
-                        "height": 43,
-                        "alpha": 1,
-                        "visible": false
-                      },
-                      {
-                        "id": "winPlaqueTry_label",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "label",
-                        "x": 279,
-                        "y": 336,
-                        "rotation": 0,
-                        "width": 396,
-                        "height": 43,
-                        "alpha": 1,
-                        "visible": false
-                      },
-                      {
-                        "id": "winPlaqueBuy_label",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "label",
-                        "x": 279,
-                        "y": 336,
-                        "rotation": 0,
-                        "width": 396,
-                        "height": 43,
-                        "alpha": 1,
-                        "visible": false
-                      },
-                      {
-                        "id": "winPlaque_value",
-                        "preFab": false,
-                        "loadType": "-",
-                        "type": "label",
-                        "x": 298,
-                        "y": 411,
-                        "rotation": 0,
-                        "width": 351,
-                        "height": 82,
-                        "alpha": 1,
-                        "visible": false
-                      },
-                      {
                         "id": "winPlaqueAnims",
                         "preFab": false,
                         "loadType": "-",
@@ -6799,11 +7101,63 @@
                           "y": 1
                         },
                         "spinedata": {
-                          "data": "spine/Plaque.skel",
+                          "data": "spine/winning plaque.skel",
                           "skin": "default",
-                          "animation": "Plaque Pop Out/Bonus Plaque Pop Out",
+                          "animation": "win/green/PlaquePopOutGreen",
                           "speed": 1
                         }
+                      },
+                      {
+                        "id": "winPlaqueTry_label",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "label",
+                        "x": 279,
+                        "y": 336,
+                        "rotation": 0,
+                        "width": 396,
+                        "height": 43,
+                        "alpha": 1,
+                        "visible": true
+                      },
+                      {
+                        "id": "winPlaque_value",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "label",
+                        "x": 70,
+                        "y": 407,
+                        "rotation": 0,
+                        "width": 1000,
+                        "height": 108.5858585858586,
+                        "alpha": 1,
+                        "visible": true
+                      },
+                      {
+                        "id": "winPlaqueBuy_label",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "label",
+                        "x": 270,
+                        "y": 310,
+                        "rotation": 0,
+                        "width": 600,
+                        "height": 65.15151515151516,
+                        "alpha": 1,
+                        "visible": true
+                      },
+                      {
+                        "id": "winPlaque_label",
+                        "preFab": false,
+                        "loadType": "-",
+                        "type": "label",
+                        "x": 270,
+                        "y": 310,
+                        "rotation": 0,
+                        "width": 600,
+                        "height": 65.15151515151516,
+                        "alpha": 1,
+                        "visible": false
                       }
                     ]
                   }
@@ -6817,8 +7171,8 @@
                 "x": 571,
                 "y": 407,
                 "rotation": 0,
-                "width": 722.8939819335938,
-                "height": 627.2788391113281,
+                "width": 1050.6476440429688,
+                "height": 1045.5374450683594,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -6826,6 +7180,27 @@
                   "y": 1
                 },
                 "children": [
+                  {
+                    "id": "old_mYe6e",
+                    "preFab": false,
+                    "loadType": "-",
+                    "type": "spine-animation",
+                    "x": 0,
+                    "y": 0,
+                    "rotation": 0,
+                    "alpha": 1,
+                    "visible": false,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "spinedata": {
+                      "data": "spine/Plaque.skel",
+                      "skin": "default",
+                      "animation": "Plaque Static/Bonus Plaque Static",
+                      "speed": 1
+                    }
+                  },
                   {
                     "id": "bonusWinPlaqueAnim",
                     "preFab": false,
@@ -6841,11 +7216,37 @@
                       "y": 1
                     },
                     "spinedata": {
-                      "data": "spine/Plaque.skel",
+                      "data": "spine/winning plaque.skel",
                       "skin": "default",
-                      "animation": "Plaque Static/Bonus Plaque Static",
+                      "animation": "win/green/PlaquePopOutGreen",
                       "speed": 1
                     }
+                  },
+                  {
+                    "id": "bonuswinPlaque_value",
+                    "preFab": false,
+                    "loadType": "-",
+                    "type": "label",
+                    "x": -194,
+                    "y": -44,
+                    "rotation": 0,
+                    "width": 401,
+                    "height": 93.68091168091169,
+                    "alpha": 1,
+                    "visible": true
+                  },
+                  {
+                    "id": "bonuswinPlaque_label",
+                    "preFab": false,
+                    "loadType": "-",
+                    "type": "label",
+                    "x": -198,
+                    "y": -129,
+                    "rotation": 0,
+                    "width": 401,
+                    "height": 93.68091168091169,
+                    "alpha": 1,
+                    "visible": true
                   }
                 ]
               }
@@ -6860,7 +7261,7 @@
             "y": 1272,
             "rotation": 0,
             "width": 1005,
-            "height": 127.0862045288086,
+            "height": 158.76000213623047,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -7726,7 +8127,7 @@
                             "alpha": 1,
                             "visible": true,
                             "blendMode": 0,
-                            "bitmap": "pricePointSelectorButton_disabledBg"
+                            "bitmap": "pricePointSelectorButton_disabledBg_img"
                           }
                         ]
                       },
@@ -7760,7 +8161,7 @@
                             "alpha": 1,
                             "visible": true,
                             "blendMode": 0,
-                            "bitmap": "pricePointSelectorButton_disabledBg_img2"
+                            "bitmap": "pricePointSelectorButton_enabledBg_img"
                           }
                         ]
                       },
@@ -7794,7 +8195,7 @@
                             "alpha": 1,
                             "visible": true,
                             "blendMode": 0,
-                            "bitmap": "pricePointSelectorButton_disabledBg_img2"
+                            "bitmap": "pricePointSelectorButton_enabledBg_img"
                           }
                         ]
                       },
@@ -7828,7 +8229,7 @@
                             "alpha": 1,
                             "visible": true,
                             "blendMode": 0,
-                            "bitmap": "pricePointSelectorButton_disabledBg_img2"
+                            "bitmap": "pricePointSelectorButton_enabledBg_img"
                           }
                         ]
                       }
@@ -11248,8 +11649,8 @@
                 "x": 465,
                 "y": 10,
                 "rotation": 0,
-                "width": 314.70848846435547,
-                "height": 273.0145797729492,
+                "width": 302.260009765625,
+                "height": 158.76000213623047,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -12209,8 +12610,8 @@
                     "x": 0,
                     "y": 0,
                     "rotation": 0,
-                    "width": 150,
-                    "height": 123,
+                    "width": 222,
+                    "height": 123.5,
                     "alpha": 1,
                     "visible": true,
                     "scale": {
@@ -17940,7 +18341,7 @@
                         "alpha": 1,
                         "visible": true,
                         "blendMode": 0,
-                        "bitmap": "settingsButton_disabledBg_img2"
+                        "bitmap": "settingsButton_disabledBg_img"
                       }
                     ]
                   },
@@ -17974,7 +18375,7 @@
                         "alpha": 1,
                         "visible": true,
                         "blendMode": 0,
-                        "bitmap": "settingsButton_pressedBg_img2"
+                        "bitmap": "settingsButton_pressedBg_img"
                       }
                     ]
                   },
@@ -18008,7 +18409,7 @@
                         "alpha": 1,
                         "visible": true,
                         "blendMode": 0,
-                        "bitmap": "settingsButton_overBg_img2"
+                        "bitmap": "settingsButton_overBg_img"
                       }
                     ]
                   },
@@ -18042,7 +18443,7 @@
                         "alpha": 1,
                         "visible": true,
                         "blendMode": 0,
-                        "bitmap": "settingsButton_enabledBg_img2"
+                        "bitmap": "settingsButton_enabledBg_img"
                       }
                     ]
                   }
@@ -18266,7 +18667,7 @@
                 "y": 889,
                 "rotation": 0,
                 "width": 514,
-                "height": 377.7138977050781,
+                "height": 356.7138977050781,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -18285,7 +18686,7 @@
                     "width": 224,
                     "height": 211,
                     "alpha": 1,
-                    "visible": true,
+                    "visible": false,
                     "blendMode": 0,
                     "bitmap": "symbolborder"
                   },
@@ -18391,7 +18792,7 @@
                 "width": 480,
                 "height": 212.72727272727272,
                 "alpha": 1,
-                "visible": true,
+                "visible": false,
                 "blendMode": 0,
                 "bitmap": "gameLogo_img2"
               },
@@ -19248,8 +19649,8 @@
             "x": 1331,
             "y": 1186,
             "rotation": 0,
-            "width": 972.2858581542969,
-            "height": 886.2220153808594,
+            "width": 940,
+            "height": 861.1749877929688,
             "alpha": 1,
             "visible": true,
             "scale": {
@@ -19266,7 +19667,7 @@
                 "y": -30,
                 "rotation": 0,
                 "alpha": 1,
-                "visible": true,
+                "visible": false,
                 "scale": {
                   "x": 1,
                   "y": 1
@@ -19275,6 +19676,27 @@
                   "data": "spine/chestBonus.skel",
                   "skin": "default",
                   "animation": "Fade/FadeStatic",
+                  "speed": 1
+                }
+              },
+              {
+                "id": "chest_Anim_old",
+                "preFab": false,
+                "loadType": "-",
+                "type": "spine-animation",
+                "x": 0,
+                "y": 0,
+                "rotation": 0,
+                "alpha": 1,
+                "visible": false,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "spinedata": {
+                  "data": "spine/chestBonus.skel",
+                  "skin": "default",
+                  "animation": "Chest/chestIdleOpen",
                   "speed": 1
                 }
               },
@@ -19293,9 +19715,9 @@
                   "y": 1
                 },
                 "spinedata": {
-                  "data": "spine/chestBonus.skel",
+                  "data": "spine/Jewel_box.skel",
                   "skin": "default",
-                  "animation": "Chest/chestIdleOpen",
+                  "animation": "chestIdleOpen",
                   "speed": 1
                 }
               }
@@ -19331,7 +19753,7 @@
             "y": 1019,
             "rotation": 0,
             "alpha": 1,
-            "visible": false,
+            "visible": true,
             "scale": {
               "x": 1,
               "y": 1
@@ -19446,7 +19868,7 @@
             "y": -15,
             "rotation": 0,
             "width": 154,
-            "height": 181,
+            "height": 181.00000000000003,
             "alpha": 1,
             "visible": false,
             "blendMode": 0,
@@ -19600,7 +20022,7 @@
         "x": 100,
         "y": 100,
         "rotation": 0,
-        "width": 195,
+        "width": 198.61785888671875,
         "height": 198,
         "alpha": 1,
         "visible": true,
@@ -19662,7 +20084,7 @@
             "x": 100,
             "y": 100,
             "rotation": 0,
-            "width": 195,
+            "width": 198.61787234042552,
             "height": 198,
             "alpha": 1,
             "visible": false,

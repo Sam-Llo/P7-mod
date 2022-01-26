@@ -419,41 +419,6 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "symbolContainerPaytable6_win_value": {
-    "align": "right",
-    "breakWords": false,
-    "dropShadow": true,
-    "dropShadowAlpha": 0.3,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 1,
-    "dropShadowColor": "black",
-    "dropShadowDistance": 5,
-    "fill": [
-      "#ffffff"
-    ],
-    "fillGradientType": 0,
-    "fillGradientStops": [
-      0
-    ],
-    "fontFamily": "oswaldloccur-bold",
-    "fontSize": 24,
-    "fontStyle": "normal",
-    "fontVariant": "normal",
-    "fontWeight": "normal",
-    "letterSpacing": 0,
-    "lineHeight": 0,
-    "lineJoin": "round",
-    "miterLimit": 28,
-    "padding": 41,
-    "stroke": "#ffffff",
-    "strokeThickness": 0,
-    "textBaseline": "alphabetic",
-    "trim": false,
-    "whiteSpace": "pre",
-    "wordWrap": false,
-    "wordWrapWidth": 100,
-    "leading": 0
-  },
   "symbolContainerPaytable6_find_value": {
     "align": "right",
     "breakWords": false,
@@ -489,7 +454,7 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "symbolContainerPaytable5_win_value": {
+  "symbolContainerPaytable6_win_value": {
     "align": "right",
     "breakWords": false,
     "dropShadow": true,
@@ -559,7 +524,7 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "symbolContainerPaytable4_win_value": {
+  "symbolContainerPaytable5_win_value": {
     "align": "right",
     "breakWords": false,
     "dropShadow": true,
@@ -595,6 +560,41 @@
     "leading": 0
   },
   "symbolContainerPaytable4_find_value": {
+    "align": "right",
+    "breakWords": false,
+    "dropShadow": true,
+    "dropShadowAlpha": 0.3,
+    "dropShadowAngle": 90,
+    "dropShadowBlur": 1,
+    "dropShadowColor": "black",
+    "dropShadowDistance": 5,
+    "fill": [
+      "#ffffff"
+    ],
+    "fillGradientType": 0,
+    "fillGradientStops": [
+      0
+    ],
+    "fontFamily": "oswaldloccur-bold",
+    "fontSize": 24,
+    "fontStyle": "normal",
+    "fontVariant": "normal",
+    "fontWeight": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 0,
+    "lineJoin": "round",
+    "miterLimit": 28,
+    "padding": 41,
+    "stroke": "#ffffff",
+    "strokeThickness": 0,
+    "textBaseline": "alphabetic",
+    "trim": false,
+    "whiteSpace": "pre",
+    "wordWrap": false,
+    "wordWrapWidth": 100,
+    "leading": 0
+  },
+  "symbolContainerPaytable4_win_value": {
     "align": "right",
     "breakWords": false,
     "dropShadow": true,
@@ -1046,8 +1046,8 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "paytableBonus_multiplierAmount_value16": {
-    "align": "right",
+  "paytableBonus_multiplier_counter16": {
+    "align": "center",
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.3,
@@ -1081,8 +1081,8 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "paytableBonus_multiplier_counter16": {
-    "align": "center",
+  "paytableBonus_multiplierAmount_value16": {
+    "align": "right",
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.3,
@@ -1256,8 +1256,8 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "paytableBonus_multiplierAmount_value13": {
-    "align": "right",
+  "paytableBonus_multiplier_counter13": {
+    "align": "center",
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.3,
@@ -1291,8 +1291,8 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "paytableBonus_multiplier_counter13": {
-    "align": "center",
+  "paytableBonus_multiplierAmount_value13": {
+    "align": "right",
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.3,
@@ -1746,8 +1746,8 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "paytableBonus_multiplierAmount_value6": {
-    "align": "right",
+  "paytableBonus_multiplier_counter6": {
+    "align": "center",
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.3,
@@ -1781,8 +1781,8 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "paytableBonus_multiplier_counter6": {
-    "align": "center",
+  "paytableBonus_multiplierAmount_value6": {
+    "align": "right",
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.3,
@@ -2316,21 +2316,21 @@
   "losePlaque_label": {
     "align": "center",
     "breakWords": false,
-    "dropShadow": false,
+    "dropShadow": true,
     "dropShadowAlpha": 1,
     "dropShadowAngle": 0.5235987755982988,
     "dropShadowBlur": 0,
     "dropShadowColor": "black",
     "dropShadowDistance": 5,
     "fill": [
-      "#c1cade"
+      "#ffffff"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0
+      0.08333333333333331
     ],
     "fontFamily": "oswaldloccur-bold",
-    "fontSize": 24,
+    "fontSize": 54,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "normal",
@@ -2340,42 +2340,7 @@
     "miterLimit": 10,
     "padding": 0,
     "stroke": "black",
-    "strokeThickness": 0,
-    "textBaseline": "alphabetic",
-    "trim": false,
-    "whiteSpace": "pre",
-    "wordWrap": false,
-    "wordWrapWidth": 100,
-    "leading": 0
-  },
-  "winPlaque_label": {
-    "align": "center",
-    "breakWords": false,
-    "dropShadow": false,
-    "dropShadowAlpha": 1,
-    "dropShadowAngle": 0.5235987755982988,
-    "dropShadowBlur": 0,
-    "dropShadowColor": "black",
-    "dropShadowDistance": 5,
-    "fill": [
-      "#c1cade"
-    ],
-    "fillGradientType": 0,
-    "fillGradientStops": [
-      0
-    ],
-    "fontFamily": "oswaldloccur-bold",
-    "fontSize": 36.875,
-    "fontStyle": "normal",
-    "fontVariant": "normal",
-    "fontWeight": "normal",
-    "letterSpacing": 0,
-    "lineHeight": 0,
-    "lineJoin": "miter",
-    "miterLimit": 10,
-    "padding": 0,
-    "stroke": "black",
-    "strokeThickness": 0,
+    "strokeThickness": 2,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -2418,45 +2383,10 @@
     "wordWrapWidth": 100,
     "leading": 0
   },
-  "winPlaqueBuy_label": {
-    "align": "center",
-    "breakWords": false,
-    "dropShadow": false,
-    "dropShadowAlpha": 1,
-    "dropShadowAngle": 0.5235987755982988,
-    "dropShadowBlur": 0,
-    "dropShadowColor": "black",
-    "dropShadowDistance": 5,
-    "fill": [
-      "#c1cade"
-    ],
-    "fillGradientType": 0,
-    "fillGradientStops": [
-      0
-    ],
-    "fontFamily": "oswaldloccur-bold",
-    "fontSize": 36.875,
-    "fontStyle": "normal",
-    "fontVariant": "normal",
-    "fontWeight": "normal",
-    "letterSpacing": 0,
-    "lineHeight": 0,
-    "lineJoin": "miter",
-    "miterLimit": 10,
-    "padding": 0,
-    "stroke": "black",
-    "strokeThickness": 0,
-    "textBaseline": "alphabetic",
-    "trim": false,
-    "whiteSpace": "pre",
-    "wordWrap": false,
-    "wordWrapWidth": 100,
-    "leading": 0
-  },
   "winPlaque_value": {
     "align": "center",
     "breakWords": false,
-    "dropShadow": false,
+    "dropShadow": true,
     "dropShadowAlpha": 1,
     "dropShadowAngle": 0.5235987755982988,
     "dropShadowBlur": 0,
@@ -2470,7 +2400,7 @@
       0
     ],
     "fontFamily": "oswaldloccur-bold",
-    "fontSize": 69.625,
+    "fontSize": 85.25,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "normal",
@@ -2480,7 +2410,147 @@
     "miterLimit": 10,
     "padding": 0,
     "stroke": "black",
-    "strokeThickness": 0,
+    "strokeThickness": 2,
+    "textBaseline": "alphabetic",
+    "trim": false,
+    "whiteSpace": "pre",
+    "wordWrap": false,
+    "wordWrapWidth": 100,
+    "leading": 0
+  },
+  "winPlaqueBuy_label": {
+    "align": "center",
+    "breakWords": false,
+    "dropShadow": true,
+    "dropShadowAlpha": 1,
+    "dropShadowAngle": 0.5235987755982988,
+    "dropShadowBlur": 0,
+    "dropShadowColor": "black",
+    "dropShadowDistance": 5,
+    "fill": [
+      "#ffffff"
+    ],
+    "fillGradientType": 0,
+    "fillGradientStops": [
+      0
+    ],
+    "fontFamily": "oswaldloccur-bold",
+    "fontSize": 48.38,
+    "fontStyle": "normal",
+    "fontVariant": "normal",
+    "fontWeight": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 0,
+    "lineJoin": "miter",
+    "miterLimit": 10,
+    "padding": 0,
+    "stroke": "black",
+    "strokeThickness": 2,
+    "textBaseline": "alphabetic",
+    "trim": false,
+    "whiteSpace": "pre",
+    "wordWrap": false,
+    "wordWrapWidth": 100,
+    "leading": 0
+  },
+  "winPlaque_label": {
+    "align": "center",
+    "breakWords": false,
+    "dropShadow": true,
+    "dropShadowAlpha": 1,
+    "dropShadowAngle": 0.5235987755982988,
+    "dropShadowBlur": 0,
+    "dropShadowColor": "black",
+    "dropShadowDistance": 5,
+    "fill": [
+      "#ffffff"
+    ],
+    "fillGradientType": 0,
+    "fillGradientStops": [
+      0
+    ],
+    "fontFamily": "oswaldloccur-bold",
+    "fontSize": 48.375,
+    "fontStyle": "normal",
+    "fontVariant": "normal",
+    "fontWeight": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 0,
+    "lineJoin": "miter",
+    "miterLimit": 10,
+    "padding": 0,
+    "stroke": "black",
+    "strokeThickness": 2,
+    "textBaseline": "alphabetic",
+    "trim": false,
+    "whiteSpace": "pre",
+    "wordWrap": false,
+    "wordWrapWidth": 100,
+    "leading": 0
+  },
+  "bonuswinPlaque_value": {
+    "align": "center",
+    "breakWords": false,
+    "dropShadow": true,
+    "dropShadowAlpha": 1,
+    "dropShadowAngle": 0,
+    "dropShadowBlur": 5,
+    "dropShadowColor": "black",
+    "dropShadowDistance": 0,
+    "fill": [
+      "#e1ff00"
+    ],
+    "fillGradientType": 0,
+    "fillGradientStops": [
+      0
+    ],
+    "fontFamily": "piedra-regular",
+    "fontSize": 43.5,
+    "fontStyle": "normal",
+    "fontVariant": "normal",
+    "fontWeight": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 0,
+    "lineJoin": "round",
+    "miterLimit": 28,
+    "padding": 0,
+    "stroke": "#6e3d03",
+    "strokeThickness": 4,
+    "textBaseline": "alphabetic",
+    "trim": false,
+    "whiteSpace": "pre",
+    "wordWrap": false,
+    "wordWrapWidth": 100,
+    "leading": 0
+  },
+  "bonuswinPlaque_label": {
+    "align": "center",
+    "breakWords": false,
+    "dropShadow": true,
+    "dropShadowAlpha": 1,
+    "dropShadowAngle": 0.5235987755982988,
+    "dropShadowBlur": 0,
+    "dropShadowColor": "black",
+    "dropShadowDistance": 5,
+    "fill": [
+      "#ffffff"
+    ],
+    "fillGradientType": 0,
+    "fillGradientStops": [
+      0
+    ],
+    "fontFamily": "oswaldloccur-bold",
+    "fontSize": 48.38,
+    "fontStyle": "normal",
+    "fontVariant": "normal",
+    "fontWeight": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 0,
+    "lineJoin": "miter",
+    "miterLimit": 10,
+    "padding": 0,
+    "stroke": "black",
+    "strokeThickness": 2,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
