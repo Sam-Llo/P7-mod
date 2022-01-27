@@ -170,7 +170,7 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
 
         this._symbolSelectAnim.renderable = systemProps.orientation === Orientation.LANDSCAPE;
         this._symbolSelectAnimPrt.renderable = !this._symbolSelectAnim.renderable;
-
+        //t
         this.findPaytableElements(); // Layout tool base one
 
         this.addReactions();
