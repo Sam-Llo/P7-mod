@@ -28,20 +28,20 @@
       "frame": {
         "x": 365,
         "y": 1,
-        "w": 356,
-        "h": 318
+        "w": 310,
+        "h": 313
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 356,
-        "h": 318
+        "w": 310,
+        "h": 313
       },
       "sourceSize": {
-        "w": 356,
-        "h": 318
+        "w": 310,
+        "h": 313
       },
       "pivot": {
         "x": 0.5,
@@ -50,7 +50,7 @@
     },
     "footerBarBg_img2": {
       "frame": {
-        "x": 685,
+        "x": 677,
         "y": 1,
         "w": 810,
         "h": 80
@@ -74,8 +74,8 @@
     },
     "symbolborder": {
       "frame": {
-        "x": 1,
-        "y": 327,
+        "x": 365,
+        "y": 316,
         "w": 244,
         "h": 230
       },
@@ -99,7 +99,7 @@
     "reelPosition1_img2": {
       "frame": {
         "x": 1,
-        "y": 559,
+        "y": 327,
         "w": 180,
         "h": 154
       },
@@ -120,34 +120,10 @@
         "y": 0.5
       }
     },
-    "symbolsBonusBackground16_img2": {
-      "frame": {
-        "x": 183,
-        "y": 559,
-        "w": 179,
-        "h": 153
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 179,
-        "h": 153
-      },
-      "sourceSize": {
-        "w": 181,
-        "h": 155
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
     "reel_mask_spinMeterButton_img": {
       "frame": {
-        "x": 247,
-        "y": 359,
+        "x": 183,
+        "y": 327,
         "w": 164,
         "h": 164
       },
@@ -170,8 +146,8 @@
     },
     "symbolBonus10Static": {
       "frame": {
-        "x": 364,
-        "y": 525,
+        "x": 1,
+        "y": 483,
         "w": 178,
         "h": 150
       },
@@ -194,8 +170,80 @@
     },
     "symbolBonus11Static": {
       "frame": {
-        "x": 413,
-        "y": 359,
+        "x": 181,
+        "y": 493,
+        "w": 178,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 178,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus1Static_img": {
+      "frame": {
+        "x": 1,
+        "y": 635,
+        "w": 178,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 178,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus2Static_img": {
+      "frame": {
+        "x": 181,
+        "y": 645,
+        "w": 178,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 178,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus3Static_img": {
+      "frame": {
+        "x": 361,
+        "y": 548,
         "w": 178,
         "h": 150
       },
@@ -218,12 +266,12 @@
     },
     "revealAllStartButton_enabledBg": {
       "frame": {
-        "x": 544,
-        "y": 511,
+        "x": 361,
+        "y": 700,
         "w": 227,
         "h": 99
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -242,12 +290,12 @@
     },
     "pricePointSelectorButton_disabledBg_img": {
       "frame": {
-        "x": 183,
-        "y": 714,
+        "x": 590,
+        "y": 548,
         "w": 263,
         "h": 84
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -258,102 +306,6 @@
       "sourceSize": {
         "w": 263,
         "h": 84
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "settingsButton_pressedBg_img2": {
-      "frame": {
-        "x": 448,
-        "y": 677,
-        "w": 94,
-        "h": 94
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 94,
-        "h": 94
-      },
-      "sourceSize": {
-        "w": 94,
-        "h": 94
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "settingsButton_enabledBg_img2": {
-      "frame": {
-        "x": 1,
-        "y": 715,
-        "w": 94,
-        "h": 93
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 94,
-        "h": 93
-      },
-      "sourceSize": {
-        "w": 94,
-        "h": 93
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "minusButton_disabledBg_img": {
-      "frame": {
-        "x": 593,
-        "y": 359,
-        "w": 85,
-        "h": 85
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 85,
-        "h": 85
-      },
-      "sourceSize": {
-        "w": 85,
-        "h": 85
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "settingsButton_disabledBg_img": {
-      "frame": {
-        "x": 97,
-        "y": 715,
-        "w": 80,
-        "h": 80
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 80,
-        "h": 80
-      },
-      "sourceSize": {
-        "w": 80,
-        "h": 80
       },
       "pivot": {
         "x": 0.5,
@@ -367,7 +319,7 @@
     "image": "gamebitmaps-0-3.png",
     "format": "RGBA8888",
     "size": {
-      "w": 766,
+      "w": 758,
       "h": 812
     },
     "scale": 1

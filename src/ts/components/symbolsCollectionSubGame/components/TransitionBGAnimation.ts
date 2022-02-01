@@ -70,6 +70,8 @@ export class TransitionBGAnimation {
             this._isWaveTransitionAnimPlaying = true;
             this.setWaveTransitionVisibilties();
             if (isTransitionIn === true) {
+                this._transitionBGAnim.zIndex = 568;
+                this._transitionBGAnimPrt.zIndex = 568;
                 soundManager.execute("onBonusTransitionIn");
                 this._transitionBGAnim.alpha = 1;
                 this._transitionBGAnimPrt.alpha = 1;

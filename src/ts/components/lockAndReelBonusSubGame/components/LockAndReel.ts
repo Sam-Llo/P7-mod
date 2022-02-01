@@ -75,7 +75,7 @@ export class LockAndReel extends Reel {
                 break;
         }
         if (this._winAnim !== undefined) {
-            this._winAnim.scale.set(0.7, 0.7);
+            this._winAnim.scale.set(0.9, 0.9);
             this._winAnim.renderable = true;
             this._winAnim.updateTransform();
             this._winAnim.setAnimation(winningSymbolAnimationNmae);
@@ -91,7 +91,7 @@ export class LockAndReel extends Reel {
             (orientation: Orientation) => {
                 //Called when Orientation got changed
                 if (this._winAnim) {
-                    if (this._winAnim.renderable) this._winAnim.scale.set(0.7, 0.7);
+                    if (this._winAnim.renderable) this._winAnim.scale.set(0.9, 0.9);
                 }
             },
             { fireImmediately: false, delay: 0.1 },
