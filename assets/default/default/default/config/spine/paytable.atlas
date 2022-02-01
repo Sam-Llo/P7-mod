@@ -1,0 +1,55 @@
+
+paytable.png
+size: 170,1013
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non trans/selector_glow
+  rotate: true
+  xy: 0, 561
+  size: 452, 126
+  orig: 700, 320
+  offset: 124, 97
+  index: -1
+number orig
+  rotate: true
+  xy: 128, 844
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: -1
+trans/number
+  rotate: false
+  xy: 128, 862
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+trans/selector
+  rotate: true
+  xy: 0, 114
+  size: 445, 121
+  orig: 453, 127
+  offset: 4, 3
+  index: -1
+trans/selector border
+  rotate: true
+  xy: 123, 185
+  size: 374, 47
+  orig: 374, 47
+  offset: 0, 0
+  index: -1
+trans/value
+  rotate: false
+  xy: 0, 0
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: -1
+value orig
+  rotate: true
+  xy: 128, 900
+  size: 113, 35
+  orig: 113, 35
+  offset: 0, 0
+  index: -1

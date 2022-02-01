@@ -1,0 +1,397 @@
+
+bonus pay table vfx.png
+size: 1990,2040
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Non trans/pay table border/pay glow_00004
+  rotate: false
+  xy: 270, 5
+  size: 260, 95
+  orig: 662, 483
+  offset: 183, 219
+  index: -1
+Non trans/pay table border/pay glow_00034
+  rotate: false
+  xy: 0, 0
+  size: 268, 100
+  orig: 662, 483
+  offset: 180, 216
+  index: -1
+Non trans/pay table explosion/explode_00001
+  rotate: false
+  xy: 532, 9
+  size: 73, 91
+  orig: 662, 483
+  offset: 296, 231
+  index: -1
+Non trans/pay table explosion/explode_00013
+  rotate: false
+  xy: 1322, 102
+  size: 638, 483
+  orig: 662, 483
+  offset: 12, 0
+  index: -1
+Non trans/pay table explosion/explode_00014
+  rotate: false
+  xy: 1328, 587
+  size: 655, 483
+  orig: 662, 483
+  offset: 0, 0
+  index: -1
+Non trans/pay table explosion/explode_00015
+  rotate: false
+  xy: 0, 1557
+  size: 662, 483
+  orig: 662, 483
+  offset: 0, 0
+  index: -1
+Non trans/pay table explosion/explode_00016
+  rotate: false
+  xy: 1328, 1072
+  size: 657, 483
+  orig: 662, 483
+  offset: 0, 0
+  index: -1
+Non trans/pay table explosion/explode_00017
+  rotate: false
+  xy: 664, 102
+  size: 656, 483
+  orig: 662, 483
+  offset: 6, 0
+  index: -1
+Non trans/pay table explosion/explode_00018
+  rotate: false
+  xy: 0, 1072
+  size: 662, 483
+  orig: 662, 483
+  offset: 0, 0
+  index: -1
+Non trans/pay table explosion/explode_00019
+  rotate: false
+  xy: 664, 1557
+  size: 662, 483
+  orig: 662, 483
+  offset: 0, 0
+  index: -1
+Non trans/pay table explosion/explode_00020
+  rotate: false
+  xy: 0, 587
+  size: 662, 483
+  orig: 662, 483
+  offset: 0, 0
+  index: -1
+Non trans/pay table explosion/explode_00021
+  rotate: false
+  xy: 664, 1072
+  size: 662, 483
+  orig: 662, 483
+  offset: 0, 0
+  index: -1
+Non trans/pay table explosion/explode_00022
+  rotate: false
+  xy: 1328, 1557
+  size: 662, 483
+  orig: 662, 483
+  offset: 0, 0
+  index: -1
+Non trans/pay table explosion/explode_00023
+  rotate: false
+  xy: 0, 102
+  size: 662, 483
+  orig: 662, 483
+  offset: 0, 0
+  index: -1
+Non trans/pay table explosion/explode_00024
+  rotate: false
+  xy: 664, 587
+  size: 662, 483
+  orig: 662, 483
+  offset: 0, 0
+  index: -1
+
+bonus pay table vfx2.png
+size: 2033,1927
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Non trans/pay table border/pay glow_00005
+  rotate: false
+  xy: 490, 159
+  size: 305, 133
+  orig: 662, 483
+  offset: 168, 204
+  index: -1
+Non trans/pay table border/pay glow_00006
+  rotate: true
+  xy: 1880, 1010
+  size: 328, 152
+  orig: 662, 483
+  offset: 160, 197
+  index: -1
+Non trans/pay table border/pay glow_00007
+  rotate: false
+  xy: 896, 338
+  size: 346, 172
+  orig: 662, 483
+  offset: 153, 189
+  index: -1
+Non trans/pay table border/pay glow_00008
+  rotate: true
+  xy: 1266, 587
+  size: 362, 188
+  orig: 662, 483
+  offset: 147, 184
+  index: -1
+Non trans/pay table border/pay glow_00009
+  rotate: true
+  xy: 1836, 273
+  size: 369, 197
+  orig: 662, 483
+  offset: 145, 180
+  index: -1
+Non trans/pay table border/pay glow_00010
+  rotate: false
+  xy: 1456, 440
+  size: 378, 203
+  orig: 662, 483
+  offset: 142, 179
+  index: -1
+Non trans/pay table border/pay glow_00011
+  rotate: true
+  xy: 485, 449
+  size: 378, 203
+  orig: 662, 483
+  offset: 142, 179
+  index: -1
+Non trans/pay table border/pay glow_00012
+  rotate: false
+  xy: 1456, 645
+  size: 379, 204
+  orig: 662, 483
+  offset: 141, 179
+  index: -1
+Non trans/pay table border/pay glow_00013
+  rotate: false
+  xy: 883, 1088
+  size: 389, 217
+  orig: 662, 483
+  offset: 138, 173
+  index: -1
+Non trans/pay table border/pay glow_00014
+  rotate: false
+  xy: 490, 1039
+  size: 389, 217
+  orig: 662, 483
+  offset: 138, 173
+  index: -1
+Non trans/pay table border/pay glow_00015
+  rotate: false
+  xy: 975, 1307
+  size: 391, 217
+  orig: 662, 483
+  offset: 137, 173
+  index: -1
+Non trans/pay table border/pay glow_00016
+  rotate: false
+  xy: 490, 1258
+  size: 391, 217
+  orig: 662, 483
+  offset: 137, 173
+  index: -1
+Non trans/pay table border/pay glow_00017
+  rotate: false
+  xy: 1456, 851
+  size: 382, 206
+  orig: 662, 483
+  offset: 140, 178
+  index: -1
+Non trans/pay table border/pay glow_00018
+  rotate: false
+  xy: 1456, 1059
+  size: 382, 207
+  orig: 662, 483
+  offset: 140, 178
+  index: -1
+Non trans/pay table border/pay glow_00019
+  rotate: false
+  xy: 490, 829
+  size: 382, 208
+  orig: 662, 483
+  offset: 140, 177
+  index: -1
+Non trans/pay table border/pay glow_00020
+  rotate: false
+  xy: 881, 878
+  size: 383, 208
+  orig: 662, 483
+  offset: 140, 177
+  index: -1
+Non trans/pay table border/pay glow_00021
+  rotate: false
+  xy: 969, 4
+  size: 375, 203
+  orig: 662, 483
+  offset: 142, 177
+  index: -1
+Non trans/pay table border/pay glow_00022
+  rotate: true
+  xy: 1244, 209
+  size: 376, 203
+  orig: 662, 483
+  offset: 142, 177
+  index: -1
+Non trans/pay table border/pay glow_00023
+  rotate: true
+  xy: 690, 451
+  size: 376, 204
+  orig: 662, 483
+  offset: 142, 177
+  index: -1
+Non trans/pay table border/pay glow_00024
+  rotate: false
+  xy: 1650, 75
+  size: 370, 196
+  orig: 662, 483
+  offset: 144, 181
+  index: -1
+Non trans/pay table border/pay glow_00025
+  rotate: true
+  xy: 1840, 644
+  size: 364, 192
+  orig: 662, 483
+  offset: 146, 181
+  index: -1
+Non trans/pay table border/pay glow_00026
+  rotate: false
+  xy: 896, 687
+  size: 362, 189
+  orig: 662, 483
+  offset: 147, 182
+  index: -1
+Non trans/pay table border/pay glow_00027
+  rotate: true
+  xy: 1274, 951
+  size: 354, 180
+  orig: 662, 483
+  offset: 150, 186
+  index: -1
+Non trans/pay table border/pay glow_00028
+  rotate: false
+  xy: 896, 512
+  size: 346, 173
+  orig: 662, 483
+  offset: 153, 188
+  index: -1
+Non trans/pay table border/pay glow_00029
+  rotate: true
+  xy: 804, 1
+  size: 335, 163
+  orig: 662, 483
+  offset: 157, 192
+  index: -1
+Non trans/pay table border/pay glow_00030
+  rotate: false
+  xy: 1449, 281
+  size: 329, 157
+  orig: 662, 483
+  offset: 159, 195
+  index: -1
+Non trans/pay table border/pay glow_00031
+  rotate: false
+  xy: 485, 294
+  size: 317, 144
+  orig: 662, 483
+  offset: 163, 199
+  index: -1
+Non trans/pay table border/pay glow_00032
+  rotate: false
+  xy: 490, 24
+  size: 304, 133
+  orig: 662, 483
+  offset: 168, 203
+  index: -1
+Non trans/pay table border/pay glow_00033
+  rotate: true
+  xy: 0, 0
+  size: 288, 118
+  orig: 662, 483
+  offset: 173, 209
+  index: -1
+Non trans/pay table explosion/explode_00002
+  rotate: false
+  xy: 1913, 1765
+  size: 111, 162
+  orig: 662, 483
+  offset: 278, 198
+  index: -1
+Non trans/pay table explosion/explode_00003
+  rotate: false
+  xy: 1880, 1340
+  size: 153, 232
+  orig: 662, 483
+  offset: 259, 165
+  index: -1
+Non trans/pay table explosion/explode_00004
+  rotate: true
+  xy: 1346, 5
+  size: 202, 302
+  orig: 662, 483
+  offset: 234, 130
+  index: -1
+Non trans/pay table explosion/explode_00005
+  rotate: true
+  xy: 120, 34
+  size: 254, 368
+  orig: 662, 483
+  offset: 206, 96
+  index: -1
+Non trans/pay table explosion/explode_00006
+  rotate: true
+  xy: 1460, 1268
+  size: 304, 418
+  orig: 662, 483
+  offset: 180, 65
+  index: -1
+Non trans/pay table explosion/explode_00007
+  rotate: true
+  xy: 1460, 1574
+  size: 353, 451
+  orig: 662, 483
+  offset: 155, 32
+  index: -1
+Non trans/pay table explosion/explode_00008
+  rotate: true
+  xy: 975, 1526
+  size: 401, 483
+  orig: 662, 483
+  offset: 130, 0
+  index: -1
+Non trans/pay table explosion/explode_00009
+  rotate: true
+  xy: 490, 1477
+  size: 450, 483
+  orig: 662, 483
+  offset: 105, 0
+  index: -1
+Non trans/pay table explosion/explode_00010
+  rotate: true
+  xy: 0, 290
+  size: 498, 483
+  orig: 662, 483
+  offset: 81, 0
+  index: -1
+Non trans/pay table explosion/explode_00011
+  rotate: true
+  xy: 0, 790
+  size: 545, 483
+  orig: 662, 483
+  offset: 57, 0
+  index: -1
+Non trans/pay table explosion/explode_00012
+  rotate: true
+  xy: 0, 1337
+  size: 590, 483
+  orig: 662, 483
+  offset: 35, 0
+  index: -1

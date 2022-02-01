@@ -1,0 +1,27 @@
+
+transition.png
+size: 1625,1217
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+big_curtain
+  rotate: true
+  xy: 0, 185
+  size: 1032, 1424
+  orig: 1032, 1424
+  offset: 0, 0
+  index: -1
+curtain
+  rotate: true
+  xy: 0, 0
+  size: 183, 1433
+  orig: 194, 1447
+  offset: 11, 14
+  index: -1
+folded_curtain
+  rotate: true
+  xy: 1426, 599
+  size: 618, 199
+  orig: 621, 221
+  offset: 1, 1
+  index: -1

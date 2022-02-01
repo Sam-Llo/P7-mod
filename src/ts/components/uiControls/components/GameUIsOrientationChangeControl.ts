@@ -187,7 +187,7 @@ export class GameUIsOrientationChangeControl {
             const portraiTime = this._buySpineAnimPortrait.spine.state.getCurrent(0).trackTime;
             this._buySpineAnim.setAnimation("BuyButtonLandscapeMouseover", undefined, true).trackTime = landscapeTime;
             this._buySpineAnimPortrait.setAnimation(
-                "BuyButtonPortraitMouseOver",
+                "BuyButtonPortraitMouseover",
                 undefined,
                 true,
             ).trackTime = portraiTime;

@@ -1,0 +1,167 @@
+
+Bonus Pay Table.png
+size: 1678,1570
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Non trans/sparkle/sparkly00131
+  rotate: true
+  xy: 682, 7
+  size: 330, 404
+  orig: 404, 495
+  offset: 51, 0
+  index: -1
+Non trans/sparkle/sparkly00132
+  rotate: false
+  xy: 678, 339
+  size: 331, 405
+  orig: 404, 495
+  offset: 51, 0
+  index: -1
+Non trans/sparkle/sparkly00133
+  rotate: false
+  xy: 345, 336
+  size: 331, 408
+  orig: 404, 495
+  offset: 51, 0
+  index: -1
+Non trans/sparkle/sparkly00134
+  rotate: false
+  xy: 347, 1159
+  size: 341, 409
+  orig: 404, 495
+  offset: 51, 0
+  index: -1
+Non trans/sparkle/sparkly00135
+  rotate: false
+  xy: 345, 746
+  size: 342, 409
+  orig: 404, 495
+  offset: 51, 1
+  index: -1
+Non trans/sparkle/sparkly00136
+  rotate: false
+  xy: 2, 332
+  size: 341, 410
+  orig: 404, 495
+  offset: 51, 2
+  index: -1
+Non trans/sparkle/sparkly00137
+  rotate: false
+  xy: 2, 1157
+  size: 343, 411
+  orig: 404, 495
+  offset: 50, 3
+  index: -1
+Non trans/sparkle/sparkly00138
+  rotate: false
+  xy: 2, 744
+  size: 341, 411
+  orig: 404, 495
+  offset: 51, 4
+  index: -1
+Non trans/sparkle/sparkly00139
+  rotate: true
+  xy: 1011, 344
+  size: 304, 368
+  orig: 404, 495
+  offset: 64, 57
+  index: -1
+Non trans/sparkle/sparkly00140
+  rotate: true
+  xy: 1302, 650
+  size: 304, 370
+  orig: 404, 495
+  offset: 64, 58
+  index: -1
+Non trans/sparkle/sparkly00141
+  rotate: true
+  xy: 309, 24
+  size: 306, 371
+  orig: 404, 495
+  offset: 63, 59
+  index: -1
+Non trans/sparkle/sparkly00142
+  rotate: true
+  xy: 1304, 956
+  size: 305, 371
+  orig: 404, 495
+  offset: 64, 61
+  index: -1
+Non trans/sparkle/sparkly00143
+  rotate: false
+  xy: 997, 1196
+  size: 305, 372
+  orig: 404, 495
+  offset: 64, 62
+  index: -1
+Non trans/sparkle/sparkly00144
+  rotate: true
+  xy: 1304, 1263
+  size: 305, 372
+  orig: 404, 495
+  offset: 64, 64
+  index: -1
+Non trans/sparkle/sparkly00145
+  rotate: false
+  xy: 996, 819
+  size: 304, 373
+  orig: 404, 495
+  offset: 64, 66
+  index: -1
+Non trans/sparkle/sparkly00146
+  rotate: false
+  xy: 689, 783
+  size: 305, 374
+  orig: 404, 495
+  offset: 64, 67
+  index: -1
+Non trans/sparkle/sparkly00147
+  rotate: false
+  xy: 690, 1194
+  size: 305, 374
+  orig: 404, 495
+  offset: 64, 69
+  index: -1
+Non trans/sparkle/sparkly00148
+  rotate: false
+  xy: 2, 2
+  size: 305, 328
+  orig: 404, 495
+  offset: 64, 71
+  index: -1
+Non trans/sparkle/sparkly00149
+  rotate: true
+  xy: 1381, 387
+  size: 261, 292
+  orig: 404, 495
+  offset: 85, 96
+  index: -1
+Trans/10x
+  rotate: false
+  xy: 1011, 682
+  size: 200, 135
+  orig: 200, 135
+  offset: 0, 0
+  index: -1
+Trans/10x2
+  rotate: true
+  xy: 1088, 15
+  size: 200, 135
+  orig: 200, 135
+  offset: 0, 0
+  index: -1
+Trans/value 2
+  rotate: false
+  xy: 1225, 47
+  size: 270, 168
+  orig: 270, 168
+  offset: 0, 0
+  index: -1
+Trans/value1
+  rotate: false
+  xy: 1381, 217
+  size: 270, 168
+  orig: 270, 168
+  offset: 0, 0
+  index: -1

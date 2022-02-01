@@ -1,0 +1,27 @@
+
+BonusMarketingScreen.png
+size: 466,307
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non Trans/glow1
+  rotate: false
+  xy: 0, 0
+  size: 307, 307
+  orig: 307, 307
+  offset: 0, 0
+  index: -1
+trans/bonus01
+  rotate: false
+  xy: 309, 135
+  size: 126, 172
+  orig: 128, 173
+  offset: 1, 1
+  index: -1
+trans/bonus02
+  rotate: false
+  xy: 309, 0
+  size: 157, 133
+  orig: 159, 134
+  offset: 1, 1
+  index: -1

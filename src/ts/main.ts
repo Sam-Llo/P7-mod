@@ -17,6 +17,7 @@ import {
     SoundTypes,
     systemProps,
     EmitterCommandSet,
+    StageActions,
 } from "playa-core";
 
 import {
@@ -37,6 +38,8 @@ import {
 } from "playa-iw";
 
 import * as PIXI from "pixi.js";
+import { StageProps } from "playa-core/dist/stage/StageProps";
+import { Stage } from "react-pixi-fiber";
 import { WagerFlow } from "./flows/WagerFlow";
 import { RevealFlow } from "./flows/RevealFlow";
 import { DefaultEffectsHandler } from "./flows/effects/DefaultEffectsHandler";

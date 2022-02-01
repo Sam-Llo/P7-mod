@@ -24,107 +24,131 @@
         "y": 0.5
       }
     },
-    "symbolBonus10Static": {
+    "bonusGameLogo_img": {
+      "frame": {
+        "x": 1,
+        "y": 383,
+        "w": 620,
+        "h": 207
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 620,
+        "h": 207
+      },
+      "sourceSize": {
+        "w": 620,
+        "h": 207
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "beachyBonusWithSurfboardLogo": {
       "frame": {
         "x": 661,
         "y": 1,
-        "w": 178,
-        "h": 150
+        "w": 537,
+        "h": 144
       },
       "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 178,
-        "h": 150
+        "w": 537,
+        "h": 144
       },
       "sourceSize": {
-        "w": 178,
-        "h": 150
+        "w": 537,
+        "h": 144
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "symbolBonus11Static": {
-      "frame": {
-        "x": 661,
-        "y": 181,
-        "w": 178,
-        "h": 150
-      },
-      "rotated": true,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 178,
-        "h": 150
-      },
-      "sourceSize": {
-        "w": 178,
-        "h": 150
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "symbolBonus1Static_img": {
-      "frame": {
-        "x": 661,
-        "y": 361,
-        "w": 178,
-        "h": 150
-      },
-      "rotated": true,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 178,
-        "h": 150
-      },
-      "sourceSize": {
-        "w": 178,
-        "h": 150
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "pricePointSelectorButton_enabledBg_img": {
+    "revealAllStopButton_enabledBg_img2": {
       "frame": {
         "x": 1,
-        "y": 541,
-        "w": 262,
-        "h": 86
+        "y": 592,
+        "w": 202,
+        "h": 202
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 262,
-        "h": 86
+        "w": 202,
+        "h": 202
       },
       "sourceSize": {
-        "w": 262,
-        "h": 86
+        "w": 202,
+        "h": 202
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "reelPosition1_img2": {
+    "revealAllStopButton_overBg_img2": {
       "frame": {
-        "x": 1,
-        "y": 383,
-        "w": 180,
+        "x": 205,
+        "y": 592,
+        "w": 202,
+        "h": 202
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 202,
+        "h": 202
+      },
+      "sourceSize": {
+        "w": 202,
+        "h": 202
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "revealAllStopButton_pressedBg_img2": {
+      "frame": {
+        "x": 409,
+        "y": 592,
+        "w": 202,
+        "h": 202
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 202,
+        "h": 202
+      },
+      "sourceSize": {
+        "w": 202,
+        "h": 202
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "reel_mask_1_img": {
+      "frame": {
+        "x": 613,
+        "y": 592,
+        "w": 182,
         "h": 154
       },
       "rotated": false,
@@ -132,180 +156,12 @@
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 180,
+        "w": 182,
         "h": 154
       },
       "sourceSize": {
-        "w": 180,
+        "w": 182,
         "h": 154
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "gameLogo_img2": {
-      "frame": {
-        "x": 89,
-        "y": 539,
-        "w": 548,
-        "h": 241
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 548,
-        "h": 241
-      },
-      "sourceSize": {
-        "w": 548,
-        "h": 241
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "symbolsBonusBackground16_img2": {
-      "frame": {
-        "x": 183,
-        "y": 383,
-        "w": 179,
-        "h": 153
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 179,
-        "h": 153
-      },
-      "sourceSize": {
-        "w": 181,
-        "h": 155
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "symbolBonus2Static_img": {
-      "frame": {
-        "x": 364,
-        "y": 383,
-        "w": 178,
-        "h": 150
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 178,
-        "h": 150
-      },
-      "sourceSize": {
-        "w": 178,
-        "h": 150
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "reel_mask_spinMeterButton_img": {
-      "frame": {
-        "x": 639,
-        "y": 541,
-        "w": 164,
-        "h": 164
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 164,
-        "h": 164
-      },
-      "sourceSize": {
-        "w": 164,
-        "h": 164
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "minusButton_disabledBg_img": {
-      "frame": {
-        "x": 639,
-        "y": 707,
-        "w": 85,
-        "h": 85
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 85,
-        "h": 85
-      },
-      "sourceSize": {
-        "w": 85,
-        "h": 85
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "minusButton_enabledBg_img": {
-      "frame": {
-        "x": 726,
-        "y": 707,
-        "w": 85,
-        "h": 85
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 85,
-        "h": 85
-      },
-      "sourceSize": {
-        "w": 85,
-        "h": 85
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "minusButton_overBg_img": {
-      "frame": {
-        "x": 544,
-        "y": 383,
-        "w": 85,
-        "h": 85
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 85,
-        "h": 85
-      },
-      "sourceSize": {
-        "w": 85,
-        "h": 85
       },
       "pivot": {
         "x": 0.5,
@@ -319,8 +175,8 @@
     "image": "gamebitmaps-0-1.png",
     "format": "RGBA8888",
     "size": {
-      "w": 812,
-      "h": 804
+      "w": 806,
+      "h": 795
     },
     "scale": 1
   }

@@ -1,33 +1,9 @@
 {
   "frames": {
-    "footerBarBg_img2": {
-      "frame": {
-        "x": 1,
-        "y": 1,
-        "w": 810,
-        "h": 80
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 810,
-        "h": 80
-      },
-      "sourceSize": {
-        "w": 810,
-        "h": 80
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
     "symbolsFrame": {
       "frame": {
         "x": 1,
-        "y": 83,
+        "y": 1,
         "w": 759,
         "h": 486
       },
@@ -48,24 +24,48 @@
         "y": 0.5
       }
     },
-    "symbolborder": {
+    "gameLogo_img2": {
       "frame": {
         "x": 1,
-        "y": 571,
-        "w": 244,
-        "h": 230
+        "y": 489,
+        "w": 548,
+        "h": 241
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 244,
-        "h": 230
+        "w": 548,
+        "h": 241
       },
       "sourceSize": {
-        "w": 244,
-        "h": 230
+        "w": 548,
+        "h": 241
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "revealAllStopButton_disabledBg_img2": {
+      "frame": {
+        "x": 551,
+        "y": 489,
+        "w": 202,
+        "h": 202
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 202,
+        "h": 202
+      },
+      "sourceSize": {
+        "w": 202,
+        "h": 202
       },
       "pivot": {
         "x": 0.5,
@@ -74,142 +74,22 @@
     },
     "footerDivider_03_img": {
       "frame": {
-        "x": 1,
-        "y": 803,
+        "x": 755,
+        "y": 489,
         "w": 2,
         "h": 20
-      },
-      "rotated": true,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 2,
-        "h": 20
-      },
-      "sourceSize": {
-        "w": 2,
-        "h": 20
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "revealAllStartButton_enabledBg": {
-      "frame": {
-        "x": 247,
-        "y": 571,
-        "w": 227,
-        "h": 99
-      },
-      "rotated": true,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 227,
-        "h": 99
-      },
-      "sourceSize": {
-        "w": 227,
-        "h": 99
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "buy_button_disabled_lds": {
-      "frame": {
-        "x": 348,
-        "y": 571,
-        "w": 227,
-        "h": 98
-      },
-      "rotated": true,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 227,
-        "h": 98
-      },
-      "sourceSize": {
-        "w": 227,
-        "h": 98
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "buy_button_over_lds": {
-      "frame": {
-        "x": 448,
-        "y": 571,
-        "w": 227,
-        "h": 98
-      },
-      "rotated": true,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 227,
-        "h": 98
-      },
-      "sourceSize": {
-        "w": 227,
-        "h": 98
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "pricePointSelectorButton_disabledBg_img": {
-      "frame": {
-        "x": 548,
-        "y": 571,
-        "w": 263,
-        "h": 84
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 263,
-        "h": 84
+        "w": 2,
+        "h": 20
       },
       "sourceSize": {
-        "w": 263,
-        "h": 84
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "reel_mask_1_img": {
-      "frame": {
-        "x": 548,
-        "y": 657,
-        "w": 182,
-        "h": 154
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 182,
-        "h": 154
-      },
-      "sourceSize": {
-        "w": 182,
-        "h": 154
+        "w": 2,
+        "h": 20
       },
       "pivot": {
         "x": 0.5,
@@ -223,8 +103,8 @@
     "image": "gamebitmaps-0-0.png",
     "format": "RGBA8888",
     "size": {
-      "w": 812,
-      "h": 812
+      "w": 761,
+      "h": 731
     },
     "scale": 1
   }

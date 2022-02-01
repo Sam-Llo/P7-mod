@@ -1,16 +1,35 @@
 import { TweenMax } from "gsap";
+import { DisplayObject } from "pixi.js";
 import {
+    Background,
+    BaseAction,
     BaseView,
+    gameActions,
+    GameActions,
+    GameFlow,
     LayoutBuilder,
+    layoutService,
     loaderService,
     MobxUtils,
     Orientation,
     ParentDef,
     SpineAnimation,
+    Stage,
+    StageActions,
+    stageService,
+    StorageService,
+    StorageTypes,
     systemProps,
 } from "playa-core";
-import { gameStore } from "..";
+import { LayoutProps } from "playa-core/dist/layout/layoutProps";
+import { StageProps } from "playa-core/dist/stage/StageProps";
+import { MarketingScreen, IToggle, IWData, IWProps, iwProps, iwActions } from "playa-iw";
+import { Container } from "react-pixi-fiber";
+import { gameStore, MarketingScreenSettings } from "..";
+import { GameIDs } from "../../main";
+import { GameProps } from "../store/GameProps";
 import { LayoutUtils } from "../utils/LayoutUtils";
+
 /**
  * BackgroundSwap
  */
@@ -18,6 +37,8 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
     private static readonly orientationChanged: string = "backgroundOrientationChanged";
 
     private static readonly baseGameVisible: string = "symbolsCollectionBaseGameVisible";
+
+    private static readonly marketingScreenOff: string = "logoVisible";
 
     private static readonly STRINGS_BONUS_WIN_LAN: string = "LandscapeLightBonusWin";
 
@@ -36,11 +57,19 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
     private bgBaseGameAnimPort!: SpineAnimation;
 
     //Animated Logo
-    private bgBaseGameLogoAnim!: SpineAnimation;
+    public bgBaseGameLogoAnim!: SpineAnimation;
+
+    private bgBaseGameLogoAnimPrt!: SpineAnimation;
 
     private stringOfLightsBonusGameAnim!: SpineAnimation;
 
     private stringOfLightsBonusGameAnimPort!: SpineAnimation;
+
+    private stage!: Stage;
+
+    private testContainer!: string;
+
+    private marketingscreen!: Container;
 
     public constructor(layoutId: string) {
         super(new ParentDef(null, null), {}, undefined, [], layoutId);
@@ -59,6 +88,20 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
 
         //Find the portrait and landscape animated logos inside Layout
         this.bgBaseGameLogoAnim = this.container.children.find((obj) => obj.name === "gameLogo_anim") as SpineAnimation;
+        this.bgBaseGameLogoAnim.updateTransform();
+        this.bgBaseGameLogoAnim.setAnimation("landscape logo animation", undefined, true);
+        this.bgBaseGameLogoAnim.play();
+
+        this.bgBaseGameLogoAnimPrt = this.container.children.find(
+            (obj) => obj.name === "gameLogo_anim_prt",
+        ) as SpineAnimation;
+
+        this.bgBaseGameLogoAnimPrt.updateTransform();
+        this.bgBaseGameLogoAnimPrt.setAnimation("portrait logo animation", undefined, true);
+        this.bgBaseGameLogoAnimPrt.play();
+
+        this.bgBaseGameLogoAnim.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+        this.bgBaseGameLogoAnimPrt.renderable = !this.bgBaseGameLogoAnim.renderable;
 
         //Find the portrait and landscape animated background inside Layout
         this.bgBaseGameAnimLand = this.container.children.find(
@@ -89,22 +132,32 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
 
         this.bgBaseGameAnimLand.updateTransform();
         this.bgBaseGameAnimPort.updateTransform();
-        this.bgBaseGameLogoAnim.updateTransform();
+        //this.bgBaseGameLogoAnim.updateTransform();
 
         this.bgBaseGameAnimLand.setAnimation("landscape animation background", undefined, true);
         this.bgBaseGameAnimPort.setAnimation("portrait animation background", undefined, true);
-        this.bgBaseGameLogoAnim.setAnimation("landscape logo animation", undefined, true);
-        this.bgBaseGameLogoAnim.setAnimation("portrait logo animation", undefined, true);
+        //this.bgBaseGameLogoAnim.setAnimation("landscape logo animation", undefined, true);
+        // this.bgBaseGameLogoAnim.setAnimation("portrait logo animation", undefined, true);
 
         this.bgBaseGameAnimLand.play();
         this.bgBaseGameAnimPort.play();
-        this.bgBaseGameLogoAnim.play();
+        // this.bgBaseGameLogoAnim.play();
         this.bgBaseGameAnimLand.renderable = systemProps.orientation === Orientation.LANDSCAPE;
         this.bgBaseGameAnimLand.visible = systemProps.orientation === Orientation.LANDSCAPE;
         this.bgBaseGameAnimPort.renderable = !this.bgBaseGameAnimLand.renderable;
         this.bgBaseGameAnimPort.visible = !this.bgBaseGameAnimLand.visible;
 
         this.addReactions();
+
+        this.stage = layoutService.props.layout;
+        //this.stage.container.;
+        /*              this.marketingscreen = this.container.parent.parent.children.find(
+                    (containerRef) => obj.name === "game",
+                ) as Container; */
+
+        //this.marketingscreen.visible = false;
+        console.log(`${this.container.parent.name}IT SHOULD SAY GAME`);
+        // this.showLogo();
     }
 
     /**
@@ -122,8 +175,19 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                 this.bgBaseGameAnimPort.visible = !this.bgBaseGameAnimLand.visible;
                 this.setStringOfLightsVisibilitiesBaseOnOrientation();
 
+                this.bgBaseGameLogoAnim.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+                this.bgBaseGameLogoAnimPrt.renderable = !this.bgBaseGameLogoAnim.renderable;
+
+                this.bgBaseGameLogoAnim.updateTransform();
+                this.bgBaseGameLogoAnim.setAnimation("landscape logo animation", undefined, true);
+                this.bgBaseGameLogoAnim.play();
+
+                this.bgBaseGameLogoAnimPrt.updateTransform();
+                this.bgBaseGameLogoAnimPrt.setAnimation("portrait logo animation", undefined, true);
+                this.bgBaseGameLogoAnimPrt.play();
+
                 // setting logo animation depending on orientation
-                if (systemProps.orientation === Orientation.LANDSCAPE) {
+                /*  if (systemProps.orientation === Orientation.LANDSCAPE) {
                     this.bgBaseGameLogoAnim.visible = systemProps.orientation === Orientation.LANDSCAPE;
                     this.bgBaseGameLogoAnim.setAnimation("landscape logo animation", undefined, true);
                     this.bgBaseGameLogoAnim.play();
@@ -131,10 +195,31 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                     this.bgBaseGameLogoAnim.visible = systemProps.orientation === Orientation.PORTRAIT;
                     this.bgBaseGameLogoAnim.setAnimation("portrait logo animation", undefined, true);
                     this.bgBaseGameLogoAnim.play();
-                }
+                } */
             },
             { fireImmediately: true },
         );
+
+        /* MobxUtils.getInstance().addReaction(
+            BackgroundSwap.marketingScreenOff,
+            () => this.props.MarketingScreenSettings._marketScreenOff,
+            (_marketScreenOff: boolean) => {
+                    if (!_marketScreenOff){ */
+        /*   this.bgBaseGameLogoAnim.visible = true;
+                        this.bgBaseGameLogoAnimPrt.visible = true;
+                        console.log("LOGO FALSE")
+ */
+
+        // }else{
+        /*         this.bgBaseGameLogoAnim.visible = true;
+                        this.bgBaseGameLogoAnimPrt.visible = true;
+                        console.log("LOGO TRUE")
+                     */
+
+        // }
+        // },
+        //   { fireImmediately: true },
+        //  );
 
         MobxUtils.getInstance().addReaction(
             BackgroundSwap.baseGameVisible,
@@ -146,6 +231,7 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                     this.bgBaseGameAnimLand.updateTransform();
                     this.bgBaseGameAnimPort.updateTransform();
                     this.bgBaseGameLogoAnim.visible = false;
+                    this.bgBaseGameLogoAnimPrt.visible = false;
                     TweenMax.delayedCall(BackgroundSwap.DELAY_BONUS_BACKGROUND_LANDSCAPE, () => {
                         this.bgBaseGameAnimLand.setAnimation("landscape bouns reveal background", undefined, false);
                         this.bgBaseGameAnimLand.play();
@@ -155,7 +241,7 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                     });
                     TweenMax.delayedCall(BackgroundSwap.DELAY_BONUS_BACKGROUND_PORTRAIT, () => {
                         this.bgBaseGameAnimPort.setAnimation("portrait bonus reveal background", undefined, false);
-                        this.bgBaseGameAnimPort.play();
+                        //  this.bgBaseGameAnimPort.play();
                     });
                 } else {
                     this.bgBaseGameAnimLand.updateTransform();
@@ -165,6 +251,7 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                     this.bgBaseGameAnimLand.play();
                     this.bgBaseGameAnimPort.play();
                     this.bgBaseGameLogoAnim.visible = true;
+                    this.bgBaseGameLogoAnimPrt.visible = true;
                 }
             },
             { fireImmediately: false },
@@ -182,6 +269,14 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
             this.stringOfLightsBonusGameAnimPort.renderable = false;
             this.stringOfLightsBonusGameAnim.visible = false;
             this.stringOfLightsBonusGameAnimPort.visible = false;
+        }
+    }
+
+    protected async showLogo(): Promise<void> {
+        if (!iwProps.marketingScreenOff) {
+            this.bgBaseGameLogoAnim.visible = false;
+        } else {
+            this.bgBaseGameLogoAnim.visible = true;
         }
     }
 

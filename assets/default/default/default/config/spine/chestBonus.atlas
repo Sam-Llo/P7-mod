@@ -1,0 +1,279 @@
+
+chestBonus.png
+size: 2030,1891
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non Trans/burst
+  rotate: false
+  xy: 0, 529
+  size: 655, 639
+  orig: 666, 642
+  offset: 4, 3
+  index: -1
+non Trans/sparkle/sparkly00131
+  rotate: true
+  xy: 786, 1162
+  size: 324, 396
+  orig: 396, 485
+  offset: 50, 0
+  index: -1
+non Trans/sparkle/sparkly00132
+  rotate: false
+  xy: 1184, 1090
+  size: 325, 397
+  orig: 396, 485
+  offset: 50, 0
+  index: -1
+non Trans/sparkle/sparkly00133
+  rotate: false
+  xy: 1511, 1088
+  size: 325, 400
+  orig: 396, 485
+  offset: 50, 0
+  index: -1
+non Trans/sparkle/sparkly00134
+  rotate: false
+  xy: 1461, 1490
+  size: 335, 401
+  orig: 396, 485
+  offset: 50, 0
+  index: -1
+non Trans/sparkle/sparkly00135
+  rotate: false
+  xy: 337, 126
+  size: 335, 401
+  orig: 396, 485
+  offset: 50, 1
+  index: -1
+non Trans/sparkle/sparkly00136
+  rotate: false
+  xy: 1124, 1489
+  size: 335, 402
+  orig: 396, 485
+  offset: 50, 2
+  index: -1
+non Trans/sparkle/sparkly00137
+  rotate: false
+  xy: 786, 1488
+  size: 336, 403
+  orig: 396, 485
+  offset: 49, 3
+  index: -1
+non Trans/sparkle/sparkly00138
+  rotate: false
+  xy: 0, 124
+  size: 335, 403
+  orig: 396, 485
+  offset: 50, 4
+  index: -1
+non Trans/sparkle/sparkly00139
+  rotate: true
+  xy: 1477, 787
+  size: 299, 362
+  orig: 396, 485
+  offset: 62, 55
+  index: -1
+non Trans/sparkle/sparkly00140
+  rotate: true
+  xy: 1002, 120
+  size: 299, 363
+  orig: 396, 485
+  offset: 62, 57
+  index: -1
+non Trans/sparkle/sparkly00141
+  rotate: true
+  xy: 1367, 120
+  size: 299, 363
+  orig: 396, 485
+  offset: 62, 58
+  index: -1
+non Trans/sparkle/sparkly00142
+  rotate: false
+  xy: 1276, 421
+  size: 300, 364
+  orig: 396, 485
+  offset: 62, 59
+  index: -1
+non Trans/sparkle/sparkly00143
+  rotate: false
+  xy: 1578, 421
+  size: 300, 364
+  orig: 396, 485
+  offset: 62, 61
+  index: -1
+non Trans/sparkle/sparkly00144
+  rotate: false
+  xy: 657, 794
+  size: 300, 366
+  orig: 396, 485
+  offset: 62, 62
+  index: -1
+non Trans/sparkle/sparkly00145
+  rotate: true
+  xy: 1109, 789
+  size: 299, 366
+  orig: 396, 485
+  offset: 62, 64
+  index: -1
+non Trans/sparkle/sparkly00146
+  rotate: false
+  xy: 674, 166
+  size: 299, 367
+  orig: 396, 485
+  offset: 63, 65
+  index: -1
+non Trans/sparkle/sparkly00147
+  rotate: false
+  xy: 975, 421
+  size: 299, 366
+  orig: 396, 485
+  offset: 63, 68
+  index: -1
+non Trans/sparkle/sparkly00148
+  rotate: false
+  xy: 1732, 97
+  size: 298, 322
+  orig: 396, 485
+  offset: 63, 69
+  index: -1
+non Trans/sparkle/sparkly00149
+  rotate: true
+  xy: 657, 535
+  size: 257, 286
+  orig: 396, 485
+  offset: 83, 94
+  index: -1
+trans/20
+  rotate: false
+  xy: 1244, 38
+  size: 130, 80
+  orig: 130, 80
+  offset: 0, 0
+  index: -1
+trans/LidShadow
+  rotate: false
+  xy: 1002, 68
+  size: 240, 50
+  orig: 242, 52
+  offset: 1, 1
+  index: -1
+trans/base
+  rotate: true
+  xy: 1798, 1546
+  size: 345, 189
+  orig: 345, 189
+  offset: 0, 0
+  index: -1
+trans/base back
+  rotate: false
+  xy: 674, 85
+  size: 326, 79
+  orig: 326, 79
+  offset: 0, 0
+  index: -1
+trans/coin_1
+  rotate: false
+  xy: 1376, 67
+  size: 58, 51
+  orig: 59, 51
+  offset: 1, 0
+  index: -1
+trans/coin_4
+  rotate: false
+  xy: 1376, 67
+  size: 58, 51
+  orig: 59, 51
+  offset: 1, 0
+  index: -1
+trans/coin_2
+  rotate: true
+  xy: 1989, 1829
+  size: 62, 41
+  orig: 62, 41
+  offset: 0, 0
+  index: -1
+trans/coin_5
+  rotate: true
+  xy: 1989, 1829
+  size: 62, 41
+  orig: 62, 41
+  offset: 0, 0
+  index: -1
+trans/coin_3
+  rotate: false
+  xy: 1109, 1102
+  size: 59, 58
+  orig: 59, 58
+  offset: 0, 0
+  index: -1
+trans/coins
+  rotate: false
+  xy: 670, 0
+  size: 220, 83
+  orig: 221, 84
+  offset: 1, 0
+  index: -1
+trans/fade
+  rotate: false
+  xy: 0, 1170
+  size: 784, 721
+  orig: 784, 781
+  offset: 0, 30
+  index: -1
+trans/gem glow
+  rotate: true
+  xy: 1841, 1010
+  size: 169, 166
+  orig: 175, 173
+  offset: 3, 4
+  index: -1
+trans/lid1
+  rotate: true
+  xy: 959, 798
+  size: 362, 148
+  orig: 362, 148
+  offset: 0, 0
+  index: -1
+trans/lidFront
+  rotate: true
+  xy: 1838, 1181
+  size: 363, 87
+  orig: 364, 88
+  offset: 1, 1
+  index: -1
+trans/lidFrontInner
+  rotate: false
+  xy: 357, 28
+  size: 311, 96
+  orig: 311, 96
+  offset: 0, 0
+  index: -1
+trans/lidFrontOpen
+  rotate: true
+  xy: 1927, 1182
+  size: 362, 88
+  orig: 362, 88
+  offset: 0, 0
+  index: -1
+trans/lidTop
+  rotate: false
+  xy: 0, 9
+  size: 355, 113
+  orig: 358, 113
+  offset: 1, 0
+  index: -1
+trans/pearls
+  rotate: false
+  xy: 892, 18
+  size: 100, 65
+  orig: 108, 70
+  offset: 0, 1
+  index: -1
+trans/sparkle
+  rotate: false
+  xy: 1798, 1509
+  size: 38, 35
+  orig: 40, 38
+  offset: 1, 1
+  index: -1

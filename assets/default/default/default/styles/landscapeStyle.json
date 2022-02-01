@@ -709,7 +709,7 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 8,
     "fill": [
-      "#fffa00"
+      "#d7d78c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
@@ -744,7 +744,7 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 8,
     "fill": [
-      "#fffa00"
+      "#d7d78c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
@@ -779,7 +779,7 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 8,
     "fill": [
-      "#fffa00"
+      "#d7d78c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
@@ -814,7 +814,7 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 8,
     "fill": [
-      "#fffa00"
+      "#d7d78c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
@@ -879,26 +879,24 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 5,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 6,
     "dropShadowColor": "black",
-    "dropShadowDistance": 12,
+    "dropShadowDistance": 2,
     "fill": [
-      "#e7ff82",
-      "#e6aa0a",
-      "#ffe600",
-      "#e7ff82",
-      "#f1a00a"
+      "#e7ff81ff",
+      "#caaa0a",
+      "#ffe605",
+      "#e8ff80"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0.3,
-      0.35,
-      0.45,
-      0.65,
-      0.7
+      0.28,
+      0.51,
+      0.5533333333333332,
+      0.86
     ],
-    "fontFamily": "piedra-regular",
+    "fontFamily": "oswald-bold",
     "fontSize": 60,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -908,8 +906,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 5,
+    "stroke": "#600900",
+    "strokeThickness": 3,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -922,26 +920,24 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 5,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 6,
     "dropShadowColor": "black",
-    "dropShadowDistance": 12,
+    "dropShadowDistance": 2,
     "fill": [
-      "#e7ff82",
-      "#e6aa0a",
-      "#ffe600",
-      "#e7ff82",
-      "#f1a00a"
+      "#e7ff81ff",
+      "#caaa0a",
+      "#ffe605",
+      "#e8ff80"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0.3,
-      0.35,
-      0.45,
-      0.65,
-      0.7
+      0.28,
+      0.51,
+      0.5533333333333332,
+      0.86
     ],
-    "fontFamily": "piedra-regular",
+    "fontFamily": "oswald-bold",
     "fontSize": 60,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -951,8 +947,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 5,
+    "stroke": "#600900",
+    "strokeThickness": 3,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -965,26 +961,24 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 5,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 6,
     "dropShadowColor": "black",
-    "dropShadowDistance": 12,
+    "dropShadowDistance": 2,
     "fill": [
-      "#e7ff82",
-      "#e6aa0a",
-      "#ffe600",
-      "#e7ff82",
-      "#f1a00a"
+      "#e7ff81ff",
+      "#caaa0a",
+      "#ffe605",
+      "#e8ff80"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0.3,
-      0.35,
-      0.45,
-      0.65,
-      0.7
+      0.28,
+      0.51,
+      0.5533333333333332,
+      0.86
     ],
-    "fontFamily": "piedra-regular",
+    "fontFamily": "oswald-bold",
     "fontSize": 60,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -994,8 +988,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 5,
+    "stroke": "#600900",
+    "strokeThickness": 3,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -1008,26 +1002,24 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 5,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 6,
     "dropShadowColor": "black",
-    "dropShadowDistance": 12,
+    "dropShadowDistance": 2,
     "fill": [
-      "#e7ff82",
-      "#e6aa0a",
-      "#ffe600",
-      "#e7ff82",
-      "#f1a00a"
+      "#e7ff81ff",
+      "#caaa0a",
+      "#ffe605",
+      "#e8ff80"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0.3,
-      0.35,
-      0.45,
-      0.65,
-      0.7
+      0.28,
+      0.51,
+      0.5533333333333332,
+      0.86
     ],
-    "fontFamily": "piedra-regular",
+    "fontFamily": "oswald-bold",
     "fontSize": 60,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -1037,8 +1029,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 5,
+    "stroke": "#600900",
+    "strokeThickness": 3,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -1891,26 +1883,16 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
+    "dropShadowAngle": 2,
     "dropShadowBlur": 2,
     "dropShadowColor": "black",
-    "dropShadowDistance": 8,
+    "dropShadowDistance": 2,
     "fill": [
-      "#ffe300ff",
-      "#ffe300",
-      "#ffe300ff",
-      "#ffe300ff",
-      "#ffe300ff",
-      "#ffe300ff"
+      "#ffe300"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0,
-      0.3,
-      0.35,
-      0.45,
-      0.65,
-      0.7
+      0.03
     ],
     "fontFamily": "oswald-bold",
     "fontSize": 28,
@@ -1936,23 +1918,15 @@
     "breakWords": false,
     "dropShadow": false,
     "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
+    "dropShadowAngle": 2,
     "dropShadowBlur": 2,
     "dropShadowColor": "black",
-    "dropShadowDistance": 8,
+    "dropShadowDistance": 2,
     "fill": [
-      "#724d01",
-      "#724d01ff",
-      "#724d01ff",
-      "#724d01ff",
-      "#724d01ff"
+      "#ffe300"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0,
-      0.16666666666666663,
-      0.38666666666666666,
-      0.61,
       0.83
     ],
     "fontFamily": "oswald-bold",
@@ -1979,23 +1953,15 @@
     "breakWords": false,
     "dropShadow": false,
     "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
+    "dropShadowAngle": 2,
     "dropShadowBlur": 2,
     "dropShadowColor": "black",
-    "dropShadowDistance": 8,
+    "dropShadowDistance": 2,
     "fill": [
-      "#724d01",
-      "#724d01ff",
-      "#724d01ff",
-      "#724d01ff",
-      "#724d01ff"
+      "#ffe300"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0,
-      0.16666666666666663,
-      0.38666666666666666,
-      0.61,
       0.83
     ],
     "fontFamily": "oswald-bold",
@@ -2022,23 +1988,15 @@
     "breakWords": false,
     "dropShadow": false,
     "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
+    "dropShadowAngle": 2,
     "dropShadowBlur": 2,
     "dropShadowColor": "black",
-    "dropShadowDistance": 8,
+    "dropShadowDistance": 2,
     "fill": [
-      "#724d01",
-      "#724d01ff",
-      "#724d01ff",
-      "#724d01ff",
-      "#724d01ff"
+      "#ffe300"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0,
-      0.16666666666666663,
-      0.38666666666666666,
-      0.61,
       0.83
     ],
     "fontFamily": "oswald-bold",
@@ -2065,23 +2023,15 @@
     "breakWords": false,
     "dropShadow": false,
     "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
+    "dropShadowAngle": 2,
     "dropShadowBlur": 2,
     "dropShadowColor": "black",
-    "dropShadowDistance": 8,
+    "dropShadowDistance": 2,
     "fill": [
-      "#724d01",
-      "#724d01ff",
-      "#724d01ff",
-      "#724d01ff",
-      "#724d01ff"
+      "#ffe300"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0,
-      0.16666666666666663,
-      0.38666666666666666,
-      0.61,
       0.83
     ],
     "fontFamily": "oswald-bold",
@@ -2318,19 +2268,19 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 1,
-    "dropShadowAngle": 0.5235987755982988,
-    "dropShadowBlur": 0,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 1,
     "dropShadowColor": "black",
-    "dropShadowDistance": 5,
+    "dropShadowDistance": 2,
     "fill": [
       "#ffffff"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0.08333333333333331
+      0
     ],
     "fontFamily": "oswaldloccur-bold",
-    "fontSize": 54,
+    "fontSize": 48.375,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "normal",
@@ -2388,29 +2338,29 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 1,
-    "dropShadowAngle": 0.5235987755982988,
-    "dropShadowBlur": 0,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 1,
     "dropShadowColor": "black",
-    "dropShadowDistance": 5,
+    "dropShadowDistance": 2,
     "fill": [
-      "#ffffff"
+      "#fbe74c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "oswaldloccur-bold",
+    "fontFamily": "oswald-bold",
     "fontSize": 85.25,
     "fontStyle": "normal",
     "fontVariant": "normal",
-    "fontWeight": "normal",
+    "fontWeight": "bold",
     "letterSpacing": 0,
     "lineHeight": 0,
     "lineJoin": "miter",
     "miterLimit": 10,
     "padding": 0,
-    "stroke": "black",
-    "strokeThickness": 2,
+    "stroke": "#be0304",
+    "strokeThickness": 3,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -2423,8 +2373,8 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 1,
-    "dropShadowAngle": 0.5235987755982988,
-    "dropShadowBlur": 0,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 1,
     "dropShadowColor": "black",
     "dropShadowDistance": 5,
     "fill": [
@@ -2435,7 +2385,7 @@
       0
     ],
     "fontFamily": "oswaldloccur-bold",
-    "fontSize": 48.38,
+    "fontSize": 48.375,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "normal",
@@ -2493,29 +2443,29 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 1,
-    "dropShadowAngle": 0,
-    "dropShadowBlur": 5,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 1,
     "dropShadowColor": "black",
-    "dropShadowDistance": 0,
+    "dropShadowDistance": 2,
     "fill": [
-      "#e1ff00"
+      "#fbe74c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "piedra-regular",
-    "fontSize": 43.5,
+    "fontFamily": "oswald-bold",
+    "fontSize": 65.5,
     "fontStyle": "normal",
     "fontVariant": "normal",
-    "fontWeight": "normal",
+    "fontWeight": "bold",
     "letterSpacing": 0,
     "lineHeight": 0,
-    "lineJoin": "round",
-    "miterLimit": 28,
+    "lineJoin": "miter",
+    "miterLimit": 10,
     "padding": 0,
-    "stroke": "#6e3d03",
-    "strokeThickness": 4,
+    "stroke": "#be0304",
+    "strokeThickness": 3,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -2528,10 +2478,10 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 1,
-    "dropShadowAngle": 0.5235987755982988,
-    "dropShadowBlur": 0,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 1,
     "dropShadowColor": "black",
-    "dropShadowDistance": 5,
+    "dropShadowDistance": 2,
     "fill": [
       "#ffffff"
     ],
@@ -2540,7 +2490,7 @@
       0
     ],
     "fontFamily": "oswaldloccur-bold",
-    "fontSize": 48.38,
+    "fontSize": 44.25,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "normal",
@@ -2743,13 +2693,13 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 5,
     "fill": [
-      "#ffffff"
+      "#000000"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "oswaldloccur-bold",
+    "fontFamily": "oswald-bold",
     "fontSize": 31,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -2759,8 +2709,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 0,
+    "stroke": "#844d05",
+    "strokeThickness": 1,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -2778,13 +2728,13 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 5,
     "fill": [
-      "#ffffff"
+      "#000000"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "oswaldloccur-bold",
+    "fontFamily": "oswald-bold",
     "fontSize": 31,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -2794,8 +2744,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 0,
+    "stroke": "#844d05",
+    "strokeThickness": 1,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -2813,13 +2763,13 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 5,
     "fill": [
-      "#ffffff"
+      "#000000"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "oswaldloccur-bold",
+    "fontFamily": "oswald-bold",
     "fontSize": 31,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -2829,8 +2779,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 0,
+    "stroke": "#844d05",
+    "strokeThickness": 1,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -2848,13 +2798,13 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 5,
     "fill": [
-      "#ffffff"
+      "#000000"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "oswaldloccur-bold",
+    "fontFamily": "oswald-bold",
     "fontSize": 31,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -2864,8 +2814,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 0,
+    "stroke": "#844d05",
+    "strokeThickness": 1,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -2883,13 +2833,13 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 5,
     "fill": [
-      "#ffffff"
+      "#000000"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "oswaldloccur-bold",
+    "fontFamily": "oswald-bold",
     "fontSize": 31,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -2899,8 +2849,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 0,
+    "stroke": "#844d05",
+    "strokeThickness": 1,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -2918,13 +2868,13 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 5,
     "fill": [
-      "#ffffff"
+      "#000000"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "oswaldloccur-bold",
+    "fontFamily": "oswald-bold",
     "fontSize": 31,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -2934,8 +2884,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 0,
+    "stroke": "#844d05",
+    "strokeThickness": 1,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -2953,13 +2903,13 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 5,
     "fill": [
-      "#ffffff"
+      "#000000"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "oswaldloccur-bold",
+    "fontFamily": "oswald-bold",
     "fontSize": 31,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -2969,8 +2919,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 0,
+    "stroke": "#844d05",
+    "strokeThickness": 1,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -2988,13 +2938,13 @@
     "dropShadowColor": "black",
     "dropShadowDistance": 5,
     "fill": [
-      "#ffffff"
+      "#000000"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "oswaldloccur-bold",
+    "fontFamily": "oswald-bold",
     "fontSize": 31,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -3004,8 +2954,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 0,
+    "stroke": "#844d05",
+    "strokeThickness": 1,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -3611,12 +3561,12 @@
   "tapAnywhere_label": {
     "align": "center",
     "breakWords": false,
-    "dropShadow": false,
-    "dropShadowAlpha": 1,
-    "dropShadowAngle": 0.5235987755982988,
+    "dropShadow": true,
+    "dropShadowAlpha": 0.7,
+    "dropShadowAngle": 1.7,
     "dropShadowBlur": 0,
     "dropShadowColor": "black",
-    "dropShadowDistance": 5,
+    "dropShadowDistance": 2,
     "fill": [
       "#ffffff"
     ],
@@ -3624,7 +3574,7 @@
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "piedra-regular",
+    "fontFamily": "oswald-bold",
     "fontSize": 40,
     "fontStyle": "normal",
     "fontVariant": "normal",
@@ -3634,33 +3584,33 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 5,
+    "stroke": "#000000",
+    "strokeThickness": 0,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
     "wordWrap": false,
-    "wordWrapWidth": 100,
+    "wordWrapWidth": 330,
     "leading": 0
   },
   "tutorialContent1_label1": {
     "align": "center",
     "breakWords": false,
     "dropShadow": false,
-    "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 5,
+    "dropShadowAlpha": 0.7,
+    "dropShadowAngle": 1.7,
+    "dropShadowBlur": 0,
     "dropShadowColor": "black",
-    "dropShadowDistance": 8,
+    "dropShadowDistance": 2,
     "fill": [
-      "#f5ff00"
+      "#d7d78c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "piedra-regular",
-    "fontSize": 36,
+    "fontFamily": "oswald-bold",
+    "fontSize": 34,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "bold",
@@ -3669,8 +3619,8 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 8,
+    "stroke": "#000000",
+    "strokeThickness": 0,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -3682,20 +3632,20 @@
     "align": "center",
     "breakWords": false,
     "dropShadow": false,
-    "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 5,
+    "dropShadowAlpha": 0.7,
+    "dropShadowAngle": 1.7,
+    "dropShadowBlur": 0,
     "dropShadowColor": "black",
-    "dropShadowDistance": 8,
+    "dropShadowDistance": 2,
     "fill": [
-      "#f5ff00"
+      "#d7d78c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "piedra-regular",
-    "fontSize": 36,
+    "fontFamily": "oswald-bold",
+    "fontSize": 32.125,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "bold",
@@ -3704,33 +3654,33 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 8,
+    "stroke": "#000000",
+    "strokeThickness": 0,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
     "wordWrap": true,
-    "wordWrapWidth": 400,
+    "wordWrapWidth": 330,
     "leading": 0
   },
   "tutorialContent3_label1": {
     "align": "center",
     "breakWords": false,
     "dropShadow": false,
-    "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 5,
+    "dropShadowAlpha": 0.7,
+    "dropShadowAngle": 1.7,
+    "dropShadowBlur": 0,
     "dropShadowColor": "black",
-    "dropShadowDistance": 8,
+    "dropShadowDistance": 2,
     "fill": [
-      "#f5ff00"
+      "#d7d78c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "piedra-regular",
-    "fontSize": 36,
+    "fontFamily": "oswald-bold",
+    "fontSize": 32.125,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "bold",
@@ -3739,13 +3689,13 @@
     "lineJoin": "round",
     "miterLimit": 75,
     "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 8,
+    "stroke": "#000000",
+    "strokeThickness": 0,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
     "wordWrap": true,
-    "wordWrapWidth": 430,
+    "wordWrapWidth": 330,
     "leading": 0
   },
   "doNotShowAgain_label": {
@@ -3823,29 +3773,29 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 1,
-    "dropShadowAngle": 0,
-    "dropShadowBlur": 5,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 1,
     "dropShadowColor": "black",
-    "dropShadowDistance": 0,
+    "dropShadowDistance": 2,
     "fill": [
-      "#ffffff"
+      "#fbe74c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "piedra-regular",
-    "fontSize": 70,
+    "fontFamily": "oswald-bold",
+    "fontSize": 85.25,
     "fontStyle": "normal",
     "fontVariant": "normal",
-    "fontWeight": "normal",
+    "fontWeight": "bold",
     "letterSpacing": 0,
     "lineHeight": 0,
-    "lineJoin": "round",
-    "miterLimit": 28,
+    "lineJoin": "miter",
+    "miterLimit": 10,
     "padding": 0,
-    "stroke": "#6e3d03",
-    "strokeThickness": 4,
+    "stroke": "#be0304",
+    "strokeThickness": 3,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -3854,41 +3804,33 @@
     "leading": 0
   },
   "chestValueTextStyle": {
-    "align": "left",
+    "align": "center",
     "breakWords": false,
     "dropShadow": true,
-    "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 5,
+    "dropShadowAlpha": 1,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 1,
     "dropShadowColor": "black",
-    "dropShadowDistance": 12,
+    "dropShadowDistance": 2,
     "fill": [
-      "#e7ff82",
-      "#cbaa0a",
-      "#ffe600",
-      "#e7ff82",
-      "#f1a00a"
+      "#fbe74c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0.3,
-      0.35,
-      0.5,
-      0.65,
-      0.7
+      0
     ],
-    "fontFamily": "alfaslabone-regular",
-    "fontSize": 50,
+    "fontFamily": "oswald-bold",
+    "fontSize": 85.25,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "bold",
     "letterSpacing": 0,
     "lineHeight": 0,
-    "lineJoin": "round",
-    "miterLimit": 75,
-    "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 5,
+    "lineJoin": "miter",
+    "miterLimit": 10,
+    "padding": 0,
+    "stroke": "#be0304",
+    "strokeThickness": 3,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -3901,29 +3843,29 @@
     "breakWords": false,
     "dropShadow": true,
     "dropShadowAlpha": 1,
-    "dropShadowAngle": 0,
-    "dropShadowBlur": 5,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 1,
     "dropShadowColor": "black",
-    "dropShadowDistance": 0,
+    "dropShadowDistance": 2,
     "fill": [
-      "#f5fa00"
+      "#fbe74c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
       0
     ],
-    "fontFamily": "piedra-regular",
-    "fontSize": 70,
+    "fontFamily": "oswald-bold",
+    "fontSize": 85.25,
     "fontStyle": "normal",
     "fontVariant": "normal",
-    "fontWeight": "normal",
+    "fontWeight": "bold",
     "letterSpacing": 0,
     "lineHeight": 0,
-    "lineJoin": "round",
-    "miterLimit": 28,
-    "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 4,
+    "lineJoin": "miter",
+    "miterLimit": 10,
+    "padding": 0,
+    "stroke": "#be0304",
+    "strokeThickness": 3,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
@@ -3932,41 +3874,33 @@
     "leading": 0
   },
   "chestValueTextStyleGridSpace": {
-    "align": "left",
+    "align": "center",
     "breakWords": false,
     "dropShadow": true,
-    "dropShadowAlpha": 0.6,
-    "dropShadowAngle": 90,
-    "dropShadowBlur": 5,
+    "dropShadowAlpha": 1,
+    "dropShadowAngle": 2,
+    "dropShadowBlur": 1,
     "dropShadowColor": "black",
-    "dropShadowDistance": 12,
+    "dropShadowDistance": 2,
     "fill": [
-      "#e7ff82",
-      "#cbaa0a",
-      "#ffe600",
-      "#e7ff82",
-      "#f1a00a"
+      "#fbe74c"
     ],
     "fillGradientType": 0,
     "fillGradientStops": [
-      0.3,
-      0.35,
-      0.5,
-      0.65,
-      0.7
+      0
     ],
-    "fontFamily": "alfaslabone-regular",
-    "fontSize": 31,
+    "fontFamily": "oswald-bold",
+    "fontSize": 85.25,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "bold",
     "letterSpacing": 0,
     "lineHeight": 0,
-    "lineJoin": "round",
-    "miterLimit": 75,
-    "padding": 41,
-    "stroke": "#6e3d03",
-    "strokeThickness": 5,
+    "lineJoin": "miter",
+    "miterLimit": 10,
+    "padding": 0,
+    "stroke": "#be0304",
+    "strokeThickness": 3,
     "textBaseline": "alphabetic",
     "trim": false,
     "whiteSpace": "pre",
