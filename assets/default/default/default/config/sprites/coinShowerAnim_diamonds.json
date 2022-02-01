@@ -1,0 +1,255 @@
+{"frames": {
+
+"gem_100.png":
+{
+	"frame": {"x":0,"y":0,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_101.png":
+{
+	"frame": {"x":704,"y":0,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_102.png":
+{
+	"frame": {"x":1408,"y":0,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_103.png":
+{
+	"frame": {"x":2112,"y":0,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_104.png":
+{
+	"frame": {"x":2816,"y":0,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_105.png":
+{
+	"frame": {"x":0,"y":528,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_106.png":
+{
+	"frame": {"x":704,"y":528,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_107.png":
+{
+	"frame": {"x":1408,"y":528,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_108.png":
+{
+	"frame": {"x":2112,"y":528,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_109.png":
+{
+	"frame": {"x":2816,"y":528,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_110.png":
+{
+	"frame": {"x":0,"y":1056,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_111.png":
+{
+	"frame": {"x":704,"y":1056,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_112.png":
+{
+	"frame": {"x":1408,"y":1056,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_113.png":
+{
+	"frame": {"x":2112,"y":1056,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_114.png":
+{
+	"frame": {"x":2816,"y":1056,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_115.png":
+{
+	"frame": {"x":0,"y":1584,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_116.png":
+{
+	"frame": {"x":704,"y":1584,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_117.png":
+{
+	"frame": {"x":1408,"y":1584,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_118.png":
+{
+	"frame": {"x":2112,"y":1584,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_119.png":
+{
+	"frame": {"x":2816,"y":1584,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_120.png":
+{
+	"frame": {"x":0,"y":2112,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_121.png":
+{
+	"frame": {"x":704,"y":2112,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_122.png":
+{
+	"frame": {"x":1408,"y":2112,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_123.png":
+{
+	"frame": {"x":2112,"y":2112,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_124.png":
+{
+	"frame": {"x":2816,"y":2112,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_125.png":
+{
+	"frame": {"x":0,"y":2640,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_126.png":
+{
+	"frame": {"x":704,"y":2640,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_127.png":
+{
+	"frame": {"x":1408,"y":2640,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_128.png":
+{
+	"frame": {"x":2112,"y":2640,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+},
+"gem_129.png":
+{
+	"frame": {"x":2816,"y":2640,"w":704,"h":528},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":704,"h":528},
+	"sourceSize": {"w":704,"h":528}
+}},
+"animations": {
+	"gem": ["gem_100.png","gem_101.png","gem_102.png","gem_103.png","gem_104.png","gem_105.png","gem_106.png","gem_107.png","gem_108.png","gem_109.png","gem_110.png","gem_111.png","gem_112.png","gem_113.png","gem_114.png","gem_115.png","gem_116.png","gem_117.png","gem_118.png","gem_119.png","gem_120.png","gem_121.png","gem_122.png","gem_123.png","gem_124.png","gem_125.png","gem_126.png","gem_127.png","gem_128.png","gem_129.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "diamondShowerAnim.png",
+	"format": "RGBA8888",
+	"size": {"w":3520,"h":3168},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2cfb59d11ccc54e738bf41cdf4c938c8:514f6786096706987d30934380bbffb9:6d6ef41b6b24bf041a93457d9eeb07bf$"
+}
+}

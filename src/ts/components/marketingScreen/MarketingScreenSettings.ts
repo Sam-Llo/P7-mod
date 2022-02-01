@@ -1,7 +1,9 @@
+import { throws } from "assert";
 import { Bounce, Power1, TweenMax } from "gsap";
 import { Container } from "pixi.js";
-import { BaseAction, SpineAnimation, StorageService, TextAutoFit } from "playa-core";
-import { MarketingScreen, IToggle, IWData, IWProps } from "playa-iw";
+import { BaseAction, SpineAnimation, Stage, StorageService, TextAutoFit } from "playa-core";
+import { StageProps } from "playa-core/dist/stage/StageProps";
+import { MarketingScreen, IToggle, IWData, IWProps, iwProps } from "playa-iw";
 import { gameStore } from "../../components";
 import { SymbolSelectionReelAnimation } from "./SymbolSelectionReelAnimation";
 
@@ -91,12 +93,13 @@ export class MarketingScreenSettings extends MarketingScreen {
         this.sevenAnim.setAnimation("7 bonus", undefined, true);
         this.jewelBoxAnim.play();
         this.sevenAnim.play();
-
         // Pulse call to action
         this.pulsePrompt(true);
 
         // Register toggle
         // super.registerToggle(this.findToggle());
+
+        //        this.stage.background.visible = false;
     }
 
     /**

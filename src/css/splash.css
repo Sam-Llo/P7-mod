@@ -4,11 +4,11 @@
     --black: rgb(0, 0, 0);  
     --progress-bar-surround: rgba(255, 39, 0, 1);  
     --dark-menu: rgb(35, 38, 43);
-    --bar-background: rgb(216, 68, 68);
-    --loader-value: rgb(251, 255, 0);
-    --copyright: rgb(255, 255, 255);
+    --bar-background: rgb(214, 183, 3);
+    --loader-value: rgb(255, 215, 0);
+    --copyright: rgb(194, 144, 5);
     --webgl-warning: rgb(0, 0, 0);
-    --stripes: rgba(255, 186, 0, .9);
+    --stripes: rgba(215, 215, 140, .9);
     --body-background: rgb(255, 255, 255);
 }
 

@@ -1,0 +1,160 @@
+
+bonus game grid.png
+size: 1571,526
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non trans/bonus_border_frame/bonus border frame_00000
+  rotate: false
+  xy: 0, 8
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00001
+  rotate: false
+  xy: 1381, 5
+  size: 190, 169
+  orig: 301, 301
+  offset: 48, 63
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00002
+  rotate: false
+  xy: 1185, 2
+  size: 194, 172
+  orig: 301, 301
+  offset: 46, 61
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00003
+  rotate: false
+  xy: 989, 1
+  size: 194, 173
+  orig: 301, 301
+  offset: 46, 61
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00004
+  rotate: false
+  xy: 792, 1
+  size: 195, 173
+  orig: 301, 301
+  offset: 45, 61
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00005
+  rotate: false
+  xy: 361, 352
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00006
+  rotate: false
+  xy: 559, 352
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00007
+  rotate: false
+  xy: 757, 352
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00008
+  rotate: false
+  xy: 955, 352
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00009
+  rotate: false
+  xy: 1153, 352
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00010
+  rotate: false
+  xy: 1351, 352
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00011
+  rotate: false
+  xy: 361, 176
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00012
+  rotate: false
+  xy: 559, 176
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00013
+  rotate: false
+  xy: 757, 176
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00014
+  rotate: false
+  xy: 955, 176
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00015
+  rotate: false
+  xy: 1153, 176
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00016
+  rotate: false
+  xy: 1351, 176
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00017
+  rotate: false
+  xy: 198, 0
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00018
+  rotate: false
+  xy: 396, 0
+  size: 196, 174
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00019
+  rotate: false
+  xy: 0, 11
+  size: 196, 175
+  orig: 301, 301
+  offset: 45, 60
+  index: -1
+non trans/bonus_border_frame/bonus border frame_00020
+  rotate: false
+  xy: 594, 1
+  size: 196, 173
+  orig: 301, 301
+  offset: 45, 61
+  index: -1
+non trans/border white flash
+  rotate: false
+  xy: 0, 188
+  size: 359, 338
+  orig: 432, 432
+  offset: 30, 44
+  index: -1

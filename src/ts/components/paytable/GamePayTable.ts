@@ -1,5 +1,5 @@
 import { Ease, TimelineMax } from "gsap";
-import { Container } from "pixi.js";
+import { Container, DisplayObject, Sprite } from "pixi.js";
 import {
     BaseAction,
     BaseView,
@@ -43,6 +43,10 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
     private _paytableAnimSpine!: SpineAnimation;
 
     private _paytableAnimSpinePrt!: SpineAnimation;
+
+    private _paytableFrame!: Sprite;
+
+    private _paytableFramePrt!: Sprite;
 
     private _winFindLabelText3!: TextAutoFit;
 
@@ -129,14 +133,24 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._paytableAnimSpine.setAnimation(this._config.LandscapeGamePaytableStaticAnimtionName);
         this._paytableAnimSpine.play();
 
-        /* this._paytableAnimSpinePrt = this.container.children.find(
+        this._paytableAnimSpinePrt = this.container.children.find(
             (obj) => obj.name === `PayTableMainGame_anim_prt`,
         ) as SpineAnimation;
         this._paytableAnimSpinePrt.updateTransform();
         this._paytableAnimSpinePrt.setAnimation(this._config.PortraitGamePaytableStaticAnimtionName);
         this._paytableAnimSpinePrt.play();
+
         this._paytableAnimSpine.renderable = systemProps.orientation === Orientation.LANDSCAPE;
-        this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable; */
+        this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable;
+
+        this._paytableFrame = this.container.children.find((obj) => obj.name === `paytableFrameBG_img.png`) as Sprite;
+
+        this._paytableFramePrt = this.container.children.find(
+            (obj) => obj.name === `paytableFrameBG_prt_img.png`,
+        ) as Sprite;
+
+        this._paytableFrame.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+        this._paytableFramePrt.renderable = !this._paytableFrame.renderable;
 
         this._glowAnim = this.container.children.find(
             (obj) => obj.name === `initialWinningSymbolsSelection_glow_anim`,
@@ -217,7 +231,7 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         // this._symbolSelectAnim.visible = false;
         //this._symbolSelectAnimPrt.visible = true;
         this._symbolSelectAnimPrt.updateTransform();
-        this._symbolSelectAnimPrt.setAnimation("reset/portrait/Selector portrait reset green", undefined, false); //will need to set this to reset white once i get updated anim
+        this._symbolSelectAnimPrt.setAnimation("reset/portrait/Selector portrait reset white", undefined, false); //will need to set this to reset white once i get updated anim
         this._symbolSelectAnimPrt.play();
     }
 
@@ -300,6 +314,16 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
                 this._paytableAnimSpinePrt.renderable = !this._paytableAnimSpine.renderable;
             },
         );
+
+        MobxUtils.getInstance().addReaction(
+            GamePayTable.orientationChanged,
+            () => systemProps.orientation,
+            (orientation: Orientation) => {
+                this._paytableFrame.renderable = systemProps.orientation === Orientation.LANDSCAPE;
+                this._paytableFramePrt.renderable = !this._paytableFrame.renderable;
+            },
+        );
+
         MobxUtils.getInstance().addReaction(
             "totalWinningSymbolsCountChangedReaction",
             () => gameStore.props.totalWinningSymbolsCount,
@@ -374,9 +398,9 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
         this._paytableAnimSpine.updateTransform();
         this._paytableAnimSpine.setAnimation(`${this._config.LandscapeFadeInWinAnimPrefix}${currentMultiplier}`);
         this._paytableAnimSpine.play();
-        // this._paytableAnimSpinePrt.updateTransform();
-        // this._paytableAnimSpinePrt.setAnimation(`${this._config.PortraitFadeInWinAnimPrefix}${currentMultiplier}`);
-        //  this._paytableAnimSpinePrt.play();
+        this._paytableAnimSpinePrt.updateTransform();
+        this._paytableAnimSpinePrt.setAnimation(`${this._config.PortraitFadeInWinAnimPrefix}${currentMultiplier}`);
+        this._paytableAnimSpinePrt.play();
     }
 
     private playWinHighlights(currentMultiplier: number) {
@@ -413,17 +437,17 @@ export class GamePayTable extends BaseView<IWProps, BaseAction<IWData>, IWProps,
 
     private fadeOutWinTableHighlightsOnNewGameStart() {
         if (this._currentHighlightedMultiplierNum >= this._config.LeastWinningSymbolsCount) {
-            this._paytableAnimSpine.updateTransform();
+            /*  this._paytableAnimSpine.updateTransform();
             this._paytableAnimSpine.setAnimation(
-                `${this._config.LandscapeFadeOutWinAnimPrefix}${this._currentHighlightedMultiplierNum}`,
-            );
-            this._paytableAnimSpine.play();
+                `${this._config.LandscapeFadeOutWinAnimPrefix}${this._currentHighlightedMultiplierNum}`, */
+            // );
+            //  this._paytableAnimSpine.play();
 
-            this._paytableAnimSpinePrt.updateTransform();
+            /*  this._paytableAnimSpinePrt.updateTransform();
             this._paytableAnimSpinePrt.setAnimation(
                 `${this._config.PortraitFadeOutWinAnimPrefix}${this._currentHighlightedMultiplierNum}`,
             );
-            this._paytableAnimSpinePrt.play();
+            this._paytableAnimSpinePrt.play(); */
             const selectedBonusHighLightTimeLine = new TimelineMax();
             selectedBonusHighLightTimeLine.fromTo(
                 [

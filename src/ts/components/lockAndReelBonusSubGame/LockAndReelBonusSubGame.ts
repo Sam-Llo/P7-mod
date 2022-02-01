@@ -329,7 +329,7 @@ export class LockAndReelBonusSubGame extends SubGame {
         if (visible) {
             for (let i = 1; i <= this._lockAndReelsController.getBonusGridTotalElementsCount(); i++) {
                 this[`${this._config.SymbolsBonusBackgroundPrefix}${i}`].renderable = false;
-                this[`${this._config.SymbolsBonusBackgroundPrefix}${i}`].visible = false;
+                // this[`${this._config.SymbolsBonusBackgroundPrefix}${i}`].visible = false;
             }
         }
     }

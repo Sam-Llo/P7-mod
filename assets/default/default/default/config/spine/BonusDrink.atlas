@@ -1,0 +1,307 @@
+
+BonusDrink.png
+size: 2032,1540
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+nonTrans/glass glow
+  rotate: false
+  xy: 263, 71
+  size: 185, 231
+  orig: 301, 301
+  offset: 59, 36
+  index: -1
+nonTrans/glass shine/Shine_00000
+  rotate: false
+  xy: 1174, 327
+  size: 14, 20
+  orig: 662, 603
+  offset: 262, 226
+  index: -1
+nonTrans/glass shine/Shine_00001
+  rotate: true
+  xy: 1009, 316
+  size: 31, 104
+  orig: 662, 603
+  offset: 259, 218
+  index: -1
+nonTrans/glass shine/Shine_00002
+  rotate: false
+  xy: 1836, 1352
+  size: 47, 127
+  orig: 662, 603
+  offset: 259, 213
+  index: -1
+nonTrans/glass shine/Shine_00003
+  rotate: true
+  xy: 311, 3
+  size: 66, 141
+  orig: 662, 603
+  offset: 258, 209
+  index: -1
+nonTrans/glass shine/Shine_00004
+  rotate: true
+  xy: 1817, 315
+  size: 75, 188
+  orig: 662, 603
+  offset: 258, 205
+  index: -1
+nonTrans/glass shine/Shine_00005
+  rotate: true
+  xy: 1837, 1260
+  size: 79, 194
+  orig: 662, 603
+  offset: 259, 204
+  index: -1
+nonTrans/glass shine/Shine_00006
+  rotate: false
+  xy: 1656, 1342
+  size: 92, 198
+  orig: 662, 603
+  offset: 259, 203
+  index: -1
+nonTrans/glass shine/Shine_00007
+  rotate: false
+  xy: 1929, 1341
+  size: 103, 199
+  orig: 662, 603
+  offset: 260, 203
+  index: -1
+nonTrans/glass shine/Shine_00008
+  rotate: false
+  xy: 1544, 1341
+  size: 110, 199
+  orig: 662, 603
+  offset: 262, 203
+  index: -1
+nonTrans/glass shine/Shine_00009
+  rotate: false
+  xy: 1424, 1341
+  size: 118, 199
+  orig: 662, 603
+  offset: 263, 203
+  index: -1
+nonTrans/glass shine/Shine_00010
+  rotate: false
+  xy: 1573, 1141
+  size: 129, 198
+  orig: 662, 603
+  offset: 264, 204
+  index: -1
+nonTrans/glass shine/Shine_00011
+  rotate: false
+  xy: 1704, 1143
+  size: 131, 196
+  orig: 662, 603
+  offset: 269, 206
+  index: -1
+nonTrans/glass shine/Shine_00012
+  rotate: true
+  xy: 1837, 1136
+  size: 122, 189
+  orig: 662, 603
+  offset: 278, 213
+  index: -1
+nonTrans/glass shine/Shine_00013
+  rotate: true
+  xy: 1817, 201
+  size: 112, 183
+  orig: 662, 603
+  offset: 288, 219
+  index: -1
+nonTrans/glass shine/Shine_00014
+  rotate: false
+  xy: 1817, 55
+  size: 109, 144
+  orig: 662, 603
+  offset: 293, 258
+  index: -1
+nonTrans/glass shine/Shine_00015
+  rotate: false
+  xy: 1929, 625
+  size: 97, 139
+  orig: 662, 603
+  offset: 306, 263
+  index: -1
+nonTrans/glass shine/Shine_00016
+  rotate: false
+  xy: 1750, 1413
+  size: 84, 127
+  orig: 662, 603
+  offset: 319, 274
+  index: -1
+nonTrans/glass shine/Shine_00017
+  rotate: true
+  xy: 1837, 1481
+  size: 59, 90
+  orig: 662, 603
+  offset: 341, 292
+  index: -1
+nonTrans/glass shine/Shine_00018
+  rotate: false
+  xy: 263, 0
+  size: 46, 69
+  orig: 662, 603
+  offset: 354, 313
+  index: -1
+nonTrans/glass shine/Shine_00019
+  rotate: true
+  xy: 1115, 316
+  size: 31, 57
+  orig: 662, 603
+  offset: 369, 323
+  index: -1
+nonTrans/glow/glow_00000_00008
+  rotate: true
+  xy: 687, 725
+  size: 404, 403
+  orig: 662, 483
+  offset: 130, 40
+  index: -1
+nonTrans/glow01
+  rotate: false
+  xy: 1020, 1138
+  size: 402, 402
+  orig: 402, 402
+  offset: 0, 0
+  index: -1
+nonTrans/sparkle/sparkly00131
+  rotate: false
+  xy: 688, 1136
+  size: 330, 404
+  orig: 404, 495
+  offset: 51, 0
+  index: -1
+nonTrans/sparkle/sparkly00132
+  rotate: false
+  xy: 676, 311
+  size: 331, 405
+  orig: 404, 495
+  offset: 51, 0
+  index: -1
+nonTrans/sparkle/sparkly00133
+  rotate: false
+  xy: 343, 308
+  size: 331, 408
+  orig: 404, 495
+  offset: 51, 0
+  index: -1
+nonTrans/sparkle/sparkly00134
+  rotate: false
+  xy: 345, 1131
+  size: 341, 409
+  orig: 404, 495
+  offset: 51, 0
+  index: -1
+nonTrans/sparkle/sparkly00135
+  rotate: false
+  xy: 343, 718
+  size: 342, 409
+  orig: 404, 495
+  offset: 51, 1
+  index: -1
+nonTrans/sparkle/sparkly00136
+  rotate: false
+  xy: 0, 304
+  size: 341, 410
+  orig: 404, 495
+  offset: 51, 2
+  index: -1
+nonTrans/sparkle/sparkly00137
+  rotate: false
+  xy: 0, 1129
+  size: 343, 411
+  orig: 404, 495
+  offset: 50, 3
+  index: -1
+nonTrans/sparkle/sparkly00138
+  rotate: false
+  xy: 0, 716
+  size: 341, 411
+  orig: 404, 495
+  offset: 51, 4
+  index: -1
+nonTrans/sparkle/sparkly00139
+  rotate: false
+  xy: 1705, 766
+  size: 304, 368
+  orig: 404, 495
+  offset: 64, 57
+  index: -1
+nonTrans/sparkle/sparkly00140
+  rotate: false
+  xy: 1623, 392
+  size: 304, 370
+  orig: 404, 495
+  offset: 64, 58
+  index: -1
+nonTrans/sparkle/sparkly00141
+  rotate: true
+  xy: 454, 0
+  size: 306, 371
+  orig: 404, 495
+  offset: 63, 59
+  index: -1
+nonTrans/sparkle/sparkly00142
+  rotate: false
+  xy: 1510, 16
+  size: 305, 371
+  orig: 404, 495
+  offset: 64, 61
+  index: -1
+nonTrans/sparkle/sparkly00143
+  rotate: false
+  xy: 1316, 389
+  size: 305, 372
+  orig: 404, 495
+  offset: 64, 62
+  index: -1
+nonTrans/sparkle/sparkly00144
+  rotate: false
+  xy: 1398, 764
+  size: 305, 372
+  orig: 404, 495
+  offset: 64, 64
+  index: -1
+nonTrans/sparkle/sparkly00145
+  rotate: false
+  xy: 1092, 763
+  size: 304, 373
+  orig: 404, 495
+  offset: 64, 66
+  index: -1
+nonTrans/sparkle/sparkly00146
+  rotate: true
+  xy: 827, 4
+  size: 305, 374
+  orig: 404, 495
+  offset: 64, 67
+  index: -1
+nonTrans/sparkle/sparkly00147
+  rotate: false
+  xy: 1009, 349
+  size: 305, 374
+  orig: 404, 495
+  offset: 64, 69
+  index: -1
+nonTrans/sparkle/sparkly00148
+  rotate: false
+  xy: 1203, 19
+  size: 305, 328
+  orig: 404, 495
+  offset: 64, 71
+  index: -1
+nonTrans/sparkle/sparkly00149
+  rotate: false
+  xy: 0, 10
+  size: 261, 292
+  orig: 404, 495
+  offset: 85, 96
+  index: -1
+trans/drink 01
+  rotate: false
+  xy: 1424, 1138
+  size: 147, 201
+  orig: 149, 201
+  offset: 1, 0
+  index: -1

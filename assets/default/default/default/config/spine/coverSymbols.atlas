@@ -1,0 +1,188 @@
+
+coverSymbols.png
+size: 846,999
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/coverWinning1
+  rotate: false
+  xy: 724, 374
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: -1
+images/coverWinning10
+  rotate: false
+  xy: 203, 802
+  size: 199, 195
+  orig: 203, 199
+  offset: 2, 2
+  index: -1
+images/coverWinning11
+  rotate: false
+  xy: 404, 802
+  size: 199, 195
+  orig: 203, 199
+  offset: 2, 2
+  index: -1
+images/coverWinning12
+  rotate: false
+  xy: 605, 802
+  size: 199, 195
+  orig: 203, 199
+  offset: 2, 2
+  index: -1
+images/coverWinning2
+  rotate: false
+  xy: 723, 251
+  size: 121, 121
+  orig: 121, 121
+  offset: 0, 0
+  index: -1
+images/coverWinning3
+  rotate: false
+  xy: 396, 93
+  size: 132, 132
+  orig: 132, 132
+  offset: 0, 0
+  index: -1
+images/coverWinning4
+  rotate: false
+  xy: 570, 136
+  size: 148, 148
+  orig: 148, 148
+  offset: 0, 0
+  index: -1
+images/coverWinning5
+  rotate: false
+  xy: 558, 439
+  size: 164, 164
+  orig: 164, 164
+  offset: 0, 0
+  index: -1
+images/coverWinning6
+  rotate: false
+  xy: 199, 224
+  size: 184, 186
+  orig: 186, 186
+  offset: 1, 0
+  index: -1
+images/coverWinning7
+  rotate: true
+  xy: 199, 412
+  size: 191, 188
+  orig: 193, 190
+  offset: 1, 1
+  index: -1
+images/coverWinning8
+  rotate: true
+  xy: 2, 2
+  size: 199, 194
+  orig: 203, 198
+  offset: 2, 2
+  index: -1
+images/coverWinning9
+  rotate: false
+  xy: 2, 802
+  size: 199, 195
+  orig: 203, 199
+  offset: 2, 2
+  index: -1
+images/coverWinningStatic
+  rotate: false
+  xy: 720, 146
+  size: 103, 103
+  orig: 103, 103
+  offset: 0, 0
+  index: -1
+images/yourNumber1
+  rotate: false
+  xy: 724, 488
+  size: 115, 115
+  orig: 115, 115
+  offset: 0, 0
+  index: -1
+images/yourNumber10
+  rotate: false
+  xy: 605, 605
+  size: 199, 195
+  orig: 203, 199
+  offset: 2, 2
+  index: -1
+images/yourNumber11
+  rotate: true
+  xy: 2, 404
+  size: 199, 195
+  orig: 203, 199
+  offset: 2, 2
+  index: -1
+images/yourNumber12
+  rotate: true
+  xy: 2, 203
+  size: 199, 195
+  orig: 203, 199
+  offset: 2, 2
+  index: -1
+images/yourNumber2
+  rotate: false
+  xy: 530, 5
+  size: 129, 129
+  orig: 129, 129
+  offset: 0, 0
+  index: -1
+images/yourNumber3
+  rotate: false
+  xy: 570, 286
+  size: 151, 151
+  orig: 151, 151
+  offset: 0, 0
+  index: -1
+images/yourNumber4
+  rotate: false
+  xy: 389, 436
+  size: 167, 167
+  orig: 167, 167
+  offset: 0, 0
+  index: -1
+images/yourNumber5
+  rotate: false
+  xy: 385, 227
+  size: 183, 183
+  orig: 183, 183
+  offset: 0, 0
+  index: -1
+images/yourNumber6
+  rotate: false
+  xy: 198, 5
+  size: 196, 196
+  orig: 198, 196
+  offset: 1, 0
+  index: -1
+images/yourNumber7
+  rotate: false
+  xy: 2, 605
+  size: 199, 195
+  orig: 200, 200
+  offset: 1, 1
+  index: -1
+images/yourNumber8
+  rotate: false
+  xy: 203, 605
+  size: 199, 195
+  orig: 203, 199
+  offset: 2, 2
+  index: -1
+images/yourNumber9
+  rotate: false
+  xy: 404, 605
+  size: 199, 195
+  orig: 203, 199
+  offset: 2, 2
+  index: -1
+images/yourNumberStaitc
+  rotate: false
+  xy: 720, 41
+  size: 103, 103
+  orig: 103, 103
+  offset: 0, 0
+  index: -1

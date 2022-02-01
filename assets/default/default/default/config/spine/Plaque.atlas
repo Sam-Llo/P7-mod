@@ -1,0 +1,314 @@
+
+Plaque.png
+size: 1985,1606
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Non Trans/Firework/Fireworks_00001
+  rotate: false
+  xy: 1959, 1579
+  size: 26, 27
+  orig: 510, 455
+  offset: 242, 214
+  index: -1
+Non Trans/Firework/Fireworks_00002
+  rotate: false
+  xy: 1696, 309
+  size: 29, 28
+  orig: 510, 455
+  offset: 240, 214
+  index: -1
+Non Trans/Firework/Fireworks_00003
+  rotate: false
+  xy: 1226, 250
+  size: 32, 34
+  orig: 510, 455
+  offset: 236, 214
+  index: -1
+Non Trans/Firework/Fireworks_00004
+  rotate: false
+  xy: 1052, 1095
+  size: 44, 41
+  orig: 510, 455
+  offset: 230, 213
+  index: -1
+Non Trans/Firework/Fireworks_00005
+  rotate: false
+  xy: 943, 1087
+  size: 55, 49
+  orig: 510, 455
+  offset: 224, 211
+  index: -1
+Non Trans/Firework/Fireworks_00006
+  rotate: true
+  xy: 1420, 0
+  size: 67, 57
+  orig: 510, 455
+  offset: 217, 210
+  index: -1
+Non Trans/Firework/Fireworks_00007
+  rotate: false
+  xy: 1280, 567
+  size: 80, 66
+  orig: 510, 455
+  offset: 211, 207
+  index: -1
+Non Trans/Firework/Fireworks_00008
+  rotate: false
+  xy: 1672, 44
+  size: 98, 73
+  orig: 510, 455
+  offset: 204, 205
+  index: -1
+Non Trans/Firework/Fireworks_00009
+  rotate: false
+  xy: 1555, 69
+  size: 115, 82
+  orig: 510, 455
+  offset: 197, 202
+  index: -1
+Non Trans/Firework/Fireworks_00010
+  rotate: false
+  xy: 1420, 69
+  size: 133, 91
+  orig: 510, 455
+  offset: 189, 198
+  index: -1
+Non Trans/Firework/Fireworks_00011
+  rotate: false
+  xy: 1268, 60
+  size: 150, 100
+  orig: 510, 455
+  offset: 182, 194
+  index: -1
+Non Trans/Firework/Fireworks_00012
+  rotate: false
+  xy: 1099, 37
+  size: 167, 109
+  orig: 510, 455
+  offset: 174, 190
+  index: -1
+Non Trans/Firework/Fireworks_00013
+  rotate: true
+  xy: 1575, 153
+  size: 184, 119
+  orig: 510, 455
+  offset: 166, 185
+  index: -1
+Non Trans/Firework/Fireworks_00014
+  rotate: false
+  xy: 895, 15
+  size: 202, 131
+  orig: 510, 455
+  offset: 157, 179
+  index: -1
+Non Trans/Firework/Fireworks_00015
+  rotate: true
+  xy: 1583, 339
+  size: 220, 142
+  orig: 510, 455
+  offset: 148, 173
+  index: -1
+Non Trans/Firework/Fireworks_00016
+  rotate: true
+  xy: 741, 5
+  size: 238, 152
+  orig: 510, 455
+  offset: 138, 167
+  index: -1
+Non Trans/Firework/Fireworks_00017
+  rotate: false
+  xy: 1727, 296
+  size: 255, 164
+  orig: 510, 455
+  offset: 129, 160
+  index: -1
+Non Trans/Firework/Fireworks_00018
+  rotate: false
+  xy: 1696, 119
+  size: 274, 175
+  orig: 510, 455
+  offset: 118, 152
+  index: -1
+Non Trans/Firework/Fireworks_00019
+  rotate: false
+  xy: 1280, 162
+  size: 293, 187
+  orig: 510, 455
+  offset: 107, 144
+  index: -1
+Non Trans/Firework/Fireworks_00020
+  rotate: true
+  xy: 1395, 774
+  size: 311, 198
+  orig: 510, 455
+  offset: 96, 135
+  index: -1
+Non Trans/Firework/Fireworks_00021
+  rotate: false
+  xy: 1395, 561
+  size: 330, 211
+  orig: 510, 455
+  offset: 84, 125
+  index: -1
+Non Trans/Firework/Fireworks_00022
+  rotate: false
+  xy: 390, 17
+  size: 349, 226
+  orig: 510, 455
+  offset: 72, 115
+  index: -1
+Non Trans/Firework/Fireworks_00023
+  rotate: false
+  xy: 1601, 1043
+  size: 362, 244
+  orig: 510, 455
+  offset: 66, 105
+  index: -1
+Non Trans/Firework/Fireworks_00024
+  rotate: false
+  xy: 1595, 774
+  size: 368, 267
+  orig: 510, 455
+  offset: 66, 94
+  index: -1
+Non Trans/Firework/Fireworks_00025
+  rotate: false
+  xy: 904, 338
+  size: 374, 295
+  orig: 510, 455
+  offset: 66, 83
+  index: -1
+Non Trans/Firework/Fireworks_00026
+  rotate: false
+  xy: 1599, 1289
+  size: 358, 317
+  orig: 510, 455
+  offset: 85, 75
+  index: -1
+trans/Bonus win text
+  rotate: false
+  xy: 0, 245
+  size: 450, 450
+  orig: 450, 450
+  offset: 0, 0
+  index: -1
+trans/Ropes
+  rotate: false
+  xy: 0, 697
+  size: 539, 419
+  orig: 540, 419
+  offset: 0, 0
+  index: -1
+trans/base
+  rotate: false
+  xy: 1113, 1230
+  size: 484, 376
+  orig: 484, 376
+  offset: 0, 0
+  index: -1
+trans/border
+  rotate: false
+  xy: 0, 1118
+  size: 600, 488
+  orig: 601, 488
+  offset: 0, 0
+  index: -1
+trans/bulb03
+  rotate: false
+  xy: 1226, 286
+  size: 50, 50
+  orig: 58, 59
+  offset: 4, 5
+  index: -1
+trans/bulb04
+  rotate: false
+  xy: 1772, 67
+  size: 50, 50
+  orig: 59, 59
+  offset: 4, 5
+  index: -1
+trans/bulb05
+  rotate: false
+  xy: 1479, 17
+  size: 50, 50
+  orig: 58, 58
+  offset: 4, 4
+  index: -1
+trans/bulb06
+  rotate: false
+  xy: 1000, 1087
+  size: 50, 49
+  orig: 59, 59
+  offset: 4, 5
+  index: -1
+trans/no win text
+  rotate: false
+  xy: 452, 245
+  size: 450, 450
+  orig: 450, 450
+  offset: 0, 0
+  index: -1
+trans/palm branch01
+  rotate: true
+  xy: 1727, 462
+  size: 310, 220
+  orig: 310, 220
+  offset: 0, 0
+  index: -1
+trans/palm branch02
+  rotate: true
+  xy: 1280, 351
+  size: 208, 301
+  orig: 208, 307
+  offset: 0, 0
+  index: -1
+trans/palm branch03
+  rotate: true
+  xy: 0, 9
+  size: 234, 388
+  orig: 234, 388
+  offset: 0, 0
+  index: -1
+trans/palm branch04
+  rotate: false
+  xy: 904, 148
+  size: 320, 188
+  orig: 320, 188
+  offset: 0, 0
+  index: -1
+trans/shadow
+  rotate: false
+  xy: 602, 1212
+  size: 509, 394
+  orig: 541, 426
+  offset: 16, 16
+  index: -1
+trans/string of lights
+  rotate: false
+  xy: 602, 1138
+  size: 512, 72
+  orig: 512, 109
+  offset: 0, 28
+  index: -1
+trans/surfBoard
+  rotate: false
+  xy: 1116, 1087
+  size: 483, 141
+  orig: 483, 141
+  offset: 0, 0
+  index: -1
+trans/win text
+  rotate: false
+  xy: 943, 635
+  size: 450, 450
+  orig: 450, 450
+  offset: 0, 0
+  index: -1
+trans/win value
+  rotate: false
+  xy: 541, 716
+  size: 400, 400
+  orig: 400, 400
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,375 @@
+{
+  "frames": {
+    "paytableFrameBG_img": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 633,
+        "h": 293
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 633,
+        "h": 293
+      },
+      "sourceSize": {
+        "w": 633,
+        "h": 293
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus7Static_img": {
+      "frame": {
+        "x": 636,
+        "y": 1,
+        "w": 161,
+        "h": 140
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 161,
+        "h": 140
+      },
+      "sourceSize": {
+        "w": 161,
+        "h": 140
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus3Static_img": {
+      "frame": {
+        "x": 636,
+        "y": 143,
+        "w": 178,
+        "h": 150
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 178,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "bonusGameLogo_img": {
+      "frame": {
+        "x": 1,
+        "y": 296,
+        "w": 618,
+        "h": 207
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 618,
+        "h": 207
+      },
+      "sourceSize": {
+        "w": 618,
+        "h": 207
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "DoNotShowAgainCheckBoxOn_img": {
+      "frame": {
+        "x": 621,
+        "y": 323,
+        "w": 183,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 183,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 183,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "DoNotShowAgainCheckBoxOff_img": {
+      "frame": {
+        "x": 621,
+        "y": 409,
+        "w": 182,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 0,
+        "w": 182,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 183,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus4Static_img": {
+      "frame": {
+        "x": 621,
+        "y": 495,
+        "w": 178,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 178,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus5Static_img": {
+      "frame": {
+        "x": 1,
+        "y": 647,
+        "w": 178,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 178,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "palmTree": {
+      "frame": {
+        "x": 1,
+        "y": 505,
+        "w": 136,
+        "h": 141
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 141
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "starFish": {
+      "frame": {
+        "x": 144,
+        "y": 505,
+        "w": 136,
+        "h": 141
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 141
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus6Static_img": {
+      "frame": {
+        "x": 181,
+        "y": 647,
+        "w": 178,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 178,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "sun": {
+      "frame": {
+        "x": 287,
+        "y": 505,
+        "w": 136,
+        "h": 141
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 136,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 136,
+        "h": 141
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "pricePointSelectorButton_disabledBg_img2": {
+      "frame": {
+        "x": 361,
+        "y": 643,
+        "w": 247,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 247,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 247,
+        "h": 92
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "iceCream": {
+      "frame": {
+        "x": 430,
+        "y": 505,
+        "w": 135,
+        "h": 141
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 135,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 135,
+        "h": 141
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus8Static_img": {
+      "frame": {
+        "x": 610,
+        "y": 647,
+        "w": 178,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 178,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "IGT Layout Tool - https://github.com/igtinteractive/layout_tool",
+    "version": "0.5.2",
+    "image": "gamebitmaps-0-2.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 805,
+      "h": 798
+    },
+    "scale": 1
+  }
+}

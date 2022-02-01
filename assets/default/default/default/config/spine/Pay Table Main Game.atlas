@@ -1,0 +1,300 @@
+
+Pay Table Main Game.png
+size: 2003,1469
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Non Trans/Comp 1/PlaytableVFX_00002
+  rotate: true
+  xy: 1815, 131
+  size: 244, 106
+  orig: 509, 286
+  offset: 145, 111
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00003
+  rotate: true
+  xy: 741, 928
+  size: 268, 111
+  orig: 509, 286
+  offset: 121, 107
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00004
+  rotate: true
+  xy: 1714, 641
+  size: 279, 126
+  orig: 509, 286
+  offset: 111, 93
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00005
+  rotate: true
+  xy: 1021, 630
+  size: 282, 141
+  orig: 509, 286
+  offset: 108, 78
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00006
+  rotate: true
+  xy: 1852, 1188
+  size: 281, 151
+  orig: 509, 286
+  offset: 106, 66
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00007
+  rotate: true
+  xy: 1851, 908
+  size: 278, 152
+  orig: 509, 286
+  offset: 105, 64
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00008
+  rotate: false
+  xy: 1203, 5
+  size: 269, 151
+  orig: 509, 286
+  offset: 104, 62
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00009
+  rotate: true
+  xy: 1701, 922
+  size: 280, 148
+  orig: 509, 286
+  offset: 104, 61
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00010
+  rotate: true
+  xy: 1842, 613
+  size: 293, 155
+  orig: 509, 286
+  offset: 105, 61
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00011
+  rotate: false
+  xy: 939, 198
+  size: 292, 163
+  orig: 509, 286
+  offset: 112, 61
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00012
+  rotate: false
+  xy: 916, 25
+  size: 285, 171
+  orig: 509, 286
+  offset: 120, 61
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00013
+  rotate: true
+  xy: 985, 363
+  size: 265, 179
+  orig: 509, 286
+  offset: 141, 62
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00014
+  rotate: false
+  xy: 629, 6
+  size: 285, 190
+  orig: 509, 286
+  offset: 122, 60
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00015
+  rotate: false
+  xy: 1233, 158
+  size: 297, 205
+  orig: 509, 286
+  offset: 111, 54
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00016
+  rotate: false
+  xy: 340, 218
+  size: 300, 221
+  orig: 509, 286
+  offset: 108, 48
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00017
+  rotate: false
+  xy: 687, 430
+  size: 296, 235
+  orig: 509, 286
+  offset: 106, 42
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00018
+  rotate: false
+  xy: 1421, 666
+  size: 291, 250
+  orig: 509, 286
+  offset: 105, 36
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00019
+  rotate: true
+  xy: 1164, 635
+  size: 277, 255
+  orig: 509, 286
+  offset: 104, 31
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00020
+  rotate: false
+  xy: 1532, 145
+  size: 281, 224
+  orig: 509, 286
+  offset: 104, 25
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00021
+  rotate: false
+  xy: 1692, 377
+  size: 294, 234
+  orig: 509, 286
+  offset: 105, 20
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00022
+  rotate: true
+  xy: 1441, 371
+  size: 293, 249
+  orig: 509, 286
+  offset: 111, 13
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00023
+  rotate: true
+  xy: 1153, 914
+  size: 286, 259
+  orig: 509, 286
+  offset: 119, 10
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00024
+  rotate: true
+  xy: 1166, 365
+  size: 268, 273
+  orig: 509, 286
+  offset: 138, 4
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00025
+  rotate: false
+  xy: 1414, 918
+  size: 285, 284
+  orig: 509, 286
+  offset: 122, 0
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00026
+  rotate: false
+  xy: 854, 914
+  size: 297, 286
+  orig: 509, 286
+  offset: 111, 0
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00027
+  rotate: false
+  xy: 327, 0
+  size: 300, 216
+  orig: 509, 286
+  offset: 108, 43
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00028
+  rotate: false
+  xy: 642, 198
+  size: 295, 230
+  orig: 509, 286
+  offset: 107, 39
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00029
+  rotate: false
+  xy: 721, 667
+  size: 298, 245
+  orig: 509, 286
+  offset: 105, 35
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00030
+  rotate: false
+  xy: 379, 441
+  size: 306, 256
+  orig: 509, 286
+  offset: 104, 30
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00031
+  rotate: false
+  xy: 406, 699
+  size: 313, 242
+  orig: 509, 286
+  offset: 104, 28
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00032
+  rotate: false
+  xy: 420, 943
+  size: 319, 253
+  orig: 509, 286
+  offset: 105, 25
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00033
+  rotate: false
+  xy: 1530, 1204
+  size: 320, 265
+  orig: 509, 286
+  offset: 111, 21
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00034
+  rotate: false
+  xy: 0, 76
+  size: 325, 268
+  orig: 509, 286
+  offset: 113, 18
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00035
+  rotate: false
+  xy: 0, 346
+  size: 338, 271
+  orig: 509, 286
+  offset: 107, 15
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00036
+  rotate: false
+  xy: 1178, 1214
+  size: 350, 255
+  orig: 509, 286
+  offset: 101, 11
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00037
+  rotate: false
+  xy: 813, 1202
+  size: 363, 267
+  orig: 509, 286
+  offset: 95, 10
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00038
+  rotate: false
+  xy: 0, 619
+  size: 377, 279
+  orig: 509, 286
+  offset: 88, 7
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00039
+  rotate: false
+  xy: 420, 1198
+  size: 391, 271
+  orig: 509, 286
+  offset: 81, 5
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00040
+  rotate: false
+  xy: 0, 900
+  size: 404, 281
+  orig: 509, 286
+  offset: 75, 2
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00041
+  rotate: false
+  xy: 0, 1183
+  size: 418, 286
+  orig: 509, 286
+  offset: 68, 0
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00042
+  rotate: false
+  xy: 0, 16
+  size: 112, 58
+  orig: 509, 286
+  offset: 241, 116
+  index: -1
+Non Trans/Comp 1/PlaytableVFX_00043
+  rotate: true
+  xy: 1474, 43
+  size: 113, 56
+  orig: 509, 286
+  offset: 240, 117
+  index: -1

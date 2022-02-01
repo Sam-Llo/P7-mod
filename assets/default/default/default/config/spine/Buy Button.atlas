@@ -1,0 +1,256 @@
+
+Buy Button.jpg
+size: 398,618
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non tran/portrait anim_00
+  rotate: false
+  xy: 0, 0
+  size: 365, 326
+  orig: 400, 400
+  offset: 30, 70
+  index: -1
+non tran/red glow landscape
+  rotate: false
+  xy: 0, 526
+  size: 198, 92
+  orig: 208, 103
+  offset: 5, 7
+  index: -1
+non tran/red glow portrait
+  rotate: true
+  xy: 0, 328
+  size: 196, 197
+  orig: 400, 400
+  offset: 102, 101
+  index: -1
+non tran/white glow landscape
+  rotate: false
+  xy: 200, 526
+  size: 198, 92
+  orig: 206, 103
+  offset: 4, 4
+  index: -1
+non tran/white glow portrait
+  rotate: true
+  xy: 199, 328
+  size: 196, 198
+  orig: 400, 400
+  offset: 100, 111
+  index: -1
+
+Buy Button2.jpg
+size: 1662,721
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+non tran/landscape anim/red glow anim landscape_01
+  rotate: false
+  xy: 782, 240
+  size: 248, 220
+  orig: 400, 400
+  offset: 63, 127
+  index: -1
+non tran/landscape anim/red glow anim landscape_02
+  rotate: false
+  xy: 1032, 241
+  size: 245, 219
+  orig: 400, 400
+  offset: 39, 127
+  index: -1
+non tran/landscape anim/red glow anim landscape_03
+  rotate: false
+  xy: 1279, 239
+  size: 237, 221
+  orig: 400, 400
+  offset: 21, 121
+  index: -1
+non tran/landscape anim/red glow anim landscape_04
+  rotate: false
+  xy: 1217, 11
+  size: 226, 226
+  orig: 400, 400
+  offset: 10, 108
+  index: -1
+non tran/landscape anim/red glow anim landscape_05
+  rotate: false
+  xy: 997, 2
+  size: 218, 236
+  orig: 400, 400
+  offset: 4, 84
+  index: -1
+non tran/landscape anim/red glow anim landscape_06
+  rotate: false
+  xy: 1445, 14
+  size: 217, 223
+  orig: 400, 400
+  offset: 16, 72
+  index: -1
+non tran/landscape anim/red glow anim landscape_07
+  rotate: false
+  xy: 558, 2
+  size: 231, 212
+  orig: 400, 400
+  offset: 26, 65
+  index: -1
+non tran/landscape anim/red glow anim landscape_08
+  rotate: true
+  xy: 791, 0
+  size: 238, 204
+  orig: 400, 400
+  offset: 47, 61
+  index: -1
+non tran/landscape anim/red glow anim landscape_09
+  rotate: true
+  xy: 558, 216
+  size: 250, 222
+  orig: 400, 400
+  offset: 61, 52
+  index: -1
+non tran/landscape anim/red glow anim landscape_10
+  rotate: false
+  xy: 0, 1
+  size: 257, 226
+  orig: 400, 400
+  offset: 79, 50
+  index: -1
+non tran/landscape anim/red glow anim landscape_11
+  rotate: false
+  xy: 293, 0
+  size: 263, 229
+  orig: 400, 400
+  offset: 97, 49
+  index: -1
+non tran/landscape anim/red glow anim landscape_12
+  rotate: false
+  xy: 293, 231
+  size: 263, 235
+  orig: 400, 400
+  offset: 115, 50
+  index: -1
+non tran/landscape anim/red glow anim landscape_13
+  rotate: false
+  xy: 1380, 474
+  size: 260, 247
+  orig: 400, 400
+  offset: 131, 52
+  index: -1
+non tran/landscape anim/red glow anim landscape_14
+  rotate: false
+  xy: 1123, 462
+  size: 255, 259
+  orig: 400, 400
+  offset: 144, 57
+  index: -1
+non tran/landscape anim/red glow anim landscape_15
+  rotate: true
+  xy: 592, 472
+  size: 249, 267
+  orig: 400, 400
+  offset: 149, 65
+  index: -1
+non tran/landscape anim/red glow anim landscape_16
+  rotate: true
+  xy: 861, 462
+  size: 259, 260
+  orig: 400, 400
+  offset: 136, 77
+  index: -1
+non tran/landscape anim/red glow anim landscape_17
+  rotate: false
+  xy: 314, 468
+  size: 276, 253
+  orig: 400, 400
+  offset: 113, 92
+  index: -1
+non tran/landscape anim/red glow anim landscape_18
+  rotate: false
+  xy: 0, 229
+  size: 291, 246
+  orig: 400, 400
+  offset: 87, 102
+  index: -1
+non tran/landscape anim/red glow anim landscape_19
+  rotate: false
+  xy: 0, 477
+  size: 312, 244
+  orig: 400, 400
+  offset: 62, 111
+  index: -1
+
+Buy Button.png
+size: 387,808
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/base landscape
+  rotate: true
+  xy: 77, 0
+  size: 182, 74
+  orig: 182, 75
+  offset: 0, 1
+  index: -1
+trans/base landscape white
+  rotate: false
+  xy: 153, 27
+  size: 182, 74
+  orig: 182, 74
+  offset: 0, 0
+  index: -1
+trans/base portrait
+  rotate: true
+  xy: 198, 378
+  size: 180, 181
+  orig: 180, 181
+  offset: 0, 0
+  index: -1
+trans/base portrait white
+  rotate: true
+  xy: 198, 196
+  size: 180, 181
+  orig: 180, 181
+  offset: 0, 0
+  index: -1
+trans/border glass landscape
+  rotate: false
+  xy: 183, 103
+  size: 198, 91
+  orig: 198, 91
+  offset: 0, 0
+  index: -1
+trans/border glass portrait
+  rotate: false
+  xy: 0, 366
+  size: 196, 196
+  orig: 196, 197
+  offset: 0, 0
+  index: -1
+trans/border landscape
+  rotate: true
+  xy: 246, 560
+  size: 248, 141
+  orig: 254, 147
+  offset: 3, 3
+  index: -1
+trans/border portrait
+  rotate: false
+  xy: 0, 564
+  size: 244, 244
+  orig: 251, 251
+  offset: 4, 3
+  index: -1
+trans/red landscape
+  rotate: true
+  xy: 0, 0
+  size: 182, 75
+  orig: 182, 75
+  offset: 0, 0
+  index: -1
+trans/red portrait
+  rotate: true
+  xy: 0, 184
+  size: 180, 181
+  orig: 180, 181
+  offset: 0, 0
+  index: -1
