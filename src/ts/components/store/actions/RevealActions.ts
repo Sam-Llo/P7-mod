@@ -176,6 +176,11 @@ export class RevealActions extends BaseAction<GameData> {
     }
 
     @action.bound
+    public setMarketingScreenisOff(isOff: boolean): void {
+        this._data.marketingScreenisOff = isOff;
+    }
+
+    @action.bound
     public increaseTotalWinningSymbolsCountByAmount(increaseAmount: number) {
         if (this._data.totalWinningSymbolsCount >= 3) {
             const previousWinningAmount = iwProps.prizeTable.get(`M${this._data.totalWinningSymbolsCount}`) as number;

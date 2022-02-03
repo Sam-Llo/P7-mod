@@ -1,230 +1,251 @@
 
 bonus symbol.png
-size: 1976,1447
+size: 1999,1478
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 non trans/7 glow
   rotate: false
-  xy: 1764, 1270
+  xy: 1024, 155
   size: 169, 177
   orig: 460, 460
   offset: 147, 147
   index: -1
 non trans/7 shine/7 shine_00003
-  rotate: false
-  xy: 1013, 32
+  rotate: true
+  xy: 1568, 0
   size: 59, 111
   orig: 400, 400
   offset: 143, 145
   index: -1
 non trans/7 shine/7 shine_00004
   rotate: false
-  xy: 1013, 145
+  xy: 1120, 40
   size: 72, 113
   orig: 400, 400
   offset: 142, 145
   index: -1
 non trans/7 shine/7 shine_00005
   rotate: false
-  xy: 1860, 1156
+  xy: 1909, 206
   size: 78, 112
   orig: 400, 400
   offset: 143, 147
   index: -1
 non trans/7 shine/7 shine_00006
   rotate: true
-  xy: 1836, 271
+  xy: 1701, 131
   size: 84, 110
   orig: 400, 400
   offset: 144, 149
   index: -1
 non trans/7 shine/7 shine_00007
-  rotate: false
-  xy: 1737, 145
+  rotate: true
+  xy: 1800, 228
   size: 90, 107
   orig: 400, 400
   offset: 146, 152
   index: -1
 non trans/7 shine/7 shine_00008
   rotate: false
-  xy: 1764, 1164
+  xy: 1024, 49
   size: 94, 104
   orig: 400, 400
   offset: 150, 156
   index: -1
 non trans/7 shine/7 shine_00009
   rotate: false
-  xy: 1737, 43
+  xy: 1813, 126
   size: 90, 100
   orig: 400, 400
   offset: 159, 159
   index: -1
 non trans/7 shine/7 shine_00010
-  rotate: false
-  xy: 1087, 163
+  rotate: true
+  xy: 1696, 50
   size: 79, 95
   orig: 400, 400
   offset: 173, 163
   index: -1
 non trans/7 shine/7 shine_00011
-  rotate: false
-  xy: 1168, 165
+  rotate: true
+  xy: 1905, 136
   size: 68, 93
   orig: 400, 400
   offset: 186, 166
   index: -1
 non trans/7 shine/7 shine_00012
   rotate: true
-  xy: 1764, 1107
+  xy: 344, 10
   size: 55, 65
   orig: 400, 400
   offset: 199, 194
   index: -1
 non trans/7 shine/7 shine_00013
-  rotate: true
-  xy: 640, 372
+  rotate: false
+  xy: 411, 19
   size: 38, 46
   orig: 400, 400
   offset: 215, 211
   index: -1
 non trans/7 shine/7 shine_00014
   rotate: false
-  xy: 333, 8
+  xy: 1343, 664
   size: 22, 26
   orig: 400, 400
   offset: 228, 228
   index: -1
+non trans/frame shine_00
+  rotate: false
+  xy: 1048, 334
+  size: 326, 326
+  orig: 423, 423
+  offset: 48, 49
+  index: -1
 non trans/glow
   rotate: false
-  xy: 0, 823
+  xy: 0, 854
   size: 663, 624
   orig: 708, 628
   offset: 23, 3
   index: -1
 non trans/sparkle/sparkly00131
   rotate: false
-  xy: 1021, 632
+  xy: 1011, 662
   size: 330, 404
   orig: 404, 495
   offset: 51, 0
   index: -1
 non trans/sparkle/sparkly00132
   rotate: false
-  xy: 688, 629
+  xy: 678, 660
   size: 331, 405
   orig: 404, 495
   offset: 51, 0
   index: -1
 non trans/sparkle/sparkly00133
   rotate: false
-  xy: 0, 0
+  xy: 345, 444
   size: 331, 408
   orig: 404, 495
   offset: 51, 0
   index: -1
 non trans/sparkle/sparkly00134
   rotate: false
-  xy: 345, 412
+  xy: 1351, 1069
   size: 341, 409
   orig: 404, 495
   offset: 51, 0
   index: -1
 non trans/sparkle/sparkly00135
   rotate: false
-  xy: 1008, 1038
+  xy: 0, 30
   size: 342, 409
   orig: 404, 495
   offset: 51, 1
   index: -1
 non trans/sparkle/sparkly00136
-  rotate: true
-  xy: 1352, 1106
+  rotate: false
+  xy: 1008, 1068
   size: 341, 410
   orig: 404, 495
   offset: 51, 2
   index: -1
 non trans/sparkle/sparkly00137
   rotate: false
-  xy: 0, 410
+  xy: 0, 441
   size: 343, 411
   orig: 404, 495
   offset: 50, 3
   index: -1
 non trans/sparkle/sparkly00138
   rotate: false
-  xy: 665, 1036
+  xy: 665, 1067
   size: 341, 411
   orig: 404, 495
   offset: 51, 4
   index: -1
 non trans/sparkle/sparkly00139
   rotate: true
-  xy: 688, 323
+  xy: 678, 354
   size: 304, 368
   orig: 404, 495
   offset: 64, 57
   index: -1
 non trans/sparkle/sparkly00140
   rotate: false
-  xy: 1058, 260
+  xy: 1376, 320
   size: 304, 370
   orig: 404, 495
   offset: 64, 58
   index: -1
 non trans/sparkle/sparkly00141
   rotate: true
-  xy: 1364, 46
+  xy: 651, 46
   size: 306, 371
   orig: 404, 495
   offset: 63, 59
   index: -1
 non trans/sparkle/sparkly00142
   rotate: true
-  xy: 640, 16
+  xy: 1195, 13
   size: 305, 371
   orig: 404, 495
   offset: 64, 61
   index: -1
 non trans/sparkle/sparkly00143
   rotate: false
-  xy: 1671, 357
+  xy: 1682, 320
   size: 305, 372
   orig: 404, 495
   offset: 64, 62
   index: -1
 non trans/sparkle/sparkly00144
   rotate: false
-  xy: 333, 36
+  xy: 344, 67
   size: 305, 372
   orig: 404, 495
   offset: 64, 64
   index: -1
 non trans/sparkle/sparkly00145
   rotate: false
-  xy: 1660, 731
+  xy: 1650, 694
   size: 304, 373
   orig: 404, 495
   offset: 64, 66
   index: -1
 non trans/sparkle/sparkly00146
   rotate: false
-  xy: 1353, 730
+  xy: 1694, 1104
   size: 305, 374
   orig: 404, 495
   offset: 64, 67
   index: -1
 non trans/sparkle/sparkly00147
   rotate: false
-  xy: 1364, 354
+  xy: 1343, 692
   size: 305, 374
   orig: 404, 495
   offset: 64, 69
   index: -1
 trans/7_bonus
   rotate: false
-  xy: 1737, 254
+  xy: 1701, 217
   size: 97, 101
   orig: 97, 101
+  offset: 0, 0
+  index: -1
+trans/base
+  rotate: false
+  xy: 1568, 61
+  size: 126, 125
+  orig: 126, 125
+  offset: 0, 0
+  index: -1
+trans/border
+  rotate: false
+  xy: 1568, 188
+  size: 131, 130
+  orig: 131, 130
   offset: 0, 0
   index: -1
