@@ -646,22 +646,32 @@ export class ExtendedGameSymbolCardAnimationsControl {
                     case "A":
                         this._matchAnim.setAnimation(
                             this._matchAnimationMap.WINNING_GAME_SYMBOLS.PALM_TREE.SINGLE.REVEAL,
+                            undefined,
+                            true,
                         );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.PALM_TREE.SINGLE.OUTRO;
                         break;
                     case "B":
-                        this._matchAnim.setAnimation(this._matchAnimationMap.WINNING_GAME_SYMBOLS.SUN.SINGLE.REVEAL);
+                        this._matchAnim.setAnimation(
+                            this._matchAnimationMap.WINNING_GAME_SYMBOLS.SUN.SINGLE.REVEAL,
+                            undefined,
+                            true,
+                        );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.SUN.SINGLE.OUTRO;
                         break;
                     case "C":
                         this._matchAnim.setAnimation(
                             this._matchAnimationMap.WINNING_GAME_SYMBOLS.ICECREAM.SINGLE.REVEAL,
+                            undefined,
+                            true,
                         );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.ICECREAM.SINGLE.OUTRO;
                         break;
                     case "D":
                         this._matchAnim.setAnimation(
                             this._matchAnimationMap.WINNING_GAME_SYMBOLS.STARFISH.SINGLE.REVEAL,
+                            undefined,
+                            true,
                         );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.STARFISH.SINGLE.OUTRO;
                         break;
@@ -677,22 +687,32 @@ export class ExtendedGameSymbolCardAnimationsControl {
                     case "A":
                         this._matchAnim.setAnimation(
                             this._matchAnimationMap.WINNING_GAME_SYMBOLS.PALM_TREE.DOUBLE.REVEAL,
+                            undefined,
+                            true,
                         );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.PALM_TREE.DOUBLE.OUTRO;
                         break;
                     case "B":
-                        this._matchAnim.setAnimation(this._matchAnimationMap.WINNING_GAME_SYMBOLS.SUN.DOUBLE.REVEAL);
+                        this._matchAnim.setAnimation(
+                            this._matchAnimationMap.WINNING_GAME_SYMBOLS.SUN.DOUBLE.REVEAL,
+                            undefined,
+                            true,
+                        );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.SUN.DOUBLE.OUTRO;
                         break;
                     case "C":
                         this._matchAnim.setAnimation(
                             this._matchAnimationMap.WINNING_GAME_SYMBOLS.ICECREAM.DOUBLE.REVEAL,
+                            undefined,
+                            true,
                         );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.ICECREAM.DOUBLE.OUTRO;
                         break;
                     case "D":
                         this._matchAnim.setAnimation(
                             this._matchAnimationMap.WINNING_GAME_SYMBOLS.STARFISH.DOUBLE.REVEAL,
+                            undefined,
+                            true,
                         );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.STARFISH.DOUBLE.OUTRO;
                         break;
@@ -708,22 +728,32 @@ export class ExtendedGameSymbolCardAnimationsControl {
                     case "A":
                         this._matchAnim.setAnimation(
                             this._matchAnimationMap.WINNING_GAME_SYMBOLS.PALM_TREE.TRIPLE.REVEAL,
+                            undefined,
+                            true,
                         );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.PALM_TREE.TRIPLE.OUTRO;
                         break;
                     case "B":
-                        this._matchAnim.setAnimation(this._matchAnimationMap.WINNING_GAME_SYMBOLS.SUN.TRIPLE.REVEAL);
+                        this._matchAnim.setAnimation(
+                            this._matchAnimationMap.WINNING_GAME_SYMBOLS.SUN.TRIPLE.REVEAL,
+                            undefined,
+                            true,
+                        );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.SUN.TRIPLE.OUTRO;
                         break;
                     case "C":
                         this._matchAnim.setAnimation(
                             this._matchAnimationMap.WINNING_GAME_SYMBOLS.ICECREAM.TRIPLE.REVEAL,
+                            undefined,
+                            true,
                         );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.ICECREAM.TRIPLE.OUTRO;
                         break;
                     case "D":
                         this._matchAnim.setAnimation(
                             this._matchAnimationMap.WINNING_GAME_SYMBOLS.STARFISH.TRIPLE.REVEAL,
+                            undefined,
+                            true,
                         );
                         this._symbolMatchOutroAnimation = this._matchAnimationMap.WINNING_GAME_SYMBOLS.STARFISH.TRIPLE.OUTRO;
                         break;

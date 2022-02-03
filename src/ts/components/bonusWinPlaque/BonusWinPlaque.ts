@@ -217,6 +217,7 @@ export class BonusWinPlaque extends AnimatedPlaque<IWProps, null> {
             this._spineAnim.addAnimation(BonusWinPlaque.staticLoopAnimationName, undefined, true);
             this._spineAnim.play();
             this._winTextFields[0].text = currencyService.format(this._winAmount, iwProps.denomination);
+            this._winTextFields[1].text = translationService.getString("messages.bonusPlaqueWin_label") as string;
 
             //this.changeWinAmountText(data);
         });

@@ -1,33 +1,9 @@
 {
   "frames": {
-    "paytableBonusSymbolContainer_img": {
+    "paytableSymbolContainer_img": {
       "frame": {
         "x": 1,
         "y": 1,
-        "w": 362,
-        "h": 324
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 362,
-        "h": 324
-      },
-      "sourceSize": {
-        "w": 362,
-        "h": 324
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "paytableSymbolContainer_img": {
-      "frame": {
-        "x": 365,
-        "y": 1,
         "w": 310,
         "h": 313
       },
@@ -48,48 +24,96 @@
         "y": 0.5
       }
     },
-    "footerBarBg_img2": {
+    "revealAllStopButton_disabledBg_img2": {
       "frame": {
-        "x": 677,
+        "x": 313,
         "y": 1,
-        "w": 810,
-        "h": 80
+        "w": 202,
+        "h": 202
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 810,
-        "h": 80
+        "w": 202,
+        "h": 202
       },
       "sourceSize": {
-        "w": 810,
-        "h": 80
+        "w": 202,
+        "h": 202
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "symbolborder": {
+    "revealAllStopButton_enabledBg_img2": {
       "frame": {
-        "x": 365,
+        "x": 313,
+        "y": 205,
+        "w": 202,
+        "h": 202
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 202,
+        "h": 202
+      },
+      "sourceSize": {
+        "w": 202,
+        "h": 202
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "revealAllStopButton_overBg_img2": {
+      "frame": {
+        "x": 1,
         "y": 316,
-        "w": 244,
-        "h": 230
+        "w": 202,
+        "h": 202
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 244,
-        "h": 230
+        "w": 202,
+        "h": 202
       },
       "sourceSize": {
-        "w": 244,
-        "h": 230
+        "w": 202,
+        "h": 202
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "revealAllStopButton_pressedBg_img2": {
+      "frame": {
+        "x": 517,
+        "y": 1,
+        "w": 202,
+        "h": 202
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 202,
+        "h": 202
+      },
+      "sourceSize": {
+        "w": 202,
+        "h": 202
       },
       "pivot": {
         "x": 0.5,
@@ -98,8 +122,8 @@
     },
     "reelPosition1_img2": {
       "frame": {
-        "x": 1,
-        "y": 327,
+        "x": 517,
+        "y": 205,
         "w": 180,
         "h": 154
       },
@@ -122,8 +146,8 @@
     },
     "reel_mask_spinMeterButton_img": {
       "frame": {
-        "x": 183,
-        "y": 327,
+        "x": 517,
+        "y": 361,
         "w": 164,
         "h": 164
       },
@@ -144,10 +168,34 @@
         "y": 0.5
       }
     },
-    "symbolBonus10Static": {
+    "symbolsBonusBackground16_img2": {
       "frame": {
         "x": 1,
-        "y": 483,
+        "y": 520,
+        "w": 178,
+        "h": 151
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 178,
+        "h": 151
+      },
+      "sourceSize": {
+        "w": 178,
+        "h": 151
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus10Static": {
+      "frame": {
+        "x": 181,
+        "y": 520,
         "w": 178,
         "h": 150
       },
@@ -170,12 +218,12 @@
     },
     "symbolBonus11Static": {
       "frame": {
-        "x": 181,
-        "y": 493,
+        "x": 361,
+        "y": 409,
         "w": 178,
         "h": 150
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -192,72 +240,48 @@
         "y": 0.5
       }
     },
-    "symbolBonus1Static_img": {
-      "frame": {
-        "x": 1,
-        "y": 635,
-        "w": 178,
-        "h": 150
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 178,
-        "h": 150
-      },
-      "sourceSize": {
-        "w": 178,
-        "h": 150
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "symbolBonus2Static_img": {
-      "frame": {
-        "x": 181,
-        "y": 645,
-        "w": 178,
-        "h": 150
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 178,
-        "h": 150
-      },
-      "sourceSize": {
-        "w": 178,
-        "h": 150
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "symbolBonus3Static_img": {
+    "pricePointSelectorButton_disabledBg_img2": {
       "frame": {
         "x": 361,
-        "y": 548,
-        "w": 178,
-        "h": 150
+        "y": 589,
+        "w": 247,
+        "h": 92
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 178,
-        "h": 150
+        "w": 247,
+        "h": 92
       },
       "sourceSize": {
-        "w": 178,
-        "h": 150
+        "w": 247,
+        "h": 92
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "pricePointSelectorButton_enabledBg_img": {
+      "frame": {
+        "x": 1,
+        "y": 673,
+        "w": 262,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 262,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 262,
+        "h": 86
       },
       "pivot": {
         "x": 0.5,
@@ -266,12 +290,12 @@
     },
     "revealAllStartButton_enabledBg": {
       "frame": {
-        "x": 361,
-        "y": 700,
+        "x": 610,
+        "y": 527,
         "w": 227,
         "h": 99
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -290,12 +314,12 @@
     },
     "pricePointSelectorButton_disabledBg_img": {
       "frame": {
-        "x": 590,
-        "y": 548,
+        "x": 265,
+        "y": 683,
         "w": 263,
         "h": 84
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -311,6 +335,174 @@
         "x": 0.5,
         "y": 0.5
       }
+    },
+    "DoNotShowAgainCheckBoxOn_img": {
+      "frame": {
+        "x": 205,
+        "y": 316,
+        "w": 183,
+        "h": 84
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 183,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 183,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "DoNotShowAgainCheckBoxOff_img": {
+      "frame": {
+        "x": 699,
+        "y": 205,
+        "w": 182,
+        "h": 84
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 0,
+        "w": 182,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 183,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "symbolBonus3Static_img": {
+      "frame": {
+        "x": 683,
+        "y": 389,
+        "w": 102,
+        "h": 121
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 102,
+        "h": 121
+      },
+      "sourceSize": {
+        "w": 102,
+        "h": 121
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "settingsButton_disabledBg_img2": {
+      "frame": {
+        "x": 711,
+        "y": 512,
+        "w": 94,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 94,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 94,
+        "h": 94
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "settingsButton_pressedBg_img2": {
+      "frame": {
+        "x": 711,
+        "y": 608,
+        "w": 94,
+        "h": 94
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 94,
+        "h": 94
+      },
+      "sourceSize": {
+        "w": 94,
+        "h": 94
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "settingsButton_disabledBg_img": {
+      "frame": {
+        "x": 721,
+        "y": 1,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "settingsButton_enabledBg_img": {
+      "frame": {
+        "x": 721,
+        "y": 83,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
     }
   },
   "meta": {
@@ -319,8 +511,8 @@
     "image": "gamebitmaps-0-3.png",
     "format": "RGBA8888",
     "size": {
-      "w": 758,
-      "h": 812
+      "w": 806,
+      "h": 768
     },
     "scale": 1
   }

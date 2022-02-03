@@ -141,6 +141,15 @@ export class Reel extends BaseView<any, null, any, null> {
             this._reel2.position.set(this._reel1.position.x, this._secondReelY);
             this._reel3.position.set(this._reel1.position.x, this._thirdReelY); //put reel_3 before 1
         }
+
+        this._reel1.scale.x = 0.5;
+        this._reel1.scale.y = 0.5;
+
+        this._reel2.scale.x = 0.5;
+        this._reel2.scale.y = 0.5;
+
+        this._reel3.scale.x = 0.5;
+        this._reel3.scale.y = 0.5;
     }
 
     private calculatePositioning(localPositionX: number, localPositionY: number): void {
@@ -267,8 +276,10 @@ export class Reel extends BaseView<any, null, any, null> {
             this._maskGraphics.drawRect(
                 this._reel1.position.x - this._config.SymbolWidth / 2,
                 this._reel1.position.y - this._config.SymbolHeight / 2,
-                this._config.SymbolWidth,
-                this._config.SymbolHeight,
+                90,
+                120,
+                // this._config.SymbolWidth,
+                // this._config.SymbolHeight,
             );
 
             this._maskGraphics.endFill();

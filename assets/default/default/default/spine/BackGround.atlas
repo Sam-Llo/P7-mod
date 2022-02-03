@@ -375,3 +375,433 @@ trans/shadow overlay
   orig: 1440, 810
   offset: 0, 0
   index: -1
+
+background9.png
+size: 2026,1852
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 4/Pattern layers00
+  rotate: true
+  xy: 418, 1596
+  size: 256, 425
+  orig: 1252, 735
+  offset: 1, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers01
+  rotate: true
+  xy: 1346, 1525
+  size: 327, 553
+  orig: 1252, 735
+  offset: 1, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers02
+  rotate: true
+  xy: 630, 1161
+  size: 389, 683
+  orig: 1252, 735
+  offset: 1, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers03
+  rotate: true
+  xy: 0, 713
+  size: 446, 717
+  orig: 1252, 735
+  offset: 1, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers04
+  rotate: false
+  xy: 1438, 372
+  size: 514, 717
+  orig: 1252, 735
+  offset: 1, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers05
+  rotate: true
+  xy: 719, 0
+  size: 585, 717
+  orig: 1252, 735
+  offset: 1, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers20
+  rotate: true
+  xy: 0, 138
+  size: 573, 717
+  orig: 1252, 735
+  offset: 678, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers21
+  rotate: true
+  xy: 719, 587
+  size: 502, 717
+  orig: 1252, 735
+  offset: 749, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers22
+  rotate: true
+  xy: 1315, 1091
+  size: 432, 711
+  orig: 1252, 735
+  offset: 819, 15
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers23
+  rotate: true
+  xy: 0, 1229
+  size: 365, 628
+  orig: 1252, 735
+  offset: 886, 98
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers24
+  rotate: true
+  xy: 845, 1552
+  size: 300, 499
+  orig: 1252, 735
+  offset: 951, 227
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers25
+  rotate: true
+  xy: 0, 1606
+  size: 246, 416
+  orig: 1252, 735
+  offset: 1005, 310
+  index: -1
+
+background10.png
+size: 1446,1375
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 4/Pattern layers06
+  rotate: true
+  xy: 719, 719
+  size: 656, 717
+  orig: 1252, 735
+  offset: 1, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers07
+  rotate: false
+  xy: 719, 0
+  size: 727, 717
+  orig: 1252, 735
+  offset: 1, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers18
+  rotate: true
+  xy: 0, 33
+  size: 692, 717
+  orig: 1252, 735
+  offset: 559, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers19
+  rotate: true
+  xy: 0, 727
+  size: 648, 717
+  orig: 1252, 735
+  offset: 603, 9
+  index: -1
+
+background11.png
+size: 1786,1436
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 4/Pattern layers08
+  rotate: false
+  xy: 0, 719
+  size: 779, 717
+  orig: 1252, 735
+  offset: 1, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers09
+  rotate: false
+  xy: 781, 719
+  size: 842, 717
+  orig: 1252, 735
+  offset: 1, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers10
+  rotate: false
+  xy: 0, 0
+  size: 892, 717
+  orig: 1252, 735
+  offset: 22, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers11
+  rotate: false
+  xy: 894, 0
+  size: 892, 717
+  orig: 1252, 735
+  offset: 93, 9
+  index: -1
+
+background12.png
+size: 1814,1436
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 4/Pattern layers12
+  rotate: false
+  xy: 0, 0
+  size: 896, 717
+  orig: 1252, 735
+  offset: 160, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers13
+  rotate: false
+  xy: 0, 719
+  size: 918, 717
+  orig: 1252, 735
+  offset: 204, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers14
+  rotate: false
+  xy: 920, 719
+  size: 894, 717
+  orig: 1252, 735
+  offset: 280, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers15
+  rotate: false
+  xy: 898, 0
+  size: 892, 717
+  orig: 1252, 735
+  offset: 350, 9
+  index: -1
+
+background13.png
+size: 1591,717
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 4/Pattern layers16
+  rotate: false
+  xy: 0, 0
+  size: 830, 717
+  orig: 1252, 735
+  offset: 421, 9
+  index: -1
+trans/pattern layer/Comp 4/Pattern layers17
+  rotate: false
+  xy: 832, 0
+  size: 759, 717
+  orig: 1252, 735
+  offset: 492, 9
+  index: -1
+
+background14.png
+size: 2020,1911
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 5/landscape pattern00
+  rotate: true
+  xy: 0, 1733
+  size: 178, 290
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern01
+  rotate: true
+  xy: 658, 1645
+  size: 266, 466
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern02
+  rotate: true
+  xy: 0, 1351
+  size: 349, 598
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern03
+  rotate: true
+  xy: 600, 1184
+  size: 436, 772
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern04
+  rotate: true
+  xy: 850, 632
+  size: 550, 899
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern05
+  rotate: true
+  xy: 901, 0
+  size: 630, 899
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern21
+  rotate: true
+  xy: 0, 59
+  size: 571, 899
+  orig: 1493, 899
+  offset: 922, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern22
+  rotate: true
+  xy: 0, 694
+  size: 488, 848
+  orig: 1493, 899
+  offset: 1005, 51
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern23
+  rotate: false
+  xy: 1641, 1245
+  size: 379, 666
+  orig: 1493, 899
+  offset: 1114, 233
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern24
+  rotate: true
+  xy: 1126, 1622
+  size: 289, 513
+  orig: 1493, 899
+  offset: 1204, 386
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern25
+  rotate: true
+  xy: 292, 1702
+  size: 209, 364
+  orig: 1493, 899
+  offset: 1284, 535
+  index: -1
+
+background15.png
+size: 1800,1544
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 5/landscape pattern06
+  rotate: true
+  xy: 901, 830
+  size: 714, 899
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern07
+  rotate: true
+  xy: 901, 0
+  size: 828, 899
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern19
+  rotate: true
+  xy: 0, 121
+  size: 764, 899
+  orig: 1493, 899
+  offset: 729, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern20
+  rotate: true
+  xy: 0, 887
+  size: 657, 899
+  orig: 1493, 899
+  offset: 836, 0
+  index: -1
+
+background16.png
+size: 1196,1800
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 5/landscape pattern11
+  rotate: false
+  xy: 0, 901
+  size: 1196, 899
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern14
+  rotate: false
+  xy: 0, 0
+  size: 1194, 899
+  orig: 1493, 899
+  offset: 278, 0
+  index: -1
+
+background17.png
+size: 1895,1800
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 5/landscape pattern08
+  rotate: false
+  xy: 901, 901
+  size: 911, 899
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern09
+  rotate: false
+  xy: 901, 0
+  size: 994, 899
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern17
+  rotate: true
+  xy: 0, 7
+  size: 935, 899
+  orig: 1493, 899
+  offset: 558, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern18
+  rotate: true
+  xy: 0, 944
+  size: 856, 899
+  orig: 1493, 899
+  offset: 637, 0
+  index: -1
+
+background18.png
+size: 1192,1800
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 5/landscape pattern12
+  rotate: false
+  xy: 0, 901
+  size: 1192, 899
+  orig: 1493, 899
+  offset: 84, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern13
+  rotate: false
+  xy: 0, 0
+  size: 1173, 899
+  orig: 1493, 899
+  offset: 191, 0
+  index: -1
+
+background19.png
+size: 2006,1800
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+trans/pattern layer/Comp 5/landscape pattern10
+  rotate: false
+  xy: 901, 901
+  size: 1105, 899
+  orig: 1493, 899
+  offset: 0, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern15
+  rotate: true
+  xy: 0, 667
+  size: 1133, 899
+  orig: 1493, 899
+  offset: 360, 0
+  index: -1
+trans/pattern layer/Comp 5/landscape pattern16
+  rotate: false
+  xy: 901, 0
+  size: 1025, 899
+  orig: 1493, 899
+  offset: 468, 0
+  index: -1

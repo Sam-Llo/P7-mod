@@ -115,7 +115,7 @@
             "y": 763,
             "rotation": 0,
             "alpha": 1,
-            "visible": true,
+            "visible": false,
             "scale": {
               "x": 1,
               "y": 1
@@ -136,7 +136,7 @@
             "y": 1000,
             "rotation": 0,
             "alpha": 1,
-            "visible": true,
+            "visible": false,
             "scale": {
               "x": 1,
               "y": 1
@@ -158,8 +158,8 @@
         "x": -314,
         "y": 0,
         "rotation": 0,
-        "width": 814,
-        "height": 1447,
+        "width": 1059,
+        "height": 1462.139892578125,
         "alpha": 1,
         "visible": true,
         "scale": {
@@ -3507,6 +3507,25 @@
                         },
                         "children": [
                           {
+                            "id": "base_full1",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
+                          {
                             "id": "revealedSymbols_anim1",
                             "preFab": false,
                             "loadType": "-",
@@ -3528,28 +3547,7 @@
                             }
                           },
                           {
-                            "id": "frameCoverAnims_symbol1",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "spine-animation",
-                            "x": 0,
-                            "y": 0,
-                            "rotation": 0,
-                            "alpha": 1,
-                            "visible": true,
-                            "scale": {
-                              "x": 1,
-                              "y": 1
-                            },
-                            "spinedata": {
-                              "data": "spine/Foil.skel",
-                              "skin": "default",
-                              "animation": "static-idle/FoilStatic",
-                              "speed": 1
-                            }
-                          },
-                          {
-                            "id": "coverAnims_symbol1_fH6xT",
+                            "id": "coverAnims_symbol1",
                             "preFab": false,
                             "loadType": "-",
                             "type": "spine-animation",
@@ -3589,6 +3587,27 @@
                               "animation": "glow",
                               "speed": 1
                             }
+                          },
+                          {
+                            "id": "frameCoverAnims_symbol1",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
                           }
                         ]
                       },
@@ -3609,6 +3628,25 @@
                           "y": 1
                         },
                         "children": [
+                          {
+                            "id": "base_full2",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
                           {
                             "id": "revealedSymbols_anim2",
                             "preFab": false,
@@ -3713,25 +3751,23 @@
                         },
                         "children": [
                           {
-                            "id": "coverAnims_symbol3_arjnJ",
+                            "id": "base_full3",
                             "preFab": false,
                             "loadType": "-",
-                            "type": "spine-animation",
+                            "type": "layer",
                             "x": 0,
                             "y": 0,
                             "rotation": 0,
+                            "width": 126,
+                            "height": 125,
                             "alpha": 1,
                             "visible": true,
-                            "scale": {
-                              "x": 1,
-                              "y": 1
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
                             },
-                            "spinedata": {
-                              "data": "spine/Foil.skel",
-                              "skin": "default",
-                              "animation": "static-idle/FoilStatic",
-                              "speed": 1
-                            }
+                            "bitmap": "base_full"
                           },
                           {
                             "id": "revealedSymbols_anim3",
@@ -3751,6 +3787,27 @@
                               "data": "spine/Symbols.skel",
                               "skin": "default",
                               "animation": "reset/symbol reset bonus",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "coverAnims_symbol3",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Foil.skel",
+                              "skin": "default",
+                              "animation": "static-idle/FoilStatic",
                               "speed": 1
                             }
                           },
@@ -3815,6 +3872,25 @@
                           "y": 1
                         },
                         "children": [
+                          {
+                            "id": "base_full4",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
                           {
                             "id": "revealedSymbols_anim4",
                             "preFab": false,
@@ -3919,6 +3995,25 @@
                         },
                         "children": [
                           {
+                            "id": "base_full5",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
+                          {
                             "id": "revealedSymbols_anim5",
                             "preFab": false,
                             "loadType": "-",
@@ -4021,6 +4116,25 @@
                           "y": 1
                         },
                         "children": [
+                          {
+                            "id": "base_full6",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
                           {
                             "id": "revealedSymbols_anim6",
                             "preFab": false,
@@ -4125,6 +4239,25 @@
                         },
                         "children": [
                           {
+                            "id": "base_full7",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
+                          {
                             "id": "revealedSymbols_anim7",
                             "preFab": false,
                             "loadType": "-",
@@ -4227,6 +4360,25 @@
                           "y": 1
                         },
                         "children": [
+                          {
+                            "id": "base_full8",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
                           {
                             "id": "revealedSymbols_anim8",
                             "preFab": false,
@@ -4331,6 +4483,25 @@
                         },
                         "children": [
                           {
+                            "id": "base_full9",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
+                          {
                             "id": "revealedSymbols_anim9",
                             "preFab": false,
                             "loadType": "-",
@@ -4434,6 +4605,25 @@
                         },
                         "children": [
                           {
+                            "id": "base_full10",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
+                          {
                             "id": "revealedSymbols_anim10",
                             "preFab": false,
                             "loadType": "-",
@@ -4476,27 +4666,6 @@
                             }
                           },
                           {
-                            "id": "win_glow_anim_10",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "spine-animation",
-                            "x": 0,
-                            "y": 0,
-                            "rotation": 0,
-                            "alpha": 1,
-                            "visible": true,
-                            "scale": {
-                              "x": 1,
-                              "y": 1
-                            },
-                            "spinedata": {
-                              "data": "spine/Winning Symbols.skel",
-                              "skin": "default",
-                              "animation": "glow",
-                              "speed": 1
-                            }
-                          },
-                          {
                             "id": "frameCoverAnims_symbol10",
                             "preFab": false,
                             "loadType": "-",
@@ -4514,6 +4683,27 @@
                               "data": "spine/Foil.skel",
                               "skin": "default",
                               "animation": "static-idle/FoilStatic",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "win_glow_anim_10",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Winning Symbols.skel",
+                              "skin": "default",
+                              "animation": "glow",
                               "speed": 1
                             }
                           }
@@ -4743,6 +4933,25 @@
                         },
                         "children": [
                           {
+                            "id": "base_full13",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
+                          {
                             "id": "revealedSymbols_anim13",
                             "preFab": false,
                             "loadType": "-",
@@ -4846,6 +5055,46 @@
                         },
                         "children": [
                           {
+                            "id": "revealedSymbols_anim14",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "spine-animation",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "alpha": 1,
+                            "visible": true,
+                            "scale": {
+                              "x": 1,
+                              "y": 1
+                            },
+                            "spinedata": {
+                              "data": "spine/Symbols.skel",
+                              "skin": "default",
+                              "animation": "reset/symbol reset bonus",
+                              "speed": 1
+                            }
+                          },
+                          {
+                            "id": "base_full14",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
+                          {
                             "id": "coverAnims_symbol14",
                             "preFab": false,
                             "loadType": "-",
@@ -4884,27 +5133,6 @@
                               "data": "spine/Foil.skel",
                               "skin": "default",
                               "animation": "static-idle/FoilStatic",
-                              "speed": 1
-                            }
-                          },
-                          {
-                            "id": "revealedSymbols_anim14",
-                            "preFab": false,
-                            "loadType": "-",
-                            "type": "spine-animation",
-                            "x": 0,
-                            "y": 0,
-                            "rotation": 0,
-                            "alpha": 1,
-                            "visible": true,
-                            "scale": {
-                              "x": 1,
-                              "y": 1
-                            },
-                            "spinedata": {
-                              "data": "spine/Symbols.skel",
-                              "skin": "default",
-                              "animation": "reset/symbol reset bonus",
                               "speed": 1
                             }
                           },
@@ -4948,6 +5176,25 @@
                           "y": 1
                         },
                         "children": [
+                          {
+                            "id": "base_full15",
+                            "preFab": false,
+                            "loadType": "-",
+                            "type": "layer",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "width": 126,
+                            "height": 125,
+                            "alpha": 1,
+                            "visible": true,
+                            "blendMode": 0,
+                            "anchor": {
+                              "x": 0.5,
+                              "y": 0.5
+                            },
+                            "bitmap": "base_full"
+                          },
                           {
                             "id": "revealedSymbols_anim15",
                             "preFab": false,
@@ -24174,7 +24421,7 @@
                 "y": 560,
                 "rotation": 0,
                 "width": 460.0000457763672,
-                "height": 466,
+                "height": 461.5,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -24280,7 +24527,7 @@
                 "y": 1180,
                 "rotation": 0,
                 "width": 500,
-                "height": 466.1159362792969,
+                "height": 477.1159362792969,
                 "alpha": 1,
                 "visible": true,
                 "scale": {
@@ -24297,7 +24544,7 @@
                     "y": -30,
                     "rotation": 0,
                     "width": 356,
-                    "height": 318,
+                    "height": 318.00000000000006,
                     "alpha": 1,
                     "visible": true,
                     "blendMode": 0,

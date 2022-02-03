@@ -232,7 +232,7 @@ export class LockAndReelBonusSubGame extends SubGame {
         this[`${this._config.SymbolsBonusBackgroundPrefix}${index}`].setAnimation(
             this._config.ShadedGridHighlightAnimationName,
         );
-        this[`${this._config.SymbolsBonusBackgroundPrefix}${index}`].play();
+        //this[`${this._config.SymbolsBonusBackgroundPrefix}${index}`].play();
     }
 
     /**

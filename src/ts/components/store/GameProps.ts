@@ -31,6 +31,11 @@ export class GameProps {
     }
 
     @computed
+    public get marketingScreenisOff(): boolean {
+        return this._data.marketingScreenisOff;
+    }
+
+    @computed
     public get bonusOutcome(): number {
         return parseInt(this._parent.scenario.split("|")[2], 10);
     }

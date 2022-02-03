@@ -339,6 +339,8 @@ export class ResultSettings extends ResultPlaques {
     private playWinCoinShower(): void {
         const winRatio = iwProps.totalWin / iwProps.wager;
 
+        gameStore.actions.revealActions.setWinPlauqeIsUp(true);
+
         //Level 3 coin shower check
         if (this._winThresholdsForBaseGame.level3.lower.inclusive) {
             if (winRatio >= this._winThresholdsForBaseGame.level3.lower.multiplier) {
@@ -487,6 +489,8 @@ export class ResultSettings extends ResultPlaques {
         // this.stopSpineAnim(this._spineAnimNonWin);
         this._isWin = false;
         this._outroAnimName = "";
+
+        gameStore.actions.revealActions.setWinPlauqeIsUp(false);
     }
 
     /**

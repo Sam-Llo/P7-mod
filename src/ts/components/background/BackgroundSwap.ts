@@ -38,7 +38,9 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
 
     private static readonly baseGameVisible: string = "symbolsCollectionBaseGameVisible";
 
-    private static readonly marketingScreenOff: string = "logoVisible";
+    private static readonly winPlaqueIsUp: string = "winPlaqueIsUpSetBackground";
+
+    private static readonly marketingScreenisOff: string = "logoVisible";
 
     private static readonly STRINGS_BONUS_WIN_LAN: string = "LandscapeLightBonusWin";
 
@@ -134,8 +136,8 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
         this.bgBaseGameAnimPort.updateTransform();
         //this.bgBaseGameLogoAnim.updateTransform();
 
-        this.bgBaseGameAnimLand.setAnimation("landscape animation background", undefined, true);
-        this.bgBaseGameAnimPort.setAnimation("portrait animation background", undefined, true);
+        this.bgBaseGameAnimLand.setAnimation("landscape animation background3", undefined, true);
+        this.bgBaseGameAnimPort.setAnimation("portrait animation background3", undefined, true);
         //this.bgBaseGameLogoAnim.setAnimation("landscape logo animation", undefined, true);
         // this.bgBaseGameLogoAnim.setAnimation("portrait logo animation", undefined, true);
 
@@ -148,16 +150,6 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
         this.bgBaseGameAnimPort.visible = !this.bgBaseGameAnimLand.visible;
 
         this.addReactions();
-
-        this.stage = layoutService.props.layout;
-        //this.stage.container.;
-        /*              this.marketingscreen = this.container.parent.parent.children.find(
-                    (containerRef) => obj.name === "game",
-                ) as Container; */
-
-        //this.marketingscreen.visible = false;
-        console.log(`${this.container.parent.name}IT SHOULD SAY GAME`);
-        // this.showLogo();
     }
 
     /**
@@ -200,6 +192,37 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
             { fireImmediately: true },
         );
 
+        MobxUtils.getInstance().addReaction(
+            BackgroundSwap.winPlaqueIsUp,
+            () => gameStore.props.winPlaqueIsUp,
+            (iswinPlaqueIsUp: boolean) => {
+                this.bgBaseGameAnimLand.setAnimation("landscape animation background", undefined, true);
+                this.bgBaseGameAnimPort.setAnimation("portrait animation background", undefined, true);
+
+                if (!iswinPlaqueIsUp) {
+                    this.bgBaseGameAnimLand.setAnimation("landscape animation background2", undefined, true);
+                    this.bgBaseGameAnimPort.setAnimation("portrait animation background2", undefined, true);
+                }
+            },
+            { fireImmediately: false },
+        );
+
+        MobxUtils.getInstance().addReaction(
+            BackgroundSwap.marketingScreenisOff,
+            () => gameStore.props.marketingScreenisOff,
+            (ismarketingScreenisOff: boolean) => {
+                this.bgBaseGameLogoAnim.visible = true;
+                this.bgBaseGameLogoAnimPrt.visible = true;
+                this.bgBaseGameAnimLand.setAnimation("landscape animation background2", undefined, true);
+                this.bgBaseGameAnimPort.setAnimation("portrait animation background2", undefined, true);
+
+                if (!ismarketingScreenisOff) {
+                    // this.bgBaseGameAnimLand.setAnimation("landscape animation background2", undefined, true);
+                    // this.bgBaseGameAnimPort.setAnimation("portrait animation background2", undefined, true);
+                }
+            },
+            { fireImmediately: false },
+        );
         /* MobxUtils.getInstance().addReaction(
             BackgroundSwap.marketingScreenOff,
             () => this.props.MarketingScreenSettings._marketScreenOff,
@@ -228,6 +251,7 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                 this.setStringOfLightsVisibilitiesBaseOnOrientation();
                 this.startPlaytingStringsOfLightsAnimation();
                 if (!isBaseGameVisible) {
+                    this.bgBaseGameAnimLand.y = 600; //350
                     this.bgBaseGameAnimLand.updateTransform();
                     this.bgBaseGameAnimPort.updateTransform();
                     this.bgBaseGameLogoAnim.visible = false;
@@ -244,6 +268,7 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
                         //  this.bgBaseGameAnimPort.play();
                     });
                 } else {
+                    this.bgBaseGameAnimLand.y = 350; //350
                     this.bgBaseGameAnimLand.updateTransform();
                     this.bgBaseGameAnimPort.updateTransform();
                     this.bgBaseGameAnimLand.setAnimation("landscape animation background", undefined, true);
@@ -287,6 +312,18 @@ export class BackgroundSwap extends BaseView<any, null, any, null> {
         this.stringOfLightsBonusGameAnimPort.setAnimation(BackgroundSwap.STRINGS_BONUS_WIN_POT, undefined, false);
         this.stringOfLightsBonusGameAnim.play();
         this.stringOfLightsBonusGameAnimPort.play();
+    }
+
+    private playBackgroundShineAnimation(): void {
+        TweenMax.delayedCall(
+            BackgroundSwap.DELAY_BONUS_BACKGROUND_LANDSCAPE + Math.random() * BackgroundSwap.RANDOM_TIME_STRINGS_LIGHTS,
+            () => {
+                this.bgBaseGameAnimLand.updateTransform();
+                this.bgBaseGameAnimPort.updateTransform();
+                this.bgBaseGameAnimLand.setAnimation("landscape animation background2", undefined, true);
+                this.bgBaseGameAnimPort.setAnimation("portrait animation background2", undefined, true);
+            },
+        );
     }
 
     private startPlaytingStringsOfLightsAnimation(): void {

@@ -1,7 +1,7 @@
 import { throws } from "assert";
 import { Bounce, Power1, TweenMax } from "gsap";
 import { Container } from "pixi.js";
-import { BaseAction, SpineAnimation, Stage, StorageService, TextAutoFit } from "playa-core";
+import { BaseAction, gameActions, SpineAnimation, Stage, StorageService, TextAutoFit } from "playa-core";
 import { StageProps } from "playa-core/dist/stage/StageProps";
 import { MarketingScreen, IToggle, IWData, IWProps, iwProps } from "playa-iw";
 import { gameStore } from "../../components";
@@ -89,8 +89,8 @@ export class MarketingScreenSettings extends MarketingScreen {
         ) as SpineAnimation;
         this.jewelBoxAnim.updateTransform();
         this.sevenAnim.updateTransform();
-        this.jewelBoxAnim.setAnimation("Jewel box bonus", undefined, true);
-        this.sevenAnim.setAnimation("7 bonus", undefined, true);
+        this.jewelBoxAnim.setAnimation("7 bonus", undefined, true);
+        this.sevenAnim.setAnimation("Jewel box bonus", undefined, true);
         this.jewelBoxAnim.play();
         this.sevenAnim.play();
         // Pulse call to action
@@ -142,6 +142,7 @@ export class MarketingScreenSettings extends MarketingScreen {
         this._uiContainer.renderable = true;
         this._winUpToContainer.renderable = true;
         this._uiFooterContainer.renderable = true;
+        gameStore.actions.revealActions.setMarketingScreenisOff(true);
     }
 
     /**

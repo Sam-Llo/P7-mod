@@ -24,48 +24,24 @@
         "y": 0.5
       }
     },
-    "gameLogo_img2": {
+    "paytableFrameBG_prt_img": {
       "frame": {
         "x": 1,
         "y": 489,
-        "w": 548,
-        "h": 241
+        "w": 776,
+        "h": 305
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 548,
-        "h": 241
+        "w": 776,
+        "h": 305
       },
       "sourceSize": {
-        "w": 548,
-        "h": 241
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "revealAllStopButton_disabledBg_img2": {
-      "frame": {
-        "x": 551,
-        "y": 489,
-        "w": 202,
-        "h": 202
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 202,
-        "h": 202
-      },
-      "sourceSize": {
-        "w": 202,
-        "h": 202
+        "w": 776,
+        "h": 305
       },
       "pivot": {
         "x": 0.5,
@@ -74,8 +50,8 @@
     },
     "footerDivider_03_img": {
       "frame": {
-        "x": 755,
-        "y": 489,
+        "x": 762,
+        "y": 1,
         "w": 2,
         "h": 20
       },
@@ -103,8 +79,8 @@
     "image": "gamebitmaps-0-0.png",
     "format": "RGBA8888",
     "size": {
-      "w": 761,
-      "h": 731
+      "w": 778,
+      "h": 795
     },
     "scale": 1
   }

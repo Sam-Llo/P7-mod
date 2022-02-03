@@ -61,6 +61,8 @@ export class GameData {
 
     @observable public winPlaqueIsUp: boolean;
 
+    @observable public marketingScreenisOff: boolean;
+
     public constructor() {
         this.firstCycleComplete = false;
         this.winTotal = 0;
@@ -81,5 +83,6 @@ export class GameData {
         this.totalWinningSymbolsCount = 0;
         this.winLevel = 0;
         this.winPlaqueIsUp = false;
+        this.marketingScreenisOff = false;
     }
 }

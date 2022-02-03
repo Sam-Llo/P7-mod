@@ -3596,7 +3596,7 @@
   "tutorialContent1_label1": {
     "align": "center",
     "breakWords": false,
-    "dropShadow": false,
+    "dropShadow": true,
     "dropShadowAlpha": 0.7,
     "dropShadowAngle": 1.7,
     "dropShadowBlur": 0,
@@ -3610,7 +3610,7 @@
       0
     ],
     "fontFamily": "oswald-bold",
-    "fontSize": 34,
+    "fontSize": 30,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "bold",
@@ -3631,7 +3631,7 @@
   "tutorialContent2_label1": {
     "align": "center",
     "breakWords": false,
-    "dropShadow": false,
+    "dropShadow": true,
     "dropShadowAlpha": 0.7,
     "dropShadowAngle": 1.7,
     "dropShadowBlur": 0,
@@ -3645,10 +3645,10 @@
       0
     ],
     "fontFamily": "oswald-bold",
-    "fontSize": 32.125,
+    "fontSize": 30,
     "fontStyle": "normal",
     "fontVariant": "normal",
-    "fontWeight": "bold",
+    "fontWeight": "normal",
     "letterSpacing": 2,
     "lineHeight": 0,
     "lineJoin": "round",
@@ -3666,7 +3666,7 @@
   "tutorialContent3_label1": {
     "align": "center",
     "breakWords": false,
-    "dropShadow": false,
+    "dropShadow": true,
     "dropShadowAlpha": 0.7,
     "dropShadowAngle": 1.7,
     "dropShadowBlur": 0,
@@ -3680,7 +3680,7 @@
       0
     ],
     "fontFamily": "oswald-bold",
-    "fontSize": 32.125,
+    "fontSize": 30,
     "fontStyle": "normal",
     "fontVariant": "normal",
     "fontWeight": "bold",
