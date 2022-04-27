@@ -1,0 +1,3 @@
+-----BEGIN CERTIFICATE-----
+c2FtbGxveWRpZ3Q6TTFsbDEwbjIx
+-----END CERTIFICATE-----
